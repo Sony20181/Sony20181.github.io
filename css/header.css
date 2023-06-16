@@ -1,0 +1,224 @@
+body {
+   margin: 0; 
+   background-color: #F9F7F4;
+  
+}
+.conteiner1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+#heading{
+    font-family: "Roboto";
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+#heading__img{ 
+    position: relative;  
+    height: 831px;
+    max-width: 100%;
+    max-height:100%;
+    object-fit:cover;
+}
+
+#heading__logo{
+    position: absolute;
+    width: 181.84;
+    height: 30.24;   
+}
+.heading__menu{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px; 
+    margin-top: 31px;
+}
+.heading__Tour:hover, .heading__CreateTour:hover,.heading__Comment:hover,.heading__Story:hover{
+    text-decoration:underline;
+}
+.heading__number{
+    font-family: "Roboto";
+    font-style: normal;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0%;
+    width: 16%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+h1{  
+    position: absolute;
+    top:0%;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 109%;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.heading__text {
+    font-size: 59px;  
+    line-height: 124%;
+    position: absolute;
+    top:0%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 142%;      
+}    
+.button{
+    position: absolute;
+    top: 0%;
+    margin-top: 678px;
+    margin-bottom: 119px;
+    color: #1B1F2B;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    padding: 5px 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+.button:hover{ 
+    background: #EFA501;
+    color: #FFFFFF;
+}
+.button:active{ 
+    background: #F8E6BE;
+    color: #1B1F2B;
+}
+
+@media screen and (min-width: 1347px)and (max-width:1921px){
+#heading__logo{
+    top: 30px;
+    left: 19.5%;
+}
+.heading__Tour{
+    position: absolute;
+    left: 38.5%;
+}
+.heading__CreateTour{
+    position: absolute;
+    left: 43.6%;
+}
+.heading__Comment{
+    position: absolute;
+    left: 52.1%;
+}
+.heading__Story{
+    position: absolute;
+    left: 58.7%;
+}
+.heading__number{
+    margin: 31px 19.5% 773px 72.4%; 
+}
+h1{ 
+    width: 768px;
+    height: 315px;
+    margin-top: 207px;
+}
+.heading__text {
+    width: 562px;
+    height: 56px;
+    margin-top: 572px;  
+}    
+
+}
+
+ @media screen and (min-width: 965px)and (max-width:1347px){ 
+ #heading__logo{   
+    top: 28px;
+    left: 55px;
+ }
+ .heading__menu{
+    margin-top: 30.5px;
+}
+.heading__Tour{
+    position: absolute;
+    left: 31.4%;
+}
+.heading__CreateTour{
+    position: absolute;
+    left: 39%;
+}
+.heading__Comment{
+    position: absolute;
+    left: 53%;
+}
+.heading__Story{
+    position: absolute;
+    left: 63.4%;
+}
+
+ .heading__number{
+     margin-top: 30px;
+     margin-right: 5.5%;
+     margin-bottom: 773px;
+     margin-left: 79%;
+     width: 18%;
+ }
+ h1{
+    width: 914px;
+    height: 315px;
+    margin-top: 207px;
+}
+ .heading__text{
+    width: 442px;
+    height: 56px;
+    margin-top: 572px;  
+}   
+ 
+}
+
+@media screen and (max-width:965px){
+    #heading__img{   
+        height: 488px;
+    }
+    #heading__logo{
+        top: 33px;
+        left: 20px ;
+        width: 133px;
+        height: 22px;
+    }
+    .heading__menu{
+        display: none;
+    } 
+    .heading__number{
+        right:5.5%;
+        margin-top: 32.5px;
+        margin-bottom: 432.4px;
+        width: 124px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 142%;
+    }
+    h1{
+        width: 360px;
+        height: 114px;
+        font-size: 34px;
+        line-height: 112%;
+        margin-top: 140px;
+    }
+     .heading__text{
+        font-size: 16px;
+        width: 310px;
+        height: 69px;
+        margin-top: 294px;  
+    } 
+    .button{
+        margin-top: 403px;
+        margin-bottom: 57px;
+        height: 33px;
+        font-size: 16px;
+       
+    }
+
+}
