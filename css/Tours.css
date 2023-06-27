@@ -53,7 +53,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     cursor: pointer; 
     
 }
-.TourMenu__right:focus, .TourMenu__right:active{
+.TourMenu__right:focus, .TourMenu__right:active {
     text-decoration:underline;
     color:#EFA501;
 }
@@ -77,6 +77,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 .IMG__box__cards:hover {  
     transform: scale(1.05);
     transition: all .3s ease-in-out; 
+    cursor: pointer; 
 } 
 
 .IMG__box__cards:after{  
@@ -201,21 +202,44 @@ input, select, textarea, option{
 select{ 
     padding-left: 18px;
     color:#A6A6A6;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 select:focus{
     color: #1B1F2B;
 }
+
 option:checked{
     color: #3B7E7B;
+}
+input[type=date] {
+    color:#A6A6A6;
+    text-indent: 9px;
+    margin-top: 8px; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-transform: uppercase;}
+
+input[type=date]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    padding-right: 10px;
 }
 
 textarea{
     height:146px; 
 }
+
 input:hover,select:hover, textarea:hover, input:focus, select:focus, textarea:focus,input:active,select:active, textarea:active{
     outline: 1px solid #F4F0E9;
     background: #F4F0E9;
 }
+
+input[type = date]:hover, select:hover{cursor: pointer;}
+input[type = date]:focus{color: #1B1F2B;}
 
 .Form__full-width {
     grid-column: 1 / 3;
@@ -256,9 +280,12 @@ input:hover,select:hover, textarea:hover, input:focus, select:focus, textarea:fo
     line-height: 142%;
     letter-spacing: -0.01em;
     margin-left: 45px;
-   /* margin-top: -1.5px;*/
     color: #A6A6A6;
 }
+.Form__checkbox-agree:hover, #Form__agreement:hover, .Form__Radio-Text:hover, .Form__Ages:hover {
+    cursor: pointer;
+}
+ 
 .Form__checkbox-agree-part2{
     color: #1B1F2B;
 }
@@ -284,7 +311,7 @@ input:hover,select:hover, textarea:hover, input:focus, select:focus, textarea:fo
     color: #FFFFFF;
     background: #286562;
 }
-.Form__find-tour:hover{ background: #3B7E7B;}
+.Form__find-tour:hover{ background: #3B7E7B; cursor: pointer;}
 .Form__find-tour:active{ background:#627F7E;}
 
 .Form__reset{
@@ -292,7 +319,7 @@ input:hover,select:hover, textarea:hover, input:focus, select:focus, textarea:fo
     background: #E0F0E5;
 }
 
-.Form__reset:hover{ background: #F1F3F2;}
+.Form__reset:hover{ background: #F1F3F2; cursor: pointer;}
 .Form__reset:active{ background:#D9DFDB;}
 
  
@@ -417,6 +444,7 @@ input:hover,select:hover, textarea:hover, input:focus, select:focus, textarea:fo
 .Story__cards:hover {
     transform: scale(1.05);
     transition: all .3s ease-in-out; 
+    cursor: pointer;
 } 
 
 .Story__Name{
@@ -457,7 +485,8 @@ input:hover,select:hover, textarea:hover, input:focus, select:focus, textarea:fo
     z-index: 3;
 }
 .Story__detail:hover{
-    background: #286562;;
+    background: #286562;
+    cursor: pointer;
 }
 .Story__detail:active{
     background: #EFA501;
@@ -513,6 +542,7 @@ margin-left: 1011px;
 }
 .Story__instagram:hover, .Story__facebook:hover, .Story__YouToub:hover , .Story__instagram-card2:hover, .Story__vk-card2:hover,.Story__instagram-card3:hover,.Story__facebook-card3:hover, .Story__vk-card3:hover  {
     text-decoration: underline;
+    cursor: pointer;
 }
 .Story__instagram:active, .Story__facebook:active, .Story__YouToub:active, .Story__instagram-card2:active, .Story__vk-card2:active , .Story__instagram-card3:active , .Story__facebook-card3:active, .Story__vk-card3:active  {
     color: #EFA501;
@@ -559,6 +589,7 @@ margin-left: 1011px;
 }
 .Footer__email:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 .Footer__email:active{
     text-decoration: underline;
@@ -604,6 +635,7 @@ margin-left: 1011px;
 .Footer__network__instagram:hover, .Footer__network__facebook:hover, .Footer__network__vk:hover{
     text-decoration: underline;
     color: #3B7E7B;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1347px)and (max-width:1921px){
