@@ -50,6 +50,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 }
 .TourMenu__right:hover{
     text-decoration:underline;
+    cursor: pointer; 
     
 }
 .TourMenu__right:focus, .TourMenu__right:active{
@@ -124,6 +125,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 }
 .IMG__box__detail:hover{
     background:  #286562;
+    cursor: pointer; 
 }
 .IMG__box__detail:active{
     background: #EFA501;
