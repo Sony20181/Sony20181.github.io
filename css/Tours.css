@@ -326,7 +326,7 @@ input[type = date]:focus{color: #1B1F2B;}
     display: block;
     width: 26px;
     height: 26px;
-    background: url("img/travel photo-5.png") repeat 0 0 ;
+    background: url("img/radiobutton.png") repeat 0 0 ;
     background-size: 26px 26px ;
     opacity: 0;
     position: absolute;
