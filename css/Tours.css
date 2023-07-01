@@ -606,19 +606,23 @@ input[type = date]:focus{color: #1B1F2B;}
     padding-left: 20px;
     font-size: 23px;
 }
-.Story__card:hover .Story__detail {
+.Story__detail:hover {
     background:  #286562;
     cursor: pointer; 
   }
 
-.Story__card:active .Story__detail{
+ .Story__detail:active {
     background: #EFA501;
 }
 
+
+
 .Story__button{
+   
     color: #FFFFFF;
 }
 .Story__vector{
+   
     padding-left: 12px; 
 }
 .Story__Social-networks{
@@ -665,6 +669,7 @@ margin-left: 1011px;
     text-decoration: underline;
     cursor: pointer;
 }
+
 .Story__instagram:active, .Story__facebook:active, .Story__YouToub:active, .Story__instagram-card2:active, .Story__vk-card2:active , .Story__instagram-card3:active , .Story__facebook-card3:active, .Story__vk-card3:active  {
     color: #EFA501;
     text-decoration: underline;
