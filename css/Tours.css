@@ -59,7 +59,6 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     color:#EFA501;
 }
 .IMG{
-   
     margin: 0 auto;
     position: relative; 
     margin-top: 104px;  
@@ -73,26 +72,37 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 .IMG__box__cards{   
     position: relative; 
     object-fit: cover;
-}
-
-.IMG__box__cards:hover {  
-    transform: scale(1.05);
-    transition: all .3s ease-in-out; 
-    cursor: pointer; 
-} 
-
-.IMG__box__cards:after{  
-    position: absolute;
-    left: 0;
-    top:0%;
-    width: 100%;
-    height: 531px;
+    overflow: hidden;
     border-radius: 45px; 
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-    z-index: 2;
-    content:'';
+    height: 531px;
 }
 
+.IMG__box__card {
+    position: relative;
+    width: 370px;
+    height: 561px;
+    overflow: hidden;
+  }
+  
+  .IMG__box__scale1 {
+    max-width: 100%;
+    transition: transform 0.3s;
+    
+  }
+  
+  .IMG__box__scale1:hover img {
+    transform: scale(1.2);
+  }
+  .IMG__box__scale1::after{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        border-radius: 45px; 
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+        content:'';
+  }
 .IMG__box__name {
     position: absolute;
     width: 240px;
@@ -104,6 +114,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     top: 48px; 
     left: 50px;  
     z-index: 3;
+    pointer-events: none; 
 }
 .IMG__box__price{
     position: absolute;
@@ -115,38 +126,38 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     top: 150px; 
     left: 50px;
     z-index: 3;
+    pointer-events: none; 
 }
-.IMG__box__detail{
+
+.IMG__box__detail {
     position: absolute;
-    width: 199px;
-    height: 42px;
+    z-index:3;
+    width: 180px;
+    height: 36px;
     margin-left: 30px;
     top: 444px;
     border-radius: 50px;
-    z-index: 3;
-}
-.IMG__box__detail:hover{
-    background:  #286562;
-    cursor: pointer; 
-}
-.IMG__box__detail:active{
-    background: #EFA501;
-}
-.IMG__box__button{
     padding-top: 7px;
     padding-left:  20px;
     font-size: 23px;
     line-height: 122%;
     color: #FFFFFF;
-    z-index: 3;
+    }
+    .IMG__box__card:hover .IMG__box__detail {
+        background:  #286562;
+        cursor: pointer; 
+      }
+    .IMG__box__vector{
+        padding-left: 12px ;
+        z-index: 3;
 }
-.IMG__box__vector{
-    padding-left: 12px ;
-    z-index: 3;
+    .IMG__box__card:active .IMG__box__detail{
+        background: #EFA501;
+}
 
-}
+
 .box__Title__top{
-    margin-top: 128px;
+    margin-top: 136px;
 }
 .box__subtitle{
     margin-top: 29px;
@@ -217,8 +228,6 @@ select{
 
 select:focus{
     color: #1B1F2B;
-   
-    
 }
 
 option:checked{
@@ -295,12 +304,14 @@ input[type = date]:focus{color: #1B1F2B;}
       -moz-appearance: none;
       -webkit-appearance: none;
       appearance: none;  
+      cursor: pointer;
 }
 .radio_label{
       font-weight: 400;
       font-size: 20px;
       line-height: 142%; 
       margin-left: 38px;
+      cursor: pointer;
      
 }
 .radio_label::before{
@@ -511,6 +522,7 @@ input[type = date]:focus{color: #1B1F2B;}
    margin: 0 auto;
    width: 1170px;
 }
+           
 .Story__cards{
     margin-top: 100px;
     display: flex;
@@ -518,36 +530,39 @@ input[type = date]:focus{color: #1B1F2B;}
     justify-content: center;
     position: relative;
 }
-
-.Story__cards::after{
-    position: absolute;
-    left: 0%;
-    top:0%;
-    width: 100%;
-    height: 567px;
-    border-radius: 45px; 
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-    z-index: 2;
-    content:'';
-}
 .Story__cards-top{
-    margin-top: 47px;
+    margin-top: 52px;
 }
-.Story__photo-one{   
+
+.Story__card {
+    position: relative;
+    width: 1170px;
+    height: 567px;
+    overflow: hidden;
+    border-radius: 55px; 
+  }
+  .Story__scale {
     border-radius: 50px;
     width: 1170px;
     height: 567px;
+  max-width: 100%;
+  transition: transform 0.3s;
+  
 }
 
-.Story__cards {
-    overflow: hidden; 
-    border-radius: 50px;
-   }
-.Story__cards:hover {
-    transform: scale(1.05);
-    transition: all .3s ease-in-out; 
-    cursor: pointer;
-} 
+.Story__scale:hover img {
+  transform: scale(1.2);
+}
+.Story__scale::after{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      border-radius: 45px; 
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+      content:'';
+}
 
 .Story__Name{
     position:absolute;
@@ -560,6 +575,7 @@ input[type = date]:focus{color: #1B1F2B;}
     line-height: 122%;
     color: #FFFFFF; 
     z-index: 3;
+   
 }
 .Story__description{
     position:absolute;
@@ -572,31 +588,35 @@ input[type = date]:focus{color: #1B1F2B;}
     line-height: 142%;
     color: #FFFFFF;
     z-index: 3;
+    
 }
 .Story__description__list{
     margin-top: 27px;
     margin-left: -10px;
+    
 }
 .Story__detail{
     position: absolute;
-    width: 199px;
-    height: 42px;
+    width: 180px;
+    height: 35px;
     margin-left: 40px;
     top: 472px;
     border-radius: 50px;
     z-index: 3;
-}
-.Story__detail:hover{
-    background: #286562;
-    cursor: pointer;
-}
-.Story__detail:active{
-    background: #EFA501;
-}
-.Story__button{
     padding-top: 7px;
     padding-left: 20px;
     font-size: 23px;
+}
+.Story__card:hover .Story__detail {
+    background:  #286562;
+    cursor: pointer; 
+  }
+
+.Story__card:active .Story__detail{
+    background: #EFA501;
+}
+
+.Story__button{
     color: #FFFFFF;
 }
 .Story__vector{
@@ -746,7 +766,7 @@ margin-left: 1011px;
     }    
     .IMG__box__card{
         width:370px;
-        height:530px;
+        height:531px;
         border-radius: 45px;        
     }
     .IMG__box__name {
@@ -810,7 +830,7 @@ margin-left: 1011px;
     .IMG__box{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15.3px; 
+        grid-gap: 18px; 
     }
     .IMG__box__card{
         width:450px;
@@ -818,6 +838,7 @@ margin-left: 1011px;
         border-radius: 40px;
         object-fit:cover;
     }
+    
     .IMG__box__name {
         width: 350px; 
         height: 43px;
@@ -825,6 +846,7 @@ margin-left: 1011px;
     .IMG__box__price{  
         top: 109px;
     }
+   
     .Shell {
         max-width: 918px;
         max-height: 966px;  
@@ -939,6 +961,25 @@ margin-left: 1011px;
     .Story__photo-one{   
         width: 918px;
     }
+    .Story__cards-top{
+        margin-top: 52px;
+    }
+    
+    .Story__card {
+        width: 1170px;
+        height: 567px;
+        border-radius: 50px; 
+      }
+      .Story__scale {
+        border-radius: 50px;
+        width: 918px;
+        height: 567px;
+    }
+ 
+    .Story__scale::after{
+          border-radius: 50px; 
+    }
+
     .Story__description{
         top:140px;
     }
@@ -967,10 +1008,11 @@ margin-left: 1011px;
         margin-left: 759px;
     }
     .Story__cards-top{
-        margin-top: 45.5px;
+        margin-top: 50px;
     }
-   
+
     .Footer__IMG-text{
+        margin-top: 134px;
         margin-left:12.2%;
     }
     .Footer__network__inst-img{
@@ -1026,17 +1068,24 @@ margin-left: 1011px;
     .IMG__box{
         display: grid;
         grid-template-columns: 318px;
-        grid-gap: 14px; 
+        grid-gap: 18.5px; 
     }
     .IMG__box__card{
         width:318px;
         height:318px;
-        border-radius: 23px;
         object-fit:cover;
     }
-    .IMG__box__cards:after{  
+    .IMG__box__cards{
+        height:318px;
+       border-radius: 20px;
+    }
+    .IMG__box__scale1::after{
+        border-radius: 20px; 
+    }
+
+    .IMG__box__scale1::after{  
         height: 318px;
-        border-radius: 23px;
+        border-radius: 0;
     }
     .IMG__box__name {
         top: 25px; 
@@ -1055,25 +1104,19 @@ margin-left: 1011px;
         left: 25px;
     }
     .IMG__box__detail{
-        width: 155.5px; 
+        width: 180px; 
         height: 37px;
         margin-left: 6px;
         top: 262px; 
     }
 
-    .IMG__box__button{
-        padding-top: 7px;
-        padding-left:  20px;
-        font-size: 16px;
-        line-height: 142%;
-    }
     .IMG__box__vector{
         top:272.5px;
         padding-left: 12px ;
     
     }
     .box__Title__top{
-        margin-top: 73px;
+        margin-top: 75px;
         letter-spacing: 0.02em;
     }
     .box__subtitle{
@@ -1309,21 +1352,21 @@ margin-left: 1011px;
         max-height: 100%;
         margin-top: 50px;
     }
-    .Story__cards::after{
-        height: 455px;
-        border-radius: 20px; 
+    
+      .Story__scale {
+      object-fit: cover; 
+      border-radius: 20px;
+      width: 318px;
+      height: 455px;
     }
+   
+    .Story__scale::after{
+          border-radius: 20px; 
+          height: 455px;
+    }
+
     .Story__cards-top{
-        margin-top: 16px;
-    }
-    .Story__photo-one{  
-        object-fit: cover; 
-        border-radius: 20px;
-        width: 318px;
-        height: 455px;
-    }
-    .Story__cards {
-        border-radius: 20px;
+        margin-top: 18px;
     }
 
     .Story__Name{
@@ -1359,19 +1402,20 @@ margin-left: 1011px;
         position: absolute;
         width: 130px;
         height: 23px;
-        margin-left: 30px;
-        top: 400px;
+        margin-left: 8px;
+        top: 392px;
         border-radius: 20px;
     }
 
     .Story__button{
-        padding-top: 1px;
+        
         padding-left: 2px;
         font-size: 16px;
         color: #FFFFFF;
     }
     .Story__vector{
-        padding-left: 10px; 
+        
+        padding-left: 12px; 
     }
     .Story__Social-networks{
         display: none;
@@ -1381,7 +1425,7 @@ margin-left: 1011px;
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
-    margin-top: 71px;
+    margin-top: 76.5px;
     position: relative;
    
 }
