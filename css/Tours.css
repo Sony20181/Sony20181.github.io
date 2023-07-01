@@ -291,7 +291,6 @@ input[type = date]:focus{color: #1B1F2B;}
 .rad{
     position:relative;
     margin-top: 10px;
-    margin-right: 30px;
 }
 .Form__radiobutto_position_yes{
         position: absolute;
