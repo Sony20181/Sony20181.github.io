@@ -182,11 +182,9 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
         padding-left: 12px ;
         z-index: 3;
 }
-    .IMG__box__card:active .IMG__box__detail{
+   .IMG__box__detail:active{
         background: #EFA501;
 }
-
-
 .box__Title__top{
     margin-top: 136px;
 }
