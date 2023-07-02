@@ -36,20 +36,31 @@
         </nav>
     </header> 
     <main>
+
     <section >   
         <div class="Choose-your-tour">    
             <div class="box">
                 <div  class="box__Title" id="Choose-a-tour">Выбери свой тур</div>
-            </div>   
-            <div class = "box TourMenu ">
+            </div> 
+            <div  class = "box TourMenu " id="mainmenu">
                 <div class = "TourMenu__width">
-                        <div class="TourMenu__right" >Популярные</div>
-                        <div class="TourMenu__left TourMenu__right">Авторские</div>
-                        <div class="TourMenu__left TourMenu__right"> Походы </div>
-                        <div class="TourMenu__second-row-left TourMenu__right"> Сплавы </div>
-                        <div class="TourMenu__left TourMenu__second-row-top TourMenu__right"> Велопрогулки </div>
-                </div>                
-            </div>
+                    <input type="radio" name="menuitem" id="item1" checked>
+                    <label class="TourMenu__right" for="item1">Популярные</label>
+
+                    <input type="radio" name="menuitem" id="item2">
+                    <label class="TourMenu__left TourMenu__right"  for="item2">Авторские</label>
+
+                    <input type="radio" name="menuitem" id="item3">
+                    <label class="TourMenu__left TourMenu__right" for="item3">Походы</label>
+
+                    <input type="radio" name="menuitem" id="item4">
+                    <label class="TourMenu__second-row-left TourMenu__right"  for="item4"> Сплавы</label>
+
+                    <input type="radio" name="menuitem" id="item5">
+                    <label  class="TourMenu__left TourMenu__second-row-top TourMenu__right" for="item5">Велопрогулки</label>
+                
+                </div>
+              </div>
         </div>
           <div class="IMG">
             <div class="IMG__box">
@@ -316,17 +327,6 @@
                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </div>
         </div>  
-        <style>
-
-           
-            
-            
- 
-
-
-            
-            
-            </style>
         <div class = "Story">
             <div class = "Story__cards">
                 <div class = "Story__card Story__scale">
@@ -343,6 +343,7 @@
                          </div>
                          
                      </div>
+                     
                      <div class = "Story__detail">
                          <div class = "Choose-your-tour Story__button"> 
                              Подробнее
