@@ -23,7 +23,7 @@ a {
 #heading__img{ 
     position: relative;  
     height: 831px;
-    max-width: 100%;
+    width: 100%;
     max-height:100%;
     object-fit:cover;
 }
@@ -101,7 +101,7 @@ h1{
     color: #1B1F2B;
 }
 
-@media screen and (min-width: 1347px)and (max-width:1921px){
+@media screen and (min-width: 1347px){
 #heading__logo{
     top: 30px;
     left: 19.5%;
