@@ -173,15 +173,18 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     font-size: 23px;
     line-height: 122%;
     color: #FFFFFF;
+   
     }
     .IMG__box__detail:hover {
         background:  #286562;
         cursor: pointer; 
       }
-    .IMG__box__vector{
-        padding-left: 12px ;
-        z-index: 3;
-}
+      .IMG__box__vector{
+        background: url("../img/vector.png") no-repeat;
+        background-size: 23px ;
+        background-position: 140px 7px;
+      }
+     
    .IMG__box__detail:active{
         background: #EFA501;
 }
@@ -639,22 +642,30 @@ input[type = date]:focus{color: #1B1F2B;}
     padding-top: 7px;
     padding-left: 20px;
     font-size: 23px;
+   
 }
 .Story__detail:hover {
     background:  #286562;
     cursor: pointer; 
   }
-
+ 
  .Story__detail:active {
     background: #EFA501;
+  
 }
 
 .Story__button{
     color: #FFFFFF;
+    background: url("../img/vector.png") no-repeat;
+    background-size: 23px;
+    background-position-x: 137px;
+    background-position-y: 6px ;
+ 
 }
+/*
 .Story__vector{
     padding-left: 12px; 
-}
+}*/
 .Story__Social-networks{
     position: absolute;
     top:479px;
@@ -1176,12 +1187,12 @@ input[type = date]:focus{color: #1B1F2B;}
         top: 262px; 
         font-size: 16px;
     }
-
     .IMG__box__vector{
-        top:272.5px;
-        padding-left: 12px ;
-    
-    }
+        background: url("../img/vector.png") no-repeat;
+        background-size: 23px ;
+        background-position: 100px 2px;
+      }
+   
     .box__Title__top{
         margin-top: 75px;
         letter-spacing: 0.02em;
@@ -1424,6 +1435,7 @@ input[type = date]:focus{color: #1B1F2B;}
         max-width: 100%;
         max-height: 100%;
         margin-top: 50px;
+        border-radius: 20px;
     }
     
       .Story__scale {
@@ -1431,11 +1443,6 @@ input[type = date]:focus{color: #1B1F2B;}
       border-radius: 20px;
       width: 318px;
       height: 455px;
-    }
-   
-    .Story__scale::after{
-          border-radius: 20px; 
-          height: 455px;
     }
 
     .Story__cards-top{
@@ -1480,15 +1487,19 @@ input[type = date]:focus{color: #1B1F2B;}
         border-radius: 20px;
     }
 
+    .Story__detail::after{
+        position: absolute;
+        border-radius: 20px;
+    }
+
     .Story__button{
-        
         padding-left: 2px;
         font-size: 16px;
         color: #FFFFFF;
-    }
-    .Story__vector{
-        
-        padding-left: 12px; 
+        background: url("../img/vector.png") no-repeat;
+        background-size: 23px;
+        background-position-x: 95px;
+        background-position-y: 2px ;
     }
     .Story__Social-networks{
         display: none;
