@@ -180,7 +180,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
         cursor: pointer; 
       }
       .IMG__box__vector{
-        background: url("../img/vector.png") no-repeat;
+        background: url("../img/Vector.png") no-repeat;
         background-size: 23px ;
         background-position: 140px 7px;
       }
@@ -656,7 +656,7 @@ input[type = date]:focus{color: #1B1F2B;}
 
 .Story__button{
     color: #FFFFFF;
-    background: url("../img/vector.png") no-repeat;
+    background: url("../img/Vector.png") no-repeat;
     background-size: 23px;
     background-position-x: 137px;
     background-position-y: 6px ;
@@ -1188,7 +1188,7 @@ input[type = date]:focus{color: #1B1F2B;}
         font-size: 16px;
     }
     .IMG__box__vector{
-        background: url("../img/vector.png") no-repeat;
+        background: url("../img/Vector.png") no-repeat;
         background-size: 23px ;
         background-position: 100px 2px;
       }
@@ -1493,7 +1493,7 @@ input[type = date]:focus{color: #1B1F2B;}
         padding-left: 2px;
         font-size: 16px;
         color: #FFFFFF;
-        background: url("../img/vector.png") no-repeat;
+        background: url("../img/Vector.png") no-repeat;
         background-size: 23px;
         background-position-x: 100px;
         background-position-y: 0px ;
