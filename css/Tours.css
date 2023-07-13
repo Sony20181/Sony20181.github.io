@@ -11,7 +11,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     justify-content: center;
 }
 
-.Choose-your-tour{
+.CommonAttributes{
     font-family: 'Roboto';
     font-style: normal;
     color: #1B1F2B;
@@ -26,6 +26,8 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     text-align: center;
     margin-top: 136px;
 }
+
+
 
 
 .TourMenu{
@@ -90,53 +92,48 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     color: #EFA501;
     text-decoration:none;
 }
-.IMG{
-    margin: 0 auto;
+
+.ChooseTour-cards{
+    margin-left:auto;
+    margin-right: auto;
     position: relative; 
-    margin-top: 104px;  
-       
-}
-.IMG__box{
+    margin-top: 75px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px; 
-}
-.IMG__box__cards{   
+    }
+.ChooseTour-card{
     position: relative; 
     object-fit: cover;
     overflow: hidden;
     border-radius: 45px; 
     height: 531px;
-}
-
-.IMG__box__card {
-    position: relative;
     width: 370px;
-    height: 561px;
-    overflow: hidden;
-  }
-  
-  .IMG__box__scale1 {
+}
+.ChooseTour-sacal{
     max-width: 100%;
     transition: transform 0.3s;
     cursor: pointer; 
-    
-  }
-  
-  .IMG__box__scale1:hover img {
+}
+
+.ChooseTour-sacal:hover .choose-card__img {
     transform: scale(1.2);
-  }
-  .IMG__box__scale1::after{
-        position: absolute;
-        left: 0;
-        top:0;
-        width: 100%;
-        height: 100%;
-        border-radius: 45px; 
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-        content:'';
-  }
-.IMG__box__name {
+}
+.ChooseTour-sacal::after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 45px; 
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+    content:'';
+}
+.ChooseTour-card__info{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+  .ChooseTour-card__title {
     position: absolute;
     width: 240px;
     height: 86px;
@@ -144,50 +141,47 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     font-size: 35px;
     line-height: 122%;
     color: #FFFFFF;
-    top: 48px; 
+    top: 3px; 
     left: 50px;  
     z-index: 3;
 }
-.IMG__box__price{
+.ChooseTour-card__price{
     position: absolute;
     font-weight: 400;
     font-size: 17px;
     line-height: 142%;
     letter-spacing: -0.01em;    
     color: #FFFFFF;
-    top: 150px; 
+    top: 135px; 
     left: 50px;
     z-index: 3;
 }
-
-.IMG__box__detail {
+.ChooseTour-card__button{
     position: absolute;
     z-index:3;
-    width: 180px;
-    height: 36px;
-    margin-left: 30px;
-    top: 444px;
     border-radius: 50px;
-    padding-top: 7px;
-    padding-left:  20px;
     font-size: 23px;
     line-height: 122%;
     color: #FFFFFF;
-   
-    }
-    .IMG__box__scale1:hover .IMG__box__detail{
-        background:  #286562;
-        cursor: pointer; 
-      }
-    .IMG__box__vector{
-        background: url("../img/Vector.png") no-repeat;
-        background-size: 23px ;
-        background-position: 140px 7px;
-    }
-     
-    .IMG__box__scale1:active .IMG__box__detail:active{
-        background: #EFA501;
+    top: 447px;
+    border:none;
+    background: none;
+    padding: 7px 20px;
+    left:30px;
 }
+.ChooseTour-card__button-icon{
+    padding-left: 10px;  
+}
+.ChooseTour-sacal:hover .ChooseTour-card__button{
+    background:  #286562;
+    cursor: pointer; 
+  }
+
+.ChooseTour-sacal:active .ChooseTour-card__button:active{
+    background: #EFA501;
+}
+
+
 .box__Title__top{
     margin-top: 136px;
 }
@@ -331,6 +325,7 @@ input[type = date]:focus{color: #1B1F2B;}
 }
 .Form__radiobutto_position_no{
     margin-left: 94px;
+    width: 50px;
 }
 .radio__input{
        display: none;
@@ -364,18 +359,15 @@ input[type = date]:focus{color: #1B1F2B;}
 .radio_label::after{
     content: "";
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
-   /* background-color: #1B1F2B;
-    border: 3px solid black;*/
-    background-image: url("../img/radiobutton (1).png") no-repeat;
-    background-size: 5px 5px ;
-    position: absolute;
-    left: 7.39px;
-    top: 6.5px;
-    z-index: 2;
+    background-color: #1B1F2B;
     opacity: 0;
+    position: absolute;
+    left: 7.2px;
+    top: 6px;
+    z-index: 2;
 }
 .radio__input:checked + .radio_label:after{
     opacity: 1;
@@ -664,10 +656,7 @@ input[type = date]:focus{color: #1B1F2B;}
     background-position-y: 6px ;
  
 }
-/*
-.Story__vector{
-    padding-left: 12px; 
-}*/
+
 .Story__Social-networks{
     position: absolute;
     top:479px;
@@ -723,7 +712,11 @@ input[type = date]:focus{color: #1B1F2B;}
     max-height: 100%;
     margin-top: 130px;
     position: relative;
-    margin-left: 30%;
+   /* margin-left: 30%;*/
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
    
 }
 .Footer__colomn{
@@ -808,18 +801,21 @@ input[type = date]:focus{color: #1B1F2B;}
 }
 
 @media screen and (min-width: 1347px){
-    .IMG{
+    
+    .ChooseTour-cards{
         max-width:1170px;
     }    
-    .IMG__box__card{
+    .ChooseTour-card{
         width:370px;
         height:531px;
         border-radius: 45px;        
     }
-    .IMG__box__name {
+    .ChooseTour-card__title {
         width: 240px; 
         height: 86px;
     }
+
+
     .Shell {
         max-width: 1170px;
     }  
@@ -884,26 +880,26 @@ input[type = date]:focus{color: #1B1F2B;}
         padding-top: 0px;
     }
 
-    .IMG{
-        max-width:918px;      
-    }
-    .IMG__box{
+    .ChooseTour-cards{
+        max-width:918px;  
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
+        margin-top:104px ;
     }
-    .IMG__box__card{
+    .ChooseTour-card{
         width:450px;
         height:531px;
         border-radius: 40px;
+        object-fit: cover;
     }
     
-    .IMG__box__name {
+    .ChooseTour-card__title {
         width: 350px; 
         height: 43px;
     }
-    .IMG__box__price{  
-        top: 109px;
+    .ChooseTour-card__price{  
+        top: 90px;
     }
    
     .Shell {
@@ -943,7 +939,13 @@ input[type = date]:focus{color: #1B1F2B;}
     .radio_label{
         margin-left: 37px;
     }
-  
+    .radio_label::after{
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        left: 7.5px;
+        top: 6.59px;
+    }
    .Form__checkbox_label{
         padding-left: 37px;
         padding-top: 3px;
@@ -1082,7 +1084,7 @@ input[type = date]:focus{color: #1B1F2B;}
 
     .Footer__IMG-text{
         margin-top: 134px;
-        margin-left:12.2%;
+      /*  margin-left:12.2%;*/
     }
     .Footer__network__inst-img{
         margin-left: 287px;
@@ -1140,34 +1142,27 @@ input[type = date]:focus{color: #1B1F2B;}
     .TourMenu__second-row-top{
         margin-top: 8px;
     }
-    .IMG{
+    .ChooseTour-cards{
         margin-top: 64px;  
-        max-width:318px;   
-    }
-    .IMG__box{
+        max-width:318px;
         display: grid;
         grid-template-columns: 318px;
-        grid-gap: 18.5px; 
+        grid-gap: 18px;    
     }
-    .IMG__box__card{
+   
+    .ChooseTour-card{
         width:318px;
         height:318px;
-      
-    }
-    .IMG__box__cards{
-        height:318px;
         border-radius: 20px;
-        object-fit:cover;
+        object-fit: cover;
     }
-    .IMG__box__scale1::after{
-        border-radius: 20px; 
-    }
-    .IMG__box__scale1::after{  
+  
+    .ChooseTour-sacal::after{  
         height: 318px;
         border-radius: 0;
     }
-    .IMG__box__name {
-        top: 25px; 
+    .ChooseTour-card__title {
+        top: -7px; 
         left: 25px;  
         width: 268px; 
         height: 28px;
@@ -1176,23 +1171,19 @@ input[type = date]:focus{color: #1B1F2B;}
         line-height: 120%;
         letter-spacing: 0.04em;
     }
-    .IMG__box__price{ 
+    .ChooseTour-card__price{ 
         font-size: 16px;
         line-height: 142%; 
-        top: 66px;
+        top: 50px;
         left: 25px;
     }
-    .IMG__box__detail{
-        width: 145px; 
-        height: 30px;
-        margin-left: 6px;
-        top: 262px; 
+    .ChooseTour-card__button{
+        left: 3px;
+        top: 261px; 
         font-size: 16px;
     }
-    .IMG__box__vector{
-        background: url("../img/Vector.png") no-repeat;
-        background-size: 23px ;
-        background-position: 100px 2px;
+    .ChooseTour-card__button-icon{
+        padding-left: 14px;
       }
    
     .box__Title__top{
@@ -1284,11 +1275,11 @@ input[type = date]:focus{color: #1B1F2B;}
            top:0px;
      }
      .radio_label::after{
-         width: 3px;
-         height: 3px;
+         width: 10px;
+         height: 10px;
          border-radius: 50%;
-         left: 5.8px;
-         top: 5.8px;
+         left: 4.8px;
+         top: 4.8px;
      }
    
     .checkbox_input{

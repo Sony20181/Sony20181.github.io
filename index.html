@@ -16,29 +16,33 @@
 <body>
     
    <header>
-        <nav id ="heading">
-            <div class="conteiner1">
-                <img id="heading__img"   src="img/header-img.png"  alt="Главная картинка ">
-                <div><a href="index.html"><img id="heading__logo" src="img/YourTour.png"  alt="YourTour"></a></div>
-                <div class="heading__menu">   
-                   <div class="heading__Tour" ><a href="#Choose-a-tour">Туры</a></div>
-                   <div class="heading__CreateTour"><a href="#Create-a-tour"> Создать тур</a></div>
-                   <div class="heading__Comment"><a href="#Review">Отзывы</a></div>
-                   <div class="heading__Story"><a href="#Stories">Истории</a> </div>
+        <nav class ="heading">
+            <div class="container">
+                <img class = "heading__img" src="img/header-img.png"  alt="Главная картинка">
+                <a href="index.html"><img class="heading__logo" src="img/YourTour.png"  alt="YourTour"></a>
+                <div class = "heading__menu ">
+                    <ul class = "heading__menu-options">
+                        <li class = "heading__menu-options__option heading__menu-options__Tour"> <a href="#Choose-a-tour">Туры</a></li>
+                        <li class = "heading__menu-options__option"> <a href="#Create-a-tour"> Создать тур</a></li>
+                        <li class = "heading__menu-options__option"> <a href="#Review">Отзывы</a></li>
+                        <li class = "heading__menu-options__option"> <a href="#Stories">Истории</a></li>   
+                    </ul>                
                 </div>
             </div>
-            <p class="heading__number"><a  href="tel:+79999999999">+7 999 999 99 99</a></p>
-            <div class="conteiner1">
+            <a class="heading__number" href="tel:+79999999999">+7 999 999 99 99</a>
+            <div class="container">
                 <h1>Идеальные путешествия существуют</h1>
                 <p class="heading__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-               <button class = "button" >Найти тур</button>
+                <button class = "heading__button" >Найти тур</button>
             </div>
         </nav>
     </header> 
-    <main>
 
-    <section >   
-        <div class="Choose-your-tour">    
+    <main>
+         
+    
+   <section class = "ChooseTour" >   
+        <div class="CommonAttributes">    
             <div class="box">
                 <div  class="box__Title" id="Choose-a-tour">Выбери свой тур</div>
             </div> 
@@ -61,93 +65,89 @@
                 
                 </div>
               </div>
-        </div>
-          <div class="IMG">
-            <div class="IMG__box">
-                <div class="IMG__box__cards">
-                    <div class="IMG__box__card IMG__box__scale1">
-                      <img src="img/card_tour_photo-1.png" alt="" class = "IMG__box__scale1">
-                       <div class=" Choose-your-tour IMG__box__name"> Путешествие в горы </div>
-                        <div class=" Choose-your-tour IMG__box__price">
-                            от 80 000 руб
-                        </div>
-                        <div class="IMG__box__detail Choose-your-tour ">
-                            <div class = "IMG__box__vector">Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="IMG__box__cards">
-                    <div class="IMG__box__card IMG__box__scale1">
-                      <img src="img/card_tour_photo-2.png" alt="" class = "IMG__box__scale1">
-                       <div class=" Choose-your-tour IMG__box__name"> Путешествие в горы </div>
-                        <div class=" Choose-your-tour IMG__box__price">
-                            от 80 000 руб
-                        </div>
-                        <div class="IMG__box__detail Choose-your-tour ">
-                            <div class = "IMG__box__vector">Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="IMG__box__cards">
-                    <div class="IMG__box__card IMG__box__scale1">
-                      <img src="img/card_tour_photo-3.png" alt="" class = "IMG__box__scale1">
-                       <div class=" Choose-your-tour IMG__box__name"> Путешествие в горы </div>
-                        <div class=" Choose-your-tour IMG__box__price">
-                            от 80 000 руб
-                        </div>
-                        <div class="IMG__box__detail Choose-your-tour ">
-                            <div class = "IMG__box__vector">Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="IMG__box__cards">
-                    <div class="IMG__box__card IMG__box__scale1">
-                      <img src="img/card_tour_photo-4.png" alt="" class = "IMG__box__scale1">
-                       <div class=" Choose-your-tour IMG__box__name"> Путешествие в горы </div>
-                        <div class=" Choose-your-tour IMG__box__price">
-                            от 80 000 руб
-                        </div>
-                        <div class="IMG__box__detail Choose-your-tour ">
-                            <div class = "IMG__box__vector">Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="IMG__box__cards">
-                    <div class="IMG__box__card IMG__box__scale1">
-                      <img src="img/card_tour_photo-5.png" alt="" class = "IMG__box__scale1">
-                       <div class=" Choose-your-tour IMG__box__name"> Путешествие в горы </div>
-                        <div class=" Choose-your-tour IMG__box__price">
-                            от 80 000 руб
-                        </div>
-                        <div class="IMG__box__detail Choose-your-tour ">
-                            <div class = "IMG__box__vector">Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="IMG__box__cards">
-                    <div class="IMG__box__card IMG__box__scale1">
-                      <img src="img/card_tour_photo-6.png" alt="" class = "IMG__box__scale1">
-                       <div class=" Choose-your-tour IMG__box__name"> Путешествие в горы </div>
-                        <div class=" Choose-your-tour IMG__box__price">
-                            от 80 000 руб
-                        </div>
-                        <div class="IMG__box__detail Choose-your-tour ">
-                            <div class = "IMG__box__vector">Подробнее</div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+            
+                <div class="ChooseTour-cards">
+                    <div class="ChooseTour-card ChooseTour-sacal">
+                        <img alt="" class="ChooseTour-sacal choose-card__img" src="img/card_tour_photo-1.png">
+                        <div class="ChooseTour-card__info">
+                            <h4 class="ChooseTour-card__title">Путешествие в горы</h4>
+                            <p class="ChooseTour-card__price">от 80 000 руб</p>
+                        </div>
+                        <button class="ChooseTour-card__button">
+                            Подробнее
+                            <img alt="Стрелочка" class="ChooseTour-card__button-icon" src="img/Vector.png">
+                        </button>
+                    </div>
+                    <div class="ChooseTour-card ChooseTour-sacal">
+                        <img alt="" class="ChooseTour-sacal choose-card__img " src="img/card_tour_photo-2.png">
+                        <div class="ChooseTour-card__info">
+                            <h4 class="ChooseTour-card__title">Путешествие в горы</h4>
+                            <p class="ChooseTour-card__price">от 80 000 руб</p>
+                        </div>
+                        <button class="ChooseTour-card__button">
+                            Подробнее
+                            <img alt="Стрелочка" class="ChooseTour-card__button-icon" src="img/Vector.png">
+                        </button>
+                    </div>
+                    <div class="ChooseTour-card ChooseTour-sacal">
+                        <img alt="" class="ChooseTour-sacal choose-card__img" src="img/card_tour_photo-3.png">
+                        <div class="ChooseTour-card__info">
+                            <h4 class="ChooseTour-card__title">Путешествие в горы</h4>
+                            <p class="ChooseTour-card__price">от 80 000 руб</p>
+                        </div>
+                        <button class="ChooseTour-card__button">
+                            Подробнее
+                            <img alt="Стрелочка" class="ChooseTour-card__button-icon" src="img/Vector.png">
+                        </button>
+                    </div>
+                    <div class="ChooseTour-card ChooseTour-sacal">
+                        <img alt="" class="ChooseTour-sacal choose-card__img " src="img/card_tour_photo-4.png">
+                        <div class="ChooseTour-card__info">
+                            <h4 class="ChooseTour-card__title">Путешествие в горы</h4>
+                            <p class="ChooseTour-card__price">от 80 000 руб</p>
+                        </div>
+                        <button class="ChooseTour-card__button">
+                            Подробнее
+                            <img alt="Стрелочка" class="ChooseTour-card__button-icon" src="img/Vector.png">
+                        </button>
+                    </div>
+                    <div class="ChooseTour-card ChooseTour-sacal">
+                        <img alt="" class="ChooseTour-sacal choose-card__img" src="img/card_tour_photo-5.png">
+                        <div class="ChooseTour-card__info">
+                            <h4 class="ChooseTour-card__title">Путешествие в горы</h4>
+                            <p class="ChooseTour-card__price">от 80 000 руб</p>
+                        </div>
+                        <button class="ChooseTour-card__button">
+                            Подробнее
+                            <img alt="Стрелочка" class="ChooseTour-card__button-icon" src="img/Vector.png">
+                        </button>
+                    </div>
+                    <div class="ChooseTour-card ChooseTour-sacal">
+                        <img alt="" class="ChooseTour-sacal choose-card__img " src="img/card_tour_photo-6.png">
+                        <div class="ChooseTour-card__info">
+                            <h4 class="ChooseTour-card__title">Путешествие в горы</h4>
+                            <p class="ChooseTour-card__price">от 80 000 руб</p>
+                        </div>
+                        <button class="ChooseTour-card__button">
+                            Подробнее
+                            <img alt="Стрелочка" class="ChooseTour-card__button-icon" src="img/Vector.png">
+                        </button>
+                    </div>
+                </div>    
+        
+           
+
     </section>  
     
     <section>
-        <div class="Choose-your-tour">    
+        <div class="CommonAttributes">    
             <div class="box">
                 <div  class="box__Title box__Title__top" id="Create-a-tour">Собери свой тур </div>
             </div>                 
         </div>
         <div class="box">
-            <div class=" Choose-your-tour box__subtitle box__subtitle-width ">
+            <div class=" CommonAttributes box__subtitle box__subtitle-width ">
                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </div>
         </div>   
@@ -155,11 +155,11 @@
             <div class="Shell">
                 <div class="Form">      
                   <form action="#" class = "Form_main">
-                    <div class = "Choose-your-tour">
-                        <label for="name"><span class="Choose-your-tour Form__Title">Имя</span></label>
+                    <div class = "CommonAttributes">
+                        <label for="name"><span class="CommonAttributes Form__Title">Имя</span></label>
                         <input type="text" required  name="Name" placeholder="Введите Ваше имя"/>
                     </div>
-                    <div class = "Choose-your-tour Form__select">
+                    <div class = "CommonAttributes Form__select">
                         <label for="place"><span class="Form__Title">Направление</span></label>
                         <select place="Direction"> 
                             <option  value="Куда хотите ехать?" disabled selected>Куда хотите ехать</option>
@@ -172,38 +172,38 @@
                         </select>
                     </div>
                     <div >
-                        <label for="email"><span class="Choose-your-tour Form__Title">Email</span></label>
+                        <label for="email"><span class="CommonAttributes Form__Title">Email</span></label>
                         <input type="email" required email ="Email" placeholder="example@mail.com"/>    
                     </div>
                     <div>
-                        <label for="number"><span class="Choose-your-tour Form__Title">Телефон</span></label>
+                        <label for="number"><span class="CommonAttributes Form__Title">Телефон</span></label>
                         <input type="tel" required number ="Mobile_number" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"/>    
                     </div>
                     <div>
-                        <label for="date-before"><span class="Choose-your-tour Form__Title">Дата от</span></label>
+                        <label for="date-before"><span class="CommonAttributes Form__Title">Дата от</span></label>
                         <input type="date" required date-before ="Date-before" placeholder="ДД.ММ.ГГГГ"/>    
                     </div>
                     <div>
-                        <label for="date-after"><span class="Choose-your-tour Form__Title">Дата до</span></label>
+                        <label for="date-after"><span class="CommonAttributes Form__Title">Дата до</span></label>
                         <input type="date" required date-before ="Date-after" placeholder="ДД.ММ.ГГГГ"/>    
                     </div>
                     <div class="Form__full-width">
-                        <label for="comment"><span class="Choose-your-tour Form__Title">Комментарий</span></label>
+                        <label for="comment"><span class="CommonAttributes Form__Title">Комментарий</span></label>
                         <textarea comment="Comment"></textarea>
                     </div>
                     <div>
-                        <div class="Choose-your-tour Form__Title__Ages">Вам есть 18 лет?</div> 
+                        <div class="CommonAttributes Form__Title__Ages">Вам есть 18 лет?</div> 
                         <div class = "rad Form__radiobutto_position_yes">
                             <input class = "radio__input" type = "radio"  id = "YES" name = "question" value = "Yes">
-                            <label for  =  "YES" class = "Choose-your-tour radio_label">Да</label>
+                            <label for  =  "YES" class = "CommonAttributes radio_label">Да</label>
                         </div>
                         <div class = "rad rad2-top Form__radiobutto_position_no">
                             <input class = "radio__input" type = "radio"  id = "NO" name = "question"  value = "No">
-                            <label for  =  "NO" class = "Choose-your-tour radio_label">Нет</label>
+                            <label for  =  "NO" class = "CommonAttributes radio_label">Нет</label>
                         </div>
                     </div>
 
-                    <div class=" Choose-your-tour  Form__full-width " >
+                    <div class=" CommonAttributes  Form__full-width " >
                         <input type="checkbox" required id="Form__agreement" class = "checkbox_input">
                         <label for = "Form__agreement" class = "Form__checkbox_label"> Нажимая кнопку, я принимаю условия 
                              <a class ="Form__checkbox-agree-part2" href = "">Лицензионного договора</a>
@@ -222,19 +222,19 @@
     </section>
     
     <section>
-        <div class="Choose-your-tour">    
+        <div class="CommonAttributes">    
             <div class="box">
                 <div  class="box__Title box__An" id="Review">Отзывы наших путешественников</div>     
             </div>                 
         </div>
         <div class="box">
-            <div class=" Choose-your-tour box__subtitle">
+            <div class=" CommonAttributes box__subtitle">
                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </div>
         </div> 
        
         <div class = "Reviews">
-            <div class = " Choose-your-tour Reviews__shell ">
+            <div class = " CommonAttributes Reviews__shell ">
                 <div >
                     Идейные соображения высшего порядка, а также рамки и место обучения кадров 
                     обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
@@ -250,7 +250,7 @@
                 </div>
                 <img class="Reviews__Photo-Users" src="img/review-photo-1.png" alt="Изображение пользователя">
             </div>
-          <div class = " Choose-your-tour Reviews__shell Reviews__shell-height-secon-rewiew ">
+          <div class = " CommonAttributes Reviews__shell Reviews__shell-height-secon-rewiew ">
                 <div>
                     Равным образом постоянный количественный рост и сфера нашей активности играет важную роль 
                     в формировании системы обучения кадров, соответствует насущным потребностям.
@@ -273,13 +273,13 @@
         </div>
     </section>
     <section>
-        <div class="Choose-your-tour">    
+        <div class="CommonAttributes">    
             <div class="box">
                 <div  class="box__Title box__Photo">Фотографии путешествий </div>
             </div>                 
         </div>
         <div class="box">
-            <div class=" Choose-your-tour box__subtitle">
+            <div class=" CommonAttributes box__subtitle">
                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </div>
         </div>  
@@ -311,13 +311,13 @@
     </section>  
     
     <section>
-        <div class="Choose-your-tour">    
+        <div class="CommonAttributes">    
             <div class="box">
                 <div  class="box__Title box__Stoty" id = "Stories">Истории путешествий </div>
             </div>                 
         </div>
         <div class="box">
-            <div class="Choose-your-tour box__subtitle">
+            <div class="CommonAttributes box__subtitle">
                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
             </div>
         </div>  
@@ -325,8 +325,8 @@
             <div class = "Story__cards">
                 <div class = "Story__card Story__scale">
                     <img class = "Story__scale" src="img/story photo-1.png" alt="Фото из истории путешествия">   
-                     <div class = " Choose-your-tour Story__Name"> Автостопом в Стамбул</div>
-                         <div class = " Choose-your-tour Story__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                     <div class = " CommonAttributes Story__Name"> Автостопом в Стамбул</div>
+                         <div class = " CommonAttributes Story__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
                          широкому кругу (специалистов) участие в формировании новых предложений:
                          <div class = "Story__description__list">
                              <ul>
@@ -339,13 +339,13 @@
                      </div>
                      
                      <div class = "Story__detail">
-                         <div class = "Choose-your-tour Story__button"> 
+                         <div class = "CommonAttributes Story__button"> 
                              Подробнее
                          </div>
                      </div>
-                     <div class = " Choose-your-tour Story__Social-networks Story__instagram">instagram</div>
-                     <div class = " Choose-your-tour Story__Social-networks Story__facebook">facebook</div>
-                     <div class = " Choose-your-tour Story__Social-networks Story__YouToub">YouToub</div>   
+                     <div class = " CommonAttributes Story__Social-networks Story__instagram">instagram</div>
+                     <div class = " CommonAttributes Story__Social-networks Story__facebook">facebook</div>
+                     <div class = " CommonAttributes Story__Social-networks Story__YouToub">YouToub</div>   
                      </div>      
              </div>
  
@@ -354,17 +354,17 @@
                 <div class = "Story__card Story__scale">
                     <img class = "Story__scale" src="img/story photo-2.jpg" alt="Фото из истории путешествия">   
                      
-                     <div class = " Choose-your-tour Story__Name"> Автостопом в Стамбул</div>
-                        <div class = " Choose-your-tour Story__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                     <div class = " CommonAttributes Story__Name"> Автостопом в Стамбул</div>
+                        <div class = " CommonAttributes Story__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
                             широкому кругу (специалистов) участие в формировании новых предложений.
                         </div>
                         <div class = "Story__detail">
-                            <div class = "Choose-your-tour Story__button"> 
+                            <div class = "CommonAttributes Story__button"> 
                                 Подробнее
                             </div>
                         </div>
-                        <div class = " Choose-your-tour Story__Social-networks Story__instagram-card2">instagram</div>
-                        <div class = " Choose-your-tour Story__Social-networks Story__vk-card2">ВКонтакте</div>  
+                        <div class = " CommonAttributes Story__Social-networks Story__instagram-card2">instagram</div>
+                        <div class = " CommonAttributes Story__Social-networks Story__vk-card2">ВКонтакте</div>  
                     </div>  
                      
                 
@@ -373,18 +373,18 @@
             <div class = "Story__cards Story__cards-top">
                 <div class = "Story__card Story__scale">
                     <img class = "Story__scale" src="img/story photo-3.png" alt="Фото из истории путешествия">   
-                     <div class = " Choose-your-tour Story__Name"> Автостопом в Стамбул</div>
-                        <div class = " Choose-your-tour Story__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                     <div class = " CommonAttributes Story__Name"> Автостопом в Стамбул</div>
+                        <div class = " CommonAttributes Story__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
                             широкому кругу (специалистов) участие в формировании новых предложений.
                         </div>
                         <div class = "Story__detail">
-                            <div class = "Choose-your-tour Story__button"> 
+                            <div class = "CommonAttributes Story__button"> 
                                 Подробнее
                             </div>
                         </div>
-                        <div class = " Choose-your-tour Story__Social-networks Story__instagram-card3">instagram</div>
-                        <div class = " Choose-your-tour Story__Social-networks Story__facebook-card3">facebook</div>
-                        <div class = " Choose-your-tour Story__Social-networks Story__vk-card3">ВКонтакте</div>   
+                        <div class = " CommonAttributes Story__Social-networks Story__instagram-card3">instagram</div>
+                        <div class = " CommonAttributes Story__Social-networks Story__facebook-card3">facebook</div>
+                        <div class = " CommonAttributes Story__Social-networks Story__vk-card3">ВКонтакте</div>   
                     </div>  
                     
                 
@@ -400,27 +400,27 @@
                 <div class = "Footer__colomn">
                     <div ><img class = "Footer__img"src="img/footer photo.png" alt="Фото"></div>  
                     <div class="Footer__description">
-                        <div class = " Choose-your-tour Footer__text ">Пора в путешествие вместе с нами!</div>
-                        <div class = " Choose-your-tour Footer__text-email">Напиши на почту и узнай подробности на <span class = "Footer__email">yourtour@gmail.com</span></div>
+                        <div class = " CommonAttributes Footer__text ">Пора в путешествие вместе с нами!</div>
+                        <div class = " CommonAttributes Footer__text-email">Напиши на почту и узнай подробности на <span class = "Footer__email">yourtour@gmail.com</span></div>
                     </div>
                 </div>
             </div>
             
             <div class = "Footer__Shell">
                 <div class = "Footer__network" >  
-                    <div class = " Choose-your-tour Footer__network__text Footer__network1">
+                    <div class = " CommonAttributes Footer__network__text Footer__network1">
                         Наши социальные сети
                     </div>
                     <img class = "Footer__network__inst-img" src="img/inst.png" alt="Фото">
-                    <div class = " Choose-your-tour Footer__network__text Footer__network__instagram">
+                    <div class = " CommonAttributes Footer__network__text Footer__network__instagram">
                         instagram
                     </div>
                     <img class = "Footer__network__facebook-img" src="img/facebook.png" alt="Фото">
-                    <div class = " Choose-your-tour Footer__network__text Footer__network__facebook">
+                    <div class = " CommonAttributes Footer__network__text Footer__network__facebook">
                         facebook
                     </div>
                     <img class = "Footer__network__vk-img" src="img/vk.png" alt="Фото">
-                    <div class = " Choose-your-tour Footer__network__text Footer__network__vk">
+                    <div class = " CommonAttributes Footer__network__text Footer__network__vk">
                         vkontakte
                     </div>
                 </div>
