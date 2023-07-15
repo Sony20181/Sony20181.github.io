@@ -18,17 +18,11 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     font-weight: 700;
 }
 
-.box__Title{  
-    width: 473px;
-    height: 73px;          
+.ChooseTour-title{
+    margin-top: 136px;
     font-size: 59px;
     line-height: 124%;
-    text-align: center;
-    margin-top: 136px;
 }
-
-
-
 
 .TourMenu{
     margin-top: 36px;
@@ -37,6 +31,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     height:28px;
     margin-bottom: 30px;
     color:#1B1F2B;
+    font-weight: 700;
 }
 .TourMenu__width{
     display:  flex;
@@ -86,7 +81,6 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     border-bottom: 3px #1B1F2B  solid; 
 }
 
-
 .TourMenu__right:active {
     border-bottom: 3px #EFA501 solid;
     color: #EFA501;
@@ -102,6 +96,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px; 
     }
+
 .ChooseTour-card{
     position: relative; 
     object-fit: cover;
@@ -129,11 +124,8 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
     content:'';
 }
-.ChooseTour-card__info{
-    font-family: 'Roboto';
-    font-style: normal;
-}
-  .ChooseTour-card__title {
+
+.ChooseTour-card__title {
     position: absolute;
     width: 240px;
     height: 86px;
@@ -182,12 +174,18 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 }
 
 
-.box__Title__top{
+.Form-title{
     margin-top: 136px;
+    margin-bottom: 0px;
+    font-size: 59px;
+    line-height: 124%;
 }
-.box__subtitle{
+.Form-subtitle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 29px;
-    width:418px;
+    width:405px;
     height: 56px;
     text-align: center;
     font-weight: 400;
@@ -195,15 +193,264 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     line-height: 142%;
     color: #A6A6A6;
 }
-.box__subtitle-width{
-    width:405px;
+form{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin-top: 102px;
+    max-width: 1030px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap:33px;
+    row-gap: 30px;
+    
 }
+form label {
+    display: block;
+    
+}
+form p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+input, select, textarea, option{
+    width: 100%;
+    height:68px;
+    margin-top: 7px; 
+    border: 1px solid #F4F0E9;
+    background: #F9F7F4;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color:#1B1F2B;
+}
+
+select{ 
+    padding-left: 18px;
+    color:#A6A6A6;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 1em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1em) 1.2em;
+    background-size: 26px 26px;
+    background-image: url("../img/ic-dropdown.png");
+}
+select:hover,select:active, select:focus{
+    outline: 1px solid #F4F0E9;
+    background: #F4F0E9;
+    padding-right: 1em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1em) 1.2em;
+    background-size: 26px 26px;
+    background-image: url("../img/ic-dropdown.png");
+}
+select:focus{
+    color: #1B1F2B;
+}
+option:checked{
+    color: #3B7E7B;
+}
+input[type=date] {
+    text-indent: 9px;
+    margin-top: 8px; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-transform: uppercase;
+}
+
+input[type = date]:invalid::-webkit-datetime-edit { color:#A6A6A6;}
+input[type = date]::-webkit-calendar-picker-indicator{ display: none; }
+input[type = date]:hover, select:hover{cursor: pointer;}
+input[type = date]:focus{color: #1B1F2B;}
+
+textarea{
+    padding: 20px;
+    height:112px; 
+    width: 990px;
+}
+
+input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:active{
+    outline: 1px solid #F4F0E9;
+    background: #F4F0E9;
+}
+
+.Form__label-textarea{
+    grid-column: 1 / 3;
+}
+.Form__TitleAges{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+   /* grid-gap: 33px;*/
+    font-size: 20px;
+    grid-column: 1 / 3;
+}
+.Form__radiobutton{
+    position:relative;
+   margin-top: -25px;
+}
+.Form__radiobutton-position-yes{
+        position: absolute;
+}
+.Form__radiobutton-position-no{
+    margin-left: 94px;
+    width: 50px;
+}
+.Form__radio-input{
+    display: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;  
+    cursor: pointer;
    
+}
+.Form__radio-label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%; 
+    margin-left: 38px;
+    cursor: pointer;
+    margin-top: -2px;
+    
+}
+.Form__radio-label::before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 1px;
+    top: 0;
+    z-index: 1;
+}
+.Form__radio-label::after{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #1B1F2B;
+  opacity: 0;
+  position: absolute;
+  left: 7.2px;
+  top: 6px;
+  z-index: 2;
+}
+.Form__radio-input:checked + .Form__radio-label:after{
+  opacity: 1;
+}
+.Form__checkbox{
+    grid-column: 1 / 3;
+}
+.Form__checkbox-input{
+    display: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    
+}
+.Form__checkbox-label{
+    position: absolute;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    color: #A6A6A6;
+    padding-left: 45px;
+    padding-top: 1px;
+}
+
+.Form__checkbox-label:before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 1px;
+    top: 1px;
+    z-index: 1;
+}
+.Form__checkbox-label:after{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/radiobutton (1).png");
+    background-size: 25px 25px ;
+    opacity: 0;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 2;
+}
+
+.Form__checkbox-input:checked + .Form__checkbox-label:after{
+    opacity: 1;
+}
+.Form__checkbox-label:hover,.Form__Radio-Text:hover, .Form__Ages:hover, .Form__checkbox-input:hover {
+    cursor: pointer;
+}
+ 
+.Form__checkbox-agree-part2{
+    color: #1B1F2B;
+}
+.Form__checkbox-agree-part2:hover{
+    text-decoration:underline;
+}
+.Form__checkbox-agree-part2:active{
+    color: #286562;
+    text-decoration:underline;
+}
+
+.Form__button{
+    width: 235px;
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    margin-top: 31px;
+}
+.Form__find-tour{ 
+    color: #FFFFFF;
+    background: #286562;
+}
+.Form__find-tour:hover{ background: #3B7E7B; cursor: pointer;}
+.Form__find-tour:active{ background:#627F7E;}
+
+.Form__reset{
+    color: #286562;
+    background: #E0F0E5;
+}
+
+.Form__reset:hover{ background: #F1F3F2; cursor: pointer;}
+.Form__reset:active{ background:#D9DFDB;}
+
+ /*  
 .Shell {
     height: 986px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 102px;
+   
 }  
 .Form {
     background: #FFFFFF;
@@ -215,6 +462,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
+
 form label {
     display: block;
 }
@@ -224,6 +472,7 @@ form label {
     font-size: 20px;
     line-height: 142%;
 }
+
 input, select, textarea, option{
    width: 100%;
    height:68px;
@@ -302,7 +551,8 @@ input[type = date]:focus{color: #1B1F2B;}
 .Form__full-width {
     grid-column: 1 / 3;
   }
-
+  */
+/*
 .Form__Title__Ages{
     font-weight: 400;
     font-size: 20px;
@@ -461,13 +711,38 @@ input[type = date]:focus{color: #1B1F2B;}
 
 .Form__reset:hover{ background: #F1F3F2; cursor: pointer;}
 .Form__reset:active{ background:#D9DFDB;}
-
+*/
  
-.box__An{
+.reviews-Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 136px;
+    margin-bottom: 0px;
+    font-size: 59px;
+    line-height: 124%;
     width: 529px;
     height: 146px;
-    margin-top: 135px; 
+   
 }
+
+.reviews-subtitle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width:415px;
+    height: 56px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #A6A6A6;
+}
+
 
 .Reviews{
     margin:0 auto;
@@ -814,20 +1089,12 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 240px; 
         height: 86px;
     }
-
-
-    .Shell {
-        max-width: 1170px;
-    }  
-    .Form {
-        padding: 70px;
-    } 
   
     .Form__half-part-width {
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
     }
     .Form__reset{
-        margin-left: 5%;
+        margin-left: 2.5%;
     }
     .Reviews{
         max-width: 1170px;
@@ -901,18 +1168,17 @@ input[type = date]:focus{color: #1B1F2B;}
     .ChooseTour-card__price{  
         top: 90px;
     }
-   
-    .Shell {
-        max-width: 918px;
+    .Form-title{
+        margin-top: 133px;
+    }
+    form {
+        max-width: 798px;
         max-height: 966px;  
         margin-top: 100px;
-    } 
-    .Form {
         padding: 60px ;
-    } 
-    .Form_main{
         grid-gap: 30.5px 20px;
-    }
+    } 
+  
     .Form__half-part-width {
         grid-column: 1 / 3;
     }
@@ -933,29 +1199,29 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 758px;
         height: 112px;
     }
-    .Form__Title__Ages{     
+    .Form__TitleAges{     
         margin-top: -3px;
     }
-    .radio_label{
+    .Form__radio-label{
         margin-left: 37px;
     }
-    .radio_label::after{
+    .Form__radio-label::after{
         border-radius: 50%;
         width: 12px;
         height: 12px;
         left: 7.5px;
         top: 6.59px;
     }
-   .Form__checkbox_label{
+   .Form__checkbox-label{
         padding-left: 37px;
         padding-top: 3px;
    
     }
-    .Form__checkbox_label:before{
+    .Form__checkbox-label:before{
         top: 2px;
         left:0px;
     }
-    .Form__checkbox_label:after{
+    .Form__checkbox-label:after{
         top: 2px;
         left:0px;
     }
@@ -1113,14 +1379,9 @@ input[type = date]:focus{color: #1B1F2B;}
         padding-bottom: 0;
         padding-top: 0;
     }
-    .box__Title{  
-        width: 283px;
-        height: 38px;     
+    .ChooseTour-title{  
         font-size: 34px;
         line-height: 112%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 75px;
         letter-spacing: 0.02em;
     }
@@ -1185,40 +1446,39 @@ input[type = date]:focus{color: #1B1F2B;}
     .ChooseTour-card__button-icon{
         padding-left: 14px;
       }
-   
-    .box__Title__top{
+    
+    .Form-title{  
+        font-size: 34px;
+        line-height: 112%;
         margin-top: 75px;
         letter-spacing: 0.02em;
     }
-    .box__subtitle{
+    .Form-subtitle{
+        display: flex;
+        margin-left:auto;
+        margin-right: auto;
         margin-top: 19px;
         width: 318px;
         height: 46px;
         font-size: 16px;
     }
-    .box__subtitle-width{
-        width:318px;
-    }
         
-    .Shell {
-        max-width: 318px;
+    form {
+        max-width: 278px;
         max-height: 1110px;  
         margin-top: 40px;
-    }  
-    
-    .Form {
         padding: 20px 20px 40px;
         border-radius: 30px;
-    } 
-    .Form_main{
         display: flex;
 	    flex-direction: column;
 	    gap: 30.3px;
-    }
+    }  
+    
+   
     form label {
         display: block;    
     }
-    .Form__Title{
+    form p{
         font-weight: 400;
         font-size: 16px;
         line-height: 142%; 
@@ -1248,33 +1508,33 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 258px;
         height: 112px;
     }
-    .Form__Title__Ages{
+    .Form__TitleAges{
         font-size: 16px; 
         margin-top: -6px;
     }
-    .rad{
+    .Form__radiobutton{
         margin-top: 9px;
     }
     .rad2-top{
         margin-top: 11px;
     }
-    .Form__radiobutto_position_no{
+    .Form__radiobutton-position-no{
         margin-left: 80px;
      }
-     .radio_label{
+     .Form__radio_label{
            font-weight: 400;
            font-size: 16px;
            line-height: 142%; 
            margin-left: 28px;
      }
-     .radio_label::before{
+     .Form__radio-label::before{
            width: 16px;
            height: 16px;
            border: 2px solid black;
            left:0px;
            top:0px;
      }
-     .radio_label::after{
+     .Form__radio-label::after{
          width: 10px;
          height: 10px;
          border-radius: 50%;
@@ -1282,11 +1542,11 @@ input[type = date]:focus{color: #1B1F2B;}
          top: 4.8px;
      }
    
-    .checkbox_input{
+    .Form__checkbox-input{
         width: 18px;   
         height: 18px;
     }
-    .Form__checkbox_label{
+    .Form__checkbox-agree-part2{
         width: 250px;
         font-size: 16px;
         height: 69px;
@@ -1295,7 +1555,7 @@ input[type = date]:focus{color: #1B1F2B;}
         padding-left: 30px;
         padding-top: 0;
     }
-    .Form__checkbox_label:before{
+    .Form__checkbox-label:before{
         width: 17px;
         height: 17px;
         top:-2px;
@@ -1303,7 +1563,7 @@ input[type = date]:focus{color: #1B1F2B;}
         border: 2px solid black;
         border-radius: 5px;
     }
-    .Form__checkbox_label:after{
+    .Form__checkbox-label:after{
         width: 16px;
         height: 16px;
         top:-2px;
@@ -1319,10 +1579,27 @@ input[type = date]:focus{color: #1B1F2B;}
     .Form__reset{
         margin-left: 2%;
     }
-    .box__An{
+
+    .reviews-Title{
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 112%;
+        letter-spacing: 0.68px;
+        margin-bottom: 0px;
         width: 318px;
         height: 76px;
-        margin-top: 199px; 
+        margin-top: 75px; 
+       
+    }
+    
+    .reviews-subtitle{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width:318px;
+        height: 46px;
+        font-size: 16px;
     }
         
     .Reviews{

@@ -1,6 +1,8 @@
 body {
    margin: 0; 
    background-color: #F9F7F4;
+   font-family: "Roboto";
+   font-style: normal;
   
 }
 .container {
@@ -15,9 +17,10 @@ a{
     text-decoration: none; 
 }
 .heading{
-    font-family: "Roboto";
-    font-style: normal;
+   /* font-family: "Roboto";
+    font-style: normal;*/
     color: #FFFFFF;
+    
 }
 
 .heading__img{ 
@@ -66,7 +69,7 @@ a{
     font-size: 20px;
     line-height: 28px;
 }
-h1{  
+.heading__Titile{  
     position: absolute;
     top:0%;
     font-weight: 700;
@@ -123,7 +126,7 @@ h1{
     .heading__number{
         margin: 31px 19.5% 773px 72.4%; 
     }
-    h1{ 
+    .heading__Titile{ 
         width: 768px;
         height: 315px;
         margin-top: 207px;
@@ -157,7 +160,7 @@ h1{
         margin-left: 79%;
         width: 18%;
     }
-    h1{
+    .heading__Titile{
         width: 914px;
         height: 315px;
         margin-top: 207px;
@@ -192,7 +195,7 @@ h1{
         font-size: 16px;
         line-height: 142%;
     }
-    h1{
+    .heading__Titile{
         width: 360px;
         height: 114px;
         font-size: 34px;
