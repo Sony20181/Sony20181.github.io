@@ -42,7 +42,40 @@
          
     <section class = "ChooseTour" >   
         <h1 class ="box ChooseTour-title" id="Choose-a-tour">Выбери свой тур</h1>
-           <div  class = "box TourMenu " id="mainmenu">
+        
+        <ul class = "ChooseTour-options" id = "ChooseTourOp">
+            <li class = "ChooseTour-options-option">
+                <label class="ChooseTour-option__label" for="popular">
+                    <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="popular" checked>
+                    <p>Популярные</p>
+                </label>
+            </li>
+            <li class = "ChooseTour-options-option">
+                <label class="ChooseTour-option__label"  for="copyright">
+                    <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="copyright">
+                    <p>Авторские</p>
+                </label>
+            </li>
+            <li class = "ChooseTour-options-option">
+                <label class="ChooseTour-option__label" for="hiking">
+                    <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="hiking">
+                        <p>Походы</p>
+                </label>
+            </li>
+            <li class = "ChooseTour-options-option">                    
+                <label class="ChooseTour-option__label"  for="alloys"> 
+                    <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="alloys">
+                    <p>Сплавы</p>
+                </label>
+            </li>
+            <li class = "ChooseTour-options-option">
+                <label  class="ChooseTour-option__label" for="cycling">
+                    <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="cycling">
+                    <p> Велопрогулки</p> 
+                </label>
+            </li>
+        </ul>
+         <!--  <div  class = "box TourMenu " id="mainmenu">
                 <div class = "TourMenu__width">
                     <input type="radio" name="menuitem" id="item1" checked>
                     <label class="TourMenu__right" for="item1">Популярные</label>
@@ -60,7 +93,7 @@
                     <label  class="TourMenu__left TourMenu__second-row-top TourMenu__right" for="item5">Велопрогулки</label>
                 
                 </div>
-            </div>
+            </div>-->
             
         <div class="ChooseTour-cards">
             <div class="ChooseTour-card ChooseTour-sacal">
@@ -320,6 +353,7 @@
             </div>
         </div>
     </section>
+    
     <section>
         <div class="CommonAttributes">    
             <div class="box">
@@ -440,6 +474,7 @@
 
         </div>
     </section>
+
     </main>
 
     <footer>
