@@ -177,7 +177,6 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
     content:'';
 }
-
 .ChooseTour-card__title {
     position: absolute;
     width: 240px;
@@ -225,7 +224,6 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 .ChooseTour-sacal:active .ChooseTour-card__button:active{
     background: #EFA501;
 }
-
 
 .Form-title{
     margin-top: 136px;
@@ -779,7 +777,6 @@ input[type = date]:focus{color: #1B1F2B;}
     line-height: 124%;
     width: 529px;
     height: 146px;
-   
 }
 
 .reviews-subtitle{
@@ -796,8 +793,7 @@ input[type = date]:focus{color: #1B1F2B;}
     color: #A6A6A6;
 }
 
-
-.Reviews{
+.reviews-review{
     margin:0 auto;
     max-width: 1170px;
     margin-top: 102px;
@@ -806,7 +802,8 @@ input[type = date]:focus{color: #1B1F2B;}
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
-.Reviews__shell{
+
+.reviews-review-card{
     position: relative;
     max-width: 570px; 
     background: #F4F0E9;
@@ -815,66 +812,189 @@ input[type = date]:focus{color: #1B1F2B;}
     font-size: 23px;
     line-height: 122%; 
 }
-.Reviews__Person{
+.reviews-card__text{
+    margin:0;
+}
+.reviews-card__PersonName{
     font-weight: 500px;
     font-size: 35px;
     line-height: 122%;
 }
-.Reviews__shell__ident-second-p{
+.reviews-card__text-ident{
     margin-top: 28px;
 }
-.Reviews__Selected-Tour{
+.reviews-card__Tour{
     font-weight: 400;
     font-size: 17px;
     line-height: 142%;
     letter-spacing: -0.01em;
     color: #A6A6A6;
 }
-.Reviews__Photo-Users{
+.reviews-card__PhotoUsers{
     border-radius: 100px;
     max-width: 75px;
     max-height: 75px;
 }
 
-.box__Photo{
+.Photos-Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 59px;
+    line-height: 124%;
     margin-top: 135px;
     width: 723px;
 }
-.Photo-Trip{
+.Photos-subtitle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width:415px;
+    height: 56px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #A6A6A6;
+}
+
+.Photos-Trip{
     margin: 0, auto;
     margin-top: 100px;
    
 }
-.Photo-Trip__first-row{
+.Photos-Trip__first-row{
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
 
 }
-.Photo-Trip__first-row-photo{
+.Photos-Trip__photo{
     width: 100%;
     height: 300px;
     border-radius: 50px;
     object-fit:cover;
 }
 
-.Photo-Trip__second-row{
+.Photos-Trip__second-row{
     margin-top: 30px;
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(5, 1fr);
 }
-.Photo-Trip__third-row{
+.Photos-Trip__third-row{
     margin-top: 30px;
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.box__Stoty{
+.Stories-Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     margin-top: 138px;
+    font-size: 59px;
+    line-height: 124%;
     width:615px;
 }
+.Stories-subtitle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width:415px;
+    height: 56px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #A6A6A6;
+}
+.Stories-cards{
+    margin: 0 auto;
+    width: 1170px;
+    margin-top: 100px;
+}
+.Stories-card {
+    position: relative;
+    margin-top: 100px;
+    border-radius: 55px;
+    overflow: hidden;
+  }
+.Stories-scale {
+    border-radius: 50px;
+    width: 1170px;
+    height: 567px;
+    max-width: 100%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.Stories-scale:hover img {
+  transform: scale(1.2);
+}
+.Stories-scale::after{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      border-radius: 45px; 
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+      content:'';
+}
+.Stories-card__Title{
+    position:absolute;
+    width: 554px;
+    height: 43px;
+    top:60px;
+    margin-left: 60px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+    color: #FFFFFF; 
+    z-index: 3;  
+}
+.Stories-card__description{
+    position:absolute;
+    width: 554px;
+    height: 224px;
+    top:140px;
+    margin-left: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #FFFFFF;
+    z-index: 3;
+    
+}
+.Stories-card__description-list{
+    margin-top: 27px;
+    margin-left: -10px;
+    
+}
+.Story__detail{
+    position: absolute;
+    width: 180px;
+    height: 35px;
+    margin-left: 40px;
+    top: 472px;
+    border-radius: 50px;
+    z-index: 3;
+    padding-top: 7px;
+    padding-left: 20px;
+    font-size: 23px;
+   
+}
+/*
 .Story{
    margin: 0 auto;
    width: 1170px;
@@ -932,8 +1052,7 @@ input[type = date]:focus{color: #1B1F2B;}
     font-size: 35px;
     line-height: 122%;
     color: #FFFFFF; 
-    z-index: 3;
-   
+    z-index: 3;  
 }
 .Story__description{
     position:absolute;
@@ -1034,7 +1153,7 @@ input[type = date]:focus{color: #1B1F2B;}
     color: #EFA501;
     text-decoration: underline;
 }
-
+*/
 .Footer__IMG-text{
     max-width: 100%;
     max-height: 100%;
@@ -1149,31 +1268,31 @@ input[type = date]:focus{color: #1B1F2B;}
     .Form__reset{
         margin-left: 2.5%;
     }
-    .Reviews{
+    .reviews-review{
         max-width: 1170px;
         height: 673px;
         grid-gap: 30px;
     }
-    .Reviews__shell{
+    .reviews-review-card{
         max-width: 570px; 
     }
-    .Reviews__Person{
+    .reviews-card__PersonName{
         position: absolute;
         top :558px;
         max-width: 415px;   
     }
-    .Reviews__Selected-Tour{
+    .reviews-card__Tour{
         position: absolute;
         top :609px;
         max-width: 415px;  
     }
-    .Reviews__Photo-Users{
+    .reviews-card__PhotoUsers{
         position: absolute;
         top :558px;
         left: 455px;
     
     }
-    .Photo-Trip{
+    .Photos-Trip{
         margin-left: auto;
         margin-right: auto;
         padding-left: 30px;
@@ -1286,66 +1405,67 @@ input[type = date]:focus{color: #1B1F2B;}
     .Form__reset{
         margin-left: 3%;
     }
-    .Reviews{ 
+    .reviews-review{ 
         max-width: 918px;
         height: 841px;
         grid-gap: 18px;
     }
-    .Reviews__shell{
+    .reviews-review-card{
         max-width: 450px; 
         padding: 40px;
     }
-    .Reviews__Person{
+    .reviews-card__PersonName{
         position: absolute;
         top :726px;
         max-width: 295px;   
     }
-    .Reviews__Selected-Tour{
+    .reviews-card__Tour{
         position: absolute;
         top :777px;
         max-width: 295px;  
     }
-    .Reviews__Photo-Users{
+    .reviews-card__PhotoUsers{
         position: absolute;
         top :726px;
         left: 335px;
     }
-    .Photo-Trip{
+    .Photos-Trip{
         margin-left: auto;
         margin-right: auto;
         padding-left: 20px;
         padding-right: 20px;
         max-width: 984px;
     }
-    .Photo-Trip__first-row{
+    .Photos-Trip__first-row{
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
     }
-    .Photo-Trip__photo-delete{
+    .Photos-Trip__photo-FirstDelete{
         display: none;
     }
-    .Photo-Trip__first-row-photo{
+    .Photos-Trip__photo{
         width: 100%;
         height: 300px;
         border-radius: 50px;
         object-fit:cover;
     }
-    .Photo-Trip__second-row{
+    .Photos-Trip__second-row{
         margin-top: 30px;
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
     }
-    .Photo-Trip__third-row{
+    .Photos-Trip__third-row{
         margin-top: 30px;
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
     }
-    .box__Stoty{
+    .Stories-Title{
         margin-top: 140px;
     }
+    /*
     .Story{
         margin: 0 auto;
         width: 918px;
@@ -1361,18 +1481,22 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 1170px;
         height: 567px;
         border-radius: 50px; 
-      }
-      .Story__scale {
+      }*/
+      .Stories-cards{
+        margin: 0 auto;
+        width: 918px;
+    }
+      .Stories-scale{
         border-radius: 50px;
         width: 918px;
         height: 567px;
     }
  
-    .Story__scale::after{
+    .Stories-scale::after{
           border-radius: 50px; 
     }
 
-    .Story__description{
+    .Stories-card__description{
         top:140px;
     }
     .Story__instagram{
@@ -1671,7 +1795,7 @@ input[type = date]:focus{color: #1B1F2B;}
         font-size: 16px;
     }
         
-    .Reviews{
+    .reviews-review{
         margin:0 auto;
         max-width: 318px;
         margin-top: 50px;
@@ -1680,7 +1804,7 @@ input[type = date]:focus{color: #1B1F2B;}
         gap: 19px;
         height:1000px;
     }
-    .Reviews__shell{
+    .reviews-review-card{
         position: relative;
         border-radius: 20px;
         padding: 20px ;
@@ -1689,41 +1813,55 @@ input[type = date]:focus{color: #1B1F2B;}
         height: 408px;
         width: 276px; 
     }
-    .Reviews__shell-height-secon-rewiew{
+    .reviews-review-HeightSecondCard{
         height: 550px; 
     }
-    .Reviews__Person{
+    .reviews-card__PersonName{
         margin-top:58px;
         font-weight: 700;
         font-size: 23px;
         line-height: 120%;
         letter-spacing: 0.04em;
     }
-    .Reviews__shell__ident-second-p{
+    .reviews-card__text-ident{
         margin-top: 25px;
     }
 
-    .Reviews__Selected-Tour{
+    .reviews-card__Tour{
         font-size: 16px;
         line-height: 142%;
         letter-spacing: -0.01em;
         margin-top:8px;
     }
 
-    .Reviews__Photo-Users{
+    .reviews-card__PhotoUsers{
         position:absolute;
         top: 309.8px;
         left: 222px;
     }
-    .Reviews__Photo-Users-SecondCads{
+    .reviews-card__PhotoSecondUsers-top{
         top: 497px; 
     }
-    .box__Photo{
+
+    .Photos-Title{
         width: 318px;
         height: 76px;
         margin-top: 92.5px;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 112%;
+        letter-spacing: 0.68px;
     }
-    .Photo-Trip{
+    .Photos-subtitle{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width:318px;
+        height: 46px;
+        font-size: 16px;
+    }
+    .Photos-Trip{
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
@@ -1731,43 +1869,56 @@ input[type = date]:focus{color: #1B1F2B;}
         padding-right: 21px;
         max-width: 318px;
     }
-    .Photo-Trip__first-row{
+    .Photos-Trip__first-row{
         display:grid;
         grid-gap: 18px;
         grid-template-columns: repeat(2, 1fr); 
         
     }
-    .Photo-Trip__first-row-photo{
+    .Photos-Trip__photo{
         width: 100%;
         height: 110px;
         border-radius: 20px;
         object-fit:cover;
     }
-    .delete-object{
+    .Photos-Trip__photo-SecondDelete{
         display: none;
         }
-    .Photo-Trip__photo-delete{
+    .Photos-Trip__photo-FirstDelete{
         display: none;
     }
-    .Photo-Trip__second-row{
+    .Photos-Trip__second-row{
         margin-top: 18px;
         display:grid;
         grid-gap: 10px;
         grid-template-columns: repeat(3, 1fr);
     }
-    .Photo-Trip__third-row{
+    .Photos-Trip__third-row{
         margin-top: 18px;
         display:grid;
         grid-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
     }
  
-    .box__Stoty{
-        margin-top: 76px;
+    .Stories-Title{
         width: 319px;
         height: 76px;
+        margin-top: 76px;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 112%;
+        letter-spacing: 0.68px;
     }
-    .Story{
+    .Stories-subtitle{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width:318px;
+        height: 46px;
+        font-size: 16px;
+    }
+   /* .Story{
         width: 318px;
      }
     .Story__cards{
@@ -1775,23 +1926,33 @@ input[type = date]:focus{color: #1B1F2B;}
         max-height: 100%;
         margin-top: 50px;
         border-radius: 20px;
+    }*/
+    .Stories-cards{
+        margin: 0 auto;
+        width: 318px;
+        margin-top: 50px;
     }
-    
-      .Story__scale {
+    .Stories-card {
+        position: relative;
+        margin-top: 50px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+    .Stories-scale {
       object-fit: cover; 
       border-radius: 20px;
       width: 318px;
       height: 455px;
     }
-    .Story__scale::after{
+    .Stories-scale::after{
         border-radius: 20px; 
   }
 
-    .Story__cards-top{
+    /*.Story__cards-top{
         margin-top: 20px;
-    }
+    }*/
 
-    .Story__Name{
+    .Stories-card__Title{
         position:absolute;
         width: 160px;
         height: 56px;
@@ -1804,7 +1965,7 @@ input[type = date]:focus{color: #1B1F2B;}
         letter-spacing: 0.04em;
 
     }
-    .Story__description{
+    .Stories-card__description{
         position:absolute;
         width: 263px;
         height: 230px;
@@ -1816,7 +1977,7 @@ input[type = date]:focus{color: #1B1F2B;}
         color: #FFFFFF;
     
     }
-    .Story__description__list{
+    .Stories-card__description-list{
         margin-top: 22.5px;
         margin-left: -15px;
     }
