@@ -144,7 +144,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     margin-left:auto;
     margin-right: auto;
     position: relative; 
-    margin-top: 75px;
+    margin-top: 79px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px; 
@@ -164,9 +164,10 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     cursor: pointer; 
 }
 
-.ChooseTour-sacal:hover .choose-card__img {
+.ChooseTour-sacal:hover .Choose-card__img {
     transform: scale(1.2);
 }
+
 .ChooseTour-sacal::after{
     position: absolute;
     left: 0;
@@ -210,6 +211,7 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
     top: 447px;
     border:none;
     background: none;
+    font-weight: 700;
     padding: 7px 20px;
     left:30px;
 }
@@ -811,11 +813,14 @@ input[type = date]:focus{color: #1B1F2B;}
     padding: 40px ;
     font-size: 23px;
     line-height: 122%; 
+    font-weight: 700;
 }
 .reviews-card__text{
     margin:0;
+
 }
 .reviews-card__PersonName{
+    margin:0;
     font-weight: 500px;
     font-size: 35px;
     line-height: 122%;
@@ -824,6 +829,7 @@ input[type = date]:focus{color: #1B1F2B;}
     margin-top: 28px;
 }
 .reviews-card__Tour{
+    margin:0;
     font-weight: 400;
     font-size: 17px;
     line-height: 142%;
@@ -846,6 +852,7 @@ input[type = date]:focus{color: #1B1F2B;}
     font-size: 59px;
     line-height: 124%;
     margin-top: 135px;
+    margin-bottom: 0;
     width: 723px;
 }
 .Photos-subtitle{
@@ -901,6 +908,7 @@ input[type = date]:focus{color: #1B1F2B;}
     margin-right: auto;
     text-align: center;
     margin-top: 138px;
+    margin-bottom: 0;
     font-size: 59px;
     line-height: 124%;
     width:615px;
@@ -921,14 +929,17 @@ input[type = date]:focus{color: #1B1F2B;}
 .Stories-cards{
     margin: 0 auto;
     width: 1170px;
-    margin-top: 100px;
+    margin-top: 98px;
 }
 .Stories-card {
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 55px;
     overflow: hidden;
-  }
+}
+.Stories-card h4{
+    margin-top: 0;
+}
 .Stories-scale {
     border-radius: 50px;
     width: 1170px;
@@ -938,7 +949,7 @@ input[type = date]:focus{color: #1B1F2B;}
     cursor: pointer;
 }
 
-.Stories-scale:hover img {
+.Stories-scale:hover .Stories-card__img {
   transform: scale(1.2);
 }
 .Stories-scale::after{
@@ -976,135 +987,40 @@ input[type = date]:focus{color: #1B1F2B;}
     z-index: 3;
     
 }
+.Stories-card p{
+    margin-top:0;
+}
 .Stories-card__description-list{
     margin-top: 27px;
     margin-left: -10px;
     
 }
-.Story__detail{
+.Stories-card__button{
     position: absolute;
-    width: 180px;
-    height: 35px;
-    margin-left: 40px;
-    top: 472px;
+    z-index:3;
     border-radius: 50px;
-    z-index: 3;
-    padding-top: 7px;
-    padding-left: 20px;
     font-size: 23px;
-   
-}
-/*
-.Story{
-   margin: 0 auto;
-   width: 1170px;
-}
-           
-.Story__cards{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.Story__cards-top{
-    margin-top: 52px;
-}
-
-.Story__card {
-    position: relative;
-    width: 1170px;
-    height: 567px;
-    overflow: hidden;
-    border-radius: 55px; 
-  }
-  .Story__scale {
-    border-radius: 50px;
-    width: 1170px;
-    height: 567px;
-    max-width: 100%;
-    transition: transform 0.3s;
-    cursor: pointer;
-  
-}
-
-.Story__scale:hover img {
-  transform: scale(1.2);
-}
-.Story__scale::after{
-      position: absolute;
-      left: 0;
-      top:0;
-      width: 100%;
-      height: 100%;
-      border-radius: 45px; 
-      background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-      content:'';
-}
-
-.Story__Name{
-    position:absolute;
-    width: 554px;
-    height: 43px;
-    top:60px;
-    margin-left: 60px;
-    font-weight: 500;
-    font-size: 35px;
     line-height: 122%;
-    color: #FFFFFF; 
-    z-index: 3;  
-}
-.Story__description{
-    position:absolute;
-    width: 554px;
-    height: 224px;
-    top:140px;
-    margin-left: 60px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     color: #FFFFFF;
-    z-index: 3;
-    
-}
-.Story__description__list{
-    margin-top: 27px;
-    margin-left: -10px;
-    
-}
-.Story__detail{
-    position: absolute;
-    width: 180px;
-    height: 35px;
-    margin-left: 40px;
     top: 472px;
-    border-radius: 50px;
-    z-index: 3;
-    padding-top: 7px;
-    padding-left: 20px;
-    font-size: 23px;
-   
+    border:none;
+    background: none;
+    padding: 7px 20px;
+    left:40px;
 }
-.Story__scale:hover .Story__detail{
+.Stories-card__button-icon{
+    padding-left: 10px;  
+}
+.Stories-scale:hover .Stories-card__button{
     background:  #286562;
     cursor: pointer; 
   }
- 
-  .Story__scale:active .Story__detail:active {
+
+.Stories-scale:active .Stories-card__button:active{
     background: #EFA501;
-  
 }
-
-.Story__button{
-    color: #FFFFFF;
-    background: url("../img/Vector.png") no-repeat;
-    background-size: 23px;
-    background-position-x: 137px;
-    background-position-y: 6px ;
- 
-}
-
-.Story__Social-networks{
+.Stories-card__SocialNetworks{
+    margin: 0;
     position: absolute;
     top:479px;
     font-weight: 400;
@@ -1112,63 +1028,61 @@ input[type = date]:focus{color: #1B1F2B;}
     line-height: 142%;
     color: #FFFFFF;
 }
-.Story__instagram{
+.Stories-card__instagram{
     z-index: 3;
     margin-left: 788px;
 }
-.Story__facebook{
+.Stories-card__facebook{
     z-index: 3;
     margin-left: 913px;
 }
-.Story__YouToub{
+.Stories-card__YouToub{
     z-index: 3;
     margin-left: 1032px;
 }
-.Story__instagram-card2{
+.Stories-card__instagram-card2{
     z-index: 3;
  margin-left: 886px;
 }
-.Story__vk-card2{
+.Stories-card__vk-card2{
     z-index: 3;
     margin-left: 1011px;
 }
-.Story__instagram-card3{
+.Stories-card__instagram-card3{
     z-index: 3;
     margin-left: 767px;
 }
-.Story__facebook-card3{
+.Stories-card__facebook-card3{
     z-index: 3;
     margin-left: 892px;
 }
-.Story__vk-card3{
+.Stories-card__vk-card3{
     z-index: 3;
     margin-left: 1011px;
 }
-.Story__instagram:hover, .Story__facebook:hover, .Story__YouToub:hover , .Story__instagram-card2:hover, .Story__vk-card2:hover,.Story__instagram-card3:hover,.Story__facebook-card3:hover, .Story__vk-card3:hover  {
+.Stories-card__instagram:hover, .Stories-card__facebook:hover, .Stories-card__YouToub:hover , .Stories-card__instagram-card2:hover, .Stories-card__vk-card2:hover,.Stories-card__instagram-card3:hover,.Stories-card__facebook-card3:hover, .Stories-card__vk-card3:hover  {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.Story__instagram:active, .Story__facebook:active, .Story__YouToub:active, .Story__instagram-card2:active, .Story__vk-card2:active , .Story__instagram-card3:active , .Story__facebook-card3:active, .Story__vk-card3:active  {
+.Stories-card__instagram:active, .Stories-card__facebook:active, .Stories-card__YouToub:active, .Stories-card__instagram-card2:active, .Stories-card__vk-card2:active , .Stories-card__instagram-card3:active , .Stories-card__facebook-card3:active, .Stories-card__vk-card3:active  {
     color: #EFA501;
     text-decoration: underline;
 }
-*/
-.Footer__IMG-text{
+
+.Footer{
     max-width: 100%;
     max-height: 100%;
-    margin-top: 130px;
-    position: relative;
-   /* margin-left: 30%;*/
-    display: flex;
-    justify-content: center;
+    margin-top: 135px;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
-   
-}
-.Footer__colomn{
-    display: grid;
+    justify-content: center;
+    position: relative;
     grid-template-columns: 370px 370px;
+}
+.Footer h3{
+    margin-top:0;
 }
 .Footer__img{
     width: 370px;
@@ -1177,19 +1091,25 @@ input[type = date]:focus{color: #1B1F2B;}
 }
 .Footer__description{
     place-self: center;
+    
 }
+.Footer__description h3, .Footer__description p {
+    margin-top:30px;
+}
+
 .Footer__text{
     font-weight: 500;
     font-size: 35px;
     line-height: 122%;
     margin-left: 54px;
+
 }
 .Footer__text-email{
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
     color: #A6A6A6;
-    margin-top: 22px;
+    margin-top: 0px;
     margin-left: 52px;
     width: 364px;
 }
@@ -1204,6 +1124,37 @@ input[type = date]:focus{color: #1B1F2B;}
     text-decoration: underline;
     color: #286562;  
 }
+.Footer-networks{
+    display: flex;
+    justify-content: center;
+    padding:0px;
+    margin-top: 132.5px;
+    background: #F4F0E9;
+    list-style-type:none;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #A6A6A6;
+}
+.Footer-networks__text{
+    margin-right:537px;
+}
+.Footer-networks__network{
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+    color:#1B1F2B;
+}
+.Footer-networks__network:hover{
+    text-decoration: underline;
+    color: #3B7E7B;
+    cursor: pointer;
+}
+/*
 .Footer__network{
     display: flex;
     justify-content: center;
@@ -1246,7 +1197,7 @@ input[type = date]:focus{color: #1B1F2B;}
     color: #3B7E7B;
     cursor: pointer;
 }
-
+*/
 @media screen and (min-width: 1347px){
     
     .ChooseTour-cards{
@@ -1342,8 +1293,11 @@ input[type = date]:focus{color: #1B1F2B;}
     .ChooseTour-card__price{  
         top: 90px;
     }
+    .ChooseTour-card__button-icon{
+        padding-left: 5px;  
+    }
     .Form-title{
-        margin-top: 133px;
+        margin-top: 135px;
     }
     form {
         max-width: 798px;
@@ -1405,6 +1359,9 @@ input[type = date]:focus{color: #1B1F2B;}
     .Form__reset{
         margin-left: 3%;
     }
+    .reviews-Title{
+        margin-top:138px ;
+    }
     .reviews-review{ 
         max-width: 918px;
         height: 841px;
@@ -1428,6 +1385,9 @@ input[type = date]:focus{color: #1B1F2B;}
         position: absolute;
         top :726px;
         left: 335px;
+    }
+    .Photos-Title{
+        margin-top: 134px;
     }
     .Photos-Trip{
         margin-left: auto;
@@ -1463,74 +1423,57 @@ input[type = date]:focus{color: #1B1F2B;}
         grid-template-columns: repeat(3, 1fr);
     }
     .Stories-Title{
-        margin-top: 140px;
+        margin-top: 138px;
     }
-    /*
-    .Story{
+    .Stories-cards{
         margin: 0 auto;
         width: 918px;
-     }
-    .Story__photo-one{   
-        width: 918px;
+        margin-top: 100px;
     }
-    .Story__cards-top{
-        margin-top: 52px;
-    }
-    
-    .Story__card {
-        width: 1170px;
-        height: 567px;
-        border-radius: 50px; 
-      }*/
-      .Stories-cards{
-        margin: 0 auto;
-        width: 918px;
-    }
-      .Stories-scale{
+    .Stories-scale{
         border-radius: 50px;
         width: 918px;
         height: 567px;
     }
- 
     .Stories-scale::after{
-          border-radius: 50px; 
+        border-radius: 50px; 
     }
 
     .Stories-card__description{
         top:140px;
     }
-    .Story__instagram{
+    .Stories-card__instagram{
         margin-left: 536px;
     }
-    .Story__facebook{
+    .Stories-card__facebook{
         margin-left: 661px;
     }
-    .Story__YouToub{
+    .Stories-card__YouToub{
         margin-left: 780px;
     }
-    .Story__instagram-card2{
+    .Stories-card__instagram-card2{
         margin-left: 634px;
     }
-    .Story__vk-card2{
+    .Stories-card__vk-card2{
     margin-left: 759px;
     }
-    .Story__instagram-card3{
+    .Stories-card__instagram-card3{
         margin-left: 515px;
     }
-    .Story__facebook-card3{
+    .Stories-card__facebook-card3{
         margin-left: 640px;
     }
-    .Story__vk-card3{
+    .Stories-card__vk-card3{
         margin-left: 759px;
     }
-    .Story__cards-top{
-        margin-top: 50px;
-    }
-
-    .Footer__IMG-text{
+    .Footer{
         margin-top: 134px;
-      /*  margin-left:12.2%;*/
     }
+    .Footer-networks__text{
+        margin-right: 257px;
+
+    }
+    /*
     .Footer__network__inst-img{
         margin-left: 287px;
     }
@@ -1539,7 +1482,7 @@ input[type = date]:focus{color: #1B1F2B;}
     }
     .Footer__text-email{
         margin-left: 57px;
-    }
+    }*/
  
 }
 
@@ -1614,9 +1557,10 @@ input[type = date]:focus{color: #1B1F2B;}
     .ChooseTour-sacal::after{  
         height: 318px;
         border-radius: 0;
+        
     }
     .ChooseTour-card__title {
-        top: -7px; 
+        top: -5px; 
         left: 25px;  
         width: 268px; 
         height: 28px;
@@ -1632,12 +1576,12 @@ input[type = date]:focus{color: #1B1F2B;}
         left: 25px;
     }
     .ChooseTour-card__button{
-        left: 3px;
-        top: 261px; 
+        left: 5px;
+        top: 263px; 
         font-size: 16px;
     }
     .ChooseTour-card__button-icon{
-        padding-left: 14px;
+        padding-left: 9px;
       }
     
     .Form-title{  
@@ -1650,7 +1594,7 @@ input[type = date]:focus{color: #1B1F2B;}
         display: flex;
         margin-left:auto;
         margin-right: auto;
-        margin-top: 19px;
+        margin-top: 21px;
         width: 318px;
         height: 46px;
         font-size: 16px;
@@ -1918,15 +1862,6 @@ input[type = date]:focus{color: #1B1F2B;}
         height: 46px;
         font-size: 16px;
     }
-   /* .Story{
-        width: 318px;
-     }
-    .Story__cards{
-        max-width: 100%;
-        max-height: 100%;
-        margin-top: 50px;
-        border-radius: 20px;
-    }*/
     .Stories-cards{
         margin: 0 auto;
         width: 318px;
@@ -1934,7 +1869,7 @@ input[type = date]:focus{color: #1B1F2B;}
     }
     .Stories-card {
         position: relative;
-        margin-top: 50px;
+        margin-top: 18px;
         border-radius: 20px;
         overflow: hidden;
       }
@@ -1947,11 +1882,6 @@ input[type = date]:focus{color: #1B1F2B;}
     .Stories-scale::after{
         border-radius: 20px; 
   }
-
-    /*.Story__cards-top{
-        margin-top: 20px;
-    }*/
-
     .Stories-card__Title{
         position:absolute;
         width: 160px;
@@ -1981,40 +1911,32 @@ input[type = date]:focus{color: #1B1F2B;}
         margin-top: 22.5px;
         margin-left: -15px;
     }
-    .Story__detail{
+    .Stories-card__button{
         position: absolute;
-        width: 130px;
-        height: 23px;
-        margin-left: 8px;
-        top: 398px;
         border-radius: 20px;
-    }
-    .Story__button{
-        padding-left: 2px;
         font-size: 16px;
-        color: #FFFFFF;
-        background: url("../img/Vector.png") no-repeat;
-        background-size: 23px;
-        background-position-x: 100px;
-        background-position-y: 0px ;
+        line-height: 122%;
+        top: 394px;
+        padding: 7px 20px;
+        left:9px;
     }
-    .Story__Social-networks{
+    .Stories-card__button-icon{
+        padding-left: 13px;  
+    }
+    .Stories-card__SocialNetworks{
         display: none;
     }
 
-.Footer__IMG-text{
+.Footer{
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
     margin-top: 76.5px;
     position: relative;
-   
-}
-
-.Footer__colomn{
     display: grid;
     grid-template-columns: 130px;
     justify-content: center;
+   
 }
 .Footer__img{
     width: 130px;
@@ -2044,6 +1966,24 @@ input[type = date]:focus{color: #1B1F2B;}
     width: 291px;
     margin-left: 0px;
 }
+.Footer-networks{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    height: 95px;
+    font-size: 16px;  
+}
+
+.Footer-networks__text{
+    margin-right:20px;
+}
+.Footer-networks__network{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*
 .Footer__network{
     display: flex;
     justify-content: center;
@@ -2107,5 +2047,5 @@ input[type = date]:focus{color: #1B1F2B;}
 }
 .Footer__network__vk{
     margin-left: 6.5px; 
-}
+}*/
 }
