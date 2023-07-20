@@ -42,7 +42,7 @@
          
     <section class = "ChooseTour" >   
         <h1 class ="box ChooseTour-title" id="Choose-a-tour">Выбери свой тур</h1>
-        <ul class = "ChooseTour-options" id = "ChooseTourOp">
+        <ul class="ChooseTour-options">
             <li class = "ChooseTour-options-option">
                 <label class="ChooseTour-option__label" for="popular">
                     <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="popular" checked>
@@ -64,36 +64,17 @@
             <li class = "ChooseTour-options-option">                    
                 <label class="ChooseTour-option__label"  for="alloys"> 
                     <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="alloys">
-                    <p>Сплавы</p>
+                    <p class = "ChooseTour-option__text">Сплавы</p>
                 </label>
             </li>
             <li class = "ChooseTour-options-option">
                 <label  class="ChooseTour-option__label" for="cycling">
                     <input class="ChooseTour-option__input" type="radio" name="ChooseTourOp" id="cycling">
-                    <p> Велопрогулки</p> 
+                    <p class = "ChooseTour-option__text"> Велопрогулки</p> 
                 </label>
-            </li>
+            </li>   
         </ul>
-         <!--  <div  class = "box TourMenu " id="mainmenu">
-                <div class = "TourMenu__width">
-                    <input type="radio" name="menuitem" id="item1" checked>
-                    <label class="TourMenu__right" for="item1">Популярные</label>
-
-                    <input type="radio" name="menuitem" id="item2">
-                    <label class="TourMenu__left TourMenu__right"  for="item2">Авторские</label>
-
-                    <input type="radio" name="menuitem" id="item3">
-                    <label class="TourMenu__left TourMenu__right" for="item3">Походы</label>
-
-                    <input type="radio" name="menuitem" id="item4">
-                    <label class="TourMenu__second-row-left TourMenu__right"  for="item4"> Сплавы</label>
-
-                    <input type="radio" name="menuitem" id="item5">
-                    <label  class="TourMenu__left TourMenu__second-row-top TourMenu__right" for="item5">Велопрогулки</label>
-                
-                </div>
-            </div>-->
-            
+      
         <div class="ChooseTour-cards">
             <div class="ChooseTour-card ChooseTour-sacal">
                 <img alt="Фото Тура" class="ChooseTour-sacal Choose-card__img" src="img/card_tour_photo-1.png">
@@ -207,8 +188,30 @@
             </label>   
         
                 
-            <div class="Form__TitleAges">Вам есть 18 лет?</div> 
-                    
+            <div class="Form-radiobutton">
+                <p class="Form-radiobutton__question">Вам есть 18 лет?</p>
+                <label for  =  "YES" class = "Form__radio-label">
+                    <input class = "Form__radio-input" type = "radio"  id = "YES" name = "question">
+                    <p class = "Form-radiobutton__text">Да</p>
+                </label>
+                
+                <label for  =  "NO" class = "Form__radio-label">
+                    <input class = "Form__radio-input" type = "radio"  id = "NO" name = "question">
+                    <p class = "Form-radiobutton__text">Нет</p>
+                </label>
+            </div>
+            
+            <label class = "Form-checkbox__label" for = "Form__agreement" >
+                <input class = "Form-checkbox__input" type="checkbox" required id="Form__agreement" >           
+                <p class = "Form-checkbox__text">Нажимая кнопку, я принимаю условия <a class = "Form-checkbox__agreement"href = "">Лицензионного договора</a></p>
+            </label> 
+
+            <div class = "Form-button">  
+                <button type ="submit" class = "Form-button__find-tour">Найти тур</button>
+                <button type = "reset" value = "reset" class = "Form-button__reset" >Сбросить</button>
+            </div>
+         
+              <!--      
             <div>        
                 <div class = "Form__radiobutton Form__radiobutton-position-yes">
                     <input class = "Form__radio-input" type = "radio"  id = "YES" name = "question" value = "Yes">
@@ -234,7 +237,7 @@
                 <button type ="submit" class = " Form__button Form__find-tour">Найти тур</button>
                 <button type = "reset" value = "reset" class = " Form__button Form__reset" >Сбросить</button>
             </div>
-                
+                -->
         </form>
               
 
@@ -434,40 +437,6 @@
 
     </main>
 
-   <!-- <footer>
-        <div class = "Footer">
-            <div class = "Footer__IMG-text">
-                <div class = "Footer__colomn">
-                    <div ><img class = "Footer__img"src="img/footer photo.png" alt="Фото"></div>  
-                    <div class="Footer__description">
-                        <div class = " CommonAttributes Footer__text ">Пора в путешествие вместе с нами!</div>
-                        <div class = " CommonAttributes Footer__text-email">Напиши на почту и узнай подробности на <span class = "Footer__email">yourtour@gmail.com</span></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "Footer__Shell">
-                <div class = "Footer__network" >  
-                    <div class = " CommonAttributes Footer__network__text Footer__network1">
-                        Наши социальные сети
-                    </div>
-                    <img class = "Footer__network__inst-img" src="img/inst.png" alt="Фото">
-                    <div class = " CommonAttributes Footer__network__text Footer__network__instagram">
-                        instagram
-                    </div>
-                    <img class = "Footer__network__facebook-img" src="img/facebook.png" alt="Фото">
-                    <div class = " CommonAttributes Footer__network__text Footer__network__facebook">
-                        facebook
-                    </div>
-                    <img class = "Footer__network__vk-img" src="img/vk.png" alt="Фото">
-                    <div class = " CommonAttributes Footer__network__text Footer__network__vk">
-                        vkontakte
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>-->
-
     <footer>
         <div class = "Footer">
             <img class = "Footer__img"src="img/footer photo.png" alt="Фото">  
@@ -477,7 +446,7 @@
             </div>
         </div>
         <ul class = "Footer-networks">
-            <li class = "Footer-networks__option">
+            <li class = "Footer-networks__options">
                 <div class = "Footer-networks__text">Наши социальные сети</div>
             </li>
             <li class = "Footer-networks__option">
@@ -493,25 +462,6 @@
                 <p class = "Footer-networks__network">vkontakte</p>
             </li>
         </ul>
-        <!--    <div class = "Footer__Shell">
-                <div class = "Footer__network" >  
-                    <div class = " CommonAttributes Footer__network__text Footer__network1">
-                        Наши социальные сети
-                    </div>
-                    <img class = "Footer__network__inst-img" src="img/inst.png" alt="Фото">
-                    <div class = " CommonAttributes Footer__network__text Footer__network__instagram">
-                        instagram
-                    </div>
-                    <img class = "Footer__network__facebook-img" src="img/facebook.png" alt="Фото">
-                    <div class = " CommonAttributes Footer__network__text Footer__network__facebook">
-                        facebook
-                    </div>
-                    <img class = "Footer__network__vk-img" src="img/vk.png" alt="Фото">
-                    <div class = " CommonAttributes Footer__network__text Footer__network__vk">
-                        vkontakte
-                    </div>
-                </div>
-            </div>-->
     </footer>
 </body>
 </html>

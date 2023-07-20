@@ -20,126 +20,50 @@ input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s e
 
 .ChooseTour-title{
     margin-top: 136px;
+    margin-bottom: 0px;
     font-size: 59px;
     line-height: 124%;
 }
-.ChooseTour-options{
+.ChooseTour-options {
     display:  flex;
-    list-style-type:none;
     justify-content: center;
+    list-style-type:none;
     margin-left: auto;
     margin-right: auto;
     font-weight: 700;
     line-height: 122%;
     font-size: 23px;
-    margin-top: -36px;
+    margin-top: 12px;
     padding:0px;
-    align-items: center;
+    flex-wrap: wrap; 
 }
-  
 .ChooseTour-options-option{
-   display: inline;
-   margin-left:15px;
-   margin-right: 15px;
+    margin-right:15px;
+    margin-left:15px;
 }
-.ChooseTour-option__label{
-    cursor: pointer;   
-}
-.ChooseTour-option__input{
+.ChooseTour-option__input {
     display: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
 }
-#ChooseTourOp input[type="radio"]:checked + .ChooseTour-option__label {
-    border-bottom: 3px #EFA501 solid;
-    color: #EFA501;
-    text-decoration:none;
-}
-
-#ChooseTourOp input[type="radio"]:checked + .ChooseTour-option__label:first-of-type {
-    border-bottom: 3px #EFA501 solid;
-    color: #EFA501;
-    text-decoration:none;
-    padding-bottom: 7px;
-    padding-top: 7px;
-}
-.ChooseTour-options-option:hover{
+.ChooseTour-options-option:hover p {
     text-decoration:none;
     cursor: pointer;   
     border-bottom: 3px #1B1F2B  solid; 
+    padding-bottom: 2px;
 }
 
-.ChooseTour-options-option:active {
+.ChooseTour-options-option:active p {
     border-bottom: 3px #EFA501 solid;
     color: #EFA501;
     text-decoration:none;
+    padding-bottom: 2px;
 }
-/*
-.TourMenu{
-    margin-top: 36px;
-    font-size: 23px;
-    line-height: 122%;
-    height:28px;
-    margin-bottom: 30px;
-    color:#1B1F2B;
-    font-weight: 700;
-}
-.TourMenu__width{
-    display:  flex;
-    flex-wrap: wrap;
-    width:702px;
-    list-style-type: none;
-   
-}
-#mainmenu input[type="radio"] {
-    display: none;
-}
-  
-#mainmenu label {
-    display: inline-block;
-    padding-top: 7px;
-}
-#mainmenu input[type="radio"]:checked + label {
-      border-bottom: 3px #EFA501 solid;
-      color: #EFA501;
-      text-decoration:none;
-      padding-bottom: 7px;
-      
-
-}
-
-#mainmenu input[type="radio"]:checked + label:first-of-type {
-      border-bottom: 3px #EFA501 solid;
-      color: #EFA501;
-      text-decoration:none;
-      padding-bottom: 7px;
-      padding-top: 7px;
-}
-
-.TourMenu__left{
-    margin-left: 30px; 
-}
-.TourMenu__second-row-left{
-    margin-left: 32px; 
-}
-.TourMenu__right{
-    color:#1B1F2B;   
-}
-
-.TourMenu__right:hover{
-    text-decoration:none;
-    cursor: pointer;   
-    border-bottom: 3px #1B1F2B  solid; 
-}
-
-.TourMenu__right:active {
+.ChooseTour-options input:checked + p {
     border-bottom: 3px #EFA501 solid;
     color: #EFA501;
     text-decoration:none;
+    padding-bottom: 2px;
 }
 
-*/
 .ChooseTour-cards{
     margin-left:auto;
     margin-right: auto;
@@ -338,20 +262,151 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     background: #F4F0E9;
 }
 
-.Form__label-textarea{
+.Form__label-textarea, .Form-radiobutton{
+    margin-top: -2px;
     grid-column: 1 / 3;
+    
 }
-.Form__TitleAges{
+.Form-radiobutton__question{
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
-   /* grid-gap: 33px;*/
     font-size: 20px;
-    grid-column: 1 / 3;
+    margin-bottom: 9px;
 }
+.Form-radiobutton__text{
+    display:inline;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%; 
+    cursor: pointer; 
+    margin-right: 28px;
+    padding-left: 37px;
+}
+.Form__radio-label{
+    display:inline;
+    cursor: pointer;
+    }
+.Form__radio-input{
+    display: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+.Form__radio-label::before{
+    content: "";
+    display: inline;
+    width: 22px;
+    height: 22px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FFFFFF;
+    margin-left: 0px;
+    z-index: 1;
+}
+.Form__radio-label::after{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #1B1F2B;
+  opacity: 0;
+  position: absolute;
+ /* left: 7.2px;
+  top: 6px;*/
+  z-index: 2;
+}
+ input:checked + .Form__radio-label::after{
+    opacity: 1;
+}
+.Form-checkbox__input{
+    display: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.Form-checkbox__label{
+    grid-column: 1 / 3;
+    
+}
+.Form-checkbox__text{
+    padding-top: 1px;
+    padding-left: 45px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%; 
+    letter-spacing: -0.17px;
+    color: #A6A6A6;
+    cursor: pointer;
+}
+.Form-checkbox__agreement{
+    color: #1B1F2B;
+}
+.Form-checkbox__agreement:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.Form-checkbox__agreement:active{
+    color: #286562;
+    text-decoration:underline;
+}
+.Form-checkbox__label:before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #FFFFFF;
+    margin-left: 0px;
+    z-index: 1;
+}
+.Form-checkbox__label:after{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/radiobutton (1).png");
+    background-size: 25px 25px ;
+    opacity: 0;
+    position: absolute;
+    left: 1px; 
+    z-index: 2;
+}
+
+.Form-checkbox__input:checked + .Form-checkbox__label:after{
+    opacity: 1;
+}
+
+.Form-button__find-tour, .Form-button__reset{
+    width: 235px;
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    margin-top: 5px;
+    color: #FFFFFF;
+    background: #286562;
+}
+.Form-button__reset{
+    color: #286562;
+    background: #E0F0E5;
+}
+.Form__find-tour:hover{ background: #3B7E7B; cursor: pointer;}
+.Form__find-tour:active{ background:#627F7E;}
+.Form__reset:hover{ background: #F1F3F2; cursor: pointer;}
+.Form__reset:active{ background:#D9DFDB;}
+
+/*
 .Form__radiobutton{
     position:relative;
-   margin-top: -25px;
+    margin-top: -25px;
 }
 .Form__radiobutton-position-yes{
         position: absolute;
@@ -365,8 +420,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;  
-    cursor: pointer;
-   
+    cursor: pointer;  
 }
 .Form__radio-label{
     font-weight: 400;
@@ -471,31 +525,8 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     color: #286562;
     text-decoration:underline;
 }
+*/
 
-.Form__button{
-    width: 235px;
-    height: 58px;
-    border-radius: 10px;
-    border: none;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    margin-top: 31px;
-}
-.Form__find-tour{ 
-    color: #FFFFFF;
-    background: #286562;
-}
-.Form__find-tour:hover{ background: #3B7E7B; cursor: pointer;}
-.Form__find-tour:active{ background:#627F7E;}
-
-.Form__reset{
-    color: #286562;
-    background: #E0F0E5;
-}
-
-.Form__reset:hover{ background: #F1F3F2; cursor: pointer;}
-.Form__reset:active{ background:#D9DFDB;}
 
  /*  
 .Shell {
@@ -1071,8 +1102,6 @@ input[type = date]:focus{color: #1B1F2B;}
 }
 
 .Footer{
-    max-width: 100%;
-    max-height: 100%;
     margin-top: 135px;
     display: grid;
     margin-left: auto;
@@ -1081,37 +1110,35 @@ input[type = date]:focus{color: #1B1F2B;}
     position: relative;
     grid-template-columns: 370px 370px;
 }
-.Footer h3{
-    margin-top:0;
-}
+
 .Footer__img{
     width: 370px;
     height: 370px;
     border-radius: 50px;
 }
 .Footer__description{
-    place-self: center;
-    
+    place-self: center; 
 }
-.Footer__description h3, .Footer__description p {
-    margin-top:30px;
+.Footer__description h3{
+    margin-top: 13px;
+    margin-bottom: 0;
 }
+
 
 .Footer__text{
     font-weight: 500;
     font-size: 35px;
     line-height: 122%;
     margin-left: 54px;
-
 }
 .Footer__text-email{
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
     color: #A6A6A6;
-    margin-top: 0px;
     margin-left: 52px;
     width: 364px;
+    
 }
 .Footer__email{
     color:#1B1F2B;
@@ -1140,13 +1167,15 @@ input[type = date]:focus{color: #1B1F2B;}
     line-height: 142%;
     color: #A6A6A6;
 }
-.Footer-networks__text{
-    margin-right:537px;
+.Footer-networks__options{
+    margin-right:510px;
+}
+.Footer-networks__option{
+    margin-right: 40px;
 }
 .Footer-networks__network{
     display: inline;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
     color:#1B1F2B;
 }
 .Footer-networks__network:hover{
@@ -1154,50 +1183,7 @@ input[type = date]:focus{color: #1B1F2B;}
     color: #3B7E7B;
     cursor: pointer;
 }
-/*
-.Footer__network{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 132.5px;
-    background: #F4F0E9;
-    height: 88px;
-    width: 100%;
-}
-.Footer__network__text{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    color: #A6A6A6;
-}
-.Footer__network__inst-img{
-    margin-left: 537px;
-}
-.Footer__network__instagram{
-    margin-left: 12px;
-    color:#1B1F2B;
-}
-.Footer__network__facebook-img{
-    margin-left: 38px;
-}
-.Footer__network__facebook{
-    margin-left: 15px;
-    color:#1B1F2B;
-}
 
-.Footer__network__vk-img{
-    margin-left: 29px;
-}
-.Footer__network__vk{
-    margin-left: 12px;
-    color:#1B1F2B;
-}
-.Footer__network__instagram:hover, .Footer__network__facebook:hover, .Footer__network__vk:hover{
-    text-decoration: underline;
-    color: #3B7E7B;
-    cursor: pointer;
-}
-*/
 @media screen and (min-width: 1347px){
     
     .ChooseTour-cards{
@@ -1212,12 +1198,11 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 240px; 
         height: 86px;
     }
-  
-    .Form__half-part-width {
+    .Form-button{
         grid-column: 1 / 3;
     }
-    .Form__reset{
-        margin-left: 2.5%;
+    .Form-button__reset{
+        margin-left: 5%;
     }
     .reviews-review{
         max-width: 1170px;
@@ -1249,6 +1234,7 @@ input[type = date]:focus{color: #1B1F2B;}
         padding-left: 30px;
         padding-right: 30px;
     }
+    
 
 }
 
@@ -1258,26 +1244,13 @@ input[type = date]:focus{color: #1B1F2B;}
     input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
-    
-    
-    /*   
-    #mainmenu label {
-        padding-top: 0px;
-    }
-    #mainmenu input[type="radio"]:checked + label {
-        padding-bottom: 0px;
-    }
-    #mainmenu input[type="radio"]:checked + label:first-of-type {
-        padding-bottom: 0px;
-        padding-top: 0px;
-    }
-*/
+   
     .ChooseTour-cards{
         max-width:918px;  
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
-        margin-top:104px ;
+        margin-top:77px;
     }
     .ChooseTour-card{
         width:450px;
@@ -1306,10 +1279,7 @@ input[type = date]:focus{color: #1B1F2B;}
         padding: 60px ;
         grid-gap: 30.5px 20px;
     } 
-  
-    .Form__half-part-width {
-        grid-column: 1 / 3;
-    }
+
     select{ 
         padding-left: 19px; 
         padding-top: 5px; 
@@ -1327,6 +1297,26 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 758px;
         height: 112px;
     }
+    .Form__label-textarea{
+        margin-top: 1px;
+    }
+    .Form-radiobutton{
+        margin-top: -2px;
+    }
+    .Form-radiobutton__question{
+        margin-bottom: 9px;
+    }
+    .Form-checkbox__text{
+        padding-top: 1px;
+        padding-left: 36px;
+    }
+    .Form-button{
+        grid-column: 1 / 3;
+    }
+    .Form-button__reset{
+        margin-left: 3%;
+    }
+    /*
     .Form__TitleAges{     
         margin-top: -3px;
     }
@@ -1358,7 +1348,10 @@ input[type = date]:focus{color: #1B1F2B;}
     }
     .Form__reset{
         margin-left: 3%;
-    }
+    }*/
+    
+    
+    
     .reviews-Title{
         margin-top:138px ;
     }
@@ -1469,21 +1462,9 @@ input[type = date]:focus{color: #1B1F2B;}
     .Footer{
         margin-top: 134px;
     }
-    .Footer-networks__text{
-        margin-right: 257px;
-
+    .Footer-networks__options{
+        margin-right:257px;
     }
-    /*
-    .Footer__network__inst-img{
-        margin-left: 287px;
-    }
-    .Footer__text{
-        margin-left: 58px;
-    }
-    .Footer__text-email{
-        margin-left: 57px;
-    }*/
- 
 }
 
 @media screen and (max-width:965px){
@@ -1491,16 +1472,7 @@ input[type = date]:focus{color: #1B1F2B;}
     input::-moz-placeholder     {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 9px;   transition: text-indent 0.3s ease;}   
-   /* #mainmenu label {
-        padding-top: 0;
-    }
-    #mainmenu input[type="radio"]:checked + label {
-        padding-bottom: 0;
-    }
-    #mainmenu input[type="radio"]:checked + label:first-of-type {
-        padding-bottom: 0;
-        padding-top: 0;
-    }*/
+   
     .ChooseTour-title{  
         font-size: 34px;
         line-height: 112%;
@@ -1511,36 +1483,29 @@ input[type = date]:focus{color: #1B1F2B;}
     .ChooseTour-options{
         line-height: 142%;
         font-size: 16px;
-        margin-top: -13px;
+        margin-top: 15px;
         padding:0px;
-        width:160px;
-    }
-      
+        width:318px;
+    } 
     .ChooseTour-options-option{
        display: inline;
-       margin-left:15px;
-       margin-right: 15px;
+       margin-left:6px;
+       margin-right: 6px;
     }
-  /*  .TourMenu{
-        margin-top: 45.3px;
-        font-size: 16px;
-        line-height: 142%;
+    .ChooseTour-option__text{
+        margin-top: -10px;
     }
-    .TourMenu__width{
-        width:259px;
+    .ChooseTour-options-option:hover p {
+        padding-bottom: 0px;
     }
-    .TourMenu__left{
-        margin-left: 11px; 
+    .ChooseTour-options-option:active p {
+        padding-bottom: 0px;
     }
-    .TourMenu__second-row-left{
-        margin-top: 8px;
-        margin-left: 41px; 
+    .ChooseTour-options input:checked + p {
+        padding-bottom: 0px;
     }
-    .TourMenu__second-row-top{
-        margin-top: 8px;
-    }*/
     .ChooseTour-cards{
-        margin-top: 64px;  
+        margin-top: 35px;  
         max-width:318px;
         display: grid;
         grid-template-columns: 318px;
@@ -1645,6 +1610,57 @@ input[type = date]:focus{color: #1B1F2B;}
         width: 258px;
         height: 112px;
     }
+    .Form-radiobutton__question{
+        font-size: 16px; 
+        margin-bottom: 9px;
+    }
+    .Form-radiobutton__text{
+        font-size: 16px;
+        margin-right: 28px;
+        padding-left: 30px;
+    }
+    .Form__radio-label::before{
+        width: 16px;
+        height: 16px;
+        border: 2px solid black;
+    }
+    .Form__radio-label::after{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      left: 4.8px;
+      top: 4.8px;
+    }
+    .Form-checkbox__text{
+        padding-left: 32px;
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    .Form-checkbox__label:before{
+        width: 17px;
+        height: 17px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .Form-checkbox__label:after{
+        width: 16px;
+        height: 16px;
+        background-size: 20px 20px ;
+    }
+    .Form-button{
+        grid-column: 1/2;
+    }
+    .Form-button__find-tour, .Form-button__reset{
+        width: 134px;
+        height: 47px;
+        font-size: 16px;
+        margin-top: -2px;
+    }
+    .Form-button__reset{
+        margin-left: 1.5%;
+        
+    }
+    /*
     .Form__TitleAges{
         font-size: 16px; 
         margin-top: -6px;
@@ -1716,7 +1732,7 @@ input[type = date]:focus{color: #1B1F2B;}
     .Form__reset{
         margin-left: 2%;
     }
-
+*/
     .reviews-Title{
         font-size: 34px;
         font-weight: 700;
@@ -1946,15 +1962,16 @@ input[type = date]:focus{color: #1B1F2B;}
 .Footer__description{
     place-self: center;
 }
+.Footer__description h3{
+    margin-top: 29px;
+}
 .Footer__text{
-    margin-top: 26px;
     font-weight: 700;
     font-size: 23px;
     line-height: 120%;
     text-align: center;
     letter-spacing: 0.04em;
     margin-left: 0px;
-    
 }
 .Footer__text-email{
     font-weight: 400;
@@ -1962,90 +1979,36 @@ input[type = date]:focus{color: #1B1F2B;}
     line-height: 142%;
     text-align: center;
     color: #A6A6A6;
-    margin-top: 20px;
+    margin-top: 22px;
     width: 291px;
     margin-left: 0px;
+    
 }
 .Footer-networks{
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
+    margin-top: 58px;
     height: 95px;
-    font-size: 16px;  
-}
-
-.Footer-networks__text{
-    margin-right:20px;
-}
-.Footer-networks__network{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-/*
-.Footer__network{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 75px;
-    background: #F4F0E9;
-    height: 95px;
-    width: 100%;
-}
-
-.Footer__Shell{
-    margin-top: 75px;
-    background: #F4F0E9;
-    height: 95px;
-    width: 100%;
-  }
-  .Footer__network__text{
-    font-weight: 400;
     font-size: 16px;
-    line-height: 142%;
-    color: #A6A6A6;
-}
-  .Footer__network{
-    margin:0 auto;
-    width:315px;
-    display:  flex;
+    width: 360px;  
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  .Footer__network1{
-    margin-top:5px;
-    margin-left:21% ;
-    margin-right: 21%;
-    margin-bottom: -27px;
-   
-  }
-  .Footer__network__inst-img{
-    width:10.77px;
-    height:10.77px;
-    margin-left: 6px;   
 }
-.Footer__network__instagram{
-    margin-left: 6.54px;
+.Footer-networks__options{
+    margin-left: 60px;
+    margin-right: 60px;
 }
-.Footer__network__facebook-img{
-    width:6.15px;
-    height:13.08px;
-    margin-left: 25px;
-}
-.Footer__network__facebook{
-    margin-left: 8.85px;  
+.Footer-networks__option{
+    margin-right: 10px;
 }
 
-.Footer__network__vk-img{
-    width:15.38px;
-    height:9.23px;
-    margin-left: 18px;
+.Footer-networks__network{
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.Footer__network__vk{
-    margin-left: 6.5px; 
-}*/
+.Footer-networks__inst-img, .Footer-networks__facebook-img, .Footer-networks__vk-img{
+    width:10px;
+    height:10px;
+}
 }
