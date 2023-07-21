@@ -325,57 +325,69 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
    .Form-radiobutton__label input[type = "radio"]:checked + span::after {
    opacity:1;
    }
-/*
-.Form-radiobutton__text{
-    display:inline;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%; 
-    cursor: pointer; 
-    margin-right: 28px;
-    padding-left: 37px;
-}
-.Form__radio-label{
-    display:inline;
-    cursor: pointer;
-    }
-.Form__radio-input{
-    display: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none; 
-}
 
-.Form__radio-label::before{
-    content: "";
-    display: inline;
-    width: 22px;
-    height: 22px;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #FFFFFF;
-    margin-left: 0px;
-    z-index: 1;
-}*/
-.Form__radio-label::after{
- /* content: "";
-  display: inline;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: #1B1F2B;
-  opacity: 0;
-  position: absolute;
- margin-left:-6.1%;
-  margin-top: 6px;*/
- /* left: 7.2px;
-  top: 6px;*/
-  /*z-index: 2;*/
-}
  input:checked + .Form__radio-label::after{
     opacity: 1;
 }
+.Form-checkbox__label{
+    grid-column: 1 / 3; 
+}
+.Form-checkbox__label p {
+    display:flex;
+   align-items:center;
+   position:relative;
+   font-weight: 400;
+    font-size: 17px;
+    line-height: 142%; 
+    letter-spacing: -0.17px;
+    color: #A6A6A6;
+    cursor: pointer;
+    padding-top: 2px;
+   }
+  .Form-checkbox__label input[type = "checkbox"]{
+   position:absolute;
+   width:1px;
+   height:1px;
+   opacity:0;
+   }
+   .Form-checkbox__label p::before{
+   content : "";
+   width: 22px;
+   height: 22px;
+   border: 2px solid black;
+   display:inline-block;
+   
+   margin-right:20px;
+   border-radius: 5px;
+   background-color: #FFFFFF;
+   z-index: 1;
+   }
+   .Form-checkbox__label p::after{
+   content : "";
+   position:absolute;
+   left:0px;
+   top:0;
+   width:5px;
+   height:5px;
+   background-color:red;
+   border-radius:100%;
+   transform: translateX(50%);
+    opacity:0;
+   }
+   .Form-checkbox__label input[type = "checkbox"]:checked + p::after {
+   opacity:1;
+   }
+.Form__checkbox-agree-partTwo{
+    color: #1B1F2B;
+}
+.Form__checkbox-agree-partTwo:hover{
+    text-decoration:underline;
+}
+.Form__checkbox-agree-partTwo:active{
+    color: #286562;
+    text-decoration:underline;
+}
+/*
 .Form-checkbox__input{
     display: none;
     -moz-appearance: none;
@@ -383,8 +395,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     appearance: none;
 }
 .Form-checkbox__label{
-    grid-column: 1 / 3;
-    
+    grid-column: 1 / 3;    
 }
 .Form-checkbox__text{
     padding-top: 1px;
@@ -435,7 +446,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 .Form-checkbox__input:checked + .Form-checkbox__label:after{
     opacity: 1;
 }
-
+*/
 .Form-button__find-tour, .Form-button__reset{
     width: 235px;
     height: 58px;
@@ -1106,10 +1117,10 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     .Form-radiobutton__question{
         margin-bottom: 9px;
     }
-    .Form-checkbox__text{
+  /*  .Form-checkbox__text{
         padding-top: 1px;
         padding-left: 36px;
-    }
+    }*/
     .Form-button{
         grid-column: 1 / 3;
     }
@@ -1418,7 +1429,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         height: 10px;
         transform: translate(46%, 46%);
        }
-    .Form-checkbox__text{
+   /* .Form-checkbox__text{
         padding-left: 32px;
         font-size: 16px;
         letter-spacing: 0px;
@@ -1433,7 +1444,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         width: 16px;
         height: 16px;
         background-size: 20px 20px ;
-    }
+    }*/
     .Form-button{
         grid-column: 1/2;
     }
