@@ -190,14 +190,14 @@
                 
             <div class="Form-radiobutton">
                 <p class="Form-radiobutton__question">Вам есть 18 лет?</p>
-                <input class = "Form__radio-input" type = "radio"  id = "YES" name = "question">
-                <label for  =  "YES" class = "Form__radio-label">
-                    <p class = "Form-radiobutton__text">Да</p>
+                <label class = "Form-radiobutton__label Form-radiobutton__position-yes">
+                    <input type = "radio"  id = "YES" name = "question" value ="Yes">
+                    <span>Да</span>
                 </label>
-                
-                <input class = "Form__radio-input" type = "radio"  id = "NO" name = "question">
-                <label for  =  "NO" class = "Form__radio-label">
-                    <p class = "Form-radiobutton__text">Нет</p>
+                  
+                <label class = "Form-radiobutton__label Form-radiobutton__position-no">
+                    <input type = "radio"  id = "NO" name = "question" value="No">
+                    <span>Нет</span>
                 </label>
             </div>
             
@@ -212,18 +212,6 @@
             </div>
          
               <!--      
-            <div>        
-                <div class = "Form__radiobutton Form__radiobutton-position-yes">
-                    <input class = "Form__radio-input" type = "radio"  id = "YES" name = "question" value = "Yes">
-                    <label for  =  "YES" class = "Form__radio-label">Да</label>
-                </div>
-                <div class = " Form__radiobutton rad2-top Form__radiobutton-position-no">
-                    <input class = "Form__radio-input" type = "radio"  id = "NO" name = "question"  value = "No">
-                    <label for  =  "NO" class = "Form__radio-label">Нет</label>
-                </div>
-            </div>
-
-                    
             <div class="Form__checkbox" >
                 <input type="checkbox" required id="Form__agreement" class = "Form__checkbox-input">
                 <label for = "Form__agreement" class = "Form__checkbox-label">           
