@@ -202,8 +202,9 @@
             </div>
             <label class = "Form-checkbox__label">
                 <input type = "checkbox">
-                <p>Нажимая кнопку, я принимаю условия <a class ="Form__checkbox-agree-partTwo" href = ""> Лицензионного договора</a></p>
-              </label>
+                <p>Нажимая кнопку, я принимаю условия<a class ="Form__checkbox-agree-partTwo" href = "">Лицензионного договора</a></p>
+              <!--  <p>Нажимая кнопку, я принимаю условия Лицензионного договора</p>-->
+            </label>
               
             <!--<input class = "Form-checkbox__input" type="checkbox" required id="Form__agreement" >
             <label class = "Form-checkbox__label" for = "Form__agreement" >           
@@ -214,89 +215,7 @@
                 <button type ="submit" class = "Form-button__find-tour">Найти тур</button>
                 <button type = "reset" value = "reset" class = "Form-button__reset" >Сбросить</button>
             </div>
-         
-              <!--      
-            <div class="Form__checkbox" >
-                <input type="checkbox" required id="Form__agreement" class = "Form__checkbox-input">
-                <label for = "Form__agreement" class = "Form__checkbox-label">           
-                    <p>Нажимая кнопку, я принимаю условия 
-                    <a class ="Form__checkbox-agree-part2" href = "">Лицензионного договора</a></p>
-                </label> 
-            </div>
-                    
-                -->
         </form>
-              
-
-        <!--
-            <div class="Shell">
-                <div class="Form">      
-                  <form action="#" class = "Form_main">
-                    <div>
-                        <label for="name"><span class="CommonAttributes Form__Title">Имя</span></label>
-                        <input type="text" required  name="Name" placeholder="Введите Ваше имя"/>
-                    </div>
-                    <div class = "CommonAttributes Form__select">
-                        <label for="place"><span class="Form__Title">Направление</span></label>
-                        <select place="Direction"> 
-                            <option  value="Куда хотите ехать?" disabled selected>Куда хотите ехать</option>
-                            <option>Берген (Норвегия)</option>
-                            <option>Бухта Навагио (Греция)</option>
-                            <option>Гейрангер-фьорд (Норвегия)</option>
-                            <option>Долина Йосемити(США)</option>
-                            <option>Шондонг (Вьетнам)</option>
-                            <option>Ленсойс-Мараньенсес (Бразилия)</option>
-                        </select>
-                    </div>
-                    <div >
-                        <label for="email"><span class="CommonAttributes Form__Title">Email</span></label>
-                        <input type="email" required email ="Email" placeholder="example@mail.com"/>    
-                    </div>
-                    <div>
-                        <label for="number"><span class="CommonAttributes Form__Title">Телефон</span></label>
-                        <input type="tel" required number ="Mobile_number" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"/>    
-                    </div>
-                    <div>
-                        <label for="date-before"><span class="CommonAttributes Form__Title">Дата от</span></label>
-                        <input type="date" required date-before ="Date-before" placeholder="ДД.ММ.ГГГГ"/>    
-                    </div>
-                    <div>
-                        <label for="date-after"><span class="CommonAttributes Form__Title">Дата до</span></label>
-                        <input type="date" required date-before ="Date-after" placeholder="ДД.ММ.ГГГГ"/>    
-                    </div>
-                    <div class="Form__full-width">
-                        <label for="comment"><span class="CommonAttributes Form__Title">Комментарий</span></label>
-                        <textarea comment="Comment"></textarea>
-                    </div>
-                    <div>
-                        <div class="CommonAttributes Form__Title__Ages">Вам есть 18 лет?</div> 
-                        <div class = "rad Form__radiobutto_position_yes">
-                            <input class = "radio__input" type = "radio"  id = "YES" name = "question" value = "Yes">
-                            <label for  =  "YES" class = "CommonAttributes radio_label">Да</label>
-                        </div>
-                        <div class = "rad rad2-top Form__radiobutto_position_no">
-                            <input class = "radio__input" type = "radio"  id = "NO" name = "question"  value = "No">
-                            <label for  =  "NO" class = "CommonAttributes radio_label">Нет</label>
-                        </div>
-                    </div>
-
-                    <div class=" CommonAttributes  Form__full-width " >
-                        <input type="checkbox" required id="Form__agreement" class = "checkbox_input">
-                        <label for = "Form__agreement" class = "Form__checkbox_label"> Нажимая кнопку, я принимаю условия 
-                             <a class ="Form__checkbox-agree-part2" href = "">Лицензионного договора</a>
-                        </label> 
-                    </div>
-
-                    <div  class = "Form__half-part-width ">  
-                            <button type ="submit" class = " Form__button Form__find-tour">Найти тур</button>
-                            <button type = "reset" value = "reset" class = " Form__button Form__reset" >Сбросить</button>
-                    </div>
-                    
-                  </form>
-                  
-              </div>
-            </div>
-              -->
     </section>
     
     <section class = "reviews">
@@ -366,8 +285,7 @@
     
     <section class = "Stories">
         <h1 class ="Stories-Title" id = "Stories" >Истории путешествий</h1>
-        <p class ="Stories-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-      
+        <p class ="Stories-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p> 
         <div class = "Stories-cards">
             <div class = "Stories-card Stories-scale">
                 <img class = "Stories-scale Stories-card__img" src="img/story photo-1.png" alt="Фото из истории путешествия">   
@@ -432,7 +350,7 @@
                 <p class = "Footer__text-email">Напиши на почту и узнай подробности на <span class = "Footer__email">yourtour@gmail.com</span></p>
             </div>
         </div>
-        <ul class = "Footer-networks">
+        <ul class = "Footer-networks Footer-networksBackground">
             <li class = "Footer-networks__options">
                 <div class = "Footer-networks__text">Наши социальные сети</div>
             </li>
