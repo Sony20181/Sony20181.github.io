@@ -331,13 +331,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
    /* display:flex;
     align-items:center;
     position:relative;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 142%; 
-    letter-spacing: -0.17px;
-    color: #A6A6A6;
-    cursor: pointer;
-    padding-top: 2px;*/
+    */
     display:flex;
     align-items:center;
     position:relative;
