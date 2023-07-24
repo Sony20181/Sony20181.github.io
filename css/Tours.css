@@ -363,7 +363,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     content : "";
     position:absolute;
     left:0px;
-    top:2px;
+    top:1.8px;
     width: 22px;
     height: 22px;
     background-image: url("../img/radiobutton (1).png");
@@ -935,7 +935,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         margin-right:13px;
     }
     .Form-checkbox__fake::after{
-        top:1.3px;
+        top:1px;
     }
     .Form-button{
         margin-top: -3px;
