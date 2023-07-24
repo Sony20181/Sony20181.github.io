@@ -31,7 +31,10 @@ a{
 .heading__logo{
     position: absolute;
     width: 181.84;
-    height: 30.24;   
+    height: 30.24; 
+    
+    top: 30px;
+    left: 27%;
 }
 .heading__menu{
     display:flex;
@@ -65,6 +68,8 @@ a{
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+
+    margin: 31px 19.5% 773px 68%; 
 }
 .heading__Titile{  
     position: absolute;
@@ -74,6 +79,9 @@ a{
     line-height: 109%;
     text-align: center;
     letter-spacing: 0.02em;
+    width: 768px;
+    height: 315px;
+    margin-top: 207px;
 }
 .heading__text {
     font-size: 59px;  
@@ -84,6 +92,9 @@ a{
     font-weight: 400;
     text-align: center;
     line-height: 142%;      
+    width: 562px;
+    height: 56px;
+    margin-top: 572px;  
 }    
 .heading__button{
     position: absolute;
@@ -110,7 +121,7 @@ a{
     color: #1B1F2B;
 }
 
-@media screen and (min-width: 1347px){
+@media screen and (min-width: 1347px) and (max-width: 1956px){
     .heading__logo{
         top: 30px;
         left: 19.5%;
