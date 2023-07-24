@@ -934,6 +934,9 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     .Form-checkbox__label .Form-checkbox__fake::before{
         margin-right:13px;
     }
+    .Form-checkbox__fake::after{
+        top:1.3px;
+    }
     .Form-button{
         margin-top: -3px;
         grid-column: 1 / 3;
@@ -1260,6 +1263,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         z-index: 1;
     }
     .Form-checkbox__fake::after{
+        top:0px;
         content : "";
         width: 16px;
         height: 16px;
