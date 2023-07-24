@@ -32,7 +32,6 @@ a{
     position: absolute;
     width: 181.84;
     height: 30.24; 
-    
     top: 30px;
     left: 27%;
 }
@@ -68,8 +67,9 @@ a{
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-
-    margin: 31px 19.5% 773px 68%; 
+    margin-top: 31px;
+    margin-bottom: 773px;
+    right:16%;
 }
 .heading__Titile{  
     position: absolute;
@@ -121,8 +121,8 @@ a{
     color: #1B1F2B;
 }
 .heading__menu-options__Tour{
-    margin-left:-8px;
-}
+        margin-left:-8px;
+    }
 @media screen and (min-width: 1347px) and (max-width: 1956px){
     .heading__logo{
         top: 30px;
@@ -134,7 +134,9 @@ a{
     }
 
     .heading__number{
-        margin: 31px 19.5% 773px 72.4%; 
+        margin-top: 31px;
+        margin-bottom: 773px;
+        right:11.5%;
     }
     .heading__Titile{ 
         width: 768px;
@@ -165,9 +167,8 @@ a{
     }
     .heading__number{
         margin-top: 30px;
-        margin-right: 5.5%;
         margin-bottom: 773px;
-        margin-left: 79%;
+        right:3%;
         width: 18%;
     }
     .heading__Titile{
