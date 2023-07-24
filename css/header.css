@@ -120,7 +120,9 @@ a{
     background: #F8E6BE;
     color: #1B1F2B;
 }
-
+.heading__menu-options__Tour{
+    margin-left:-8px;
+}
 @media screen and (min-width: 1347px) and (max-width: 1956px){
     .heading__logo{
         top: 30px;
