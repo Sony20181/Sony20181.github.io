@@ -185,9 +185,7 @@
             <label class="Form__label-textarea" for="comment">
                 <p class="Form__Comment">Комментарий</p>
                 <textarea comment="Comment"></textarea>
-            </label>   
-        
-                
+            </label>     
             <div class="Form-radiobutton">
                 <p class="Form-radiobutton__question">Вам есть 18 лет?</p>
                 <label class = "Form-radiobutton__label Form-radiobutton__position-yes">
@@ -202,14 +200,10 @@
             </div>
             <label class = "Form-checkbox__label">
                 <input type = "checkbox">
-                <p class = "Form-checkbox__text" >Нажимая кнопку, я принимаю условия<a class ="Form__checkbox-agree-partTwo" href = "">Лицензионного договора</a></p>
+                <div class = "Form-checkbox__fake">
+                    <p class = "Form-checkbox__text">Нажимая кнопку, я принимаю условия<a class ="Form-checkbox__text-partTwo" href = "">Лицензионного договора</a></p>
+                </div>    
             </label>
-              
-            <!--<input class = "Form-checkbox__input" type="checkbox" required id="Form__agreement" >
-            <label class = "Form-checkbox__label" for = "Form__agreement" >           
-                <p class = "Form-checkbox__text">Нажимая кнопку, я принимаю условия <a class = "Form-checkbox__agreement"href = "">Лицензионного договора</a></p>
-            </label> -->
-
             <div class = "Form-button">  
                 <button type ="submit" class = "Form-button__find-tour">Найти тур</button>
                 <button type = "reset" value = "reset" class = "Form-button__reset" >Сбросить</button>
@@ -288,53 +282,66 @@
         <div class = "Stories-cards">
             <div class = "Stories-card Stories-scale">
                 <img class = "Stories-scale Stories-card__img" src="img/story photo-1.png" alt="Фото из истории путешествия">   
-                <h4 class = "Stories-card__Title">Автостопом в Стамбул</h4>
-                <div class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
-                     широкому кругу (специалистов) участие в формировании новых предложений:
-                    
-                         <ul class = "Stories-card__description-list">
-                            <li>вкусная еда</li>
-                             <li>дешевый транспорт</li>
-                             <li>красивый город.</li>
-                         </ul>
-                     
+                <div class = "Stories-card__information">
+                    <h4 class = "Stories-card__Title">Автостопом в Стамбул</h4>
+                    <div class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                        широкому кругу (специалистов) участие в формировании новых предложений:
+                        
+                            <ul class = "Stories-card__description-list">
+                                <li>вкусная еда</li>
+                                <li>дешевый транспорт</li>
+                                <li>красивый город.</li>
+                            </ul>
+                        
+                    </div>
                 </div>
                 <button class="Stories-card__button">
                     Подробнее
                     <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
                 </button>
-                 <p class = "Stories-card__SocialNetworks Stories-card__instagram">instagram</p>
-                 <p class = "Stories-card__SocialNetworks Stories-card__facebook">facebook</p>
-                 <p class = "Stories-card__SocialNetworks Stories-card__YouToub">YouToub</p>   
+                <div class = "Stories-card__SocialNetworks">
+                    <p class = "Stories-card__instagram">instagram</p>
+                    <p class = " Stories-card__facebook">facebook</p>
+                    <p class = " Stories-card__YouToub">YouToub</p>  
+                </div>
+                  
             </div>      
             
             <div class = "Stories-card Stories-scale">
                 <img class = "Stories-scale Stories-card__img" src="img/story photo-2.jpg" alt="Фото из истории путешествия">   
-                 <h4 class = "Stories-card__Title"> Автостопом в Стамбул</h4>
-                <p class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
-                    широкому кругу (специалистов) участие в формировании новых предложений.
-                </p>
+                <div class = "Stories-card__information">
+                    <h4 class = "Stories-card__Title"> Автостопом в Стамбул</h4>
+                    <p class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                        широкому кругу (специалистов) участие в формировании новых предложений.
+                    </p>
+                </div>  
                 <button class="Stories-card__button">
                     Подробнее
                     <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
                 </button>
-                <p class = " Stories-card__SocialNetworks Stories-card__instagram-card2">instagram</p>
-                <p class = " Stories-card__SocialNetworks Stories-card__vk-card2">ВКонтакте</p>  
+                <div class = "Stories-card__SocialNetworks">
+                    <p class = "Stories-card__instagram-card2">instagram</p>
+                    <p class = "Stories-card__vk-card2">ВКонтакте</p>  
+                </div>
             </div>  
             
             <div class = "Stories-card Stories-scale">
-                <img class = "Stories-scale Stories-card__img" src="img/story photo-3.png" alt="Фото из истории путешествия">   
-                <h4 class = "Stories-card__Title"> Автостопом в Стамбул</h4>
-                <p class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
-                    широкому кругу (специалистов) участие в формировании новых предложений.
-                </p>
+                <img class = "Stories-scale Stories-card__img" src="img/story photo-3.png" alt="Фото из истории путешествия"> 
+                <div class = "Stories-card__information">
+                    <h4 class = "Stories-card__Title"> Автостопом в Стамбул</h4>
+                    <p class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                        широкому кругу (специалистов) участие в формировании новых предложений.
+                    </p>
+                </div>  
                 <button class="Stories-card__button">
                     Подробнее
                     <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
                 </button>
-                <p class = "Stories-card__SocialNetworks Stories-card__instagram-card3">instagram</p>
-                <p class = "Stories-card__SocialNetworks Stories-card__facebook-card3">facebook</p>
-                <p class = "Stories-card__SocialNetworks Stories-card__vk-card3">ВКонтакте</p>   
+                <div class = "Stories-card__SocialNetworks">
+                    <p class = " Stories-card__instagram-card3">instagram</p>
+                    <p class = " Stories-card__facebook-card3">facebook</p>
+                    <p class = " Stories-card__vk-card3">ВКонтакте</p> 
+                </div>  
             </div>  
         </div>
     </section>
