@@ -2,36 +2,67 @@ input[placeholder]          {text-indent: 16px;   transition: text-indent 0.3s e
 input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
 input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
 input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
-
-.box{
+  
+.hero {
+    height: 624px;
+}
+    
+.hero-img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 831px;
+    object-fit: cover;
+    z-index: -1;
 }
-.ChooseTour-title{
-    margin-top: 136px;
-    margin-bottom: 0px;
-    font-size: 59px;
-    line-height: 124%;
+.hero-block {
+    margin: 119px auto 0;
+    width: 768px;
+    color: #FFFFFF;
 }
+.hero-title {
+    text-align: center;
+}
+.hero-text {
+    text-align: center;
+    width: 562px;
+    margin: 50px auto;
+    }
+.hero-button {
+    display: block;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: none;
+    margin: 0 auto;
+}
+
+.hero-button:hover{ 
+    background: #EFA501;
+    color: #FFFFFF;
+    cursor: pointer; 
+}
+.hero-button:active{ 
+    background: #F8E6BE;
+    color: #1B1F2B;
+}
+
+
 .ChooseTour-options {
     display:  flex;
     justify-content: center;
-    list-style-type:none;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    line-height: 122%;
-    font-size: 23px;
-    margin-top: 12px;
-    padding:0px;
+    margin: 36px auto 0;
     flex-wrap: wrap; 
 }
 .ChooseTour-options-option{
-    margin-right:15px;
-    margin-left:15px;
+    margin-right:30px;
+}
+.ChooseTour-options-option:last-child {
+    margin-right: 0;
 }
 .ChooseTour-option__input {
     display: none;
@@ -60,7 +91,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     margin-left:auto;
     margin-right: auto;
     position: relative; 
-    margin-top: 79px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px; 
@@ -103,22 +134,15 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     position: absolute;
     width: 240px;
     height: 86px;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
     color: #FFFFFF;
-    top: 3px; 
+    top: 50px; 
     left: 50px;  
     z-index: 3;
 }
 .ChooseTour-card__price{
     position: absolute;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 142%;
-    letter-spacing: -0.01em;    
     color: #FFFFFF;
-    top: 135px; 
+    top: 152px; 
     left: 50px;
     z-index: 3;
 }
@@ -126,18 +150,15 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     position: absolute;
     z-index:3;
     border-radius: 50px;
-    font-size: 23px;
-    line-height: 122%;
     color: #FFFFFF;
     top: 447px;
     border:none;
     background: none;
-    font-weight: 700;
     padding: 6px 20px;
     left:29px;
 }
 .ChooseTour-card__button-icon{
-    padding-left: 4px;  
+    padding-left: 10px;  
 }
 .ChooseTour-sacal:hover .ChooseTour-card__button{
     background:  #286562;
@@ -148,12 +169,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     background: #EFA501;
 }
 
-.Form-title{
-    margin-top: 135px;
-    margin-bottom: 0px;
-    font-size: 59px;
-    line-height: 124%;
-}
 .Form-subtitle{
     display: flex;
     margin-left: auto;
@@ -162,11 +177,10 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     width:405px;
     height: 56px;
     text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     color: #A6A6A6;
 }
+
+
 form{
     margin-left: auto;
     margin-right: auto;
@@ -174,7 +188,8 @@ form{
     background: #FFFFFF;
     border-radius: 50px;
     margin-top: 101px;
-    max-width: 1030px;
+    max-width: 1170px;
+    height: 986px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap:33px;
@@ -185,13 +200,7 @@ form label {
     display: block;
     
 }
-form p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 input, select, textarea, option{
     width: 100%;
     height:68px;
@@ -235,11 +244,6 @@ option:checked{
 input[type=date] {
     text-indent: 8px;
     margin-top: 7px; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     text-transform: uppercase;
 }
 
@@ -250,8 +254,8 @@ input[type = date]:focus{color: #1B1F2B;}
 
 textarea{
     padding: 20px;
-    height:112px; 
-    width: 990px;
+    height:152px; 
+    width: 1030px;
 }
 
 input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:active{
@@ -263,10 +267,8 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     grid-column: 1 / 3;
     
 }
+
 .Form-radiobutton__question{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     margin-bottom: 8px;
 }
 .Form-radiobutton__position-yes{
@@ -333,10 +335,6 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     position:relative;
 }
 .Form-checkbox__text{
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 142%; 
-    letter-spacing: -0.17px;
     color: #A6A6A6;
     cursor: pointer;
 }
@@ -392,9 +390,6 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     height: 58px;
     border-radius: 10px;
     border: none;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     margin-top: 4px;
     color: #FFFFFF;
     background: #286562;
@@ -410,15 +405,10 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
  
 .reviews-Title{
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 135px;
-    margin-bottom: 0px;
-    font-size: 59px;
-    line-height: 124%;
     width: 529px;
     height: 146px;
 }
@@ -453,29 +443,12 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     background: #F4F0E9;
     border-radius: 50px;
     padding: 40px ;
-    font-size: 23px;
-    line-height: 122%; 
-    font-weight: 700;
 }
-.reviews-card__text{
-    margin:0;
 
-}
-.reviews-card__PersonName{
-    margin:0;
-    font-weight: 500px;
-    font-size: 35px;
-    line-height: 122%;
-}
 .reviews-card__text-ident{
     margin-top: 28px;
 }
 .reviews-card__Tour{
-    margin:0;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 142%;
-    letter-spacing: -0.01em;
     color: #A6A6A6;
 }
 .reviews-card__PhotoUsers{
@@ -484,19 +457,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     max-height: 75px;
 }
 
-.Photos-Title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 59px;
-    line-height: 124%;
-    margin-top: 135px;
-    margin-bottom: 0;
-    width: 723px;
-}
+
 .Photos-subtitle{
     display: flex;
     margin-left: auto;
@@ -505,9 +466,6 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     width:415px;
     height: 56px;
     text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     color: #A6A6A6;
 }
 
@@ -712,90 +670,70 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     color: #EFA501;
     text-decoration: underline;
 }
-
-.Footer{
-    margin-top: 135px;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
+.Intelligence{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    position: relative;
-    grid-template-columns: 370px 370px;
+    align-items: center;
+    gap: 30px;
+    margin: 135px auto;
+    width: 771px;
 }
-
-.Footer__img{
+.Intelligence-img{
     width: 370px;
     height: 370px;
     border-radius: 50px;
-    margin-left: -16px;
 }
-.Footer__description{
-    place-self: center; 
-    margin-left: 21px;
+.Intelligence__text-email{
+    color:#A6A6A6;
+    margin-top: 20px;
 }
-.Footer__description h3{
-    margin-top: 21px;
-    margin-bottom: 0;
-}
-.Footer__text{
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
-}
-.Footer__text-email{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    color: #A6A6A6;
-    width: 364px;
-}
-.Footer__email{
+.Intelligence__email{
     color:#1B1F2B;
 }
-.Footer__email:hover{
+.Intelligence__email:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-.Footer__email:active{
+.Intelligence__email:active{
     text-decoration: underline;
     color: #286562;  
 }
-.Footer-networksBackground{
+
+footer {
     background: #F4F0E9;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 88px;
+}
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.Footer-text{
+    color:#A6A6A6;
 }
 .Footer-networks{
     display: flex;
-    justify-content: center;
-    padding:0px;
-    margin-top: 137px;
-    list-style-type:none;
     align-items: center;
-    height: 88px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    color: #A6A6A6;
 }
-
-.Footer-networks__inst-img{
-    margin-left:542px;
+.Footer-networks__option{
+    margin-right: 25px;
+    color:#A6A6A6;
 }
-.Footer-networks__facebook-img{
-    margin-left:38px;
+.Footer-networks__option:last-child {
+    margin-right: 0;
 }
-
-.Footer-networks__vk-img{
-    margin-left:35px;
+.Footer-networks__text{
+    display: inline-block;
+    margin-left: 10px;
 }
-
-.Footer-networks__network{
-    display: inline;
-    margin-left: 6px;
-    color:#1B1F2B;
-}
-.Footer-networks__network:hover{
+.Footer-networks__text:hover{
     text-decoration: underline;
     color: #3B7E7B;
     cursor: pointer;
@@ -861,13 +799,20 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
-   
+
+    .hero-block {
+        width: 914px;
+    }
+    .hero-text {
+        width: 442px;
+    }
+
     .ChooseTour-cards{
         max-width:918px;  
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
-        margin-top:77px;
+        margin-top:101px;
     }
     .ChooseTour-card{
         width:450px;
@@ -885,24 +830,21 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         height: 43px;
     }
     .ChooseTour-card__price{  
-        top: 90px;
+        top: 104px;
     }
     .ChooseTour-card__button-icon{
         padding-left: 5px;  
     }
-    .Form-title{
-        margin-top: 135px;
-    }
     .Form-subtitle{
-        margin-top: 31px;
+        margin-top: 25px;
        
     }
     form {
-        max-width: 798px;
-        max-height: 966px;  
+        max-width: 918px;
+        max-height: 968px;  
         margin-top: 100px;
         padding: 60px ;
-        grid-gap: 30.5px 20px;
+        grid-gap: 33px 20px;
     } 
 
     select{ 
@@ -919,17 +861,17 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     }
     textarea{
         padding: 20px;
-        width: 758px;
-        height: 112px;
+        width: 798px;
+        height: 152px;
     }
     .Form__label-textarea{
-        margin-top: 1px;
-    }
-    .Form-radiobutton{
         margin-top: -2px;
     }
+    .Form-radiobutton{
+        margin-top: -6px;
+    }
     .Form-radiobutton__question{
-        margin-bottom: 9px;
+        margin-bottom: 6px;
     }
     .Form-checkbox__label .Form-checkbox__fake::before{
         margin-right:13px;
@@ -972,15 +914,12 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         top :726px;
         left: 335px;
     }
-    .Photos-Title{
-        margin-top: 136px;
-    }
     .Photos-Trip{
         margin-left: auto;
         margin-right: auto;
         padding-left: 20px;
         padding-right: 20px;
-        max-width: 984px;
+        max-width: 1024px;
     }
     .Photos-Trip__first-row{
         display:grid;
@@ -1052,24 +991,9 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     .Stories-card__vk-card3{
         margin-left: 759px;
     }
-    .Footer{
-        margin-top: 134px;
-    }
 
-    .Footer-networks__inst-img{
-        margin-left:286px;
-    }
-    .Footer-networks__facebook-img{
-        margin-left:40px;
-        margin-right:5px;
-    }
-    
-    .Footer-networks__vk-img{
-        margin-left:35px;
-    }
-    
-    .Footer-networks__network{
-        margin-left: 6px;
+    .Footer{
+        width: 918px;
     }
 }
 
@@ -1079,39 +1003,39 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 9px;   transition: text-indent 0.3s ease;}   
    
-    .ChooseTour-title{  
-        font-size: 34px;
-        line-height: 112%;
-        margin-top: 75px;
-        letter-spacing: 0.02em;
-       
+    .hero {
+        height: 348px;
     }
-    .ChooseTour-options{
-        line-height: 142%;
-        font-size: 16px;
-        margin-top: 15px;
-        padding:0px;
+        
+    .hero-img {
+        height: 488px;
+    }
+    .hero-block {
+        margin: 52px auto 0;
+        width: 360px;
+    }
+    .hero-text {
+        width: 310px;
+        margin: 40px auto;
+    }
+    .ChooseTour-options {
+        display:  flex;
+        justify-content: center;
+        margin: 30px auto 0;
+        flex-wrap: wrap; 
         width:318px;
-    } 
+    }
     .ChooseTour-options-option{
-       display: inline;
-       margin-left:6px;
-       margin-right: 6px;
+        margin-left:6px;
+        margin-right: 6px;
     }
+   
     .ChooseTour-option__text{
-        margin-top: -10px;
+        margin-top: 6px;
     }
-    .ChooseTour-options-option:hover p {
-        padding-bottom: 0px;
-    }
-    .ChooseTour-options-option:active p {
-        padding-bottom: 0px;
-    }
-    .ChooseTour-options input:checked + p {
-        padding-bottom: 0px;
-    }
+
     .ChooseTour-cards{
-        margin-top: 35px;  
+        margin-top: 50px;  
         max-width:318px;
         display: grid;
         grid-template-columns: 318px;
@@ -1134,20 +1058,15 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         border-radius: 0;
         
     }
+    
     .ChooseTour-card__title {
-        top: -5px; 
+        top: 25px; 
         left: 25px;  
         width: 268px; 
         height: 28px;
-        font-weight: 700;
-        font-size: 23px;
-        line-height: 120%;
-        letter-spacing: 0.04em;
     }
     .ChooseTour-card__price{ 
-        font-size: 16px;
-        line-height: 142%; 
-        top: 50px;
+        top: 66px;
         left: 25px;
     }
     .ChooseTour-card__button{
@@ -1159,12 +1078,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         padding-left: 9px;
       }
     
-    .Form-title{  
-        font-size: 34px;
-        line-height: 112%;
-        margin-top: 75px;
-        letter-spacing: 0.02em;
-    }
+    
     .Form-subtitle{
         display: flex;
         margin-left:auto;
@@ -1172,28 +1086,22 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         margin-top: 21px;
         width: 318px;
         height: 46px;
-        font-size: 16px;
     }
         
     form {
-        max-width: 278px;
-        max-height: 1110px;  
+        max-width: 318px;
+        height: 1110px;  
         margin-top: 40px;
         padding: 20px 20px 40px;
         border-radius: 30px;
         display: flex;
 	    flex-direction: column;
-	    gap: 30.3px;
+	    gap: 33px;
     }  
     
    
     form label {
         display: block;    
-    }
-    form p{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 142%; 
     }
     input, select, textarea, option{
     width: 100%;
@@ -1217,11 +1125,11 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 
     textarea{
         padding: 10px;
-        width: 258px;
-        height: 112px;
+        width: 278px;
+        height: 132px;
     }
     .Form-radiobutton__question{
-        margin-top: -4px;
+        margin-top: -8px;
         font-size: 16px; 
         margin-bottom: 9px;
     }
@@ -1280,22 +1188,15 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         width: 134px;
         height: 47px;
         font-size: 16px;
-        margin-top: -1px;
+        margin-top: -5px;
     }
     .Form-button__reset{
         margin-left: 1.7%;
         
     }
     .reviews-Title{
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 112%;
-        letter-spacing: 0.68px;
-        margin-bottom: 0px;
         width: 318px;
         height: 76px;
-        margin-top: 75px; 
-       
     }
     
     .reviews-subtitle{
@@ -1305,7 +1206,6 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         margin-top: 20px;
         width:318px;
         height: 46px;
-        font-size: 16px;
     }
         
     .reviews-review{
@@ -1324,26 +1224,19 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         font-size: 16px;
         line-height: 142%;
         height: 408px;
-        width: 276px; 
+        width: 318px; 
     }
     .reviews-review-HeightSecondCard{
-        height: 550px; 
+        height: 592px; 
     }
     .reviews-card__PersonName{
         margin-top:60px;
-        font-weight: 700;
-        font-size: 23px;
-        line-height: 120%;
-        letter-spacing: 0.04em;
     }
     .reviews-card__text-ident{
         margin-top: 25px;
     }
 
     .reviews-card__Tour{
-        font-size: 16px;
-        line-height: 142%;
-        letter-spacing: -0.01em;
         margin-top:8px;
     }
 
@@ -1357,13 +1250,13 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     }
 
     .Photos-Title{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         width: 318px;
         height: 76px;
-        margin-top: 92.5px;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 112%;
-        letter-spacing: 0.68px;
+        margin-top: 85px;
     }
     .Photos-subtitle{
         display: flex;
@@ -1372,7 +1265,6 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         margin-top: 20px;
         width:318px;
         height: 46px;
-        font-size: 16px;
     }
     .Photos-Trip{
         margin-left: auto;
@@ -1380,7 +1272,7 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
         margin-top: 50px;
         padding-left: 21px;
         padding-right: 21px;
-        max-width: 318px;
+        max-width: 360px;
     }
     .Photos-Trip__first-row{
         display:grid;
@@ -1499,92 +1391,36 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     .Stories-card__SocialNetworks{
         display: none;
     }
+    .Intelligence{
+        flex-direction: column;
+        margin: 75px auto;
+        width: 291px;
+    }
+    .Intelligence-description{
+        text-align: center;
+    }
+    .Intelligence-img{
+        width: 130px;
+        height: 133px;
+        border-radius: 20px;
+    }
 
-.Footer{
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 76.5px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 130px;
-    justify-content: center;
-   
-}
-.Footer__img{
-    width: 130px;
-    height: 133px;
-    border-radius: 20px;
-    margin-left: 0px;
-}
-.Footer__description{
-    place-self: center;
-    margin-left: 0px;
-}
-.Footer__description h3{
-    margin-top: 29px;
-    
-}
-.Footer__text{
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    margin-left: 0px;
-}
-.Footer__text-email{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 142%;
-    text-align: center;
-    color: #A6A6A6;
-    margin-top: 22px;
-    width: 291px;
-    margin-left: 0px;
-    
-}
-.Footer-networksBackground{
-    background: #F4F0E9;
-    width: 100%;
-}
-.Footer-networks{
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 58px;
-    height: 95px;
-    font-size: 16px;
-    width: 360px; 
-    flex-wrap: wrap;
-}
+    footer {
+        height: 95px;
+    }
+    .Footer{
+        justify-content: center;
+        width: 360px;
+    }
+    .Footer-networks{
+        margin-top: 7px;
+    }
+    .Footer-networks__option{
+        margin-right: 15px;
+    }
 
-.Footer-networks__options{
-    margin-top: 8px;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-}
-.Footer-networks__option {
-    margin-top:-25px;
-}
-.Footer-networks__inst-img{
-    margin-left:0px;
-}
-.Footer-networks__facebook-img{
-    margin-left:15px;
-    margin-right:2px;
-}
-.Footer-networks__vk-img{
-    margin-left:20px;
-}
+    .Footer-networks__text{
+        margin-left: 5px;
+    }
 
-.Footer-networks__network{
-    margin-left: 5px;
-}
-.Footer-networks__inst-img, .Footer-networks__facebook-img, .Footer-networks__vk-img{
-    width:10px;
-    height:10px;
-}
 }
