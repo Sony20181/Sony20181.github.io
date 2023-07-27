@@ -41,12 +41,12 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <img class="hero-img" src="img/header-img.png" alt="Главная картинка">
-            <div class="hero-block">
-               <h1 class="h1 hero-title ">Идеальные путешествия существуют</h1>
-                <p class="hero-text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-                <button class="hero-button p-small">Найти тур</button>
+        <section class="caption">
+            <img class="caption-img" src="img/header-img.png" alt="Главная картинка">
+            <div class="caption-block">
+               <h1 class="h1 caption-title ">Идеальные путешествия существуют</h1>
+                <p class="caption-text p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <button class="caption-button p-small">Найти тур</button>
             </div>
         </section>
          
@@ -226,7 +226,6 @@
             <h2 class ="reviews-Title h2" id="Review">Отзывы наших путешественников</h2>
             <p class ="reviews-subtitle p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             <div class = "reviews-review">
-
                 <div class = "reviews-review-card ">
                     <p class = "reviews-card__text p-big">
                         Идейные соображения высшего порядка, а также рамки и место обучения кадров 
@@ -288,14 +287,14 @@
         </section>  
         
         <section class = "Stories">
-            <h1 class ="Stories-Title" id = "Stories" >Истории путешествий</h1>
-            <p class ="Stories-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p> 
+            <h1 class ="Stories-Title h2 " id = "Stories" >Истории путешествий</h1>
+            <p class ="Stories-subtitle p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p> 
             <div class = "Stories-cards">
                 <div class = "Stories-card Stories-scale">
                     <img class = "Stories-scale Stories-card__img" src="img/story photo-1.png" alt="Фото из истории путешествия">   
                     <div class = "Stories-card__information">
-                        <h4 class = "Stories-card__Title">Автостопом в Стамбул</h4>
-                        <div class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                        <h3 class = "Stories-card__Title h3">Автостопом в Стамбул</h3>
+                        <div class = "Stories-card__description p-normal"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
                             широкому кругу (специалистов) участие в формировании новых предложений:
                             
                                 <ul class = "Stories-card__description-list">
@@ -306,53 +305,59 @@
                             
                         </div>
                     </div>
-                    <button class="Stories-card__button">
-                        Подробнее
-                        <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
-                    </button>
-                    <div class = "Stories-card__SocialNetworks">
-                        <p class = "Stories-card__instagram">instagram</p>
-                        <p class = " Stories-card__facebook">facebook</p>
-                        <p class = " Stories-card__YouToub">YouToub</p>  
+                    <div class = "Stories-card__detailed">
+                        <button class="Stories-card__button p-big">
+                            Подробнее
+                            <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
+                        </button>
+                        <ul class = "Stories-card__SocialNetworks">
+                            <li class = "Stories-card__Network"><p class = "p-normal">instagram</p></li>
+                            <li class = "Stories-card__Network"><p class = " p-normal">facebook</p></li>
+                            <li class = "Stories-card__Network"><p class = " p-normal">YouToub</p> </li>
+                        </ul>
                     </div>
-                    
                 </div>      
                 
                 <div class = "Stories-card Stories-scale">
                     <img class = "Stories-scale Stories-card__img" src="img/story photo-2.jpg" alt="Фото из истории путешествия">   
                     <div class = "Stories-card__information">
-                        <h4 class = "Stories-card__Title"> Автостопом в Стамбул</h4>
-                        <p class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                        <h3 class = "Stories-card__Title h3"> Автостопом в Стамбул</h3>
+                        <p class = "Stories-card__description p-normal"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
                             широкому кругу (специалистов) участие в формировании новых предложений.
                         </p>
                     </div>  
-                    <button class="Stories-card__button">
-                        Подробнее
-                        <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
-                    </button>
-                    <div class = "Stories-card__SocialNetworks">
-                        <p class = "Stories-card__instagram-card2">instagram</p>
-                        <p class = "Stories-card__vk-card2">ВКонтакте</p>  
+                    <div class = "Stories-card__detailed">
+                        <button class="Stories-card__button p-big">
+                            Подробнее
+                            <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
+                        </button>
+                        <ul class = "Stories-card__SocialNetworks">
+                            <li class = "Stories-card__Network"><p class = "p-normal">instagram</p></li>
+                            <li class = "Stories-card__Network"><p class = " p-normal">ВКонтакте</p></li>
+                        </ul>
                     </div>
+                    
                 </div>  
                 
                 <div class = "Stories-card Stories-scale">
                     <img class = "Stories-scale Stories-card__img" src="img/story photo-3.png" alt="Фото из истории путешествия"> 
                     <div class = "Stories-card__information">
-                        <h4 class = "Stories-card__Title"> Автостопом в Стамбул</h4>
-                        <p class = "Stories-card__description"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
+                        <h3 class = "Stories-card__Title h3"> Автостопом в Стамбул</h3>
+                        <p class = "Stories-card__description p-normal"> Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает 
                             широкому кругу (специалистов) участие в формировании новых предложений.
                         </p>
                     </div>  
-                    <button class="Stories-card__button">
-                        Подробнее
-                        <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
-                    </button>
-                    <div class = "Stories-card__SocialNetworks">
-                        <p class = " Stories-card__instagram-card3">instagram</p>
-                        <p class = " Stories-card__facebook-card3">facebook</p>
-                        <p class = " Stories-card__vk-card3">ВКонтакте</p> 
-                    </div>  
+                    <div class = "Stories-card__detailed">
+                        <button class="Stories-card__button p-big">
+                            Подробнее
+                            <img alt="Стрелочка" class="Stories-card__button-icon" src="img/Vector.png">
+                        </button>
+                        <ul class = "Stories-card__SocialNetworks">
+                            <li class = "Stories-card__Network"><p class = "p-normal">instagram</p></li>
+                            <li class = "Stories-card__Network"><p class = " p-normal">facebook</p></li>
+                            <li class = "Stories-card__Network"><p class = " p-normal">ВКонтакте</p> </li>
+                        </ul>
+                    </div>
                 </div>  
             </div>
         </section>

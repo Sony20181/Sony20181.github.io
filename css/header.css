@@ -29,6 +29,7 @@
     .heading-nav__list {
     display: flex;
     align-items: center;
+    list-style: none;
 }
     
     .heading-nav__option:last-child {
