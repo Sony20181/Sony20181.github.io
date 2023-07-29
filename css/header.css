@@ -79,7 +79,9 @@
     
     @media screen and (max-width:451px){ 
         .heading {
+            position: absolute;
             background:none;
+            backdrop-filter: none;
             }
     }
     
