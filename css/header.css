@@ -8,6 +8,13 @@
     display: flex;
     align-items: center;
     height: 88px;
+    top:0;
+    left:0;
+    right: 0;
+    position: fixed;
+    background: rgba(243, 239, 232, 0.60);
+    backdrop-filter: blur(27px);
+    z-index: 4;
 }
     
     .heading .container {
@@ -57,7 +64,6 @@
             margin-right: 30px;
         }
     }
-    
     @media screen and (max-width:965px){
         .container {
             width: 318px;
@@ -68,5 +74,12 @@
         }
         .heading-nav__list {
             display: none;
+            } 
+    }  
+    
+    @media screen and (max-width:451px){ 
+        .heading {
+            background:none;
             }
-    }   
+    }
+    

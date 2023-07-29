@@ -19,7 +19,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     z-index: -1;
 }
 .caption-block {
-    margin: 119px auto 0;
+    margin: 207px auto 0;
     width: 768px;
     color: #FFFFFF;
 }
@@ -920,7 +920,7 @@ footer {
         height: 488px;
     }
     .caption-block {
-        margin: 52px auto 0;
+        margin: 140px auto 0;
         width: 360px;
     }
     .caption-text {
