@@ -15,10 +15,10 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     left: 0;
     bottom: 0;
     top: 0;
+    z-index: -1;
     width: 100%;
     height: 831px;
     object-fit: cover;
-    z-index: -1;
 }
 .caption-block {
     margin: 207px auto 0;
@@ -29,36 +29,39 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     text-align: center;
 }
 .caption-text {
-    text-align: center;
-    width: 562px;
     margin: 50px auto;
+    width: 562px;
+    text-align: center;
     }
 .caption-button {
     display: block;
-    cursor: pointer;
+    margin: 0 auto;
     padding: 5px 20px;
     border-radius: 10px;
-    background: #FFFFFF;
     border: none;
-    margin: 0 auto;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 .caption-button:hover{ 
-    background: #EFA501;
+    background-color: #EFA501;
     color: #FFFFFF;
     cursor: pointer; 
+   
 }
 .caption-button:active{ 
     background: #F8E6BE;
     color: #1B1F2B;
+    
 }
 
 
 .ChooseTour-options {
     display:  flex;
     justify-content: center;
-    margin: 36px auto 0;
     flex-wrap: wrap; 
+    margin: 36px auto 0;
     list-style: none;
 }
 .ChooseTour-options-option{
@@ -70,52 +73,73 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .ChooseTour-option__input {
     display: none;
 }
-.ChooseTour-options-option:hover p {
-    text-decoration:none;
-    cursor: pointer;   
-    border-bottom: 3px #1B1F2B  solid; 
+/*
+.ChooseTour-option__label::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    padding-bottom: 1px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .ChooseTour-option__label:hover::after {
+    width: 100%;
+    background-color:#1B1F2B;
+  }
+  .ChooseTour-options input:checked + p {
     padding-bottom: 2px;
+    border-bottom: 3px #EFA501 solid;
+    text-decoration:none;
+    color: #EFA501;
+}*/
+
+.ChooseTour-options-option:hover p {
+    padding-bottom: 2px;  
+    border-bottom: 3px #1B1F2B  solid; 
+    text-decoration:none;
+    cursor: pointer; 
 }
 
 .ChooseTour-options-option:active p {
-    border-bottom: 3px #EFA501 solid;
-    color: #EFA501;
-    text-decoration:none;
     padding-bottom: 2px;
+    border-bottom: 3px #EFA501 solid;
+    text-decoration:none;
+    color: #EFA501;
 }
 .ChooseTour-options input:checked + p {
-    border-bottom: 3px #EFA501 solid;
-    color: #EFA501;
-    text-decoration:none;
     padding-bottom: 2px;
+    border-bottom: 3px #EFA501 solid;
+    text-decoration:none;
+    color: #EFA501;
 }
 
 .ChooseTour-cards{
-    margin-left:auto;
-    margin-right: auto;
     position: relative; 
-    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px; 
+    grid-gap: 30px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 100px; 
     }
 
 .ChooseTour-card{
     position: relative; 
-    overflow: hidden;
-    border-radius: 45px; 
     height: 531px;
     width: 370px;
+    border-radius: 45px; 
+    overflow: hidden;
 }
 .Choose-card__img{
-    object-fit: cover;
     height: 531px;
     width: 370px;
+    object-fit: cover;
 }
 
 .ChooseTour-sacal{
     max-width: 100%;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
     cursor: pointer; 
 }
 
@@ -129,17 +153,17 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     top:0;
     width: 100%;
     height: 100%;
-    border-radius: 45px; 
+    border-radius: 45px;
+    content:''; 
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-    content:'';
 }
 .ChooseTour-card__info{
     position: absolute; 
     top: 50px; 
     left: 50px; 
-    color: #FFFFFF;
     z-index: 3;
     width: 240px;
+    color: #FFFFFF;
 }
 
 .ChooseTour-card__price{
@@ -147,20 +171,21 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 .ChooseTour-card__button{
     position: absolute;
-    z-index:3;
-    border-radius: 50px;
-    color: #FFFFFF;
-    margin-top: 447px;
-    border:none;
-    background: none;
-    padding: 6px 20px;
     left:29px;
+    z-index:3;
+    margin-top: 447px;
+    padding: 6px 20px;
+    border-radius: 50px;
+    border:none;
+    color: #FFFFFF;
+    background: none;
+    transition: background-color 0.4s;
 }
 .ChooseTour-card__button-icon{
     padding-left: 10px;  
 }
 .ChooseTour-sacal:hover .ChooseTour-card__button{
-    background:  #286562;
+    background-color:  #286562;
     cursor: pointer; 
   }
 
@@ -181,54 +206,60 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 
 
 form{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 70px;
-    background: #FFFFFF;
-    border-radius: 50px;
-    margin-top: 101px;
-    max-width: 1170px;
-    height: 986px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap:33px;
     row-gap: 30px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 101px;
+    padding: 70px;
+    max-width: 1170px;
+    height: 986px;
+    border-radius: 50px;
+    background: #FFFFFF;
 }
 form label {
     display: block;
     
 }
 
-input, select, textarea, option{
+input, 
+select, 
+textarea,
+ option{
     width: 100%;
     height:68px;
     margin-top: 7px; 
     border: 1px solid #F4F0E9;
-    background: #F9F7F4;
     border-radius: 10px;
+    transition: background-color 0.3s;
+    line-height: 142%;
+    background: #F9F7F4;
     font-weight: 400;
     font-size: 20px;
-    line-height: 142%;
     color:#1B1F2B;
 }
 
 select{ 
     padding-left: 18px;
-    color:#A6A6A6;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
     padding-right: 1em;
     background-repeat: no-repeat;
     background-position: calc(100% - 1em) 1.2em;
     background-size: 26px 26px;
     background-image: url("../img/ic-dropdown.png");
+    color:#A6A6A6;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
 }
-select:hover,select:active, select:focus{
+select:hover,
+select:active, 
+select:focus{
+    padding-right: 1em;
     outline: 1px solid #F4F0E9;
     background: #F4F0E9;
-    padding-right: 1em;
     background-repeat: no-repeat;
     background-position: calc(100% - 1em) 1.2em;
     background-size: 26px 26px;
@@ -241,9 +272,10 @@ option:checked{
     color: #3B7E7B;
 }
 input[type=date] {
-    text-indent: 8px;
     margin-top: 7px; 
+    transition: background-color 0.3s;
     text-transform: uppercase;
+    text-indent: 8px;
 }
 
 input[type = date]:invalid::-webkit-datetime-edit { color:#A6A6A6;}
@@ -258,12 +290,18 @@ textarea{
     resize: none;
 }
 
-input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:active{
+input:hover, 
+textarea:hover, 
+input:focus,
+textarea:focus,
+input:active,
+textarea:active{
     outline: 1px solid #F4F0E9;
-    background: #F4F0E9;
+    background-color: #F4F0E9;
 }
 
-.Form__label-textarea, .Form-radiobutton{
+.Form__label-textarea, 
+.Form-radiobutton{
     grid-column: 1 / 3;
     
 }
@@ -279,14 +317,14 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     width: 50px;
 }
 .Form-radiobutton__label span {
+    position:relative;
     display:flex;
     align-items:center;
-    position:relative;
-    cursor: pointer;
     padding-left: 36px;
     font-size: 20px;
     font-weight: 400;
     line-height: 142%; 
+    cursor: pointer;
 }
   .Form-radiobutton__label input[type = "radio"]{
    position:absolute;
@@ -295,29 +333,30 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
    opacity:0;
    }
    .Form-radiobutton__label span::before{
-   content : "";
-   width: 22px;
-   height: 22px;
-   border: 2px solid black;
-   background-color: #FFFFFF;
-   display: inline-block;
-   border-radius: 50%;
    position: absolute;
    left: 0;
    top: 0;
    z-index: 1;
+   display: inline-block;
+   width: 22px;
+   height: 22px;
+   border: 2px solid black;
+   content : "";
+   border-radius: 50%;
+   background-color: #FFFFFF;
    }
    .Form-radiobutton__label span::after{
-    content : "";
     position:absolute;
     left:0px;
     top:0px;
+    z-index: 2;
     width: 22px;
     height: 22px;
+    opacity:0;
+    content : "";
     background-image: url("../img/radiobutton (2).png");
     background-size: 25.5px 25.5px ;
-    opacity:0;
-    z-index: 2;
+    
    }
    .Form-radiobutton__label input[type = "radio"]:checked + span::after {
    opacity:1;
@@ -330,9 +369,9 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     grid-column: 1 / 3; 
 }
 .Form-checkbox__fake {
+    position:relative;
     display:flex;
     align-items:center;
-    position:relative;
 }
 .Form-checkbox__text{
     color: #A6A6A6;
@@ -347,70 +386,85 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 }
    .Form-checkbox__fake::before{
    float: left;
-   content : "";
+   display:block;
+   z-index: 1;
+   margin-right:20px;
    width: 22px;
    height: 22px;
    border: 2px solid black;
-   display:block;
-   margin-right:20px;
    border-radius: 5px;
+   content : "";
    background-color: #FFFFFF;
-   z-index: 1;
 }
 .Form-checkbox__fake::after{
-    content : "";
     position:absolute;
     left:0px;
     top:1.2px;
+    z-index: 2;
     width: 22px;
     height: 22px;
+    content : "";
+    opacity:0;
     background-image: url("../img/radiobutton (1).png");
     background-size: 25px 25px ;
-    opacity:0;
-    z-index: 2;
 }
 .Form-checkbox__label input[type = "checkbox"]:checked + .Form-checkbox__fake::after {
    opacity:1;
 }
 
 .Form-checkbox__text-partTwo{
-    color: #1B1F2B;
     padding-left: 4px;
-}
-.Form-checkbox__text-partTwo:hover{
-    text-decoration:underline;
-}
-.Form-checkbox__text-partTwo:active{
-    color: #286562;
-    text-decoration:underline;
+    color: #1B1F2B;
 }
 
+.Form-checkbox__text-partTwo:active{
+    color: #286562;
+}
+.Form-checkbox__text-partTwo::after {
+    display: block;
+    left: 0;
+    width: 0;
+    height: 2px;
+    content: "";
+    transition: background-color 0.5s;
+  }
+  
+  .Form-checkbox__text-partTwo:hover::after {
+    width: 100%;
+    background-color: #1B1F2B;
+  }
+  .Form-checkbox__text-partTwo:active::after {
+    background-color: #286562;
+  }
+
+
 .Form-button__find-tour, .Form-button__reset{
+    margin-top: 4px;
     width: 235px;
     height: 58px;
     border-radius: 10px;
     border: none;
-    margin-top: 4px;
     color: #FFFFFF;
     background: #286562;
+    transition: background-color 0.3s;
 }
 .Form-button__reset{
     color: #286562;
     background: #E0F0E5;
 }
-.Form-button__find-tour:hover{ background: #3B7E7B; cursor: pointer;}
-.Form-button__find-tour:active{ background:#627F7E;}
-.Form-button__reset:hover{ background: #F1F3F2; cursor: pointer;}
-.Form-button__reset:active{ background:#D9DFDB;}
+.Form-button__find-tour:hover{ background-color: #3B7E7B; cursor: pointer;}
+.Form-button__find-tour:active{ background-color:#627F7E;}
+.Form-button__reset:hover{ background-color: #F1F3F2; cursor: pointer;}
+.Form-button__reset:active{ background-color:#D9DFDB;}
  
 .reviews-Title{
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     width: 529px;
     height: 146px;
+    text-align: center;
 }
 
 .reviews-subtitle{
@@ -428,21 +482,21 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 }
 
 .reviews-review{
-    margin:0 auto;
-    max-width: 1170px;
-    margin-top: 99px;
-    height: 673px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    margin:0 auto;
+    margin-top: 99px;
+    max-width: 1170px;
+    height: 673px;
 }
 
 .reviews-review-card{
     position: relative;
-    max-width: 570px; 
-    background: #F4F0E9;
-    border-radius: 50px;
     padding: 40px ;
+    max-width: 570px; 
+    border-radius: 50px;
+    background: #F4F0E9;
 }
 
 .reviews-card__text-ident{
@@ -452,9 +506,9 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     color: #A6A6A6;
 }
 .reviews-card__PhotoUsers{
-    border-radius: 100px;
     max-width: 75px;
     max-height: 75px;
+    border-radius: 100px;
 }
 
 
@@ -488,16 +542,16 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 }
 
 .Photos-Trip__second-row{
-    margin-top: 30px;
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(5, 1fr);
+    margin-top: 30px;
 }
 .Photos-Trip__third-row{
-    margin-top: 30px;
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
 }
 
 .Stories-subtitle{
@@ -512,8 +566,8 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 }
 .Stories-cards{
     margin: 0 auto;
-    width: 1170px;
     margin-top: 98px;
+    width: 1170px;
 }
 .Stories-card {
     position: relative;
@@ -523,11 +577,11 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 }
 
 .Stories-scale {
-    border-radius: 50px;
     width: 1170px;
     height: 568px;
     max-width: 100%;
-    transition: transform 0.3s;
+    border-radius: 50px;
+    transition: transform 0.4s;
     cursor: pointer;
 }
 
@@ -548,47 +602,47 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     position:absolute;
     top:60px;
     left:60px;
-    color: #FFFFFF; 
-    z-index: 3;  
+    z-index: 3; 
+    color: #FFFFFF;  
 }
 .Stories-card__description{
+    margin-top: 37px;
     width: 554px;
     height: 224px;
-    margin-top: 37px;
 }
 .Stories-card__description-list{
     margin-top: 27px;
     margin-left: 27px;
 }
 .Stories-card__detailed{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1050px;
-    margin: 0 auto;
     position: absolute;
-    z-index:3;
     top:475px;
     left: 0;
     right: 0;
+    z-index:3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1050px;
 }
 .Stories-card__button{
-    color: #FFFFFF;
     padding: 7px 20px;
     border-radius: 50px;
+    color: #FFFFFF;
+    transition: background-color 0.4s;
 }
 .Stories-card__button-icon{
     padding-left: 10px;  
 }
 
 .Stories-scale:hover .Stories-card__button{
-    background:  #286562;
+    background-color:  #286562;
     cursor: pointer; 
     
   }
-
 .Stories-scale:active .Stories-card__button:active{
-    background: #EFA501;
+    background-color: #EFA501;
 }
 .Stories-card__SocialNetworks{
     color: #FFFFFF;
@@ -601,14 +655,28 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
 .Stories-card__Network:last-child {
     margin-right: 0;
 }
-.Stories-card__Network:hover{   
-    text-decoration: underline;
-    cursor: pointer;
-}
-.Stories-card__Network:active{
-   color: #EFA501;
-    text-decoration: underline;
-}
+
+  .Stories-card__SocialNetworks li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    color: #E0F0E5;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .Stories-card__SocialNetworks li:hover::after {
+    width: 100%;
+  }
+  
+  .Stories-card__SocialNetworks li:active::after {
+    background-color:#EFA501;
+  }
+  .Stories-card__Network:active{
+    color: #EFA501;
+ }
+  
 
 .Intelligence{
     display: flex;
@@ -625,26 +693,42 @@ input:hover, textarea:hover, input:focus,textarea:focus,input:active,textarea:ac
     border-radius: 50px;
 }
 .Intelligence__text-email{
-    color:#A6A6A6;
     margin-top: 20px;
+    color:#A6A6A6;
 }
 .Intelligence__email{
     color:#1B1F2B;
+    position: relative;
 }
-.Intelligence__email:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-.Intelligence__email:active{
-    text-decoration: underline;
+  
+  .Intelligence__email::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .Intelligence__email:hover::after {
+    width: 100%;
+    background-color: black;
+  }
+  
+  .Intelligence__email:active::after {
+    background-color:  #286562;
+  }
+  .Intelligence__email:active{
     color: #286562;  
 }
 
+
 footer {
-    background: #F4F0E9;
     display: flex;
     align-items: center;
     height: 88px;
+    background: #F4F0E9;
 }
 .Footer{
     display: flex;
@@ -673,11 +757,23 @@ footer {
 .Footer-networks__text{
     display: inline-block;
     margin-left: 10px;
-}
-.Footer-networks__text:hover{
-    text-decoration: underline;
-    color: #3B7E7B;
     cursor: pointer;
+}
+
+.Footer-networks__text::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: color 0.5s ;
+  }
+  
+  .Footer-networks__text:hover::after {
+    width: 100%;
+    background-color: #3B7E7B;
+  }
+  .Footer-networks__text:hover{
+    color:#3B7E7B;
 }
 
 @media screen and (min-width: 1347px){
@@ -697,9 +793,9 @@ footer {
         margin-left: 2.5%;
     }
     .reviews-review{
+        grid-gap: 30px;
         max-width: 1170px;
         height: 673px;
-        grid-gap: 30px;
     }
     .reviews-review-card{
         max-width: 570px; 
@@ -745,11 +841,11 @@ footer {
     }
 
     .ChooseTour-cards{
-        max-width:918px;  
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
         margin-top:101px;
+        max-width:918px;  
     }
     .ChooseTour-card{
         width:450px;
@@ -761,9 +857,9 @@ footer {
         width: 350px;
     }
     .Choose-card__img{
-        object-fit: cover;
         width:450px;
         height:531px;
+        object-fit: cover;
     }
     .ChooseTour-card__price{  
         top: 104px;
@@ -776,11 +872,11 @@ footer {
        
     }
     form {
+        grid-gap: 30px 20px;
         max-width: 918px;
         max-height: 968px;  
         margin-top: 100px;
         padding: 60px ;
-        grid-gap: 30px 20px;
     } 
 
     select{ 
@@ -816,8 +912,8 @@ footer {
         top:0.5px;
     }
     .Form-button{
-        margin-top: -3px;
         grid-column: 1 / 3;
+        margin-top: -3px;
     }
     .Form-button__reset{
         margin-left: 3.1%;
@@ -827,13 +923,13 @@ footer {
         margin-top:135px ;
     }
     .reviews-review{ 
+        grid-gap: 18px;
         max-width: 918px;
         height: 841px;
-        grid-gap: 18px;
     }
     .reviews-review-card{
-        max-width: 450px; 
         padding: 40px;
+        max-width: 450px; 
     }
     .reviews-card__PersonName{
         position: absolute;
@@ -873,29 +969,29 @@ footer {
         object-fit:cover;
     }
     .Photos-Trip__second-row{
-        margin-top: 30px;
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
+        margin-top: 30px;
     }
     .Photos-Trip__third-row{
-        margin-top: 30px;
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 30px;
     }
     .Stories-Title{
         margin-top: 138px;
     }
     .Stories-cards{
         margin: 0 auto;
-        width: 918px;
         margin-top: 100px;
+        width: 918px;
     }
     .Stories-scale{
-        border-radius: 50px;
         width: 918px;
         height: 567px;
+        border-radius: 50px;
     }
     .Stories-scale::after{
         border-radius: 50px; 
@@ -929,14 +1025,14 @@ footer {
         width: 360px;
     }
     .caption-text {
-        width: 310px;
         margin: 40px auto;
+        width: 310px;
     }
     .ChooseTour-options {
         display:  flex;
         justify-content: center;
-        margin: 30px auto 0;
         flex-wrap: wrap; 
+        margin: 30px auto 0;
         width:318px;
     }
     .ChooseTour-options-option{
@@ -949,11 +1045,11 @@ footer {
     }
 
     .ChooseTour-cards{
-        margin-top: 50px;  
-        max-width:318px;
         display: grid;
         grid-template-columns: 318px;
-        grid-gap: 18px;    
+        grid-gap: 18px; 
+        margin-top: 50px;  
+        max-width:318px;   
     }
    
     .ChooseTour-card{
@@ -972,10 +1068,11 @@ footer {
         border-radius: 0;
         
     }
+
     .ChooseTour-card__info{
-        width: 258px;
         top: 25px; 
         left: 25px; 
+        width: 258px;
     }
     .ChooseTour-card__price{ 
         margin-top: 13px;
@@ -999,31 +1096,36 @@ footer {
     }
         
     form {
-        max-width: 318px;
-        height: 1110px;  
-        margin-top: 40px;
-        padding: 20px 20px 40px;
-        border-radius: 30px;
         display: flex;
 	    flex-direction: column;
 	    gap: 33px;
+        margin-top: 40px;
+        padding: 20px 20px 40px;
+        max-width: 318px;
+        height: 1110px;  
+        border-radius: 30px;
     }  
     
    
     form label {
         display: block;    
     }
-    input, select, textarea, option{
-    width: 100%;
-    height: 40px;
-    font-size: 16px;
+    input, 
+    select, 
+    textarea, 
+    option{
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
     }
     select{ 
         padding-left: 8px;
         height: 46px;
         background-position: calc(100% - 0.7em) 0.6em;
     }
-    select:hover,select:active, select:focus{
+    select:hover,
+    select:active, 
+    select:focus{
         background-position: calc(100% - 0.7em) 0.6em;
     }
     input[type=date] {
@@ -1040,8 +1142,8 @@ footer {
     }
     .Form-radiobutton__question{
         margin-top: -8px;
-        font-size: 16px; 
         margin-bottom: 9px;
+        font-size: 16px; 
     }
     .Form-radiobutton__position-no{
         margin-left: 81px;
@@ -1074,17 +1176,17 @@ footer {
     }
 
     .Form-checkbox__fake::before{
-        width: 34px;
-        height: 17px;
         display:inline-block;
         margin-right:10px;
         z-index: 1;
+        width: 34px;
+        height: 17px;
     }
     .Form-checkbox__fake::after{
         top:0px;
-        content : "";
         width: 16px;
         height: 16px;
+        content : "";
         background-image: url("../img/radiobutton (1).png");
         background-size: 20px 20px ;
     }
@@ -1095,10 +1197,10 @@ footer {
         grid-column: 1/2;
     }
     .Form-button__find-tour, .Form-button__reset{
+        margin-top: -5px;
         width: 134px;
         height: 47px;
         font-size: 16px;
-        margin-top: -5px;
     }
     .Form-button__reset{
         margin-left: 1.7%;
@@ -1119,22 +1221,23 @@ footer {
     }
         
     .reviews-review{
-        margin:0 auto;
-        max-width: 318px;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         gap: 19px;
+        margin:0 auto;
+        margin-top: 50px;
+        max-width: 318px;
         height:1018px;
     }
     .reviews-review-card{
         position: relative;
-        border-radius: 20px;
         padding: 20px ;
+        height: 408px;
+        width: 318px;
+        border-radius: 20px;
         font-size: 16px;
         line-height: 142%;
-        height: 408px;
-        width: 318px; 
+         
     }
     .reviews-review-HeightSecondCard{
         height: 592px; 
@@ -1201,16 +1304,16 @@ footer {
         display: none;
     }
     .Photos-Trip__second-row{
-        margin-top: 18px;
         display:grid;
         grid-gap: 10px;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 18px;
     }
     .Photos-Trip__third-row{
-        margin-top: 18px;
         display:grid;
         grid-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 18px;
     }
  
     .Stories-Title{
@@ -1228,8 +1331,8 @@ footer {
         height: 46px;
     }
     .Stories-cards{
-        margin: 0 auto;
         width: 318px;
+        margin: 0 auto;
         margin-top: 50px;
     }
     .Stories-card {
@@ -1239,14 +1342,14 @@ footer {
         overflow: hidden;
       }
     .Stories-card__img{
-        object-fit:cover;
         width: 318px;
         height: 455px;
+        object-fit:cover;
     } 
     .Stories-scale {
-      border-radius: 20px;
       width: 318px;
       height: 455px;
+      border-radius: 20px;
     }
     .Stories-scale::after{
         border-radius: 20px; 
@@ -1268,15 +1371,13 @@ footer {
         margin-left: 23px;
     }
     .Stories-card__detailed{
-        
-        width: 300px;
         top:392px;
-        
+        width: 300px;        
     }
     
     .Stories-card__button{
-        border-radius: 20px;
         padding: 7px 20px;
+        border-radius: 20px;
     }
     .Stories-card__button-icon{
         padding-left: 13px;  
