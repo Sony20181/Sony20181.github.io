@@ -58,16 +58,17 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     
 }
 
-
 .ChooseTour-options {
     display:  flex;
     justify-content: center;
     flex-wrap: wrap; 
     margin: 36px auto 0;
     list-style: none;
+   
 }
 .ChooseTour-options-option{
     margin-right:30px;
+    
 }
 .ChooseTour-options-option:last-child {
     margin-right: 0;
@@ -121,21 +122,22 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+  /*  width: 1170px;
+    max-width: 60%;*/
     margin-left:auto;
     margin-right: auto;
-    margin-top: 100px; 
+    margin-top: 100px;
     }
 
 .ChooseTour-card{
     position: relative; 
     height: 531px;
-    width: 370px;
+   /* max-width: 36%;*/
     border-radius: 45px; 
     overflow: hidden;
 }
 .Choose-card__img{
     height: 531px;
-    width: 370px;
     object-fit: cover;
 }
 
@@ -779,14 +781,18 @@ footer {
 }
 
 @media screen and (min-width: 1347px){
-    
+  
     .ChooseTour-cards{
-        max-width:1170px;
+        width: 1170px;
+        max-width: 90%; 
     }    
     .ChooseTour-card{
-        width:370px;
-        height:531px;
         border-radius: 45px;        
+    }
+    .Choose-card__img{
+        max-width: 100%;
+        height: 531px;
+       
     }
     .Form-button{
         grid-column: 1 / 3;
@@ -829,15 +835,12 @@ footer {
 }
 
 
-@media screen and (min-width: 769px)and (max-width:1347px){ 
+@media screen and (min-width: 770px)and (max-width:1347px){ 
     input[placeholder]          {text-indent: 16px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
 
-    .caption-block {
-        width: 914px;       
-    }
     .caption-text {
         width: 442px;
     }
@@ -847,20 +850,21 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
         margin-top:101px;
-        max-width:918px;  
+        width: 918px;
+        max-width: 90%;
     }
     .ChooseTour-card{
-        width:450px;
-        height:531px;
+        max-width: 100%;
         border-radius: 40px;
-       
     }
     .ChooseTour-card__info{
+        left: 11%; 
         width: 350px;
+        max-width: 77%;
+        
     }
     .Choose-card__img{
-        width:450px;
-        height:531px;
+        width: 100%;
         object-fit: cover;
     }
     .ChooseTour-card__price{  
@@ -875,7 +879,8 @@ footer {
     }
     form {
         grid-gap: 30px 20px;
-        max-width: 918px;
+        width: 918px;
+        max-width:89%;
         max-height: 968px;  
         margin-top: 100px;
         padding: 60px ;
@@ -896,6 +901,7 @@ footer {
     textarea{
         padding: 20px;
         width: 798px;
+        max-width: 100%;
         height: 152px;
     }
     .Form__label-textarea{
@@ -926,27 +932,36 @@ footer {
     }
     .reviews-review{ 
         grid-gap: 18px;
-        max-width: 918px;
+        width: 918px;
+        max-width:90% ;
         height: 841px;
     }
     .reviews-review-card{
         padding: 40px;
         max-width: 450px; 
+      
     }
     .reviews-card__PersonName{
         position: absolute;
-        top :726px;
-        max-width: 295px;   
+       /* top :726px;
+        max-width: 295px;  
+       */
+        top :86%;
+        max-width: 65%;  
     }
     .reviews-card__Tour{
         position: absolute;
-        top :777px;
-        max-width: 295px;  
+       /* top :777px;
+        max-width: 295px;  */
+        top :92;
+        max-width: 65%;
     }
     .reviews-card__PhotoUsers{
         position: absolute;
-        top :726px;
-        left: 335px;
+       /* top :726px;
+        left: 335px;*/
+        top :86%;
+        left: 74%;
     }
    
     .Photos-Trip{
@@ -1009,7 +1024,7 @@ footer {
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
     input[placeholder]          {text-indent: 9px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
