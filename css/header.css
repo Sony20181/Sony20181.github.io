@@ -66,15 +66,15 @@
         }
     }
     
-     @media screen and (min-width: 965px)and (max-width:1347px){ 
+     @media screen and (min-width: 768px)and (max-width:1347px){ 
         .container {
-            width: 918px;
+            width: 910px;
         }
         .heading-nav__option {
             margin-right: 30px;
         }
     }
-    @media screen and (max-width:965px){
+    @media screen and (max-width:768px){
         .container {
             width: 318px;
         }

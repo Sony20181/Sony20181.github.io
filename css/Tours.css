@@ -16,9 +16,11 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     bottom: 0;
     top: 0;
     z-index: -1;
-    width: 100%;
     height: 831px;
     object-fit: cover;
+    width: 100%;
+    
+   
 }
 .caption-block {
     margin: 207px auto 0;
@@ -827,14 +829,14 @@ footer {
 }
 
 
-@media screen and (min-width: 965px)and (max-width:1347px){ 
+@media screen and (min-width: 769px)and (max-width:1347px){ 
     input[placeholder]          {text-indent: 16px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
 
     .caption-block {
-        width: 914px;
+        width: 914px;       
     }
     .caption-text {
         width: 442px;
@@ -1007,7 +1009,7 @@ footer {
     }
 }
 
-@media screen and (max-width:965px){
+@media screen and (max-width:768px){
     input[placeholder]          {text-indent: 9px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
