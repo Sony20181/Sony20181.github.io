@@ -77,25 +77,29 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     display: none;
 }
 /*
-.ChooseTour-option__label::after {
+.ChooseTour-option__label::after  {
     content: "";
     display: block;
     width: 0;
     height: 1px;
     padding-bottom: 1px;
     transition: background-color 0.3s ease-in-out;
+    
   }
   
   .ChooseTour-option__label:hover::after {
     width: 100%;
     background-color:#1B1F2B;
+   
   }
   .ChooseTour-options input:checked + p {
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     border-bottom: 3px #EFA501 solid;
     text-decoration:none;
     color: #EFA501;
+    cursor: pointer; 
 }*/
+
 
 .ChooseTour-options-option:hover p {
     padding-bottom: 2px;  
@@ -122,8 +126,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-  /*  width: 1170px;
-    max-width: 60%;*/
     margin-left:auto;
     margin-right: auto;
     margin-top: 100px;
@@ -132,7 +134,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .ChooseTour-card{
     position: relative; 
     height: 531px;
-   /* max-width: 36%;*/
     border-radius: 45px; 
     overflow: hidden;
 }
@@ -835,12 +836,15 @@ footer {
 }
 
 
-@media screen and (min-width: 770px)and (max-width:1347px){ 
+@media screen and (min-width: 768px)and (max-width:1347px){ 
     input[placeholder]          {text-indent: 16px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
     input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
-
+    .caption-block {
+        width: 914px;
+        max-width :89%;
+    }
     .caption-text {
         width: 442px;
     }
@@ -934,34 +938,40 @@ footer {
         grid-gap: 18px;
         width: 918px;
         max-width:90% ;
-        height: 841px;
+        height: auto;
+       
     }
     .reviews-review-card{
         padding: 40px;
         max-width: 450px; 
-      
     }
+
     .reviews-card__PersonName{
         position: absolute;
        /* top :726px;
         max-width: 295px;  
        */
-        top :86%;
+       /* top :86%;*/
         max-width: 65%;  
+      
     }
     .reviews-card__Tour{
         position: absolute;
        /* top :777px;
         max-width: 295px;  */
-        top :92;
+       /* top :92%;*/
         max-width: 65%;
+       
+       
     }
     .reviews-card__PhotoUsers{
         position: absolute;
+        
        /* top :726px;
         left: 335px;*/
-        top :86%;
+       /* top :86%;*/
         left: 74%;
+       
     }
    
     .Photos-Trip{
@@ -1004,6 +1014,7 @@ footer {
         margin: 0 auto;
         margin-top: 100px;
         width: 918px;
+        max-width: 89%;
     }
     .Stories-scale{
         width: 918px;
@@ -1014,17 +1025,21 @@ footer {
         border-radius: 50px; 
     }
     .Stories-card__detailed{
-        width: 795px;
+        max-width:86%;
     }
     .Stories-card__Network{
         margin-right: 34px;
     }
+    .Intelligence{
+        max-width:95%;
+    }
     .Footer{
         width: 918px;
+        max-width: 89%;
     }
 }
 
-@media screen and (max-width:769px){
+@media screen and (max-width:768px){
     input[placeholder]          {text-indent: 9px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 

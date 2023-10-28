@@ -66,15 +66,16 @@
         }
     }
     
-     @media screen and (min-width: 770px)and (max-width:1347px){ 
+     @media screen and (min-width: 768px)and (max-width:1347px){ 
         .container {
             width: 910px;
+            max-width: 99%;
         }
         .heading-nav__option {
             margin-right: 30px;
         }
     }
-    @media screen and (max-width:769px){
+    @media screen and (max-width:768px){
         .container {
             width: 318px;
         }
