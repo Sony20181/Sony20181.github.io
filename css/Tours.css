@@ -306,7 +306,8 @@ textarea:active{
 }
 
 .Form__label-textarea, 
-.Form-radiobutton{
+.Form-radiobutton,
+.Form-checkbox__label{
     grid-column: 1 / 3;
     
 }
@@ -370,6 +371,7 @@ textarea:active{
  input:checked + .Form__radio-label::after{
     opacity: 1;
 }
+
 .Form-checkbox__label{
     grid-column: 1 / 3; 
 }
@@ -416,32 +418,82 @@ textarea:active{
 .Form-checkbox__label input[type = "checkbox"]:checked + .Form-checkbox__fake::after {
    opacity:1;
 }
-
-.Form-checkbox__text-partTwo{
-    padding-left: 4px;
-    color: #1B1F2B;
+ 
+/*последняя версия
+ .Form-checkbox__label span {
+    position:relative;
+    display:flex;
+    align-items:center;
 }
+  .Form-checkbox__label input[type = "checkbox"]{
+   position:absolute;
+   width:1px;
+   height:1px;
+   opacity:0;
+   }
 
-.Form-checkbox__text-partTwo:active{
-    color: #286562;
-}
-.Form-checkbox__text-partTwo::after {
-    display: block;
-    left: 0;
-    width: 0;
-    height: 2px;
-    content: "";
-    transition: background-color 0.5s;
-  }
+   .Form-checkbox__label span::before{
+    float: left;
+   display:block;
+   z-index: 1;
+   margin-right:20px;
+   width: 22px;
+   height: 22px;
+   border: 2px solid black;
+   border-radius: 5px;
+   content : "";
+   background-color: #FFFFFF;
+   }
+   .Form-checkbox__label span::after{
+    position:absolute;
+    left:0px;
+    top:1.2px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    content : "";
+    opacity:0;
+    background-image: url("../img/radiobutton (1).png");
+    background-size: 25px 25px ;
+    
+   }
   
-  .Form-checkbox__text-partTwo:hover::after {
-    width: 100%;
-    background-color: #1B1F2B;
-  }
-  .Form-checkbox__text-partTwo:active::after {
-    background-color: #286562;
-  }
+   
+   .Form-checkbox__label input[type = "checkbox"]:checked + span::after {
+        opacity:1;
+   }
 
+   .Form-checkbox__label input:checked + .Form-checkbox__label::after{
+         opacity: 1;
+    }*/
+   
+    /*======================================================================================*/
+    .Form-checkbox__text-partTwo{
+        padding-left: 4px;
+        color: #1B1F2B;
+    }
+    .Form-checkbox__text-partTwo:active{
+        color: #286562;
+    }
+    .Form-checkbox__text-partTwo::after {
+        content: "";
+        display: block;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #1B1F2B;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .Form-checkbox__text-partTwo:hover:after {
+        transform: scaleX(1);
+        background-color: #1B1F2B;
+    }
+    .Form-checkbox__text-partTwo:active:after  {
+        transform: scaleX(1);
+        background-color: #286562;
+    }
 
 .Form-button__find-tour, .Form-button__reset{
     margin-top: 4px;
@@ -917,12 +969,14 @@ footer {
     .Form-radiobutton__question{
         margin-bottom: 6px;
     }
+    /*
     .Form-checkbox__label .Form-checkbox__fake::before{
         margin-right:13px;
     }
     .Form-checkbox__fake::after{
         top:0.5px;
-    }
+    }*/
+    
     .Form-button{
         grid-column: 1 / 3;
         margin-top: -3px;
@@ -1196,6 +1250,7 @@ footer {
         background-size: 19px 19px ;
         
     }
+    /*
     .Form-checkbox__label{
         grid-column: 1 / 3; 
     }
@@ -1224,7 +1279,8 @@ footer {
     }
     .Form-checkbox__text-partTwo{
         padding-left: 3px;
-    }
+    }*/
+   
     .Form-button{
         grid-column: 1/2;
     }
