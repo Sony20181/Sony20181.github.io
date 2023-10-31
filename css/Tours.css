@@ -545,7 +545,8 @@ textarea:active{
     margin:0 auto;
     margin-top: 99px;
     max-width: 1170px;
-    height: 673px;
+   /* height: 673px; */
+   
 }
 
 .reviews-review-card{
@@ -554,7 +555,9 @@ textarea:active{
     max-width: 570px; 
     border-radius: 50px;
     background: #F4F0E9;
+    
 }
+
 
 .reviews-card__text-ident{
     margin-top: 28px;
@@ -989,33 +992,40 @@ footer {
         margin-top:135px ;
     }
     .reviews-review{ 
-        grid-gap: 18px;
+       /* grid-gap: 18px;
         width: 918px;
         max-width:90% ;
-        height: auto;
-       
+        height: auto;*/
+        width: 918px;
+        max-width:90% ;
+        height: 841px;
+        max-height: auto;
+        grid-gap: 18px;
     }
     .reviews-review-card{
         padding: 40px;
         max-width: 450px; 
+       
     }
 
+  
     .reviews-card__PersonName{
         position: absolute;
-       /* top :726px;
+       /* 
         max-width: 295px;  
+        top :726px; 
        */
-       /* top :86%;*/
-        max-width: 65%;  
-      
+        top :86.3%; 
+        max-width: 65%;
+
     }
     .reviews-card__Tour{
         position: absolute;
        /* top :777px;
-        max-width: 295px;  */
-       /* top :92%;*/
+        max-width: 295px;  
+        */
         max-width: 65%;
-       
+        top :92.3%;
        
     }
     .reviews-card__PhotoUsers{
@@ -1023,7 +1033,7 @@ footer {
         
        /* top :726px;
         left: 335px;*/
-       /* top :86%;*/
+        top :86.3%;
         left: 74%;
        
     }
