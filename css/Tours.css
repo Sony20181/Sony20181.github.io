@@ -76,29 +76,21 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .ChooseTour-option__input {
     display: none;
 }
-/*
-.ChooseTour-option__label::after  {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1px;
-    padding-bottom: 1px;
-    transition: background-color 0.3s ease-in-out;
-    
-  }
-  
-  .ChooseTour-option__label:hover::after {
-    width: 100%;
-    background-color:#1B1F2B;
-   
-  }
-  .ChooseTour-options input:checked + p {
-    padding-bottom: 1px;
-    border-bottom: 3px #EFA501 solid;
-    text-decoration:none;
-    color: #EFA501;
-    cursor: pointer; 
-}*/
+
+ /*   
+    .Form-checkbox__text a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      .Form-checkbox__text a:hover::after {
+        width: 100%;
+        background-color: red;
+      }
+*/
 
 
 .ChooseTour-options-option:hover p {
@@ -114,6 +106,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     text-decoration:none;
     color: #EFA501;
 }
+
 .ChooseTour-options input:checked + p {
     padding-bottom: 2px;
     border-bottom: 3px #EFA501 solid;
@@ -422,11 +415,38 @@ textarea:active{
 
     .Form-checkbox__text-partTwo{
         padding-left: 4px;
-        color: #1B1F2B;
+      
     }
-    /*.Form-checkbox__text-partTwo:active{
+    .Form-checkbox__text a {
+    position: relative;
+    color: #1B1F2B;
+    cursor: pointer;
+   
+    text-decoration: none; 
+}
+.Form-checkbox__text a:after {
+    display: block;
+    position: absolute;
+    left: 0; 
+    width: 0;
+    height: 2px; 
+    background-color: #1B1F2B; 
+    content: "";
+    transition: width 0.3s ease-out; 
+   
+}
+
+.Form-checkbox__text a:hover:after {
+    width: 100%; 
+}
+.Form-checkbox__text a:active:after {
+    width: 100%; 
+    background-color:#286562;
+    ;
+}
+    .Form-checkbox__text-partTwo:active{
         color: #286562;
-    }*/
+    }
     /*
     .Form-checkbox__text-partTwo::after {
         content: "";
@@ -448,21 +468,20 @@ textarea:active{
         background-color: #286562;
     }*/
 
-    
-    
-    .Form-checkbox__text-partTwo:after {
-        content: '';
+    /*
+    .Form-checkbox__text a::after {
+        content: "";
         display: block;
-        height: 1px; /* Высота линии */
-        background: #f66d52; /* Цвет линии */
-        width: 0; /* Ширина линии до наведения */
-        margin: 10px auto 0; /* Отступ с боков по центру и сверху */
-        transition: 1s; /* Время, за которое линия возвращается после наведения */
-    }
-    .Form-checkbox__text-partTwo:hover:after {
-        width: 30%; /* Ширина линии при наведении */
-        transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
-    }
+        width: 0;
+        height: 2px;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      .Form-checkbox__text a:hover::after {
+        width: 100%;
+        background-color: red;
+      }*/
+    
 
 .Form-button__find-tour, .Form-button__reset{
     margin-top: 4px;
@@ -1239,8 +1258,31 @@ footer {
         background-image: url("../img/radiobutton (1).png");
         background-size: 20px 20px ;
     }
+    /*
     .Form-checkbox__text-partTwo{
         padding-left: 3px;
+    }*/
+    .Form-checkbox__text-partTwo a {
+        position: relative;
+        color: #00a650; /*задаём цвет ссылки*/
+        cursor: pointer;
+        text-decoration: none; /*убираем подчёркивание*/
+    }
+    .Form-checkbox__text-partTwo a:after {
+        display: block;
+        position: absolute;
+        right: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 6px; /*задаём ширину линии*/
+        background-color: red; /*задаём цвет линии*/
+        content: "";
+        transition: width 0.3s ease-out; /*задаём время анимации*/
+        
+    }
+    
+    .Form-checkbox__text-partTwo a:hover:after,
+    .Form-checkbox__text-partTwo a:focus:after {
+        width: 300%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
     }
     .Form-button{
         grid-column: 1/2;

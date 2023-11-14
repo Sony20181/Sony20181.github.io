@@ -1,16 +1,18 @@
-window.addEventListener("scroll", function() {
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var heading = document.querySelector(".heading");
-    
-    if (scrollTop > 800) {
+
+function changeHeadingColor() {
+    const heading = document.querySelector(".heading");
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const screenSize = window.innerWidth || document.documentElement.clientWidth;
+  
+    if (scroll > 800 && screenSize > 768) {
         heading.style.background = "rgba(20, 17, 17, 0.60)";
-        heading.style.backdropFilter = "blur(20px)";
-        heading.style.transition = "background-color 0.7s ease-in-out";
+    } else if (scroll >= 400 && screenSize <= 768) {
+        heading.style.background = "rgba(20, 17, 17, 0.60)";
     } else {
         heading.style.background = "rgba(243, 239, 232, 0.60)";
-        heading.style.backdropFilter = "blur(27px)";
-        heading.style.transition = "background-color 0.7s ease-in-out";
-       
     }
-});
+  }
+
+  window.addEventListener('scroll', changeHeadingColor);
+  window.addEventListener('resize', changeHeadingColor);
 

@@ -15,6 +15,7 @@
     background: rgba(243, 239, 232, 0.60);
     backdrop-filter: blur(27px);
     z-index: 4;
+    transition : background-color 0.7s ease-in-out;
 }
     
 .heading .container {
