@@ -19,7 +19,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     height: 831px;
     object-fit: cover;
     width: 100%;
-    
    
 }
 .caption-block {
@@ -66,6 +65,9 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     list-style: none;
    
 }
+.ChooseTour-option__label{
+    cursor: pointer;
+}
 .ChooseTour-options-option{
     margin-right:30px;
     
@@ -77,41 +79,30 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     display: none;
 }
 
- /*   
-    .Form-checkbox__text a::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        transition: background-color 0.5s ease-in-out;
-      }
-      
-      .Form-checkbox__text a:hover::after {
-        width: 100%;
-        background-color: red;
-      }
-*/
-
-
-.ChooseTour-options-option:hover p {
-    padding-bottom: 2px;  
-    border-bottom: 3px #1B1F2B  solid; 
-    text-decoration:none;
-    cursor: pointer; 
-}
-
-.ChooseTour-options-option:active p {
-    padding-bottom: 2px;
-    border-bottom: 3px #EFA501 solid;
-    text-decoration:none;
-    color: #EFA501;
-}
-
 .ChooseTour-options input:checked + p {
-    padding-bottom: 2px;
-    border-bottom: 3px #EFA501 solid;
+    transition: color 0.4s ease-in-out;
     text-decoration:none;
     color: #EFA501;
+}
+.ChooseTour-options p::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+.ChooseTour-options p:hover::after {
+    width: 100%;
+    background-color: black;
+}
+.ChooseTour-options p:active::after {
+    width: 100%;
+    background-color: #EFA501;
+}
+.ChooseTour-options input:checked + p::after {
+    width: 100%;
+    background-color: #EFA501;
 }
 
 .ChooseTour-cards{
@@ -413,17 +404,33 @@ textarea:active{
 }
 
 
-    .Form-checkbox__text-partTwo{
-        padding-left: 4px;
+.Form-checkbox__text-partTwo{
+     padding-left: 4px;
       
-    }
-    .Form-checkbox__text a {
-    position: relative;
+}
+.Form-checkbox__text a {
+   /* position: relative;*/
     color: #1B1F2B;
     cursor: pointer;
-   
     text-decoration: none; 
 }
+
+
+
+
+.Form-checkbox__text-partTwo::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .Form-checkbox__text-partTwo:hover::after {
+    width: 100%;
+    background-color: red;
+  }
+/*
 .Form-checkbox__text a:after {
     display: block;
     position: absolute;
@@ -436,53 +443,16 @@ textarea:active{
    
 }
 
-.Form-checkbox__text a:hover:after {
+.Form-checkbox__text a:hover::after {
     width: 100%; 
 }
-.Form-checkbox__text a:active:after {
+.Form-checkbox__text a:active::after {
     width: 100%; 
     background-color:#286562;
     ;
-}
-    .Form-checkbox__text-partTwo:active{
-        color: #286562;
-    }
-    /*
-    .Form-checkbox__text-partTwo::after {
-        content: "";
-        display: block;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #1B1F2B;
-        transform: scaleX(0);
-        transition: transform 0.2s ease-in-out;
-    }
+}*/
 
-    .Form-checkbox__text-partTwo:hover:after {
-        transform: scaleX(1);
-        background-color: #1B1F2B;
-    }
-    .Form-checkbox__text-partTwo:active:after  {
-        transform: scaleX(1);
-        background-color: #286562;
-    }*/
-
-    /*
-    .Form-checkbox__text a::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        transition: background-color 0.5s ease-in-out;
-      }
-      
-      .Form-checkbox__text a:hover::after {
-        width: 100%;
-        background-color: red;
-      }*/
-    
-
+   
 .Form-button__find-tour, .Form-button__reset{
     margin-top: 4px;
     width: 235px;
@@ -809,21 +779,25 @@ footer {
     cursor: pointer;
 }
 
-.Footer-networks__text::after {
+.Footer-networks__option p::after {
     content: "";
     display: block;
     width: 0;
     height: 2px;
-    transition: color 0.5s ;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+   
   }
-  
-  .Footer-networks__text:hover::after {
-    width: 100%;
-    background-color: #3B7E7B;
-  }
-  .Footer-networks__text:hover{
+.Footer-networks__text:hover{
     color:#3B7E7B;
 }
+  
+.Footer-networks__option p:hover::after {
+    width: 100%;
+    background-color: #3B7E7B;
+}
+
+
 
 @media screen and (min-width: 1347px){
   
@@ -1258,32 +1232,12 @@ footer {
         background-image: url("../img/radiobutton (1).png");
         background-size: 20px 20px ;
     }
-    /*
+    
     .Form-checkbox__text-partTwo{
         padding-left: 3px;
-    }*/
-    .Form-checkbox__text-partTwo a {
-        position: relative;
-        color: #00a650; /*задаём цвет ссылки*/
-        cursor: pointer;
-        text-decoration: none; /*убираем подчёркивание*/
     }
-    .Form-checkbox__text-partTwo a:after {
-        display: block;
-        position: absolute;
-        right: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-        width: 0;/*задаём длинну линии до наведения курсора*/
-        height: 6px; /*задаём ширину линии*/
-        background-color: red; /*задаём цвет линии*/
-        content: "";
-        transition: width 0.3s ease-out; /*задаём время анимации*/
-        
-    }
+
     
-    .Form-checkbox__text-partTwo a:hover:after,
-    .Form-checkbox__text-partTwo a:focus:after {
-        width: 300%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-    }
     .Form-button{
         grid-column: 1/2;
     }
