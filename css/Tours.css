@@ -16,10 +16,10 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     bottom: 0;
     top: 0;
     z-index: -1;
-    height: 831px;
-    object-fit: cover;
     width: 100%;
-   
+    height: 831px;
+    /*height: 100vh;*/
+    object-fit: cover;
 }
 .caption-block {
     margin: 207px auto 0;
@@ -44,7 +44,31 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     cursor: pointer;
     transition: background-color 0.5s;
 }
-
+/*
+.caption-block {
+    margin: 207px auto 0;
+    width: 768px;
+    color: #FFFFFF;
+}
+.caption-title {
+    text-align: center;
+}
+.caption-text {
+    margin: 50px auto;
+    width: 562px;
+    text-align: center;
+    }
+.caption-button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+*/
 .caption-button:hover{ 
     background-color: #EFA501;
     color: #FFFFFF;
@@ -409,15 +433,35 @@ textarea:active{
       
 }
 .Form-checkbox__text a {
-   /* position: relative;*/
+    position: relative;
     color: #1B1F2B;
     cursor: pointer;
     text-decoration: none; 
 }
+.link {
+    position: relative;
+    
+  }
+  .link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+   
+    width: 100%;
+    height: 1px;
+    background: #000;
+      text-decoration: none; 
+  }
+  .link::after {
+    width: 0;
+    transition: 0.3s;
+  }
+  .link:hover:after {
+    width: 100%;
+  }
 
-
-
-
+/*
 .Form-checkbox__text-partTwo::after {
     content: "";
     display: block;
@@ -429,7 +473,7 @@ textarea:active{
   .Form-checkbox__text-partTwo:hover::after {
     width: 100%;
     background-color: red;
-  }
+  }*/
 /*
 .Form-checkbox__text a:after {
     display: block;
@@ -1237,7 +1281,6 @@ footer {
         padding-left: 3px;
     }
 
-    
     .Form-button{
         grid-column: 1/2;
     }

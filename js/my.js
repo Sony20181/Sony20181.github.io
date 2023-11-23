@@ -1,4 +1,4 @@
-
+/*
 function changeHeadingColor() {
     const heading = document.querySelector(".heading");
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -15,4 +15,4 @@ function changeHeadingColor() {
 
   window.addEventListener('scroll', changeHeadingColor);
   window.addEventListener('resize', changeHeadingColor);
-
+*/
