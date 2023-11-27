@@ -21,7 +21,9 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     object-fit: cover;
 }
 .caption-block {
-    margin: 20vh auto 0;
+   margin: 20vh auto 0;
+  /*  width: 48rem;
+     margin: 207px auto 0;*/
     width: 768px;
     color: #FFFFFF;
 }
@@ -31,16 +33,23 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     text-align: center;
 }
 .caption-text {
-    display: flex;
-    align-items: center;
+    width: 562px;
     text-align: center;
     margin: 8vh auto;
-    width: 562px;
+    font-size: 1.25rem;
+   /*
+   width: 35.125rem;
+   width: 29.27vw;
+   font-size: 20px;
+    font-size: 0.83vw;*/
+    
     }
 .caption-button {
     display: block;
     margin: 0 auto;
     padding: 5px 20px;
+    font-size: 1.0625rem;
+  /* font-size: 17px;*/
     border-radius: 10px;
     border: none;
     background: #FFFFFF;
@@ -843,7 +852,7 @@ footer {
     input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
     
     .caption-block {
-        margin-top: 15vh;
+        margin-top: 20vh;
         width: 914px;
         max-width :89%;
     }
@@ -1040,16 +1049,18 @@ footer {
     input:-ms-input-placeholder {text-indent: 9px;   transition: text-indent 0.3s ease;}   
    
     .caption-block {
-        margin: 170px auto 0;
+        margin: 26vh auto 0;
         width: 360px;
     }
     .caption-text {
         margin: 35px auto;
         width:70%;
+        font-size: 1rem;
     }    
     .caption-button {
         margin: 0 auto;
         padding: 5px 20px;
+        font-size: 1rem;
     }
     .ChooseTour-options {
         display:  flex;
