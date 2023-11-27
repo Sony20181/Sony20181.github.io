@@ -21,10 +21,8 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     object-fit: cover;
 }
 .caption-block {
-   margin: 20vh auto 0;
-  /*  width: 48rem;
-     margin: 207px auto 0;*/
     width: 768px;
+    margin: 20vh auto 0;
     color: #FFFFFF;
 }
 .caption-title {
@@ -34,24 +32,17 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 .caption-text {
     width: 562px;
-    text-align: center;
     margin: 8vh auto;
+    text-align: center;
     font-size: 1.25rem;
-   /*
-   width: 35.125rem;
-   width: 29.27vw;
-   font-size: 20px;
-    font-size: 0.83vw;*/
-    
     }
 .caption-button {
     display: block;
     margin: 0 auto;
     padding: 5px 20px;
-    font-size: 1.0625rem;
-  /* font-size: 17px;*/
     border-radius: 10px;
     border: none;
+    font-size: 1.0625rem;
     background: #FFFFFF;
     cursor: pointer;
     transition: background-color 0.5s;
@@ -428,11 +419,11 @@ textarea:active{
    
   }
   .Form-checkbox__text-partTwo::after {
+    display: block;
     position: absolute;
     content: '';
     left: 0;
     bottom: 0;
-    display: block;
     width: 0;
     height: 1px;
     transition: 0.3s;
