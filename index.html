@@ -8,13 +8,13 @@
     <meta name=”description” content="Мы предлагаем вам уникальный опыт, который поможет вам расширить границы своих знаний и открыть для себя новые культуры и традиции. Наша команда заботится о каждой детали вашего путешествия, начиная от выбора места назначения и заканчивая подбором лучших маршрутов и развлечений.">
     <title>YourTour</title>
     <link rel = "preconnect" href="https://fonts.gstatic.com">
-    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel = "icon" href = "img/favicon.png" type = "image/png" sizes = "32*32">
     <link rel = "stylesheet" href = "css/header.css">
     <link rel = "stylesheet" href = "css/Tours.css">
     <link rel = "stylesheet" href = "css/CommonStyles.css">
     <link rel = "stylesheet" href = "css/reset.css">
-    <script src="js/my.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -123,7 +123,7 @@
                     </button>
                 </div>
                 <div class="ChooseTour-card ChooseTour-sacal">
-                    <img alt="Фото Тура" class="ChooseTour-sacal choose-card__img" src="img/card_tour_photo-4.png">
+                    <img alt="Фото Тура" class="ChooseTour-sacal Choose-card__img" src="img/card_tour_photo-4.png">
                     <div class="ChooseTour-card__info">
                         <h3 class="ChooseTour-card__title h3">Путешествие в горы</h3>
                         <p class="ChooseTour-card__price p-small">от 80 000 руб</p>
@@ -186,7 +186,7 @@
                 </label>
                 <label for="number">
                     <p class="Form__Telephone p-normal">Телефон</p>
-                    <input type="tel" minlength="9" maxlength="14" pattern="[0-9]{,14}" required number ="Mobile_number" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"/>
+                    <input type="tel" minlength="9" maxlength="14"  required oninput="inputPhoneNumber(this)"  placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"/>
                 </label>                     
                 <label for="date-from">
                     <p class="Form__DateFrom p-normal">Дата от</p>

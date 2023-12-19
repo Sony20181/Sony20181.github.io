@@ -12,10 +12,8 @@
     display: flex;
     align-items: center;
     height: 88px;
-    background: rgba(243, 239, 232, 0.60);
-    backdrop-filter: blur(27px);
     z-index: 4;
-    transition : background-color 0.7s ease-in-out;
+    
 }
     
 .heading .container {
@@ -51,7 +49,6 @@
     display: block;
     width: 0;
     height: 2px;
-    transition: background-color 0.5s ease-in-out;
   }
   
   .heading-nav__option a:hover::after {
@@ -60,14 +57,14 @@
   }
 
 
-    @media screen and (min-width: 1347px){
+    @media screen and (min-width: 1240px){
             
         .heading-nav__option {
             margin-right: 50px;
         }
     }
     
-     @media screen and (min-width: 768px)and (max-width:1347px){ 
+     @media screen and (min-width: 768px)and (max-width:1240px){ 
         .container {
             width: 910px;
             max-width: 99%;
@@ -88,12 +85,5 @@
             display: none;
             } 
     }  
-    
-    @media screen and (max-width:451px){ 
-        .heading {
-            position: absolute;
-            background:none;
-            backdrop-filter: none;
-            }
-    }
+   
     
