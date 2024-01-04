@@ -1,5 +1,5 @@
 
-    .container {
+.container {
     width: 1170px;
     margin: 0 auto;
 }
@@ -64,13 +64,20 @@
         }
     }
     
-     @media screen and (min-width: 768px)and (max-width:1240px){ 
+     @media screen and (min-width: 845px)and (max-width:1240px){ 
         .container {
-            width: 910px;
-            max-width: 99%;
+            max-width:88%;
         }
         .heading-nav__option {
-            margin-right: 30px;
+           margin-right: 1.875rem;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width:845px){ 
+        .container {
+             max-width:89%;
+         }
+        .heading-nav__option {
+           margin-right: 0.3rem;
         }
     }
     @media screen and (max-width:768px){
