@@ -1399,6 +1399,10 @@ footer {
         object-fit:cover;
     } 
     .Stories-scale {
+<<<<<<< Updated upstream
+=======
+     
+>>>>>>> Stashed changes
       width: 100%;
       height: 455px;
       border-radius: 20px;
@@ -1425,7 +1429,11 @@ footer {
     }
     .Stories-card__detailed{
         top:392px;
+<<<<<<< Updated upstream
        width:94%;     
+=======
+        width:94%;     
+>>>>>>> Stashed changes
     }
     
     .Stories-card__button{
