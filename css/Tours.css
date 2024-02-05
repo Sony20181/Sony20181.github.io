@@ -23,6 +23,8 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .caption-block {
     width: 768px;
     margin: 25vh auto 0;
+  /* margin-left: auto;
+   margin-right: auto;*/
     color: #FFFFFF;
 }
 .caption-title {
@@ -45,7 +47,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     font-size: 1.0625rem;
     background: #FFFFFF;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s  linear ;
 }
 .caption-button:hover{ 
     background-color: #EFA501;
@@ -82,7 +84,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 
 .ChooseTour-options input:checked + p {
-    transition: color 0.4s ease-in-out;
     text-decoration:none;
     color: #EFA501;
 }
@@ -97,14 +98,18 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .ChooseTour-options p:hover::after {
     width: 100%;
     background-color: black;
+   
 }
 .ChooseTour-options p:active::after {
     width: 100%;
     background-color: #EFA501;
+   
+
 }
 .ChooseTour-options input:checked + p::after {
     width: 100%;
     background-color: #EFA501;
+   
 }
 
 .ChooseTour-cards{
@@ -398,11 +403,12 @@ textarea:active{
     z-index: 2;
     content : "";
     opacity:0;
-    top: 7px;
-    left: 8px;
-    width: 7px;
-    height: 7px;
-    border: 2px solid black;
+    top: 5px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius:1.5px;
     border-top: none;
     border-left: none;
     transform: rotate(45deg);
@@ -475,7 +481,8 @@ textarea:active{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
+    margin-top: 110px;
     width:415px;
     height: 56px;
     text-align: center;
@@ -1201,7 +1208,7 @@ footer {
     }
    .Form-radiobutton__label span::after{
         left:1.5px;
-        top:5px;
+        top:6px;
         width:8px;
         height:8px;
     }
@@ -1226,11 +1233,16 @@ footer {
         height: 17px;
     }
     .Form-checkbox__fake::after{
-        top:4px;
-        left:5.5px;
-        width: 6px;
-        height: 6px;
+        top:5px;
+        left:8px;
+        width: 3px;
+        height: 7px;
         content : "";
+       
+        border: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-radius:1px;
     }
     
     .Form-checkbox__text-partTwo{
@@ -1259,7 +1271,8 @@ footer {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        margin-top: 95px;
         width:318px;
         height: 46px;
     }
@@ -1306,7 +1319,8 @@ footer {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        margin-top: 95px;
         width:318px;
         height: 46px;
     }
@@ -1316,7 +1330,7 @@ footer {
         margin-top: 50px;
         padding-left: 21px;
         padding-right: 21px;
-        max-width: 100%;
+      /*  max-width: 100%;*/
     }
     .Photos-Trip__first-row{
         display:grid;
@@ -1325,7 +1339,7 @@ footer {
         
     }
     .Photos-Trip__photo{
-        width: 100%;
+       /* width: 100%;*/
         height: 110px;
         border-radius: 20px;
         object-fit:cover;
@@ -1359,7 +1373,8 @@ footer {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        margin-top: 95px;
         width:318px;
         height: 46px;
     }

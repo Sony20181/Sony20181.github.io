@@ -7,10 +7,10 @@ function changeHeadingColor() {
       heading.style.position = "absolute";
       } 
     else {
-      heading.style.background = "rgba( 130, 120, 120, 0.60)";
-      heading.style.webkitFilter = "blur(25px);";
-      heading.style.transition = " background-color 0.5s ease-in-out";
+      heading.style.background = "rgba( 243, 239, 232, 0.6)";
+      heading.style.webkitFilter = "blur(54px);";
       heading.style.position = "fixed";
+      heading.style.marhinBottom = "88px";
     }
 }
 window.addEventListener('scroll', changeHeadingColor);
