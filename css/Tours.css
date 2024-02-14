@@ -23,8 +23,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .caption-block {
     width: 768px;
     margin: 25vh auto 0;
-  /* margin-left: auto;
-   margin-right: auto;*/
     color: #FFFFFF;
 }
 .caption-title {
@@ -49,12 +47,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     cursor: pointer;
     transition: background-color 0.5s  linear ;
 }
-.caption-button:hover{ 
-    background-color: #EFA501;
-    color: #FFFFFF;
-    cursor: pointer; 
-   
-}
+
 .caption-button:active{ 
     background: #F8E6BE;
     color: #1B1F2B;
@@ -65,7 +58,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     display:  flex;
     justify-content: center;
     flex-wrap: wrap; 
-    margin: 36px auto 0;
+    margin: 35px auto 0;
     list-style: none;
    
 }
@@ -88,27 +81,25 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     color: #EFA501;
 }
 .ChooseTour-options p::after {
-    content: "";
     display: block;
     width: 0;
     height: 2px;
-    transition: background-color 0.5s ease-in-out;
+    content: "";
+    transition:  0.5s ease-in-out;
   }
   
-.ChooseTour-options p:hover::after {
-    width: 100%;
-    background-color: black;
-   
-}
+
 .ChooseTour-options p:active::after {
     width: 100%;
     background-color: #EFA501;
+    transition:none;
    
 
 }
 .ChooseTour-options input:checked + p::after {
     width: 100%;
     background-color: #EFA501;
+    transition:none;
    
 }
 
@@ -139,10 +130,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     cursor: pointer; 
 }
 
-.ChooseTour-sacal:hover .Choose-card__img {
-    transform: scale(1.2);
-}
-
 .ChooseTour-sacal::after{
     position: absolute;
     left: 0;
@@ -156,7 +143,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .ChooseTour-card__info{
     position: absolute; 
     top: 50px; 
-    left: 50px; 
+    left: 50px;
     z-index: 3;
     width: 240px;
     color: #FFFFFF;
@@ -180,22 +167,22 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .ChooseTour-card__button-icon{
     padding-left: 10px;  
 }
-.ChooseTour-sacal:hover .ChooseTour-card__button{
-    background-color:  #286562;
-    cursor: pointer; 
-  }
+.ChooseTour-sacal:hover .Choose-card__img {
+    transform: scale(1.2);
+}
 
 .ChooseTour-sacal:active .ChooseTour-card__button:active{
     background: #EFA501;
+    transition:none;
 }
 
 .Form-subtitle{
     display: flex;
+    width:405px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 29px;
-    width:405px;
-    height: 56px;
     text-align: center;
     color: #A6A6A6;
 }
@@ -206,18 +193,18 @@ form{
     grid-template-columns: repeat(2, 1fr);
     column-gap:33px;
     row-gap: 30px;
+    max-width: 1170px;
+    height: 986px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 101px;
     padding: 70px;
-    max-width: 1170px;
-    height: 986px;
     border-radius: 50px;
     background: #FFFFFF;
 }
 form label {
     display: block;
-    
+    padding-top:3px ;
 }
 
 input, 
@@ -229,12 +216,12 @@ textarea,
     margin-top: 7px; 
     border: 1px solid #F4F0E9;
     border-radius: 10px;
-    transition: background-color 0.3s;
     line-height: 142%;
     background: #F9F7F4;
     font-weight: 400;
     font-size: 20px;
     color:#1B1F2B;
+    transition: background-color 0.3s;
 }
 
 select{ 
@@ -250,6 +237,8 @@ select{
     -webkit-appearance: none;
 
 }
+
+
 select:hover,
 select:active, 
 select:focus{
@@ -261,6 +250,7 @@ select:focus{
     background-size: 26px 26px;
     background-image: url("../img/ic-dropdown.png");
 }
+    
 select:focus{
     color: #1B1F2B;
 }
@@ -269,9 +259,9 @@ option:checked{
 }
 input[type=date] {
     margin-top: 7px; 
-    transition: background-color 0.3s;
     text-transform: uppercase;
     text-indent: 8px;
+    transition: background-color 0.3s;
 }
 
 input[type = date]:invalid::-webkit-datetime-edit { color:#A6A6A6;}
@@ -280,13 +270,12 @@ input[type = date]:hover, select:hover{cursor: pointer;}
 input[type = date]:focus{color: #1B1F2B;}
 
 textarea{
-    padding: 20px;
     height:152px; 
     width:1030px;
     max-width: 100%;
     min-width: 100%;
     min-height:152px;
-   
+    padding: 20px;  
 }
 
 input:hover, 
@@ -307,14 +296,14 @@ textarea:active{
 }
 
 .Form-radiobutton__question{
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .Form-radiobutton__position-yes{
     position: absolute;
 }
 .Form-radiobutton__position-no{
-    margin-left: 94px;
     width: 50px;
+    margin-left: 94px;
 }
 .Form-radiobutton__label span {
     position:relative;
@@ -341,22 +330,23 @@ textarea:active{
    width: 22px;
    height: 22px;
    border: 2px solid black;
-   content : "";
    border-radius: 50%;
    background-color: #FFFFFF;
+   content : "";
    }
    .Form-radiobutton__label span::after{
-    content : "";
     position:absolute;
     left:1.6px;
     top:7px;
     z-index: 2;
     width:11px;
     height:11px;
-    transform: translateX(50%);
-    opacity:0;
-    background-color:black;
     border-radius:100%;
+    background-color:black;
+    content : "";
+    opacity:0;
+    transform: translateX(50%);
+    
    }
    .Form-radiobutton__label input[type = "radio"]:checked + span::after {
    opacity:1;
@@ -388,21 +378,19 @@ textarea:active{
 }
    .Form-checkbox__fake::before{
    float: left;
-   display:block;
    z-index: 1;
-   margin-right:20px;
+   display:block;
    width: 22px;
    height: 22px;
+   margin-right:20px;
    border: 2px solid black;
    border-radius: 5px;
-   content : "";
    background-color: #FFFFFF;
+   content : "";
 }
 .Form-checkbox__fake::after{
     position:absolute;
     z-index: 2;
-    content : "";
-    opacity:0;
     top: 5px;
     left: 9px;
     width: 5px;
@@ -411,20 +399,21 @@ textarea:active{
     border-radius:1.5px;
     border-top: none;
     border-left: none;
+    content : "";
+    opacity:0;
     transform: rotate(45deg);
-  
    
 }
 .Form-checkbox__label input[type = "checkbox"]:checked + .Form-checkbox__fake::after {
    opacity:1;
 }
 
-.Form-checkbox__text-partTwo{
+  .Form-checkbox__text-partTwo{
      padding-left: 4px;
       
-}
+  }
 
-.Form-checkbox__text a {
+  .Form-checkbox__text a {
     position: relative;
     color: #1B1F2B;
     cursor: pointer;
@@ -432,26 +421,24 @@ textarea:active{
    
   }
   .Form-checkbox__text-partTwo::after {
-    display: block;
     position: absolute;
-    content: '';
     left: 0;
     bottom: 0;
+    display: block;
     width: 0;
     height: 1px;
-    transition: 0.3s;
     background: #000;
+    content: '';
+    transition: 0.5s;
   }
 
-  .Form-checkbox__text-partTwo:hover:after {
-    width: 100%;
-  }
+ 
   
    
 .Form-button__find-tour, .Form-button__reset{
-    margin-top: 4px;
     width: 235px;
     height: 58px;
+    margin-top: 3px;
     border-radius: 10px;
     border: none;
     color: #FFFFFF;
@@ -462,29 +449,37 @@ textarea:active{
     color: #286562;
     background: #E0F0E5;
 }
-.Form-button__find-tour:hover{ background-color: #3B7E7B; cursor: pointer;}
-.Form-button__find-tour:active{ background-color:#627F7E;}
-.Form-button__reset:hover{ background-color: #F1F3F2; cursor: pointer;}
-.Form-button__reset:active{ background-color:#D9DFDB;}
+.Form-button__find-tour:hover{cursor: pointer;}
+.Form-button__find-tour:active{
+    background-color:#627F7E;
+    transition:none;
+}
+.Form-button__reset:hover{
+    cursor: pointer;
+}
+.Form-button__reset:active{ 
+    background-color:#D9DFDB; 
+    transition:none;
+}
  
 .reviews-Title{
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 529px;
     height: 146px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
 .reviews-subtitle{
     display: flex;
+    width:415px;
+    height: 56px;
+    margin-top: 110px;
     margin-left: auto;
     margin-right: auto;
     /*margin-top: 30px;*/
-    margin-top: 110px;
-    width:415px;
-    height: 56px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
@@ -505,7 +500,7 @@ textarea:active{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    padding: 40px ;
+    padding: 41px ;
     border-radius: 50px;
     background: #F4F0E9;
     
@@ -527,11 +522,11 @@ textarea:active{
 
 .Photos-subtitle{
     display: flex;
+    width:415px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    width:415px;
-    height: 56px;
     text-align: center;
     color: #A6A6A6;
 }
@@ -569,11 +564,11 @@ textarea:active{
 
 .Stories-subtitle{
     display: flex;
+    width:415px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    width:415px;
-    height: 56px;
     text-align: center;
     color: #A6A6A6;
 }
@@ -616,12 +611,11 @@ textarea:active{
     top:60px;
     left:60px;
     z-index: 3; 
+    width: 554px;
     color: #FFFFFF;  
 }
 .Stories-card__description{
     margin-top: 37px;
-    width: 554px;
-    height: 224px;
 }
 .Stories-card__description-list{
     margin-top: 27px;
@@ -637,7 +631,7 @@ textarea:active{
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1050px;
+    width: 1090px;
 }
 .Stories-card__button{
     padding: 7px 20px;
@@ -649,13 +643,10 @@ textarea:active{
     padding-left: 10px;  
 }
 
-.Stories-scale:hover .Stories-card__button{
-    background-color:  #286562;
-    cursor: pointer; 
-    
-  }
+
 .Stories-scale:active .Stories-card__button:active{
     background-color: #EFA501;
+    transition:none;
 }
 .Stories-card__SocialNetworks{
     color: #FFFFFF;
@@ -663,31 +654,28 @@ textarea:active{
 }
 .Stories-card__Network{
     display: inline-block;
-    margin-right: 34px;
-}
-.Stories-card__Network:last-child {
-    margin-right: 0;
+    margin-right: 27px;
 }
 
-  .Stories-card__SocialNetworks li::after {
-    content: "";
+
+  .Stories-card__SocialNetworks li::after { 
     display: block;
-    width: 0%;
+    width: 0;
     height: 2px;
     background-color: white;
     color: #E0F0E5;
+    content: "";
     transition: width 0.5s ease-in-out;
   }
   
-  .Stories-card__SocialNetworks li:hover::after {
-    width: 100%;
-  }
+
   
   .Stories-card__SocialNetworks li:active::after {
     background-color:#EFA501;
   }
   .Stories-card__Network:active{
     color: #EFA501;
+    transition:none;
  }
   
 
@@ -697,8 +685,8 @@ textarea:active{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 135px auto;
     width: 771px;
+    margin: 135px auto;
 }
 .Intelligence-img{
     width: 370px;
@@ -715,25 +703,23 @@ textarea:active{
 }
   
   .Intelligence__email::after {
-    content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 0%;
+    width: 0;
     height: 2px;
-    transition: background-color 0.3s ease-in-out;
+    content: "";
+    transition:  0.5s ease-in-out;
   }
   
-  .Intelligence__email:hover::after {
-    width: 100%;
-    background-color: black;
-  }
   
   .Intelligence__email:active::after {
     background-color:  #286562;
+    transition:none;
   }
   .Intelligence__email:active{
-    color: #286562;  
+    color: #286562; 
+    transition:none; 
 }
 
 
@@ -761,7 +747,7 @@ footer {
     list-style: none;
 }
 .Footer-networks__option{
-    margin-right: 25px;
+    margin-right: 37px;
     color:#A6A6A6;
 }
 .Footer-networks__option:last-child {
@@ -769,30 +755,24 @@ footer {
 }
 .Footer-networks__text{
     display: inline-block;
-    margin-left: 10px;
     cursor: pointer;
 }
-
+.Footer-networks__inst-img{margin-right: 9px;}
+.Footer-networks__facebook-img{margin-right: 10px;}
+.Footer-networks__vk-img{margin-right: 7px;}
 .Footer-networks__option::after{
-    content: "";
+    content: '';
     display: block;
-    left:0;
+    left: 7;
+    bottom: 0;
     width: 0;
-    height: 1.5px;
-    transition: background-color 0.4s ease-in-out;
+    height: 1px;
+    margin-left: 24%;
+    transition:  0.4s ease-in-out;
     cursor: pointer;
    
   }
-.Footer-networks__option:hover{
-    color:#3B7E7B;
-}
- 
-.Footer-networks__option:hover::after{
-    margin-left: 24%;
-    width: 76%;
-    background-color: #3B7E7B;
-    
-}
+
 .Footer-networks__inst-img,
 .Footer-networks__facebook-img,
 .Footer-networks__vk-img{
@@ -800,7 +780,16 @@ footer {
 }
 
 @media screen and (min-width: 1240px){
-  
+    .caption-button:hover{ 
+        background-color: #EFA501;
+        color: #FFFFFF;
+        cursor: pointer;    
+    }
+    .ChooseTour-options p:hover::after {
+        width: 100%;
+        background-color: black;
+       
+    }
     .ChooseTour-cards{
         width: 1170px;
         max-width: 90%; 
@@ -813,35 +802,39 @@ footer {
         height: 531px;
        
     }
+    
+    .ChooseTour-sacal:hover .ChooseTour-card__button{
+        background-color:  #286562;
+        cursor: pointer; 
+      }
+    .Form-checkbox__text-partTwo:hover:after {
+        width: 100%;
+    }
     .Form-button{
         grid-column: 1 / 3;
     }
     .Form-button__reset{
         margin-left: 2.5%;
     }
+    .Form-button__find-tour:hover{ background-color: #3B7E7B;}
+    .Form-button__reset:hover{ background-color: #F1F3F2;}
     .reviews-review{
         grid-gap: 30px;
         max-width: 1170px;
         height: 673px;
     }
-    .reviews-review-card{
-        max-width: 570px; 
-    }
     .reviews-card__PersonName{
         position: absolute;
-        top :558px;
-        max-width: 415px;   
+        top :559px;  
     }
     .reviews-card__Tour{
         position: absolute;
-        top :609px;
-        max-width: 415px;  
+        top :609px;  
     }
     .reviews-card__PhotoUsers{
         position: absolute;
         top :558px;
         left: 455px;
-    
     }
     .Photos-Trip{
         margin-left: auto;
@@ -849,15 +842,35 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .Stories-scale:hover .Stories-card__button{
+        background-color:  #286562;
+        cursor: pointer;  
+    }
+    .Stories-card__SocialNetworks li:hover::after {
+        width: 100%;
+    }
+    .Intelligence__email:hover::after {
+        width: 100%;
+        background-color: black;
+    }
+    .Footer-networks__option:hover{
+        color:#3B7E7B;
+    }
+     
+    .Footer-networks__option:hover::after{
+        width: 76%;
+        margin-left: 24%;
+        background-color: #3B7E7B;      
+    }
     
 
 }
 
 @media screen and (min-width: 768px)and (max-width:1240px){ 
-    input[placeholder]          {text-indent: 16px;   transition: text-indent 0.3s ease;}
-    input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
-    input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
-    input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;}  
+    input[placeholder]          {text-indent: 20px;   transition: text-indent 0.3s ease;}
+    input::-moz-placeholder     {text-indent: 20px;   transition: text-indent 0.3s ease;} 
+    input:-moz-placeholder      {text-indent: 20px;   transition: text-indent 0.3s ease;} 
+    input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s ease;}  
     
     .caption-block {
         margin-top: 25vh;
@@ -878,7 +891,7 @@ footer {
     }
     .ChooseTour-card{
         max-width: 100%;
-        border-radius: 40px;
+        border-radius: 50px;
     }
     .ChooseTour-card__info{
         left: 11%; 
@@ -902,8 +915,8 @@ footer {
     }
     form {
         grid-gap: 30px 20px;
-        width: 918px;
-        max-width:89%;
+        /*width: 918px;*/
+        max-width:90%;
         max-height: 968px;  
         margin-top: 100px;
         padding: 60px ;
@@ -921,6 +934,10 @@ footer {
     input[type=date] { 
         text-indent: 8px;
     }
+    form label {
+        
+        padding-top:3px ;
+    }
     textarea{
         padding: 20px;
         width: 798px;
@@ -929,12 +946,12 @@ footer {
         height: 152px;
         min-height: 152px;
     }
-    .Form__label-textarea{
+   /* .Form__label-textarea{
         margin-top: -2px;
     }
     .Form-radiobutton{
         margin-top: -6px;
-    }
+    }*/
     .Form-radiobutton__question{
         margin-bottom: 6px;
     }
@@ -955,7 +972,7 @@ footer {
     }
    
     .reviews-Title{
-        margin-top:135px ;
+        margin-top:30px ;
     }
     .reviews-review{ 
         grid-gap: 18px;
@@ -1128,8 +1145,7 @@ footer {
         margin-top: 263px; 
     }
     .ChooseTour-card__button-icon{
-        padding-top: 2px;
-        padding-left: 12px;
+        vertical-align: middle;
       }
     
     .Form-subtitle{
@@ -1331,6 +1347,7 @@ footer {
         padding-left: 21px;
         padding-right: 21px;
       /*  max-width: 100%;*/
+     
     }
     .Photos-Trip__first-row{
         display:grid;
@@ -1341,6 +1358,7 @@ footer {
     .Photos-Trip__photo{
        /* width: 100%;*/
         height: 110px;
+       
         border-radius: 20px;
         object-fit:cover;
     }
@@ -1419,15 +1437,20 @@ footer {
        
     }
     .Stories-card__detailed{
-        top:392px;
+        top:393px;
+        left:10px;
     }
     
     .Stories-card__button{
         padding: 7px 20px;
         border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px; 
     }
     .Stories-card__button-icon{
-        padding-left: 13px;  
+        vertical-align: middle;
     }
     .Stories-card__SocialNetworks{
         display: none;
