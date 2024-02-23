@@ -115,12 +115,10 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 
 .ChooseTour-card{
     position: relative; 
-    height: 531px;
     border-radius: 45px; 
     overflow: hidden;
 }
 .Choose-card__img{
-    height: 531px;
     object-fit: cover;
 }
 
@@ -576,6 +574,7 @@ textarea:active{
     margin: 0 auto;
     margin-top: 98px;
     width: 1170px;
+    
 }
 .Stories-card {
     position: relative;
@@ -592,9 +591,12 @@ textarea:active{
     transition: transform 0.4s;
     cursor: pointer;
 }
-
+.Stories-card__img {
+    object-fit: cover;
+}
 .Stories-scale:hover .Stories-card__img {
   transform: scale(1.2);
+ 
 }
 .Stories-scale::after{
       position: absolute;
@@ -608,14 +610,17 @@ textarea:active{
 }
 .Stories-card__information{
     position:absolute;
-    top:60px;
-    left:60px;
+    top: 0;
+    left:0;
     z-index: 3; 
-    width: 554px;
+    padding: 60px;
+   /* width: 554px;*/
     color: #FFFFFF;  
 }
 .Stories-card__description{
     margin-top: 37px;
+    width: 554px;
+    
 }
 .Stories-card__description-list{
     margin-top: 27px;
@@ -677,7 +682,7 @@ textarea:active{
     color: #EFA501;
     transition:none;
  }
-  
+ /* */
 
 .Intelligence{
     display: flex;
@@ -792,9 +797,10 @@ footer {
     }
     .ChooseTour-cards{
         width: 1170px;
-        max-width: 90%; 
+      /*  max-width: 90%; */
     }    
     .ChooseTour-card{
+        height: 531px;
         border-radius: 45px;        
     }
     .Choose-card__img{
@@ -885,22 +891,24 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
-        margin-top:101px;
-        width: 918px;
+        margin-top:102px;
+       /* width: 918px;*/
         max-width: 90%;
     }
     .ChooseTour-card{
-        max-width: 100%;
+        height: 531px;
         border-radius: 50px;
     }
     .ChooseTour-card__info{
-        left: 11%; 
+       /* left: 11%; */
+        left:50px;
         width: 350px;
         max-width: 77%;
         
     }
     .Choose-card__img{
         width: 100%;
+        height: 531px;
         object-fit: cover;
     }
     .ChooseTour-card__price{  
@@ -910,16 +918,15 @@ footer {
         padding-left: 11px;  
     }
     .Form-subtitle{
-        margin-top: 28px;
+        margin-top: 31px;
        
     }
     form {
         grid-gap: 30px 20px;
-        /*width: 918px;*/
-        max-width:90%;
-        max-height: 968px;  
-        margin-top: 100px;
-        padding: 60px ;
+        max-width:89.5%;
+        height: 968px;  
+        margin-top: 101px;
+        padding: 60px 59px ;
     } 
 
     select{ 
@@ -935,9 +942,12 @@ footer {
         text-indent: 8px;
     }
     form label {
-        
-        padding-top:3px ;
+        padding-top:0 ;
     }
+    input,select{
+    margin-top: 7.5px; 
+    
+    } 
     textarea{
         padding: 20px;
         width: 798px;
@@ -946,14 +956,14 @@ footer {
         height: 152px;
         min-height: 152px;
     }
-   /* .Form__label-textarea{
-        margin-top: -2px;
+    .Form__label-textarea{
+        margin-top: 2px;
     }
-    .Form-radiobutton{
+   /* .Form-radiobutton{
         margin-top: -6px;
     }*/
     .Form-radiobutton__question{
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
     
     .Form-checkbox__label span::before{
@@ -962,7 +972,9 @@ footer {
     .Form-checkbox__label span::after{
         top:6px;
     }
-    
+    .Form-checkbox__text-partTwo{
+        padding-left: 1px;
+    }
     .Form-button{
         grid-column: 1 / 3;
         margin-top: -3px;
@@ -971,8 +983,8 @@ footer {
         margin-left: 3.1%;
     }
    
-    .reviews-Title{
-        margin-top:30px ;
+    .reviews-subtitle{
+        margin-top: 112px;
     }
     .reviews-review{ 
         grid-gap: 18px;
@@ -980,23 +992,21 @@ footer {
         max-width:90% ;
     }
     .reviews-review-card{
-        padding: 40px;
-        max-width: 450px; 
-       
+        padding: 42px 40px;
     }
     .reviews-card__info{
-        margin-top:70px;
+        margin-top:68px;
         height: 75px;
     }
   
     .reviews-card__PersonName{
         position: absolute;
-        max-width: 65%;
+       /* max-width: 65%;*/
     }
     .reviews-card__Tour{
        position: absolute;
        margin-top: 51px;
-       max-width: 65%;
+      /* max-width: 65%;*/
     }
     .reviews-card__PhotoUsers{
         position: absolute;
@@ -1038,13 +1048,13 @@ footer {
         margin-top: 30px;
     }
     .Stories-Title{
-        margin-top: 138px;
+       /* margin-top: 138px;*/
     }
     .Stories-cards{
         margin: 0 auto;
         margin-top: 100px;
         width: 918px;
-        max-width: 89%;
+        max-width: 89.5%;
     }
     .Stories-scale{
         width: 918px;
@@ -1055,7 +1065,8 @@ footer {
         border-radius: 50px; 
     }
     .Stories-card__detailed{
-        max-width:86%;
+        /*width:86%;*/
+        width: 95%;
     }
     .Stories-card__Network{
         margin-right: 34px;
@@ -1067,6 +1078,32 @@ footer {
         width: 918px;
         max-width: 89%;
     }
+    
+    /*
+.Stories-card__button{
+    padding: 7px 20px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    transition: background-color 0.4s;
+}
+.Stories-card__button-icon{
+    padding-left: 10px;  
+}
+
+
+.Stories-scale:active .Stories-card__button:active{
+    background-color: #EFA501;
+    transition:none;
+}
+.Stories-card__SocialNetworks{
+    color: #FFFFFF;
+    list-style: none;
+}
+.Stories-card__Network{
+    display: inline-block;
+    margin-right: 27px;
+}
+    */
 }
 
 @media screen and (max-width:768px){

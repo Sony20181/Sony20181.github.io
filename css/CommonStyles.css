@@ -56,12 +56,12 @@ a {
         line-height: 122%;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1240px) {
 
     .h2{
-      
-       /* margin-top: 56px;
-        padding-top: 81px;*/
+     
+       margin-top: 50px;
+        padding-top: 85px;
     }
     
 }
