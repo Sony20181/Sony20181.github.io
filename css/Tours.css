@@ -619,8 +619,6 @@ textarea:active{
 }
 .Stories-card__description{
     margin-top: 37px;
-    width: 554px;
-    
 }
 .Stories-card__description-list{
     margin-top: 27px;
@@ -851,6 +849,9 @@ footer {
     .Photos-Trip__photo{
         height: 301px;
     }
+    .Stories-card__description{
+         width: 554px;
+    }
     .Stories-scale:hover .Stories-card__button{
         background-color:  #286562;
         cursor: pointer;  
@@ -1073,6 +1074,9 @@ footer {
     .Stories-scale::after{
         border-radius: 50px; 
     }
+    .Stories-card__description{
+        width: 554px;
+   }
     .Stories-card__detailed{
         top:472px;
       /*  width:86%;
@@ -1166,7 +1170,7 @@ footer {
         display: grid;
         grid-template-columns: auto;
         grid-gap: 18px;
-        margin-top: 48px;
+        margin-top: 46px;
         max-width: 88%;
         }
     .ChooseTour-card{
@@ -1328,7 +1332,7 @@ footer {
         grid-column: 1/2;
     }
     .Form-button__find-tour, .Form-button__reset{
-        margin-top: -5px;
+        margin-top: -2px;
         width: 134px;
         height: 47px;
         font-size: 16px;
@@ -1355,13 +1359,13 @@ footer {
     .reviews-review{
         display: flex;
         flex-direction: column;
-        gap: 19px;
+        gap: 20px;
         margin-top: 50.7px;
         width: 88%; 
     }
     .reviews-review-card{
         position: relative;
-        padding: 20px ;
+        padding: 20px 21px ;
         border-radius: 20px;
         font-size: 16px;
         line-height: 142%;
@@ -1373,13 +1377,16 @@ footer {
         margin-top: 59px;
       
     }
+    .reviews-card__text-ident{
+        margin-top: 23px;
+    }
     .reviews-card__Tour{
         position: absolute;
-        margin-top: 33px;
+        margin-top: 37px;
     }
 
     .reviews-card__PhotoUsers{
-        margin-top: -20px;
+        margin-top: -17px;
         right:6%;
     }
 
@@ -1459,8 +1466,7 @@ footer {
     .Stories-cards{
         margin: 0 auto;
         margin-top: 50px;
-        width: 360px;
-        max-width:100%;
+        width:88%;
         
     }
     .Stories-card {
@@ -1468,6 +1474,7 @@ footer {
         margin-top: 20px;
         border-radius: 20px;
         overflow: hidden;
+        
       }
     .Stories-card__img{
         height: 455px;
@@ -1487,24 +1494,25 @@ footer {
         top:0;
         left:0;
         padding: 30px;
-        padding-right: 80px;
     }
     .Stories-card__Title{
        /* width:50%;*/
+       padding-right: 100px;
     }
     .Stories-card__description{
       /*  width:88%;
-        height: 230px;
-        margin-top: 20px;*/
+        height: 230px;*/
+        margin-top: 22px;
     }
     .Stories-card__description-list{
-      /*  margin-top: 22.5px;
-        margin-left: 23px;*/
+       margin-top: 24px;
+       margin-left: 23px;
        
     }
     .Stories-card__detailed{
-      /*  top:393px;
-        left:10px;*/
+        top:394px;
+        left:0;
+        padding-left: 10px;
     }
     
     .Stories-card__button{
@@ -1524,15 +1532,23 @@ footer {
     .Intelligence{
         flex-direction: column;
         margin: 75px auto;
-        width:80%;
+        width:100%;
+        
     }
     .Intelligence-description{
         text-align: center;
+       /* padding: 4px 60px;*/
     }
     .Intelligence-img{
         width: 36.11vw;
         height: 27%;
         border-radius: 20px;
+    }
+    .Intelligence__text{
+        padding: 4px 40px 0 ;
+    }
+    .Intelligence__text-email{
+        padding: 0 25px;
     }
 
     footer {
