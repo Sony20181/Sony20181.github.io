@@ -21,7 +21,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     object-fit: cover;
 }
 .caption-block {
-   /* width: 768px;*/
     margin: 25vh auto 0;
     color: #FFFFFF;
 }
@@ -31,7 +30,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     text-align: center;
 }
 .caption-text {
-   /* width: 562px;*/
     margin: 6vh auto;
     text-align: center;
     line-height: 1.5;
@@ -269,8 +267,9 @@ input[type = date]:focus{color: #1B1F2B;}
 
 textarea{
     height:152px; 
-    min-width: 1030px;
-    max-width: 1030px;
+    width: 1030px ;
+    min-width: 100%;
+    max-width: 100%;
     min-height:152px;
     padding: 20px;  
 }
@@ -681,7 +680,6 @@ textarea:active{
     justify-content: center;
     align-items: center;
     gap: 30px;
-   /* width: 771px;*/
     margin: 135px auto;
 }
 .Intelligence-img{
@@ -730,7 +728,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-   /* width: 1170px;*/
     margin: 0 auto;
 }
 
@@ -808,6 +805,10 @@ footer {
         background-color:  #286562;
         cursor: pointer; 
       }
+      form{
+       max-width: 1170px;
+      
+    }
     .Form-checkbox__text-partTwo:hover:after {
         width: 100%;
     }
@@ -1116,6 +1117,7 @@ footer {
         flex-wrap: wrap; 
         margin: 6.6vh auto 0 ;
         width:318px;
+        padding: 0 20px;
        
         
     }
@@ -1135,11 +1137,9 @@ footer {
         grid-template-columns: auto;
         grid-gap: 18px;
         margin-top: 46px;
-        width: 318px;
-        max-width: 88%;
-        }
+        padding: 0 20px;
+    }
     .ChooseTour-card{
-      /*  width: 100%;*/
         height: 318px;
         border-radius: 20px;
     }
@@ -1156,12 +1156,9 @@ footer {
     }
 
     .ChooseTour-card__info{
-       /* top: 25px; 
-        left: 25px; */
         top:0;
         left:0;
         padding: 25px;
-        /*width: 258px;*/
     }
     .ChooseTour-card__price{ 
         margin-top: 13px;
@@ -1179,7 +1176,8 @@ footer {
         margin-left:auto;
         margin-right: auto;
         margin-top: 21px;
-        max-width: 88%;
+        width: 100%;
+        padding: 0 20px;
         height: 46px;
     }
         
@@ -1225,10 +1223,10 @@ footer {
 
     textarea{
         padding: 10px;
-        width:278px;
         height: 132px;
+        width: 278px;
         max-width: 100%; 
-        min-width:100%; 
+        min-width:100%;
         min-height:132px;
     }
     .Form-radiobutton__question{
@@ -1312,25 +1310,23 @@ footer {
     }
     
     .reviews-subtitle{
-        /*display: flex;*/
         margin-left: auto;
         margin-right: auto;
-        /*margin-top: 20px;*/
         margin-top: 95px;
-        width:318px;
-        height: 46px;
+        width: 100%;
+        padding: 0 20px;
     }
         
     .reviews-review{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 50.7px;
-        width: 88%; 
+        margin-top: 40px;
+        padding: 0 22px;
     }
     .reviews-review-card{
         position: relative;
-        padding: 20px 21px ;
+        padding: 20px ;
         border-radius: 20px;
         font-size: 16px;
         line-height: 142%;
@@ -1340,7 +1336,7 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-top: 59px;
-      
+       
     }
     .reviews-card__text-ident{
         margin-top: 23px;
@@ -1351,8 +1347,8 @@ footer {
     }
 
     .reviews-card__PhotoUsers{
-        margin-top: -17px;
         right:6%;
+        margin-top: -17px;
     }
 
     .Photos-Title{
@@ -1366,18 +1362,17 @@ footer {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        /*margin-top: 20px;*/
         margin-top: 98px;
-        width:318px;
-        height: 46px;
+        width: 100%;
+        padding: 0 20px;
     }
     .Photos-Trip{
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 40px;
         padding-left: 21px;
         padding-right: 21px;
-      /*  max-width: 100%;*/
+      
      
     }
     .Photos-Trip__first-row{
@@ -1387,7 +1382,6 @@ footer {
         
     }
     .Photos-Trip__photo{
-       /* width: 100%;*/
         min-height: 110px;
         border-radius: 20px;
         object-fit:cover;
@@ -1418,20 +1412,18 @@ footer {
         height: 76px;
        
     }
-    .Stories-subtitle{
-        
+    .Stories-subtitle{   
         margin-left: auto;
         margin-right: auto;
-        /*margin-top: 20px;*/
         margin-top: 95px;
-        width:318px;
-        height: 46px;
+        padding: 0 20px;
+        width: 100%;
         display: flex;
     }
     .Stories-cards{
         margin: 0 auto;
-        margin-top: 50px;
-        width:88%;
+        margin-top: 40px;
+        padding: 0 20px;
         
     }
     .Stories-card {
@@ -1454,19 +1446,14 @@ footer {
         border-radius: 20px; 
   }
     .Stories-card__information{
-      /*  top:30px;
-        left:30px;*/
         top:0;
         left:0;
         padding: 30px;
     }
     .Stories-card__Title{
-       /* width:50%;*/
        padding-right: 100px;
     }
     .Stories-card__description{
-      /*  width:88%;
-        height: 230px;*/
         margin-top: 22px;
     }
     .Stories-card__description-list{
@@ -1502,7 +1489,6 @@ footer {
     }
     .Intelligence-description{
         text-align: center;
-       /* padding: 4px 60px;*/
     }
     .Intelligence-img{
         width: 36.11vw;
@@ -1521,17 +1507,19 @@ footer {
     }
     .Footer{
         justify-content: center;
-        width: 360px;
+        width: 100%;
+        padding: 0 18px;
+
     }
     .Footer-networks{
         margin-top: 7px;
     }
     .Footer-networks__option{
-        margin-right: 15px;
+        margin-right: 24px;
     }
 
-    .Footer-networks__text{
-        margin-left: 5px;
-    }
+    .Footer-networks__inst-img{margin-right: 1px; width: 10px; height: 10px;}
+    .Footer-networks__facebook-img{margin-right: 0; width:8px; height: 13px;}
+    .Footer-networks__vk-img{margin-right: 5px; width: 12px; height: 9px; }
 
 }
