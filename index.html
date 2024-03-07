@@ -170,15 +170,15 @@
                 </label>    
                 <label for="place">
                     <p class="Form__direction p-normal">Направление</p>
-                    <select place="Direction"> 
-                        <option  value="Куда хотите ехать?" disabled selected >Куда хотите ехать</option>
-                        <option>Берген (Норвегия)</option>
-                        <option>Бухта Навагио (Греция)</option>
-                        <option>Гейрангер-фьорд (Норвегия)</option>
-                        <option>Долина Йосемити(США)</option>
-                        <option>Шондонг (Вьетнам)</option>
-                        <option>Ленсойс-Мараньенсес (Бразилия)</option>
-                    </select>
+                    <select id="directionSelect" onchange="changeText()">
+                        <option value="Куда хотите ехать?" disabled selected>Куда хотите ехать</option>
+                        <option value="Берген (Норвегия)">Берген (Норвегия)</option>
+                        <option value="Бухта Навагио (Греция)">Бухта Навагио (Греция)</option>
+                        <option value="Гейрангер-фьорд (Норвегия)">Гейрангер-фьорд (Норвегия)</option>
+                        <option value="Долина Йосемити(США)">Долина Йосемити(США)</option>
+                        <option value="Шондонг (Вьетнам)">Шондонг (Вьетнам)</option>
+                        <option value="Ленсойс-Мараньенсес (Бразилия)">Ленсойс-Мараньенсес (Бразилия)</option>
+                      </select>
                 </label> 
                 <label for="email">
                     <p class="Form__Email p-normal">Email</p>

@@ -23,5 +23,15 @@ function inputPhoneNumber(input) {
     }
 }
 
+function changeText() {
+  let select = document.getElementById("directionSelect");
+  let selectedOption = select.options[select.selectedIndex];
+  
+  if (selectedOption.value !== "Куда хотите ехать?") {
+    select.classList.add("selected");
+  } else {
+    select.classList.remove("selected");
+  }
+}
 
 
