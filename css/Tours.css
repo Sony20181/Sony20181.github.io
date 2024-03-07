@@ -1248,7 +1248,7 @@ footer {
        height: 16px;
     }
    .Form-radiobutton__label span::after{
-        left:1.5px;
+        left:2px;
         top:6px;
         width:8px;
         height:8px;
@@ -1277,7 +1277,7 @@ footer {
         height: 17px;
     }
     .Form-checkbox__fake::after{
-        top:5px;
+        top:1px;
         left:8px;
         width: 3px;
         height: 7px;
