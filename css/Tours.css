@@ -1178,8 +1178,7 @@ footer {
         margin-left:auto;
         margin-right: auto;
         margin-top: 21px;
-        width: 100%;
-        padding: 0 20px;
+        width: 318px;
         height: 46px;
     }
         
@@ -1315,8 +1314,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: 95px;
-        width: 100%;
-        padding: 0 20px;
+        width: 318px;
     }
         
     .reviews-review{
@@ -1365,8 +1363,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: 98px;
-        width: 100%;
-        padding: 0 20px;
+        width: 318px;
     }
     .Photos-Trip{
         margin-left: auto;
@@ -1418,8 +1415,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: 95px;
-        padding: 0 20px;
-        width: 100%;
+        width: 318px;
         display: flex;
     }
     .Stories-cards{
@@ -1509,19 +1505,19 @@ footer {
     }
     .Footer{
         justify-content: center;
-        width: 100%;
-        padding: 0 18px;
+        width: 360px;
+      
 
     }
     .Footer-networks{
         margin-top: 7px;
     }
     .Footer-networks__option{
-        margin-right: 24px;
+        margin-right: 21px;
     }
 
-    .Footer-networks__inst-img{margin-right: 1px; width: 10px; height: 10px;}
-    .Footer-networks__facebook-img{margin-right: 0; width:8px; height: 13px;}
-    .Footer-networks__vk-img{margin-right: 5px; width: 12px; height: 9px; }
+    .Footer-networks__inst-img{margin-right: 3px; width: 10px; height: 10px;}
+    .Footer-networks__facebook-img{margin-right: -1px; width:8px; height: 13px;}
+    .Footer-networks__vk-img{margin-right: -1px; width: 12px; height: 9px; }
 
 }
