@@ -4,11 +4,12 @@ input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s e
 input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;} 
 :-ms-input-placeholder { color:#A6A6A6;}
 ::placeholder {color:#A6A6A6;} 
-  
+
 .caption {
    height: 100vh;
    overflow: hidden; 
-}  
+} 
+
 .caption-img {
     position: absolute;
     right: 0;
@@ -20,20 +21,24 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     height: 100vh;
     object-fit: cover;
 }
+
 .caption-block {
     margin: 25vh auto 0;
     color: #FFFFFF;
 }
+
 .caption-title {
     display: flex;
     align-items: center;
     text-align: center;
 }
+
 .caption-text {
     margin: 6vh auto;
     text-align: center;
     line-height: 1.5;
 }
+
 .caption-button {
     display: block;
     margin: 0 auto;
@@ -56,17 +61,16 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     display:  flex;
     justify-content: center;
     flex-wrap: wrap; 
-    margin: 35px auto 0;
+    margin-top:35px;
+    margin-left:auto ;
+    margin-right: auto;
     list-style: none;
-   
 }
+
 .ChooseTour-option__label{
     cursor: pointer;
 }
-.ChooseTour-options-option{
-    margin-right:30px;
-    
-}
+
 .ChooseTour-options-option:last-child {
     margin-right: 0;
 }
@@ -78,42 +82,35 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     text-decoration:none;
     color: #EFA501;
 }
+
 .ChooseTour-options p::after {
     display: block;
     width: 0;
     height: 2px;
     content: "";
     transition:  0.5s ease-in-out;
-  }
+}
   
-
 .ChooseTour-options p:active::after {
     width: 100%;
     background-color: #EFA501;
     transition:none;
-   
-
 }
+
 .ChooseTour-options input:checked + p::after {
     width: 100%;
     background-color: #EFA501;
     transition:none;
-   
 }
 
 .ChooseTour-cards{
     position: relative; 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    }
+}
 
 .ChooseTour-card{
     position: relative; 
-    border-radius: 45px; 
     overflow: hidden;
 }
 .Choose-card__img{
@@ -121,7 +118,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 
 .ChooseTour-sacal{
-    max-width: 100%;
+    width: 100%;
     transition: transform 0.4s;
     cursor: pointer; 
 }
@@ -141,28 +138,28 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     top: 0; 
     left: 0;
     z-index: 3;
-    padding: 50px 80px 0 50px;
+    /*padding: 50px 80px 0 50px;*/
     color: #FFFFFF;
 }
-
+/*
 .ChooseTour-card__price{
     margin-top: 16px;
-}
+}*/
 .ChooseTour-card__button{
     position: absolute;
-    left:29px;
+   /* left:29px;*/
     z-index:3;
-    margin-top: 447px;
+   /* margin-top: 447px;
     padding: 6px 20px;
-    border-radius: 50px;
+    border-radius: 50px;*/
     border:none;
     color: #FFFFFF;
     background: none;
     transition: background-color 0.4s;
-}
+}/*
 .ChooseTour-card__button-icon{
     padding-left: 10px;  
-}
+}*/
 .ChooseTour-sacal:hover .Choose-card__img {
     transform: scale(1.2);
 }
@@ -173,9 +170,6 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 
 .Form-subtitle{
-    display: flex;
-    width:405px;
-    height: 56px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 29px;
@@ -183,23 +177,23 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     color: #A6A6A6;
 }
 
-
 form{
-    display: grid;
+   /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap:33px;
     row-gap: 30px;
-    height: 986px;
+    height: 986px;*/
     margin-left: auto;
     margin-right: auto;
-    margin-top: 101px;
-    padding: 70px;
+ /*   margin-top: 101px;
+    padding: 70px;*/
     border-radius: 50px;
     background: #FFFFFF;
+    
 }
+
 form label {
     display: block;
-    padding-top:3px ;
 }
 
 input, 
@@ -207,32 +201,20 @@ select,
 textarea,
  option{
     width: 100%;
-    height:68px;
-    margin-top: 7px; 
     border: 1px solid #F4F0E9;
-    border-radius: 10px;
-    line-height: 142%;
     background: #F9F7F4;
-    font-weight: 400;
-    font-size: 20px;
     color:#1B1F2B;
     transition: background-color 0.3s;
 }
 
 select{ 
-    padding-left: 18px;
-    padding-right: 1em;
     background-repeat: no-repeat;
-    background-position: calc(100% - 1em) 1.2em;
-    background-size: 26px 26px;
     background-image: url("../img/ic-dropdown.jpg");
     color:#A6A6A6;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-
 }
-
 
 select:hover,
 select:active, 
@@ -249,16 +231,19 @@ select:focus{
 select:focus{
     color: #1B1F2B;
 }
+
 option:checked{
     color: #3B7E7B;
 }
+
 .selected {
     color: black;
-  }
+}
+  
 input[type=date] {
-    margin-top: 7px; 
+    /*margin-top: 7px; */
     text-transform: uppercase;
-    text-indent: 8px;
+   /* text-indent: 8px;*/
     transition: background-color 0.3s;
 }
 
@@ -268,12 +253,12 @@ input[type = date]:hover, select:hover{cursor: pointer;}
 input[type = date]:focus{color: #1B1F2B;}
 
 textarea{
-    height:152px; 
-    width: 1030px ;
+    /*height:152px; 
+    width: 1030px ;*/
     min-width: 100%;
     max-width: 100%;
-    min-height:152px;
-    padding: 20px;  
+   /* min-height:152px;
+    padding: 20px;  */
 }
 
 input:hover, 
@@ -459,7 +444,7 @@ textarea:active{
     background-color:#D9DFDB; 
     transition:none;
 }
- 
+
 .reviews-Title{
     display: flex;
     justify-content: center;
@@ -765,8 +750,7 @@ footer {
     margin-left: 24%;
     transition:  0.4s ease-in-out;
     cursor: pointer;
-   
-  }
+}
 
 .Footer-networks__inst-img,
 .Footer-networks__facebook-img,
@@ -775,42 +759,113 @@ footer {
 }
 
 @media screen and (min-width: 1240px){
+
     .caption-block {
         width: 768px;
     }
+
     .caption-text {
         width: 562px;
     }
+
     .caption-button:hover{ 
         background-color: #EFA501;
         color: #FFFFFF;
         cursor: pointer;    
     }
+  
+    .ChooseTour-options-option{
+        margin-right:30px;
+    }
+
     .ChooseTour-options p:hover::after {
         width: 100%;
         background-color: black;
-       
     }
+
     .ChooseTour-cards{
-        width: 1170px;
-    }    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        max-width: 1170px;
+        margin-top: 100px;
+    }  
+
     .ChooseTour-card{
         height: 531px;
         border-radius: 45px;        
     }
-    .Choose-card__img{
-        max-width: 100%;
-        height: 531px;  
-    }
-    
+ 
     .ChooseTour-sacal:hover .ChooseTour-card__button{
         background-color:  #286562;
         cursor: pointer; 
-      }
-      form{
-       max-width: 1170px;
-      
     }
+
+    .ChooseTour-card__info{
+        padding: 50px 80px 0 50px;
+    }
+    
+    .ChooseTour-card__price{
+        margin-top: 16px;
+    }
+
+    .ChooseTour-card__button{
+        left:29px;
+        margin-top: 447px;
+        padding: 6px 20px;
+        border-radius: 50px;
+    }
+
+    .ChooseTour-card__button-icon{
+        padding-left: 10px;  
+    }
+
+    .Form-subtitle{
+        max-width:405px;
+        max-height: 56px;
+    }
+    form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap:33px;
+        row-gap: 30px;
+        max-width: 1170px;
+        height: 986px;
+        margin-top: 101px;
+        padding: 70px;
+    }
+    form label {
+        padding-top:3px ;
+    }
+
+    input, 
+    select, 
+    textarea,
+    option{
+        height:68px;
+        margin-top: 7px; 
+        border-radius: 10px;
+        line-height: 142%;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    select{ 
+        padding-left: 18px;
+        padding-right: 1em;
+        background-position: calc(100% - 1em) 1.2em;
+        background-size: 26px 26px;     
+    }
+    input[type=date] {
+        margin-top: 7px; 
+        text-indent: 8px;
+    }
+    textarea{
+        height:152px; 
+        width: 1030px ;
+        min-height:152px;
+        padding: 20px;  
+    }
+
     .Form-checkbox__text-partTwo:hover:after {
         width: 100%;
     }
@@ -876,96 +931,131 @@ footer {
     .Footer-networks__option:hover{
         color:#3B7E7B;
     }
+    .Footer-networks__option:active{
+        color:  rgba(239, 165, 1, 1);
+    }
      
     .Footer-networks__option:hover::after{
         width: 76%;
         margin-left: 24%;
         background-color: #3B7E7B;      
     }
+    .Footer-networks__option:active::after{
+        width: 76%;
+        background-color:  rgba(239, 165, 1, 1);     
+    }
     
 
 }
 
 @media screen and (min-width: 768px)and (max-width:1240px){ 
+
     input[placeholder]          {text-indent: 20px;   transition: text-indent 0.3s ease;}
+
     input::-moz-placeholder     {text-indent: 20px;   transition: text-indent 0.3s ease;} 
+
     input:-moz-placeholder      {text-indent: 20px;   transition: text-indent 0.3s ease;} 
+
     input:-ms-input-placeholder {text-indent: 20px;   transition: text-indent 0.3s ease;}  
     
     .caption-block {
         margin-top: 25vh;
         padding: 0 50px;
     }
+
     .caption-text {
        width: 442px;   
+    }
+
+    .ChooseTour-options-option{
+        margin-right:30px;
     }
 
     .ChooseTour-cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
-        margin-top:102px;
-        padding: 0 52px;
+        margin-top:105px;
+        padding: 0 53px;
     }
+
     .ChooseTour-card{
         height: 531px;
         border-radius: 50px;
     }
+
     .ChooseTour-card__info{
         padding: 50px 30px 0 50px;
-        
     }
-    .Choose-card__img{
-        width: 100%;
-        height: 531px;
-        object-fit: cover;
+
+    .ChooseTour-card__price{
+        margin-top: 16px;
     }
-    .ChooseTour-card__price{  
-        top: 104px;
+
+    .ChooseTour-card__button{
+        left:29px;
+        margin-top: 447px;
+        padding: 6px 20px;
+        border-radius: 50px;
     }
+
     .ChooseTour-card__button-icon{
         padding-left: 11px;  
     }
+
     .Form-subtitle{
         margin-top: 31px;
-       
+        max-width:405px;
+        max-height: 56px;
     }
-    form {
-        grid-gap: 30px 20px;
-        max-width:89.5%;
-        height: 968px;  
-        margin-top: 101px;
-        padding: 60px 59px ;
-    } 
-
+    form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap:33px;
+        max-width: 918px;
+        height: 966px;
+        margin-top: 101px; 
+        padding: 60px;
+    }
+    
+    input, 
+    select, 
+    textarea,
+    option{
+        height:68px;
+        margin-top: 7px; 
+        border-radius: 10px;
+        line-height: 142%;
+        font-weight: 400;
+        font-size: 20px;
+    }
     select{ 
-        padding-left: 19px; 
         padding-top: 5px; 
+        padding-left: 19px; 
+        padding-right: 1em;
         background-position: calc(100% - 0.9em) 1.1em;
+        background-size: 26px 26px;     
     }
 
     select:hover,select:active, select:focus{
         background-position: calc(100% - 0.9em) 1.1em;
     }
-    input[type=date] { 
+    input[type=date] {
+        margin-top: 7px; 
         text-indent: 8px;
     }
-    form label {
-        padding-top:0 ;
-    }
+ 
     input,select{
-    margin-top: 7.5px; 
-    
+        margin-top: 7.5px; 
+     
     } 
     textarea{
         padding: 20px;
         width: 798px;
-        min-width: 100%;
-        max-width: 100%;
         height: 152px;
         min-height: 152px;
     }
-    .Form__label-textarea{
+     .Form__label-textarea{
         margin-top: 2px;
     }
     .Form-radiobutton__question{
@@ -1113,47 +1203,29 @@ footer {
         padding: 5px 20px;
         
     }
+    
     .ChooseTour-options {
-        display:  flex;
-        justify-content: center;
-        flex-wrap: wrap; 
-        margin: 6.6vh auto 0 ;
-        width:318px;
-        padding: 0 20px;
-       
-        
+        gap: 10px;
+        margin-top:30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .ChooseTour-options-option{
-        margin-left:1.6%;
-        margin-right: 1.6%;
-        
-    }
-   
-    .ChooseTour-option__text{
-      margin-top:1.5vh;
-      margin-right: 2px;
-    }
+
     .ChooseTour-cards{
-        position: relative; 
         display: grid;
-        grid-template-columns: auto;
         grid-gap: 18px;
         margin-top: 46px;
         padding: 0 20px;
     }
-    .ChooseTour-card{
+
+   .ChooseTour-card{
+       /* height: 88vmin;*/
         height: 318px;
-        border-radius: 20px;
-    }
-    .Choose-card__img{
-        width: 100%;
-        height:100%;
-        object-fit: cover;
         border-radius: 20px;
     }
   
     .ChooseTour-sacal::after{  
-        height:100%;
+      /*  height: 88vmin;*/
         border-radius: 20px;
     }
 
@@ -1162,59 +1234,74 @@ footer {
         left:0;
         padding: 25px;
     }
+
     .ChooseTour-card__price{ 
         margin-top: 13px;
     }
+   
     .ChooseTour-card__button{
         left: 5px; 
         margin-top: 263px; 
+        padding: 6px 20px;
+        border-radius: 50px;
     }
+
     .ChooseTour-card__button-icon{
         vertical-align: middle;
-      }
-    
-    .Form-subtitle{
-        display: flex;
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: 21px;
-        width: 318px;
-        height: 46px;
+        padding-left: 13px; 
     }
-        
-    form {
+
+
+   
+    .Form-subtitle{
+       /* display: flex;
+       margin-left:auto;
+        margin-right: auto;
+        width: 318px; 
+        height: 46px;*/
+        width: 89vmin;
+        margin-top: 21px;
+    }
+       
+    form{
+        width: 90vmin;
         margin-top: 40px;
         padding: 20px 20px 40px;
-        max-width: 88%;
-        height: 1110px;  
+       /* height: 1110px;  
         display: flex;
-	    flex-direction: column;
-	    gap: 33px;
+	    flex-direction: column;*/
+	    gap: 30px;
         border-radius: 30px;
     }  
-    
-    form label {
-        display: block; 
-        padding-top:0;   
-    }
     input, 
     select, 
-    textarea, 
+    textarea,
     option{
-        width: 100%;
         height: 40px;
+        margin-top: 7px; 
+        border-radius: 10px;
+        line-height: 142%;
+        font-weight: 400;
         font-size: 16px;
     }
     select{ 
+       /* padding-top: 5px; 
+        padding-left: 19px; 
+        padding-right: 1em;
+        background-position: calc(100% - 0.9em) 1.1em;
+        background-size: 26px 26px;    */
         padding-left: 8px;
         height: 46px;
-        background-position: calc(100% - 0.7em) 0.6em;
+        background-position: calc(100% - 0.7em) 0.6em; 
     }
+
+
     select:hover,
     select:active, 
     select:focus{
         background-position: calc(100% - 0.7em) 0.6em;
     }
+
     input[type=date] {
         margin-top: 10px; 
         font-size: 16px;
@@ -1226,8 +1313,6 @@ footer {
         padding: 10px;
         height: 132px;
         width: 278px;
-        max-width: 100%; 
-        min-width:100%;
         min-height:132px;
     }
     .Form-radiobutton__question{
@@ -1305,16 +1390,20 @@ footer {
         margin-left: 1.7%;
         
     }
+
     .reviews-Title{
-       width: 318px;
-       height: 76px;
+     /*  width: 318px;
+       height: 76px;*/
+       width: 89vmin;height: 76px;
     }
     
     .reviews-subtitle{
-        margin-left: auto;
+      /*  margin-left: auto;
         margin-right: auto;
         margin-top: 95px;
-        width: 318px;
+        width: 318px;*/
+        width: 89vmin;
+        margin-top: 95px;
     }
         
     .reviews-review{
