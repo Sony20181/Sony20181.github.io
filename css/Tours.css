@@ -105,13 +105,14 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 
 .ChooseTour-cards{
     position: relative; 
-   margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
 .ChooseTour-card{
     position: relative; 
     overflow: hidden;
+
 }
 .Choose-card__img{
     object-fit: cover;
@@ -119,6 +120,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 
 .ChooseTour-sacal{
     width: 100%;
+    height: 100%;
     transition: transform 0.4s;
     cursor: pointer; 
 }
@@ -133,33 +135,24 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     content:''; 
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
+
 .ChooseTour-card__info{
     position: absolute; 
     top: 0; 
     left: 0;
     z-index: 3;
-    /*padding: 50px 80px 0 50px;*/
     color: #FFFFFF;
 }
-/*
-.ChooseTour-card__price{
-    margin-top: 16px;
-}*/
+
 .ChooseTour-card__button{
     position: absolute;
-   /* left:29px;*/
     z-index:3;
-   /* margin-top: 447px;
-    padding: 6px 20px;
-    border-radius: 50px;*/
     border:none;
     color: #FFFFFF;
     background: none;
     transition: background-color 0.4s;
-}/*
-.ChooseTour-card__button-icon{
-    padding-left: 10px;  
-}*/
+}
+
 .ChooseTour-sacal:hover .Choose-card__img {
     transform: scale(1.2);
 }
@@ -178,21 +171,10 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 
 form{
-    /*max-width: 1170px;
-    margin: 0 auto;*/
-
-   /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap:33px;
-    row-gap: 30px;
-    height: 986px;*/
     margin-left: auto;
     margin-right: auto;
- /*   margin-top: 101px;
-    padding: 70px;*/
     border-radius: 50px;
-    background: #FFFFFF;
-    
+    background: #FFFFFF; 
 }
 
 form label {
@@ -202,7 +184,7 @@ form label {
 input, 
 select, 
 textarea,
- option{
+option{
     width: 100%;
     border: 1px solid #F4F0E9;
     background: #F9F7F4;
@@ -244,9 +226,7 @@ option:checked{
 }
   
 input[type=date] {
-    /*margin-top: 7px; */
     text-transform: uppercase;
-   /* text-indent: 8px;*/
     transition: background-color 0.3s;
 }
 
@@ -256,12 +236,8 @@ input[type = date]:hover, select:hover{cursor: pointer;}
 input[type = date]:focus{color: #1B1F2B;}
 
 textarea{
-    /*height:152px; 
-    width: 1030px ;*/
     min-width: 100%;
     max-width: 100%;
-   /* min-height:152px;
-    padding: 20px;  */
 }
 
 input:hover, 
@@ -278,7 +254,6 @@ textarea:active{
 .Form-radiobutton,
 .Form-checkbox__label{
     grid-column: 1 / 3;
-    
 }
 
 .Form-radiobutton__question{
@@ -291,6 +266,7 @@ textarea:active{
     width: 50px;
     margin-left: 94px;
 }
+
 .Form-radiobutton__label span {
     position:relative;
     display:flex;
@@ -301,13 +277,15 @@ textarea:active{
     line-height: 142%; 
     cursor: pointer;
 }
-  .Form-radiobutton__label input[type = "radio"]{
+
+.Form-radiobutton__label input[type = "radio"]{
    position:absolute;
    width:1px;
    height:1px;
    opacity:0;
-   }
-   .Form-radiobutton__label span::before{
+}
+
+.Form-radiobutton__label span::before{
    position: absolute;
    left: 0;
    top: 0;
@@ -319,8 +297,9 @@ textarea:active{
    border-radius: 50%;
    background-color: #FFFFFF;
    content : "";
-   }
-   .Form-radiobutton__label span::after{
+}
+
+.Form-radiobutton__label span::after{
     position:absolute;
     left:1.6px;
     top:7px;
@@ -332,28 +311,29 @@ textarea:active{
     content : "";
     opacity:0;
     transform: translateX(50%);
-    
-   }
-   .Form-radiobutton__label input[type = "radio"]:checked + span::after {
-   opacity:1;
-   }
+}
 
- input:checked + .Form__radio-label::after{
+.Form-radiobutton__label input[type = "radio"]:checked + span::after {
+   opacity:1;
+}
+
+input:checked + .Form__radio-label::after{
     opacity: 1;
 }
 
 .Form-checkbox__label{
     grid-column: 1 / 3; 
 }
+
 .Form-checkbox__fake {
     position:relative;
     display:flex;
     align-items:center;
 }
+
 .Form-checkbox__text{
     color: #A6A6A6;
-    cursor: pointer;
-   
+    cursor: pointer; 
 }
 
 .Form-checkbox__label input[type = "checkbox"]{
@@ -362,7 +342,8 @@ textarea:active{
    height:1px;
    opacity:0;
 }
-   .Form-checkbox__fake::before{
+
+.Form-checkbox__fake::before{
    float: left;
    z-index: 1;
    display:block;
@@ -387,26 +368,25 @@ textarea:active{
     border-left: none;
     content : "";
     opacity:0;
-    transform: rotate(45deg);
-   
+    transform: rotate(45deg); 
 }
+
 .Form-checkbox__label input[type = "checkbox"]:checked + .Form-checkbox__fake::after {
    opacity:1;
 }
 
-  .Form-checkbox__text-partTwo{
-     padding-left: 4px;
-      
-  }
+.Form-checkbox__text-partTwo{
+     padding-left: 4px;  
+}
 
-  .Form-checkbox__text a {
+.Form-checkbox__text a {
     position: relative;
     color: #1B1F2B;
     cursor: pointer;
-    text-decoration: none; 
-   
-  }
-  .Form-checkbox__text-partTwo::after {
+    text-decoration: none;  
+}
+
+.Form-checkbox__text-partTwo::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -416,11 +396,8 @@ textarea:active{
     background: #000;
     content: '';
     transition: 0.5s;
-  }
-
+}
  
-  
-   
 .Form-button__find-tour, .Form-button__reset{
     width: 235px;
     height: 58px;
@@ -431,18 +408,23 @@ textarea:active{
     background: #286562;
     transition: background-color 0.3s;
 }
+
 .Form-button__reset{
     color: #286562;
     background: #E0F0E5;
 }
+
 .Form-button__find-tour:hover{cursor: pointer;}
+
 .Form-button__find-tour:active{
     background-color:#627F7E;
     transition:none;
 }
+
 .Form-button__reset:hover{
     cursor: pointer;
 }
+
 .Form-button__reset:active{ 
     background-color:#D9DFDB; 
     transition:none;
@@ -545,6 +527,7 @@ textarea:active{
 .Stories-cards{
     margin: 0 auto;
     margin-top: 98px;
+   
 }
 .Stories-card {
     position: relative;
@@ -776,7 +759,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-        max-width: 1170px;
+        width: 100%;
+      /*  max-width: 1170px;*/
         margin-top: 100px;
     }  
 
@@ -993,12 +977,16 @@ footer {
     }
 
     .ChooseTour-card{
-        height: 531px;
+       height: 531px;
         border-radius: 50px;
     }
 
     .ChooseTour-card__info{
-        padding: 50px 30px 0 50px;
+        padding: 50px 50px 0 50px; 
+      
+    }
+    .ChooseTour-card__title{
+      /*  text-align: center;*/
     }
 
     .ChooseTour-card__price{
@@ -1147,10 +1135,10 @@ footer {
     .Photos-Trip{
         margin-left: auto;
         margin-right: auto;
-        padding-left: 20px;
+        /*padding-left: 20px;
         padding-right: 20px;
      
-        padding: 0 20px;
+        padding: 0 20px;*/
         width: 100%;
     }
 
@@ -1188,7 +1176,6 @@ footer {
     .Stories-cards{
         margin: 0 auto;
         margin-top: 98px;
-        padding: 0 52px;
     }
     .Stories-card__img {
         object-fit:fill;
@@ -1209,7 +1196,7 @@ footer {
   
     .Intelligence{
        width: 100%;
-       padding: 0 125.5px;
+       /*padding: 0 125.5px;*/
     }
     .Footer{
         width: 918px;
@@ -1228,7 +1215,7 @@ footer {
    
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     input[placeholder]          {text-indent: 9px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
@@ -1487,7 +1474,7 @@ footer {
     }
 
     .reviews-card__text-ident{
-        margin-top: 19px;
+        margin-top: 29px;
     }
 
     .reviews-card__Tour{

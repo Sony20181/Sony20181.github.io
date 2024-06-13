@@ -59,32 +59,52 @@ a {
     line-height: 122%;
 }
 
+.chooseTour,
+.Form,
+.reviews,
+.Stories,
+.Intelligence{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+}
+
 @media screen and (min-width:768px) and (max-width:1240px) {
-   /* .mainContainer{
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+    .chooseTour,
+    .Form,
+    .reviews,
+    .Stories,
+    .Photos{
         max-width: 1170px;
-        padding: 0 53px;
-    }*/
+        padding:0 53px;
+    }
+    .Photos{
+        padding:0 20px;
+    }
+    .Intelligence{
+        max-width: 918px;
+        padding:0 53px;
+    }
+
     .h2{
         margin-top: 50px;
         padding-top: 85px;
     } 
 }
 
-@media screen and (max-width:768px){
-
-    .mainContainer{
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 1170px;
+@media screen and (max-width:767px){
+    
+    .chooseTour,
+    .Form,
+    .reviews,
+    .Photos,
+    .Stories,
+    .Intelligence{
         padding: 0 21px;
     }
 
     .p-big{
-        font-size: 4.5vmin;
+        font-size: 16px/*4.5vmin*/;
         font-weight: 700;
         line-height: 142%; 
     }
@@ -106,7 +126,7 @@ a {
 
     .h2{
         margin-top: -5px;
-        font-size: 9.5vmin; 
+        font-size:34px/* 9.5vmin*/; 
         line-height: 112%;
         letter-spacing: 0.68px;
     }
