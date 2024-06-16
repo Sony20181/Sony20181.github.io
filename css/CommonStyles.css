@@ -60,29 +60,34 @@ a {
 }
 
 .chooseTour,
-.Form,
+.form,
 .reviews,
-.Stories,
-.Intelligence{
+.stories,
+.intelligence{
     margin-left: auto;
     margin-right: auto;
     max-width: 1170px;
 }
 
 @media screen and (min-width:768px) and (max-width:1240px) {
+
     .chooseTour,
-    .Form,
+    .form,
     .reviews,
-    .Stories,
-    .Photos{
+    .stories,
+    .photos{
         max-width: 1170px;
         padding:0 53px;
     }
-    .Photos{
+
+    .photos{
+        margin-left: auto;
+        margin-right: auto;
         padding:0 20px;
     }
-    .Intelligence{
-        max-width: 918px;
+
+    .intelligence{
+        max-width:918px;
         padding:0 53px;
     }
 
@@ -92,14 +97,13 @@ a {
     } 
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     
     .chooseTour,
-    .Form,
+    .form,
     .reviews,
-    .Photos,
-    .Stories,
-    .Intelligence{
+    .photos,
+    .stories{
         padding: 0 21px;
     }
 
@@ -119,7 +123,7 @@ a {
     }
 
     .h1 {
-        font-size:9.44vw;
+        font-size:9.44vw; /* font-size:9.44vw;*/
         line-height: 112%; 
         letter-spacing: 0.68px;
     }

@@ -57,7 +57,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     
 }
 
-.ChooseTour-options {
+.chooseTour-options {
     display:  flex;
     justify-content: center;
     flex-wrap: wrap; 
@@ -67,23 +67,23 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     list-style: none;
 }
 
-.ChooseTour-option__label{
+.chooseTour-option__label{
     cursor: pointer;
 }
 
-.ChooseTour-options-option:last-child {
+.chooseTour-options-option:last-child {
     margin-right: 0;
 }
-.ChooseTour-option__input {
+.chooseTour-option__input {
     display: none;
 }
 
-.ChooseTour-options input:checked + p {
+.chooseTour-options input:checked + p {
     text-decoration:none;
     color: #EFA501;
 }
 
-.ChooseTour-options p::after {
+.chooseTour-options p::after {
     display: block;
     width: 0;
     height: 2px;
@@ -91,25 +91,25 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     transition:  0.5s ease-in-out;
 }
   
-.ChooseTour-options p:active::after {
+.chooseTour-options p:active::after {
     width: 100%;
     background-color: #EFA501;
     transition:none;
 }
 
-.ChooseTour-options input:checked + p::after {
+.chooseTour-options input:checked + p::after {
     width: 100%;
     background-color: #EFA501;
     transition:none;
 }
 
-.ChooseTour-cards{
+.chooseTour-cards{
     position: relative; 
     margin-left: auto;
     margin-right: auto;
 }
 
-.ChooseTour-card{
+.chooseTour-card{
     position: relative; 
     overflow: hidden;
 
@@ -118,14 +118,14 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     object-fit: cover;
 }
 
-.ChooseTour-sacal{
+.chooseTour-sacal{
     width: 100%;
     height: 100%;
     transition: transform 0.4s;
     cursor: pointer; 
 }
 
-.ChooseTour-sacal::after{
+.chooseTour-sacal::after{
     position: absolute;
     left: 0;
     top:0;
@@ -136,7 +136,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-.ChooseTour-card__info{
+.chooseTour-card__info{
     position: absolute; 
     top: 0; 
     left: 0;
@@ -144,7 +144,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     color: #FFFFFF;
 }
 
-.ChooseTour-card__button{
+.chooseTour-card__button{
     position: absolute;
     z-index:3;
     border:none;
@@ -153,16 +153,16 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     transition: background-color 0.4s;
 }
 
-.ChooseTour-sacal:hover .Choose-card__img {
+.chooseTour-sacal:hover .Choose-card__img {
     transform: scale(1.2);
 }
 
-.ChooseTour-sacal:active .ChooseTour-card__button:active{
+.chooseTour-sacal:active .chooseTour-card__button:active{
     background: #EFA501;
     transition:none;
 }
 
-.Form-subtitle{
+.form-subtitle{
     margin-left: auto;
     margin-right: auto;
     margin-top: 29px;
@@ -250,24 +250,24 @@ textarea:active{
     background-color: #F4F0E9;
 }
 
-.Form__label-textarea, 
-.Form-radiobutton,
-.Form-checkbox__label{
+.form__label-textarea, 
+.form-radiobutton,
+.form-checkbox__label{
     grid-column: 1 / 3;
 }
 
-.Form-radiobutton__question{
+.form-radiobutton__question{
     margin-bottom: 6px;
 }
-.Form-radiobutton__position-yes{
+.form-radiobutton__position-yes{
     position: absolute;
 }
-.Form-radiobutton__position-no{
+.form-radiobutton__position-no{
     width: 50px;
     margin-left: 94px;
 }
 
-.Form-radiobutton__label span {
+.form-radiobutton__label span {
     position:relative;
     display:flex;
     align-items:center;
@@ -278,14 +278,14 @@ textarea:active{
     cursor: pointer;
 }
 
-.Form-radiobutton__label input[type = "radio"]{
+.form-radiobutton__label input[type = "radio"]{
    position:absolute;
    width:1px;
    height:1px;
    opacity:0;
 }
 
-.Form-radiobutton__label span::before{
+.form-radiobutton__label span::before{
    position: absolute;
    left: 0;
    top: 0;
@@ -299,7 +299,7 @@ textarea:active{
    content : "";
 }
 
-.Form-radiobutton__label span::after{
+.form-radiobutton__label span::after{
     position:absolute;
     left:1.6px;
     top:7px;
@@ -313,37 +313,37 @@ textarea:active{
     transform: translateX(50%);
 }
 
-.Form-radiobutton__label input[type = "radio"]:checked + span::after {
+.form-radiobutton__label input[type = "radio"]:checked + span::after {
    opacity:1;
 }
 
-input:checked + .Form__radio-label::after{
+input:checked + .form__radio-label::after{
     opacity: 1;
 }
 
-.Form-checkbox__label{
+.form-checkbox__label{
     grid-column: 1 / 3; 
 }
 
-.Form-checkbox__fake {
+.form-checkbox__fake {
     position:relative;
     display:flex;
     align-items:center;
 }
 
-.Form-checkbox__text{
+.form-checkbox__text{
     color: #A6A6A6;
     cursor: pointer; 
 }
 
-.Form-checkbox__label input[type = "checkbox"]{
+.form-checkbox__label input[type = "checkbox"]{
    position:absolute;
    width:1px;
    height:1px;
    opacity:0;
 }
 
-.Form-checkbox__fake::before{
+.form-checkbox__fake::before{
    float: left;
    z-index: 1;
    display:block;
@@ -355,7 +355,7 @@ input:checked + .Form__radio-label::after{
    background-color: #FFFFFF;
    content : "";
 }
-.Form-checkbox__fake::after{
+.form-checkbox__fake::after{
     position:absolute;
     z-index: 2;
     top: 5px;
@@ -371,22 +371,22 @@ input:checked + .Form__radio-label::after{
     transform: rotate(45deg); 
 }
 
-.Form-checkbox__label input[type = "checkbox"]:checked + .Form-checkbox__fake::after {
+.form-checkbox__label input[type = "checkbox"]:checked + .form-checkbox__fake::after {
    opacity:1;
 }
 
-.Form-checkbox__text-partTwo{
+.form-checkbox__text-partTwo{
      padding-left: 4px;  
 }
 
-.Form-checkbox__text a {
+.form-checkbox__text a {
     position: relative;
     color: #1B1F2B;
     cursor: pointer;
     text-decoration: none;  
 }
 
-.Form-checkbox__text-partTwo::after {
+.form-checkbox__text-partTwo::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -398,7 +398,7 @@ input:checked + .Form__radio-label::after{
     transition: 0.5s;
 }
  
-.Form-button__find-tour, .Form-button__reset{
+.form-button__find-tour, .form-button__reset{
     width: 235px;
     height: 58px;
     margin-top: 3px;
@@ -409,23 +409,23 @@ input:checked + .Form__radio-label::after{
     transition: background-color 0.3s;
 }
 
-.Form-button__reset{
+.form-button__reset{
     color: #286562;
     background: #E0F0E5;
 }
 
-.Form-button__find-tour:hover{cursor: pointer;}
+.form-button__find-tour:hover{cursor: pointer;}
 
-.Form-button__find-tour:active{
+.form-button__find-tour:active{
     background-color:#627F7E;
     transition:none;
 }
 
-.Form-button__reset:hover{
+.form-button__reset:hover{
     cursor: pointer;
 }
 
-.Form-button__reset:active{ 
+.form-button__reset:active{ 
     background-color:#D9DFDB; 
     transition:none;
 }
@@ -472,7 +472,7 @@ input:checked + .Form__radio-label::after{
 }
 
 
-.Photos-subtitle{
+.photos-subtitle{
     display: flex;
     width:415px;
     height: 56px;
@@ -483,38 +483,38 @@ input:checked + .Form__radio-label::after{
     color: #A6A6A6;
 }
 
-.Photos-Trip{
+.photos-Trip{
     margin: 0, auto;
     margin-top: 100px;
    
 }
 
-.Photos-Trip__first-row{
+.photos-Trip__first-row{
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
 
 }
-.Photos-Trip__photo{
+.photos-Trip__photo{
     width: 100%;
     border-radius: 50px;
     object-fit:cover;
 }
 
-.Photos-Trip__second-row{
+.photos-Trip__second-row{
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 30px;
 }
-.Photos-Trip__third-row{
+.photos-Trip__third-row{
     display:grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
 }
 
-.Stories-subtitle{
+.stories-subtitle{
     display: flex;
     width:415px;
     height: 56px;
@@ -524,19 +524,19 @@ input:checked + .Form__radio-label::after{
     text-align: center;
     color: #A6A6A6;
 }
-.Stories-cards{
+.stories-cards{
     margin: 0 auto;
     margin-top: 98px;
    
 }
-.Stories-card {
+.stories-card {
     position: relative;
     margin-top: 50px;
     border-radius: 55px;
     overflow: hidden;
 }
 
-.Stories-scale {
+.stories-scale {
   /*  width: 1170px;*/
     height: 568px;
     /*max-width: 100%;*/
@@ -544,14 +544,14 @@ input:checked + .Form__radio-label::after{
     transition: transform 0.4s;
     cursor: pointer;
 }
-.Stories-card__img {
+.stories-card__img {
     object-fit: cover;
 }
-.Stories-scale:hover .Stories-card__img {
+.stories-scale:hover .stories-card__img {
   transform: scale(1.2);
  
 }
-.Stories-scale::after{
+.stories-scale::after{
       position: absolute;
       left: 0;
       top:0;
@@ -561,7 +561,7 @@ input:checked + .Form__radio-label::after{
       background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
       content:'';
 }
-.Stories-card__information{
+.stories-card__information{
     position:absolute;
     top: 0;
     left:0;
@@ -569,14 +569,14 @@ input:checked + .Form__radio-label::after{
     padding: 60px;
     color: #FFFFFF;  
 }
-.Stories-card__description{
+.stories-card__description{
     margin-top: 37px;
 }
-.Stories-card__description-list{
+.stories-card__description-list{
     margin-top: 27px;
     margin-left: 27px;
 }
-.Stories-card__detailed{
+.stories-card__detailed{
     position: absolute;
     top:475px;
     left: 0;
@@ -588,32 +588,32 @@ input:checked + .Form__radio-label::after{
     align-items: center;
     justify-content: space-between;
 }
-.Stories-card__button{
+.stories-card__button{
     padding: 7px 20px;
     border-radius: 50px;
     color: #FFFFFF;
     transition: background-color 0.4s;
 }
-.Stories-card__button-icon{
+.stories-card__button-icon{
     padding-left: 10px;  
 }
 
 
-.Stories-scale:active .Stories-card__button:active{
+.stories-scale:active .stories-card__button:active{
     background-color: #EFA501;
     transition:none;
 }
-.Stories-card__SocialNetworks{
+.stories-card__SocialNetworks{
     color: #FFFFFF;
     list-style: none;
 }
-.Stories-card__Network{
+.stories-card__Network{
     display: inline-block;
     margin-left: 34px;
 }
 
 
-  .Stories-card__SocialNetworks li::after { 
+  .stories-card__SocialNetworks li::after { 
     display: block;
     width: 0;
     height: 2px;
@@ -625,15 +625,15 @@ input:checked + .Form__radio-label::after{
   
 
   
-  .Stories-card__SocialNetworks li:active::after {
+  .stories-card__SocialNetworks li:active::after {
     background-color:#EFA501;
   }
-  .Stories-card__Network:active{
+  .stories-card__Network:active{
     color: #EFA501;
     transition:none;
  }
 
-.Intelligence{
+.intelligence{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -641,21 +641,26 @@ input:checked + .Form__radio-label::after{
     gap: 30px;
     margin: 135px auto;
 }
-.Intelligence-img{
-    width: 370px;
+.intelligence-img{
+   width: 370px;
     height: 370px;
+   /*  width: 100%;
+    max-width: 370px;
+    height: 100%;
+    max-height: 370px;*/
+   
     border-radius: 50px;
 }
-.Intelligence__text-email{
+.intelligence__text-email{
     margin-top: 20px;
     color:#A6A6A6;
 }
-.Intelligence__email{
+.intelligence__email{
     color:#1B1F2B;
     position: relative;
 }
   
-  .Intelligence__email::after {
+.intelligence__email::after {
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -663,18 +668,17 @@ input:checked + .Form__radio-label::after{
     height: 2px;
     content: "";
     transition:  0.5s ease-in-out;
-  }
-  
-  
-  .Intelligence__email:active::after {
+}
+    
+.intelligence__email:active::after {
     background-color:  #286562;
     transition:none;
-  }
-  .Intelligence__email:active{
+}
+
+.intelligence__email:active{
     color: #286562; 
     transition:none; 
 }
-
 
 footer {
     display: flex;
@@ -682,7 +686,7 @@ footer {
     height: 88px;
     background: #F4F0E9;
 }
-.Footer{
+.footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -690,29 +694,29 @@ footer {
     margin: 0 auto;
 }
 
-.Footer-text{
+.footer-text{
     color:#A6A6A6;
 }
-.Footer-networks{
+.footer-networks{
     display: flex;
     align-items: center;
     list-style: none;
 }
-.Footer-networks__option{
+.footer-networks__option{
     margin-right: 37px;
     color:#A6A6A6;
 }
-.Footer-networks__option:last-child {
+.footer-networks__option:last-child {
     margin-right: 0;
 }
-.Footer-networks__text{
+.footer-networks__text{
     display: inline-block;
     cursor: pointer;
 }
-.Footer-networks__inst-img{margin-right: 9px;}
-.Footer-networks__facebook-img{margin-right: 10px;}
-.Footer-networks__vk-img{margin-right: 7px; }
-.Footer-networks__option::after{
+.footer-networks__inst-img{margin-right: 9px;}
+.footer-networks__facebook-img{margin-right: 10px;}
+.footer-networks__vk-img{margin-right: 7px; }
+.footer-networks__option::after{
     content: '';
     display: block;
     left: 7;
@@ -724,9 +728,9 @@ footer {
     cursor: pointer;
 }
 
-.Footer-networks__inst-img,
-.Footer-networks__facebook-img,
-.Footer-networks__vk-img{
+.footer-networks__inst-img,
+.footer-networks__facebook-img,
+.footer-networks__vk-img{
     cursor: pointer;
 }
 
@@ -746,16 +750,16 @@ footer {
         cursor: pointer;    
     }
   
-    .ChooseTour-options-option{
+    .chooseTour-options-option{
         margin-right:30px;
     }
 
-    .ChooseTour-options p:hover::after {
+    .chooseTour-options p:hover::after {
         width: 100%;
         background-color: black;
     }
 
-    .ChooseTour-cards{
+    .chooseTour-cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
@@ -764,36 +768,36 @@ footer {
         margin-top: 100px;
     }  
 
-    .ChooseTour-card{
+    .chooseTour-card{
         height: 531px;
         border-radius: 45px;        
     }
  
-    .ChooseTour-sacal:hover .ChooseTour-card__button{
+    .chooseTour-sacal:hover .chooseTour-card__button{
         background-color:  #286562;
         cursor: pointer; 
     }
 
-    .ChooseTour-card__info{
+    .chooseTour-card__info{
         padding: 50px 80px 0 50px;
     }
     
-    .ChooseTour-card__price{
+    .chooseTour-card__price{
         margin-top: 16px;
     }
 
-    .ChooseTour-card__button{
+    .chooseTour-card__button{
         left:29px;
         margin-top: 447px;
         padding: 6px 20px;
         border-radius: 50px;
     }
 
-    .ChooseTour-card__button-icon{
+    .chooseTour-card__button-icon{
         padding-left: 10px;  
     }
 
-    .Form-subtitle{
+    .form-subtitle{
         max-width:405px;
         max-height: 56px;
     }
@@ -840,21 +844,21 @@ footer {
         padding: 20px;  
     }
 
-    .Form-checkbox__text-partTwo:hover:after {
+    .form-checkbox__text-partTwo:hover:after {
         width: 100%;
     }
 
-    .Form-button{
+    .form-button{
         grid-column: 1 / 3;
     }
 
-    .Form-button__reset{
+    .form-button__reset{
         margin-left: 2.5%;
     }
 
-    .Form-button__find-tour:hover{ background-color: #3B7E7B;}
+    .form-button__find-tour:hover{ background-color: #3B7E7B;}
 
-    .Form-button__reset:hover{ background-color: #F1F3F2;}
+    .form-button__reset:hover{ background-color: #F1F3F2;}
 
     .reviews-review{
         grid-gap: 30px;
@@ -891,53 +895,53 @@ footer {
         border-radius: 100px;
     }
 
-    .Photos-Trip{
+    .photos-Trip{
         margin-left: auto;
         margin-right: auto;
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    .Photos-Trip__photo{
+    .photos-Trip__photo{
         height: 301px;
     }
 
-    .Stories-cards{
+    .stories-cards{
        width: 1170px;
     }
-    .Stories-card__description{
+    .stories-card__description{
          width: 554px;
     }
-    .Stories-scale:hover .Stories-card__button{
+    .stories-scale:hover .stories-card__button{
         background-color:  #286562;
         cursor: pointer;  
     }
-    .Stories-card__SocialNetworks li:hover::after {
+    .stories-card__SocialNetworks li:hover::after {
         width: 100%;
     }
-    .Intelligence{
+    .intelligence{
         width: 771px;
     }
-    .Intelligence__email:hover::after {
+    .intelligence__email:hover::after {
         width: 100%;
         background-color: black;
     }
-    .Footer{
+    .footer{
         width: 1170px;
     }
-    .Footer-networks__option:hover{
+    .footer-networks__option:hover{
         color:#3B7E7B;
     }
-    .Footer-networks__option:active{
+    .footer-networks__option:active{
         color:  rgba(239, 165, 1, 1);
     }
      
-    .Footer-networks__option:hover::after{
+    .footer-networks__option:hover::after{
         width: 76%;
         margin-left: 24%;
         background-color: #3B7E7B;      
     }
-    .Footer-networks__option:active::after{
+    .footer-networks__option:active::after{
         width: 76%;
         background-color:  rgba(239, 165, 1, 1);     
     }
@@ -964,11 +968,11 @@ footer {
        width: 442px;   
     }
 
-    .ChooseTour-options-option{
+    .chooseTour-options-option{
         margin-right:30px;
     }
 
-    .ChooseTour-cards{
+    .chooseTour-cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
@@ -976,35 +980,35 @@ footer {
        /* padding: 0 53px;*/
     }
 
-    .ChooseTour-card{
+    .chooseTour-card{
        height: 531px;
         border-radius: 50px;
     }
 
-    .ChooseTour-card__info{
+    .chooseTour-card__info{
         padding: 50px 50px 0 50px; 
       
     }
-    .ChooseTour-card__title{
+    .chooseTour-card__title{
       /*  text-align: center;*/
     }
 
-    .ChooseTour-card__price{
+    .chooseTour-card__price{
         margin-top: 16px;
     }
 
-    .ChooseTour-card__button{
+    .chooseTour-card__button{
         left:29px;
         margin-top: 447px;
         padding: 6px 20px;
         border-radius: 50px;
     }
 
-    .ChooseTour-card__button-icon{
+    .chooseTour-card__button-icon{
         padding-left: 11px;  
     }
 
-    .Form-subtitle{
+    .form-subtitle{
         margin-top: 31px;
         max-width:405px;
         max-height: 56px;
@@ -1065,27 +1069,27 @@ footer {
         height: 152px;
         min-height: 152px;
     }
-     .Form__label-textarea{
+     .form__label-textarea{
         margin-top: 2px;
     }
-    .Form-radiobutton__question{
+    .form-radiobutton__question{
         margin-bottom: 8px;
     }
     
-    .Form-checkbox__label span::before{
+    .form-checkbox__label span::before{
         margin-right:13px;
     }
-    .Form-checkbox__label span::after{
+    .form-checkbox__label span::after{
         top:6px;
     }
-    .Form-checkbox__text-partTwo{
+    .form-checkbox__text-partTwo{
         padding-left: 1px;
     }
-    .Form-button{
+    .form-button{
         grid-column: 1 / 3;
         margin-top: -3px;
     }
-    .Form-button__reset{
+    .form-button__reset{
         margin-left: 3.1%;
     }
    
@@ -1132,7 +1136,7 @@ footer {
         border-radius: 100px;
     }
   
-    .Photos-Trip{
+    .photos-Trip{
         margin-left: auto;
         margin-right: auto;
         /*padding-left: 20px;
@@ -1142,80 +1146,84 @@ footer {
         width: 100%;
     }
 
-    .Photos-Trip__first-row{
+    .photos-Trip__first-row{
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .Photos-Trip__photo-FirstDelete{
+    .photos-Trip__photo-FirstDelete{
         display: none;
     }
 
-    .Photos-Trip__photo{
+    .photos-Trip__photo{
         width: 100%;
         height: 301px;
         border-radius: 50px;
         object-fit:cover;
     }
 
-    .Photos-Trip__second-row{
+    .photos-Trip__second-row{
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 30px;
     }
 
-    .Photos-Trip__third-row{
+    .photos-Trip__third-row{
         display:grid;
         grid-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 30px;
     }
    
-    .Stories-cards{
-        margin: 0 auto;
+    .stories-cards{
+        /*margin: 0 auto;*/
         margin-top: 98px;
     }
-    .Stories-card__img {
+    .stories-card__img {
         object-fit:fill;
     }
-    .Stories-scale{
+    .stories-scale{
         height: 567px;
         border-radius: 50px;
     }
-    .Stories-scale::after{
+    .stories-scale::after{
         border-radius: 50px; 
     }
-    .Stories-card__description{
+    .stories-card__description{
         width: 554px;
    }
-    .Stories-card__detailed{
+    .stories-card__detailed{
         top:472px;
     }
   
-    .Intelligence{
+    .intelligence{
        width: 100%;
        /*padding: 0 125.5px;*/
     }
-    .Footer{
-        width: 918px;
-        max-width: 89.5%;
-       
+    /*.intelligence-img{
+        width: 48vw;
+        height: 40vh;
+    }*/
+    .footer{
+        width: 1170px;
+        max-width: 100%;
+        padding: 0 53px;     
     }
-    .Footer-networks__option{
+    .footer-networks__option{
         margin-right: 34px; 
     }
 
-    .Footer-networks__inst-img{margin-right: 10px;}
+    .footer-networks__inst-img{margin-right: 10px;}
 
-    .Footer-networks__facebook-img{margin-right: 10px;}
+    .footer-networks__facebook-img{margin-right: 10px;}
 
-    .Footer-networks__vk-img{margin-right: 6px; }
+    .footer-networks__vk-img{margin-right: 6px; }
    
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     input[placeholder]          {text-indent: 9px;   transition: text-indent 0.3s ease;}
     input::-moz-placeholder     {text-indent: 9px;   transition: text-indent 0.3s ease;} 
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
@@ -1234,14 +1242,14 @@ footer {
         padding: 5px 20px;
     }
     
-    .ChooseTour-options {
+    .chooseTour-options {
         gap: 10px;
         margin-top:30px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .ChooseTour-cards{
+    .chooseTour-cards{
         display: grid;
         width: 100%;
         grid-gap: 18px;
@@ -1249,40 +1257,40 @@ footer {
         /*padding: 0 20px;*/
     }
 
-   .ChooseTour-card{
+   .chooseTour-card{
        /* height: 88vmin;*/
         height: 318px;
         border-radius: 20px;
     }
   
-    .ChooseTour-sacal::after{  
+    .chooseTour-sacal::after{  
       /*  height: 88vmin;*/
         border-radius: 20px;
     }
 
-    .ChooseTour-card__info{
+    .chooseTour-card__info{
         top:0;
         left:0;
         padding: 25px;
     }
 
-    .ChooseTour-card__price{ 
+    .chooseTour-card__price{ 
         margin-top: 13px;
     }
    
-    .ChooseTour-card__button{
+    .chooseTour-card__button{
         left: 5px; 
         margin-top: 263px; 
         padding: 6px 20px;
         border-radius: 50px;
     }
 
-    .ChooseTour-card__button-icon{
+    .chooseTour-card__button-icon{
         vertical-align: middle;
         padding-left: 13px; 
     }
    
-    .Form-subtitle{
+    .form-subtitle{
        /* display: flex;
        margin-left:auto;
         margin-right: auto;
@@ -1357,49 +1365,49 @@ footer {
         min-height:132px;
     }
 
-    .Form-radiobutton__question{
+    .form-radiobutton__question{
         margin-top: -8px;
         margin-bottom: 9px;
         font-size: 16px; 
     }
 
-    .Form-radiobutton__position-no{
+    .form-radiobutton__position-no{
         margin-left: 81px;
         width: 50px;
     }
 
-    .Form-radiobutton__label span {
+    .form-radiobutton__label span {
         padding-left: 30px;
         font-size: 16px;
     }
 
-    .Form-radiobutton__label span::before{
+    .form-radiobutton__label span::before{
        width: 16px;
        height: 16px;
     }
 
-   .Form-radiobutton__label span::after{
+   .form-radiobutton__label span::after{
         left:2px;
         top:6px;
         width:8px;
         height:8px;
     }
     
-    .Form-checkbox__label{
+    .form-checkbox__label{
         grid-column: 1 / 3; 
     }
 
-    .Form-checkbox__fake {
+    .form-checkbox__fake {
         align-items: flex-start;
     }
 
-    .Form-checkbox__text{
+    .form-checkbox__text{
         margin-top: -4px;
         font-size: 16px;
         letter-spacing: 0px;
     }
 
-    .Form-checkbox__fake::before{
+    .form-checkbox__fake::before{
         display:inline-block;
         margin-top: -4px;
         margin-right:10px;
@@ -1409,7 +1417,7 @@ footer {
         height: 17px;
     }
 
-    .Form-checkbox__fake::after{
+    .form-checkbox__fake::after{
         top:1px;
         left:8px;
         width: 3px;
@@ -1421,20 +1429,20 @@ footer {
         border-radius:1px;
     }
     
-    .Form-checkbox__text-partTwo{
+    .form-checkbox__text-partTwo{
         padding-left: 3px;
     }
 
-    .Form-button{
+    .form-button{
         grid-column: 1/2;
     }
-    .Form-button__find-tour, .Form-button__reset{
+    .form-button__find-tour, .form-button__reset{
         margin-top: -2px;
         width: 134px;
         height: 47px;
         font-size: 16px;
     }
-    .Form-button__reset{
+    .form-button__reset{
         margin-left: 1.7%;   
     }
 
@@ -1490,7 +1498,7 @@ footer {
         border-radius: 100px;
     }
 
-    .Photos-Title{
+    .photos-Title{
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -1498,7 +1506,7 @@ footer {
         height: 76px;
     }
 
-    .Photos-subtitle{
+    .photos-subtitle{
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -1506,7 +1514,7 @@ footer {
         width: 318px;
     }
 
-    .Photos-Trip{
+    .photos-Trip{
         /*margin-left: auto;
         margin-right: auto;*/
         width: 100%;
@@ -1515,101 +1523,101 @@ footer {
         padding-right: 21px;*/
     }
 
-    .Photos-Trip__first-row{
+    .photos-Trip__first-row{
         display:grid;
         grid-gap: 18px;
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    .Photos-Trip__photo{
+    .photos-Trip__photo{
         min-height: 110px;
         border-radius: 20px;
         object-fit:cover;
     }
 
-    .Photos-Trip__photo-SecondDelete{
+    .photos-Trip__photo-SecondDelete{
         display: none;
     }
 
-    .Photos-Trip__photo-FirstDelete{
+    .photos-Trip__photo-FirstDelete{
         display: none;
     }
 
-    .Photos-Trip__second-row{
+    .photos-Trip__second-row{
         display:grid;
         grid-gap: 10px;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 18px;
     }
     
-    .Photos-Trip__third-row{
+    .photos-Trip__third-row{
         display:grid;
         grid-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 18px;
     }
  
-    .Stories-Title{
+    .stories-Title{
         margin-left: auto;
         margin-right: auto;
         width: 319px;
         height: 76px;
        
     }
-    .Stories-subtitle{   
+    .stories-subtitle{   
         margin-left: auto;
         margin-right: auto;
         margin-top: 95px;
         width: 318px;
         display: flex;
     }
-    .Stories-cards{
+    .stories-cards{
         margin: 0 auto;
         margin-top: 40px;
         /*padding: 0 20px;*/        
     }
-    .Stories-card {
+    .stories-card {
         position: relative;
         margin-top: 20px;
         border-radius: 20px;
         overflow: hidden;
         
       }
-    .Stories-card__img{
+    .stories-card__img{
         height: 455px;
         object-fit:cover;
     } 
-    .Stories-scale {
+    .stories-scale {
       width: 100%;
       height: 455px;
       border-radius: 20px;
     }
-    .Stories-scale::after{
+    .stories-scale::after{
         border-radius: 20px; 
   }
-    .Stories-card__information{
+    .stories-card__information{
         top:0;
         left:0;
         padding: 30px;
     }
-    .Stories-card__Title{
+    .stories-card__Title{
        padding-right: 100px;
     }
-    .Stories-card__description{
+    .stories-card__description{
         margin-top: 22px;
     }
-    .Stories-card__description-list{
+    .stories-card__description-list{
        margin-top: 24px;
        margin-left: 23px;
        
     }
-    .Stories-card__detailed{
+    .stories-card__detailed{
         top:394px;
         left:0;
         padding-left: 10px;
     }
     
-    .Stories-card__button{
+    .stories-card__button{
         padding: 7px 20px;
         border-radius: 20px;
         display: flex;
@@ -1617,51 +1625,54 @@ footer {
         justify-content: center;
         gap: 7px; 
     }
-    .Stories-card__button-icon{
+    .stories-card__button-icon{
         vertical-align: middle;
     }
-    .Stories-card__SocialNetworks{
+    .stories-card__SocialNetworks{
         display: none;
     }
-    .Intelligence{
+    .intelligence{
         flex-direction: column;
         margin: 75px auto;
-        width:100%;
+       /* width:100%;*/
+        width: 360px;
+        max-width: 100%;
         
     }
-    .Intelligence-description{
+    .intelligence-description{
         text-align: center;
     }
-    .Intelligence-img{
+    .intelligence-img{
         width: 36.11vw;
         height: 27%;
         border-radius: 20px;
     }
-    .Intelligence__text{
-        padding: 4px 40px 0 ;
+    .intelligence__text{
+        padding: 0px 40px 0 ;
     }
-    .Intelligence__text-email{
+    .intelligence__text-email{
         padding: 0 25px;
     }
 
     footer {
         height: 95px;
     }
-    .Footer{
+    .footer{
         justify-content: center;
         width: 360px;
-      
+        max-width: 100%;
+        padding: 0 21px;  
 
     }
-    .Footer-networks{
+    .footer-networks{
         margin-top: 7px;
     }
-    .Footer-networks__option{
+    .footer-networks__option{
         margin-right: 21px;
     }
 
-    .Footer-networks__inst-img{margin-right: 3px; width: 10px; height: 10px;}
-    .Footer-networks__facebook-img{margin-right: -1px; width:8px; height: 13px;}
-    .Footer-networks__vk-img{margin-right: -1px; width: 12px; height: 9px; }
+    .footer-networks__inst-img{margin-right: 3px; width: 10px; height: 10px;}
+    .footer-networks__facebook-img{margin-right: -1px; width:8px; height: 13px;}
+    .footer-networks__vk-img{margin-right: -1px; width: 12px; height: 9px; }
 
 }
