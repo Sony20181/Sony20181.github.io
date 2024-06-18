@@ -57,8 +57,8 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 }
 
 .chooseTour-options {
-    display:  flex;
-    justify-content: center;
+   display:  flex;
+  /**/   justify-content: center;
     flex-wrap: wrap; 
     margin-top:35px;
     margin-left:auto ;
@@ -940,7 +940,7 @@ footer {
     }
 
     .intelligence{
-        width:771px ;
+        max-width:771px ;
     }
 
     .intelligence__email:hover::after {
@@ -1000,6 +1000,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
         margin-top:105px;
+        padding: 0 53px;
     }
 
     .chooseTour-card{
@@ -1036,7 +1037,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px 20px;
-        height: 968px; 
+        height: 966px; 
         margin-top: 101px;
         padding: 60px;
         border-radius: 50px;
@@ -1224,14 +1225,17 @@ footer {
         padding-right: 60px;
        
     }
-    .intelligence{
-       width: 100%;
-       /*padding: 0 125.5px;*/
+    .stories-card__Network:first-child{
+        margin-left: 0;
     }
-    /**/.intelligence-img{
-        width: 100% ;
-        max-width:360px ;
-       
+
+    .intelligence{
+        width: 100%;
+    } 
+
+    .intelligence-img{
+        width:36vw;
+        height:45%;
     }
 
     .footer{
@@ -1294,7 +1298,7 @@ footer {
     }
 
    .chooseTour-card{
-        height: 318px;
+        height:318px;
         border-radius: 20px;
     }
   
@@ -1542,7 +1546,7 @@ footer {
 
     .photos-Trip{
         width: 100%;
-        margin-top: 40px;
+        margin-top: 36px;
     }
 
     .photos-Trip__first-row{
@@ -1674,7 +1678,7 @@ footer {
 
     .intelligence-img{
         width: 36.11vw;
-        height: 27%;
+        height: 27vh;
         border-radius: 20px;
     }
 
