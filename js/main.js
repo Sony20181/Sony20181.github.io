@@ -1,4 +1,4 @@
-
+/*
 function changeHeadingColor() {
     let scrollHeight = window.scrollY;
     let heading = document.querySelector('.heading');
@@ -13,7 +13,18 @@ function changeHeadingColor() {
       heading.style.position = "fixed";
       heading.style.marhinBottom = "88px";
     }
+}*/
+function changeHeadingColor() {
+  let scrollHeight = window.scrollY;
+  let heading = document.querySelector('.heading');
+  if (scrollHeight < 450) {
+    heading.classList.remove('scrolled');
+  } else {
+    heading.classList.add('scrolled');
+  }
 }
+
+window.addEventListener('scroll', changeHeadingColor);
 window.addEventListener('scroll', changeHeadingColor);
 
 function inputPhoneNumber(input) {
