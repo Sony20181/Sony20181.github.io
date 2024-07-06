@@ -1,7 +1,7 @@
-input[placeholder]          {text-indent: 16px;   transition: text-indent 0.3s ease;}
-input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.3s ease;} 
-input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.3s ease;} 
-input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s ease;} 
+input[placeholder]          {text-indent: 16px;   transition: text-indent 0.2s ease;}
+input::-moz-placeholder     {text-indent: 16px;   transition: text-indent 0.2s ease;} 
+input:-moz-placeholder      {text-indent: 16px;   transition: text-indent 0.2s ease;} 
+input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.2s ease;} 
 :-ms-input-placeholder { color:#A6A6A6;}
 ::placeholder {color:#A6A6A6;} 
 
@@ -47,7 +47,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     border: none;
     background: #FFFFFF;
     cursor: pointer;
-    transition: background-color 0.5s  linear ;
+    transition: background-color 0.2s  linear ;
 }
 
 .caption-button:active{ 
@@ -87,7 +87,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     width: 0;
     height: 2px;
     content: "";
-    transition:  0.5s ease-in-out;
+    transition: width  0.2s ease-in-out;
 }
   
 .chooseTour-options p:active::after {
@@ -120,7 +120,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
 .chooseTour-scalе{
     width: 100%;
     height: 100%;
-    transition: transform 0.4s;
+    transition: transform 0.2s;
     cursor: pointer; 
 }
 
@@ -149,7 +149,7 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.3s e
     border:none;
     color: #FFFFFF;
     background: none;
-    transition: background-color 0.4s;
+    transition: background-color 0.2s;
 }
 
 .chooseTour-scalе:hover .Choose-card__img {
@@ -188,7 +188,7 @@ option{
     border: 1px solid #F4F0E9;
     background: #F9F7F4;
     color:#1B1F2B;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 select{ 
@@ -226,7 +226,7 @@ option:checked{
   
 input[type=date] {
     text-transform: uppercase;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 input[type = date]:invalid::-webkit-datetime-edit { color:#A6A6A6;}
@@ -396,7 +396,7 @@ input:checked + .form__radio-label::after{
     height: 1px;
     background: #000;
     content: '';
-    transition: 0.5s;
+    transition: width 0.2s;
 }
  
 .form-button__find-tour, .form-button__reset{
@@ -541,7 +541,7 @@ input:checked + .form__radio-label::after{
 .stories-scale {
     height: 568px;
     border-radius: 50px;
-    transition: transform 0.4s;
+    transition: transform 0.3s;
     cursor: pointer;
 }
 
@@ -599,7 +599,7 @@ input:checked + .form__radio-label::after{
     padding: 7px 20px;
     border-radius: 50px;
     color: #FFFFFF;
-    transition: background-color 0.4s;
+    transition: background-color 0.3s;
 }
 
 .stories-card__button-icon{
@@ -628,7 +628,7 @@ input:checked + .form__radio-label::after{
     background-color: white;
     color: #E0F0E5;
     content: "";
-    transition: width 0.5s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
   
 
@@ -674,7 +674,7 @@ input:checked + .form__radio-label::after{
     width: 0;
     height: 2px;
     content: "";
-    transition:  0.5s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
     
 .intelligence__email:active::after {
@@ -741,7 +741,7 @@ footer {
     width: 0;
     height: 1px;
     margin-left: 24%;
-    transition:  0.4s ease-in-out;
+    transition: width 0.2s ease-in-out;
     cursor: pointer;
 }
 
@@ -881,7 +881,7 @@ footer {
 
     .reviews-review{
         grid-gap: 30px;
-        max-width: 1170px;
+       /* max-width: 1170px;*/
         height: 673px;
         grid-template-columns: 1fr 1fr;
         margin-top: 99px;
@@ -948,6 +948,11 @@ footer {
         background-color: black; 
     }
 
+    .intelligence__email:active::after {
+        width: 100%;
+        background-color: rgba(40, 101, 98, 1); 
+    }
+
     .footer{
         width: 1170px;
     }
@@ -1000,7 +1005,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
         margin-top:105px;
-        padding: 0 53px;
+        /*padding: 0 53px;*/
     }
 
     .chooseTour-card{
@@ -1058,7 +1063,7 @@ footer {
         font-weight: 400;
         font-size: 20px;
         color:#1B1F2B;
-        transition: background-color 0.3s;
+        transition: background-color 0.2s;
     }
 
     select{ 
@@ -1099,11 +1104,11 @@ footer {
     }
     
     .form-checkbox__label span::before{
-        margin-right:13px;
+       /* margin-right:13px;*/
     }
 
     .form-checkbox__label span::after{
-        top:6px;
+       /* top:6px;*/
     }
 
     .form-checkbox__text-partTwo{
@@ -1360,7 +1365,7 @@ footer {
         font-weight: 400;
         font-size: 16px;
         color:#1B1F2B;
-        transition: background-color 0.3s;
+        transition: background-color 0.2s;
     }
 
     select{ 
@@ -1681,11 +1686,11 @@ footer {
     }
 
     .intelligence__text{
-        padding: 0px 40px 0 ;
+        padding: 5px 35px 0 ;
     }
 
     .intelligence__text-email{
-        padding: 0 25px;
+        padding: 0 5px;
     }
 
     footer {

@@ -17,12 +17,42 @@ function changeHeadingColor() {
 function changeHeadingColor() {
   let scrollHeight = window.scrollY;
   let heading = document.querySelector('.heading');
+  let logotip = document.querySelector('.heading-logo__img');
+  let headingNumber = document.querySelector('.heading-number');
+  let headingText = document.querySelector('.heading-nav__option-text');
   if (scrollHeight < 450) {
     heading.classList.remove('scrolled');
+    logotip.classList.remove('black-color');
+    headingNumber.classList.remove('black-color');
+    headingText.classList.remove('black-color');
+
   } else {
     heading.classList.add('scrolled');
+    logotip.classList.add('black-color');
+    headingNumber.classList.add('black-color');
+    headingText.classList.add('black-color');
   }
 }
+/*
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 450) {
+    document.querySelector('.heading-nav__option-text').classList.add('dark-heading');
+  } else {
+    document.querySelector('.heading-nav__option-text').classList.remove('dark-heading');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 450) {
+    document.querySelectorAll('.heading-nav__option-text, .heading-number, .heading-logo__img').forEach(function(element) {
+      element.style.color = 'black';
+    });
+  } else {
+    document.querySelectorAll('.heading-nav__option-text, .heading-number, .heading-logo__img').forEach(function(element) {
+      element.style.color = 'white';
+    });
+  }
+});*/
 
 window.addEventListener('scroll', changeHeadingColor);
 window.addEventListener('scroll', changeHeadingColor);
