@@ -69,18 +69,23 @@ a {
     color:white;
 }
 
-.dark-heading {
-    color: black; /* Цвет текста */
-}
-
 .black-color {
     filter: invert(100%);
 }
 
-.mainContainer{
+.black-headingText .heading-nav__option a {
+    color: black;
+}
+
+.black-headingText  .heading-nav__option a:hover::after {
+    width: 100%;
+    background-color: black;
+}
+
+.common-container{
     margin: 0 auto;
     width: 100%;
-    max-width: 1170px;/**/
+    max-width: 1170px;
     
 }
 /*
@@ -93,13 +98,13 @@ a {
 }
 */
 @media screen and (min-width:768px) and (max-width:1240px) {
-    .mainContainer{
+    /*.mainContainer{
          margin: 0 auto;
          width: 100%;
          max-width:1040px;
          padding: 0 53px;
          
-     }
+     }*/
 /*
     .form,
     .reviews,
@@ -117,13 +122,13 @@ a {
 }
 
 @media screen and (max-width:767px){
-    .mainContainer{
+   /* .mainContainer{
         margin: 0 auto;
         width: 100%;
         max-width:760px;
         padding: 0 21px;
         
-    }
+    }*/
     /*
     .chooseTour,
     .form,
