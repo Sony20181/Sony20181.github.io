@@ -262,125 +262,127 @@
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-
-        <form action="#" class="form-Shell">
-          <label for="name">
-            <p class="form__Name p-normal">Имя</p>
-            <input
-              type="text"
-              required
-              name="Name"
-              placeholder="Введите Ваше имя"
-            />
-          </label>
-          <label for="place">
-            <p class="form__direction p-normal">Направление</p>
-            <select id="directionSelect" onchange="changeText()">
-              <option value="Куда хотите ехать?" disabled selected>
-                Куда хотите ехать
-              </option>
-              <option value="Берген (Норвегия)">Берген (Норвегия)</option>
-              <option value="Бухта Навагио (Греция)">
-                Бухта Навагио (Греция)
-              </option>
-              <option value="Гейрангер-фьорд (Норвегия)">
-                Гейрангер-фьорд (Норвегия)
-              </option>
-              <option value="Долина Йосемити(США)">Долина Йосемити(США)</option>
-              <option value="Шондонг (Вьетнам)">Шондонг (Вьетнам)</option>
-              <option value="Ленсойс-Мараньенсес (Бразилия)">
-                Ленсойс-Мараньенсес (Бразилия)
-              </option>
-            </select>
-          </label>
-          <label for="email">
-            <p class="form__Email p-normal">Email</p>
-            <input
-              type="email"
-              required
-              email="Email"
-              placeholder="example@mail.com"
-            />
-          </label>
-          <label for="number">
-            <p class="form__Telephone p-normal">Телефон</p>
-            <input
-              type="tel"
-              minlength="9"
-              maxlength="14"
-              required
-              oninput="inputPhoneNumber(this)"
-              placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"
-            />
-          </label>
-          <label for="date-from">
-            <p class="form__DateFrom p-normal">Дата от</p>
-            <input
-              type="date"
-              min="2023-01-10"
-              max="2030-01-01"
-              required
-              date-from="Date-from"
-              placeholder="ДД.ММ.ГГГГ"
-            />
-          </label>
-          <label for="date-before">
-            <p class="form__DateBefore p-normal">Дата до</p>
-            <input
-              type="date"
-              min="2023-01-10"
-              max="2030-01-01"
-              required
-              date-before="Date-before"
-              placeholder="ДД.ММ.ГГГГ"
-            />
-          </label>
-          <label class="form__label-textarea" for="comment">
-            <p class="form__Comment p-normal">Комментарий</p>
-            <textarea comment="Comment"></textarea>
-          </label>
-          <div class="form-radiobutton">
-            <p class="form-radiobutton__question p-normal">Вам есть 18 лет?</p>
-            <label
-              class="form-radiobutton__label form-radiobutton__position-yes"
-            >
-              <input type="radio" id="YES" name="question" value="Yes" />
-              <span>Да</span>
+        <div class=" common-container ">
+          <form action = "#" class = "form-Shell">
+            <label for="name">
+              <p class="form__Name p-normal">Имя</p>
+              <input
+                type="text"
+                required
+                name="Name"
+                placeholder="Введите Ваше имя"
+              />
             </label>
-
-            <label
-              class="form-radiobutton__label form-radiobutton__position-no"
-            >
-              <input type="radio" id="NO" name="question" value="No" />
-              <span>Нет</span>
+            <label for="place">
+              <p class="form__direction p-normal">Направление</p>
+              <select id="directionSelect" onchange="changeText()">
+                <option value="Куда хотите ехать?" disabled selected>
+                  Куда хотите ехать
+                </option>
+                <option value="Берген (Норвегия)">Берген (Норвегия)</option>
+                <option value="Бухта Навагио (Греция)">
+                  Бухта Навагио (Греция)
+                </option>
+                <option value="Гейрангер-фьорд (Норвегия)">
+                  Гейрангер-фьорд (Норвегия)
+                </option>
+                <option value="Долина Йосемити(США)">Долина Йосемити(США)</option>
+                <option value="Шондонг (Вьетнам)">Шондонг (Вьетнам)</option>
+                <option value="Ленсойс-Мараньенсес (Бразилия)">
+                  Ленсойс-Мараньенсес (Бразилия)
+                </option>
+              </select>
             </label>
-          </div>
-
-          <label class="form-checkbox__label">
-            <input type="checkbox" />
-            <span class="form-checkbox__fake">
-              <p class="form-checkbox__text p-small">
-                Нажимая кнопку, я принимаю условия<a
-                  class="form-checkbox__text-partTwo"
-                  href=""
-                  >Лицензионного договора</a
-                >
-              </p>
-            </span>
-          </label>
-          <div class="form-button">
-            <button type="submit" class="form-button__find-tour p-normal">
-              Найти тур
-            </button>
-            <button
-              type="reset"
-              value="reset"
-              class="form-button__reset p-normal"
-            >
-              Сбросить
-            </button>
-          </div>
-        </form>
+            <label for="email">
+              <p class="form__Email p-normal">Email</p>
+              <input
+                type="email"
+                required
+                email="Email"
+                placeholder="example@mail.com"
+              />
+            </label>
+            <label for="number">
+              <p class="form__Telephone p-normal">Телефон</p>
+              <input
+                type="tel"
+                minlength="9"
+                maxlength="14"
+                required
+                oninput="inputPhoneNumber(this)"
+                placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"
+              />
+            </label>
+            <label for="date-from">
+              <p class="form__DateFrom p-normal">Дата от</p>
+              <input
+                type="date"
+                min="2023-01-10"
+                max="2030-01-01"
+                required
+                date-from="Date-from"
+                placeholder="ДД.ММ.ГГГГ"
+              />
+            </label>
+            <label for="date-before">
+              <p class="form__DateBefore p-normal">Дата до</p>
+              <input
+                type="date"
+                min="2023-01-10"
+                max="2030-01-01"
+                required
+                date-before="Date-before"
+                placeholder="ДД.ММ.ГГГГ"
+              />
+            </label>
+            <label class="form__label-textarea" for="comment">
+              <p class="form__Comment p-normal">Комментарий</p>
+              <textarea comment="Comment"></textarea>
+            </label>
+            <div class="form-radiobutton">
+              <p class="form-radiobutton__question p-normal">Вам есть 18 лет?</p>
+              <label
+                class="form-radiobutton__label form-radiobutton__position-yes"
+              >
+                <input type="radio" id="YES" name="question" value="Yes" />
+                <span>Да</span>
+              </label>
+  
+              <label
+                class="form-radiobutton__label form-radiobutton__position-no"
+              >
+                <input type="radio" id="NO" name="question" value="No" />
+                <span>Нет</span>
+              </label>
+            </div>
+  
+            <label class="form-checkbox__label">
+              <input type="checkbox" />
+              <span class="form-checkbox__fake">
+                <p class="form-checkbox__text p-small">
+                  Нажимая кнопку, я принимаю условия<a
+                    class="form-checkbox__text-partTwo"
+                    href=""
+                    >Лицензионного договора</a
+                  >
+                </p>
+              </span>
+            </label>
+            <div class="form-button">
+              <button type="submit" class="form-button__find-tour p-normal">
+                Найти тур
+              </button>
+              <button
+                type="reset"
+                value="reset"
+                class="form-button__reset p-normal"
+              >
+                Сбросить
+              </button>
+            </div>
+          </form>
+        </div>
+        
       </section>
 
       <section class="reviews">
@@ -391,53 +393,56 @@
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <div class="reviews-review">
-          <div class="reviews-review-card">
-            <p class="reviews-card__text p-big">
-              Идейные соображения высшего порядка, а также рамки и место
-              обучения кадров обеспечивает широкому кругу (специалистов) участие
-              в формировании новых предложений. Идейные соображения высшего
-              порядка, а также начало повседневной работы по формированию
-              позиции позволяет оценить значение модели развития.
-            </p>
-            <div class="reviews-card__info">
-              <p class="reviews-card__PersonName h3">Мария</p>
-              <p class="reviews-card__Tour p-small">Тур: Вдали от дома</p>
-              <img
-                class="reviews-card__PhotoUsers"
-                src="img/review-photo-1.png"
-                alt="Изображение пользователя"
-              />
-            </div>
-          </div>
-
-          <div class="reviews-review-card">
-            <div>
+        <div class=" common-container ">
+          <div class="  reviews-review ">
+            <div class="reviews-review-card">
               <p class="reviews-card__text p-big">
-                Равным образом постоянный количественный рост и сфера нашей
-                активности играет важную роль в формировании системы обучения
-                кадров, соответствует насущным потребностям.
+                Идейные соображения высшего порядка, а также рамки и место
+                обучения кадров обеспечивает широкому кругу (специалистов) участие
+                в формировании новых предложений. Идейные соображения высшего
+                порядка, а также начало повседневной работы по формированию
+                позиции позволяет оценить значение модели развития.
               </p>
-              <p class="reviews-card__text-ident p-big">
-                Значимость этих проблем настолько очевидна, что дальнейшее
-                развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании новых предложений.
-                Повседневная практика показывает, что реализация намеченных
-                плановых заданий в значительной степени обуславливает создание
-                модели развития.
-              </p>
+              <div class="reviews-card__info">
+                <p class="reviews-card__PersonName h3">Мария</p>
+                <p class="reviews-card__Tour p-small">Тур: Вдали от дома</p>
+                <img
+                  class="reviews-card__PhotoUsers"
+                  src="img/review-photo-1.png"
+                  alt="Изображение пользователя"
+                />
+              </div>
             </div>
-            <div class="reviews-card__info">
-              <p class="reviews-card__PersonName h3">Павел</p>
-              <p class="reviews-card__Tour p-small">Тур: Путешествие в горы</p>
-              <img
-                class="reviews-card__PhotoUsers reviews-card__PhotoSecondUsers-top"
-                src="img/review-photo-2.png"
-                alt="Изображение пользователя"
-              />
+  
+            <div class="reviews-review-card">
+              <div>
+                <p class="reviews-card__text p-big">
+                  Равным образом постоянный количественный рост и сфера нашей
+                  активности играет важную роль в формировании системы обучения
+                  кадров, соответствует насущным потребностям.
+                </p>
+                <p class="reviews-card__text-ident p-big">
+                  Значимость этих проблем настолько очевидна, что дальнейшее
+                  развитие различных форм деятельности обеспечивает широкому кругу
+                  (специалистов) участие в формировании новых предложений.
+                  Повседневная практика показывает, что реализация намеченных
+                  плановых заданий в значительной степени обуславливает создание
+                  модели развития.
+                </p>
+              </div>
+              <div class="reviews-card__info">
+                <p class="reviews-card__PersonName h3">Павел</p>
+                <p class="reviews-card__Tour p-small">Тур: Путешествие в горы</p>
+                <img
+                  class="reviews-card__PhotoUsers reviews-card__PhotoSecondUsers-top"
+                  src="img/review-photo-2.png"
+                  alt="Изображение пользователя"
+                />
+              </div>
             </div>
           </div>
         </div>
+        
       </section>
 
       <section class="photos">
@@ -528,121 +533,124 @@
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <div class="stories-cards">
-          <div class="stories-card stories-scale">
-            <img
-              class="stories-scale stories-card__img"
-              src="img/story photo-1.png"
-              alt="Фото из истории путешествия"
-            />
-            <div class="stories-card__information">
-              <h3 class="stories-card__Title h3">Автостопом в Стамбул</h3>
-              <div class="stories-card__description p-normal">
-                Идейные соображения высшего порядка, а также рамки и место
-                обучения кадров обеспечивает широкому кругу (специалистов)
-                участие в формировании новых предложений:
-
-                <ul class="stories-card__description-list">
-                  <li>вкусная еда</li>
-                  <li>дешевый транспорт</li>
-                  <li>красивый город.</li>
+        <div class="common-container">
+          <div class="stories-cards">
+            <div class="stories-card stories-scale">
+              <img
+                class="stories-scale stories-card__img"
+                src="img/story photo-1.png"
+                alt="Фото из истории путешествия"
+              />
+              <div class="stories-card__information">
+                <h3 class="stories-card__Title h3">Автостопом в Стамбул</h3>
+                <div class="stories-card__description p-normal">
+                  Идейные соображения высшего порядка, а также рамки и место
+                  обучения кадров обеспечивает широкому кругу (специалистов)
+                  участие в формировании новых предложений:
+  
+                  <ul class="stories-card__description-list">
+                    <li>вкусная еда</li>
+                    <li>дешевый транспорт</li>
+                    <li>красивый город.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="stories-card__detailed">
+                <button class="stories-card__button p-big">
+                  Подробнее
+                  <img
+                    alt="Стрелочка"
+                    class="stories-card__button-icon"
+                    src="img/Vector.jpg"
+                  />
+                </button>
+                <ul class="stories-card__SocialNetworks">
+                  <li class="stories-card__Network">
+                    <p class="p-normal">instagram</p>
+                  </li>
+                  <li class="stories-card__Network">
+                    <p class="p-normal">facebook</p>
+                  </li>
+                  <li class="stories-card__Network">
+                    <p class="p-normal">YouTube</p>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="stories-card__detailed">
-              <button class="stories-card__button p-big">
-                Подробнее
-                <img
-                  alt="Стрелочка"
-                  class="stories-card__button-icon"
-                  src="img/Vector.jpg"
-                />
-              </button>
-              <ul class="stories-card__SocialNetworks">
-                <li class="stories-card__Network">
-                  <p class="p-normal">instagram</p>
-                </li>
-                <li class="stories-card__Network">
-                  <p class="p-normal">facebook</p>
-                </li>
-                <li class="stories-card__Network">
-                  <p class="p-normal">YouTube</p>
-                </li>
-              </ul>
+  
+            <div class="stories-card stories-scale">
+              <img
+                class="stories-scale stories-card__img"
+                src="img/story photo-2.jpg"
+                alt="Фото из истории путешествия"
+              />
+              <div class="stories-card__information">
+                <h3 class="stories-card__Title h3">Автостопом в Стамбул</h3>
+                <p class="stories-card__description p-normal">
+                  Идейные соображения высшего порядка, а также рамки и место
+                  обучения кадров обеспечивает широкому кругу (специалистов)
+                  участие в формировании новых предложений.
+                </p>
+              </div>
+              <div class="stories-card__detailed">
+                <button class="stories-card__button p-big">
+                  Подробнее
+                  <img
+                    alt="Стрелочка"
+                    class="stories-card__button-icon"
+                    src="img/Vector.jpg"
+                  />
+                </button>
+                <ul class="stories-card__SocialNetworks">
+                  <li class="stories-card__Network">
+                    <p class="p-normal">instagram</p>
+                  </li>
+                  <li class="stories-card__Network">
+                    <p class="p-normal">ВКонтакте</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <div class="stories-card stories-scale">
-            <img
-              class="stories-scale stories-card__img"
-              src="img/story photo-2.jpg"
-              alt="Фото из истории путешествия"
-            />
-            <div class="stories-card__information">
-              <h3 class="stories-card__Title h3">Автостопом в Стамбул</h3>
-              <p class="stories-card__description p-normal">
-                Идейные соображения высшего порядка, а также рамки и место
-                обучения кадров обеспечивает широкому кругу (специалистов)
-                участие в формировании новых предложений.
-              </p>
-            </div>
-            <div class="stories-card__detailed">
-              <button class="stories-card__button p-big">
-                Подробнее
-                <img
-                  alt="Стрелочка"
-                  class="stories-card__button-icon"
-                  src="img/Vector.jpg"
-                />
-              </button>
-              <ul class="stories-card__SocialNetworks">
-                <li class="stories-card__Network">
-                  <p class="p-normal">instagram</p>
-                </li>
-                <li class="stories-card__Network">
-                  <p class="p-normal">ВКонтакте</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="stories-card stories-scale">
-            <img
-              class="stories-scale stories-card__img"
-              src="img/story photo-3.png"
-              alt="Фото из истории путешествия"
-            />
-            <div class="stories-card__information">
-              <h3 class="stories-card__Title h3">Автостопом в Стамбул</h3>
-              <p class="stories-card__description p-normal">
-                Идейные соображения высшего порядка, а также рамки и место
-                обучения кадров обеспечивает широкому кругу (специалистов)
-                участие в формировании новых предложений.
-              </p>
-            </div>
-            <div class="stories-card__detailed">
-              <button class="stories-card__button p-big">
-                Подробнее
-                <img
-                  alt="Стрелочка"
-                  class="stories-card__button-icon"
-                  src="img/Vector.jpg"
-                />
-              </button>
-              <ul class="stories-card__SocialNetworks">
-                <li class="stories-card__Network">
-                  <p class="p-normal">instagram</p>
-                </li>
-                <li class="stories-card__Network">
-                  <p class="p-normal">facebook</p>
-                </li>
-                <li class="stories-card__Network">
-                  <p class="p-normal">ВКонтакте</p>
-                </li>
-              </ul>
+  
+            <div class="stories-card stories-scale">
+              <img
+                class="stories-scale stories-card__img"
+                src="img/story photo-3.png"
+                alt="Фото из истории путешествия"
+              />
+              <div class="stories-card__information">
+                <h3 class="stories-card__Title h3">Автостопом в Стамбул</h3>
+                <p class="stories-card__description p-normal">
+                  Идейные соображения высшего порядка, а также рамки и место
+                  обучения кадров обеспечивает широкому кругу (специалистов)
+                  участие в формировании новых предложений.
+                </p>
+              </div>
+              <div class="stories-card__detailed">
+                <button class="stories-card__button p-big">
+                  Подробнее
+                  <img
+                    alt="Стрелочка"
+                    class="stories-card__button-icon"
+                    src="img/Vector.jpg"
+                  />
+                </button>
+                <ul class="stories-card__SocialNetworks">
+                  <li class="stories-card__Network">
+                    <p class="p-normal">instagram</p>
+                  </li>
+                  <li class="stories-card__Network">
+                    <p class="p-normal">facebook</p>
+                  </li>
+                  <li class="stories-card__Network">
+                    <p class="p-normal">ВКонтакте</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        
       </section>
 
       <section class="intelligence">

@@ -12,7 +12,7 @@ body {
 }
 
 a {
-   /* color: #FFFFFF;*/
+    color: #FFFFFF;
 }
 
 .p-big{
@@ -85,8 +85,7 @@ a {
 .common-container{
     margin: 0 auto;
     width: 100%;
-    max-width: 1170px;
-    
+    max-width: 1170px;  
 }
 /*
 .chooseTour,
@@ -114,6 +113,12 @@ a {
         padding:0 20px;
     }
 */
+    .common-container{
+        margin: 0 auto;
+        width: 100%;
+        max-width:1040px;
+        padding: 0 53px;
+    }
 
     .h2{
         margin-top: 50px;
@@ -121,7 +126,7 @@ a {
     } 
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
    /* .mainContainer{
         margin: 0 auto;
         width: 100%;
@@ -137,7 +142,14 @@ a {
     .stories{
         padding: 0 21px;
     }
-*/
+        
+*/  .common-container{
+        margin: 0 auto;
+        width: 100%;
+        max-width:760px;
+        padding: 0 21px;
+    }
+
     .p-big{
         font-size: 16px;
         font-weight: 700;

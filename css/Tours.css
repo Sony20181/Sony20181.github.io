@@ -328,12 +328,12 @@ input:checked + .form__radio-label::after{
 .form-checkbox__fake {
     position:relative;
     display:flex;
-    align-items:center;
+    /*align-items:center;*/
 }
 
 .form-checkbox__text{
     color: #A6A6A6;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .form-checkbox__label input[type = "checkbox"]{
@@ -349,7 +349,7 @@ input:checked + .form__radio-label::after{
    display:block;
    width: 22px;
    height: 22px;
-   margin-right:20px;
+   margin-right:13px;
    border: 2px solid black;
    border-radius: 5px;
    background-color: #FFFFFF;
@@ -751,6 +751,15 @@ footer {
     cursor: pointer;
 }
 
+.footer-networks__option:active{
+    color:  rgba(239, 165, 1, 1);
+}
+
+.footer-networks__option:active::after{
+    width: 76%;
+    background-color:  rgba(239, 165, 1, 1);     
+}
+
 @media screen and (min-width: 1240px){
 
     .caption-block {
@@ -960,10 +969,6 @@ footer {
     .footer-networks__option:hover{
         color:#3B7E7B;
     }
-
-    .footer-networks__option:active{
-        color:  rgba(239, 165, 1, 1);
-    }
      
     .footer-networks__option:hover::after{
         width: 76%;
@@ -971,10 +976,6 @@ footer {
         background-color: #3B7E7B;      
     }
 
-    .footer-networks__option:active::after{
-        width: 76%;
-        background-color:  rgba(239, 165, 1, 1);     
-    }
 }
 
 @media screen and (min-width: 768px)and (max-width:1240px){ 
@@ -1109,6 +1110,7 @@ footer {
 
     .form-checkbox__label span::after{
        /* top:6px;*/
+       
     }
 
     .form-checkbox__text-partTwo{
@@ -1167,6 +1169,7 @@ footer {
   
     .photos-Trip{
         width: 100%;
+        padding:0 20px;
     }
 
     .photos-Trip__first-row{
@@ -1259,7 +1262,7 @@ footer {
    
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
 
     input[placeholder]          {text-indent: 9px;   transition: text-indent 0.3s ease;}
 
@@ -1421,8 +1424,8 @@ footer {
     }
 
    .form-radiobutton__label span::after{
-        left:2px;
-        top:6px;
+        left:1.5px;
+        top:5.5px;
         width:8px;
         height:8px;
     }
@@ -1550,6 +1553,7 @@ footer {
     .photos-Trip{
         width: 100%;
         margin-top: 36px;
+        padding: 0 21px;
     }
 
     .photos-Trip__first-row{
@@ -1710,6 +1714,15 @@ footer {
 
     .footer-networks__option{
         margin-right: 21px;
+    }
+
+    .footer-networks__option:active{
+        color:  rgba(239, 165, 1, 1);
+    }
+
+    .footer-networks__option:active::after{
+        width: 76%;
+        background-color:  rgba(239, 165, 1, 1);     
     }
 
     .footer-networks__inst-img{margin-right: 3px; width: 10px; height: 10px;}
