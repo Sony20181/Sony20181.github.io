@@ -773,6 +773,11 @@ footer {
         color: #FFFFFF;
         cursor: pointer;    
     }
+
+    .caption-button:active{ 
+        background: #F8E6BE;
+        color: #1B1F2B;  
+    }
   
     .chooseTour-options-option{
         margin-right:30px;
@@ -1202,7 +1207,7 @@ footer {
     }
    
     .stories-cards{
-        margin-top: 98px;
+        margin-top: 102px;
     }
 
     .stories-card__img {
@@ -1518,7 +1523,7 @@ footer {
     }
 
     .reviews-card__text-ident{
-        margin-top: 29px;
+        margin-top: 26px;
     }
 
     .reviews-card__Tour{
