@@ -84,8 +84,9 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.2s e
 
 .chooseTour-options p::after {
     display: block;
+    margin-top: 5px;
     width: 0;
-    height: 2px;
+    height: 1px;
     content: "";
     transition: width  0.2s ease-in-out;
 }
@@ -354,6 +355,7 @@ input:checked + .form__radio-label::after{
    border-radius: 5px;
    background-color: #FFFFFF;
    content : "";
+   cursor: pointer;
 }
 
 .form-checkbox__fake::after{
@@ -370,6 +372,7 @@ input:checked + .form__radio-label::after{
     content : "";
     opacity:0;
     transform: rotate(45deg); 
+    cursor: pointer;
 }
 
 .form-checkbox__label input[type = "checkbox"]:checked + .form-checkbox__fake::after {
@@ -389,7 +392,7 @@ input:checked + .form__radio-label::after{
 
 .form-checkbox__text-partTwo::after {
     position: absolute;
-    left: 0;
+    left: 4px;
     bottom: 0;
     display: block;
     width: 0;
@@ -624,7 +627,7 @@ input:checked + .form__radio-label::after{
 .stories-card__SocialNetworks li::after { 
     display: block;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: white;
     color: #E0F0E5;
     content: "";
@@ -670,7 +673,7 @@ input:checked + .form__radio-label::after{
     left: 0;
     bottom: -5px;
     width: 0;
-    height: 2px;
+    height: 1px;
     content: "";
     transition: width 0.2s ease-in-out;
 }
@@ -714,6 +717,7 @@ footer {
 .footer-networks__option{
     margin-right: 37px;
     color:#A6A6A6;
+    color:Black;
 }
 
 .footer-networks__option:last-child {
@@ -976,15 +980,15 @@ footer {
     .footer{
         width: 1170px;
     }
-
-    .footer-networks__option:hover{
-        color:#3B7E7B;
-    }
      
     .footer-networks__option:hover::after{
         width: 76%;
         margin-left: 24%;
-        background-color: #3B7E7B;      
+        background-color: black;      
+    }
+
+    .footer-networks__option:active::after{
+        background-color:  rgba(239, 165, 1, 1);     
     }
 
 }
@@ -1118,7 +1122,7 @@ footer {
     }
 
     .form-checkbox__text-partTwo{
-        padding-left: 1px;
+        padding-left: 5px;
     }
 
     .form-button{
@@ -1274,11 +1278,19 @@ footer {
     input:-moz-placeholder      {text-indent: 9px;   transition: text-indent 0.3s ease;} 
 
     input:-ms-input-placeholder {text-indent: 9px;   transition: text-indent 0.3s ease;}   
+
+    .caption{
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        height: 100vh;   
+    }
    
     .caption-block {
         width: 568px;
         max-width: 100%;
-        margin: 29vh auto 0;
+      /*   margin: 29vh auto ;*/
+        margin: 92px auto 0;    
     }
 
     .caption-text {
@@ -1297,6 +1309,9 @@ footer {
         margin-top:30px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .chooseTour-options p::after {
+        margin-top: 0;
     }
 
     .chooseTour-cards{
