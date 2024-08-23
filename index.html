@@ -27,7 +27,6 @@
   </head>
 
   <body>
-
     <header class="heading">
       <div class="heading-container">
         <a href="index.html" class="heading-logo">
@@ -40,16 +39,27 @@
         <nav class="heading-nav">
           <ul class="heading-nav__list">
             <li class="heading-nav__option">
-              <a class="p-normal heading-nav__option-text" href="#choose-a-tour">Туры</a>
+              <a class="p-normal heading-nav__option-text" href="#choose-a-tour"
+                >Туры</a
+              >
             </li>
             <li class="heading-nav__option">
-              <a class="p-normal heading-nav__option-text" href="#Create-a-tour"> Создать тур</a>
+              <a
+                class="p-normal heading-nav__option-text"
+                href="#Create-a-tour"
+              >
+                Создать тур</a
+              >
             </li>
             <li class="heading-nav__option">
-              <a class="p-normal heading-nav__option-text" href="#Review">Отзывы</a>
+              <a class="p-normal heading-nav__option-text" href="#Review"
+                >Отзывы</a
+              >
             </li>
             <li class="heading-nav__option">
-              <a class="p-normal heading-nav__option-text" href="#stories">Истории</a>
+              <a class="p-normal heading-nav__option-text" href="#stories"
+                >Истории</a
+              >
             </li>
           </ul>
         </nav>
@@ -58,7 +68,7 @@
         >
       </div>
     </header>
-    <main >
+    <main>
       <section class="caption">
         <img
           class="caption-img"
@@ -253,7 +263,6 @@
             </div>
           </div>
         </div>
-        
       </section>
 
       <section class="form">
@@ -262,8 +271,8 @@
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <div class=" common-container ">
-          <form action = "#" class = "form-Shell">
+        <div class="common-container">
+          <form action="#" class="form-Shell">
             <label for="name">
               <p class="form__Name p-normal">Имя</p>
               <input
@@ -275,7 +284,7 @@
             </label>
             <label for="place">
               <p class="form__direction p-normal">Направление</p>
-              <select id="directionSelect" onchange="changeText()">
+              <select id="directionSelect" onchange="changeDirectionSelectText()">
                 <option value="Куда хотите ехать?" disabled selected>
                   Куда хотите ехать
                 </option>
@@ -286,7 +295,9 @@
                 <option value="Гейрангер-фьорд (Норвегия)">
                   Гейрангер-фьорд (Норвегия)
                 </option>
-                <option value="Долина Йосемити(США)">Долина Йосемити(США)</option>
+                <option value="Долина Йосемити(США)">
+                  Долина Йосемити(США)
+                </option>
                 <option value="Шондонг (Вьетнам)">Шондонг (Вьетнам)</option>
                 <option value="Ленсойс-Мараньенсес (Бразилия)">
                   Ленсойс-Мараньенсес (Бразилия)
@@ -309,7 +320,7 @@
                 minlength="9"
                 maxlength="14"
                 required
-                oninput="inputPhoneNumber(this)"
+                oninput="validatePhoneValue(this)"
                 placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"
               />
             </label>
@@ -340,14 +351,16 @@
               <textarea comment="Comment"></textarea>
             </label>
             <div class="form-radiobutton">
-              <p class="form-radiobutton__question p-normal">Вам есть 18 лет?</p>
+              <p class="form-radiobutton__question p-normal">
+                Вам есть 18 лет?
+              </p>
               <label
                 class="form-radiobutton__label form-radiobutton__position-yes"
               >
                 <input type="radio" id="YES" name="question" value="Yes" />
                 <span>Да</span>
               </label>
-  
+
               <label
                 class="form-radiobutton__label form-radiobutton__position-no"
               >
@@ -355,7 +368,7 @@
                 <span>Нет</span>
               </label>
             </div>
-  
+
             <label class="form-checkbox__label">
               <input type="checkbox" />
               <span class="form-checkbox__fake">
@@ -382,7 +395,6 @@
             </div>
           </form>
         </div>
-        
       </section>
 
       <section class="reviews">
@@ -393,15 +405,15 @@
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <div class=" common-container ">
-          <div class="  reviews-review ">
+        <div class="common-container">
+          <div class="reviews-review">
             <div class="reviews-review-card">
               <p class="reviews-card__text p-big">
                 Идейные соображения высшего порядка, а также рамки и место
-                обучения кадров обеспечивает широкому кругу (специалистов) участие
-                в формировании новых предложений. Идейные соображения высшего
-                порядка, а также начало повседневной работы по формированию
-                позиции позволяет оценить значение модели развития.
+                обучения кадров обеспечивает широкому кругу (специалистов)
+                участие в формировании новых предложений. Идейные соображения
+                высшего порядка, а также начало повседневной работы по
+                формированию позиции позволяет оценить значение модели развития.
               </p>
               <div class="reviews-card__info">
                 <p class="reviews-card__PersonName h3">Мария</p>
@@ -413,7 +425,7 @@
                 />
               </div>
             </div>
-  
+
             <div class="reviews-review-card">
               <div>
                 <p class="reviews-card__text p-big">
@@ -423,8 +435,8 @@
                 </p>
                 <p class="reviews-card__text-ident p-big">
                   Значимость этих проблем настолько очевидна, что дальнейшее
-                  развитие различных форм деятельности обеспечивает широкому кругу
-                  (специалистов) участие в формировании новых предложений.
+                  развитие различных форм деятельности обеспечивает широкому
+                  кругу (специалистов) участие в формировании новых предложений.
                   Повседневная практика показывает, что реализация намеченных
                   плановых заданий в значительной степени обуславливает создание
                   модели развития.
@@ -432,7 +444,9 @@
               </div>
               <div class="reviews-card__info">
                 <p class="reviews-card__PersonName h3">Павел</p>
-                <p class="reviews-card__Tour p-small">Тур: Путешествие в горы</p>
+                <p class="reviews-card__Tour p-small">
+                  Тур: Путешествие в горы
+                </p>
                 <img
                   class="reviews-card__PhotoUsers reviews-card__PhotoSecondUsers-top"
                   src="img/review-photo-2.png"
@@ -442,7 +456,6 @@
             </div>
           </div>
         </div>
-        
       </section>
 
       <section class="photos">
@@ -547,7 +560,7 @@
                   Идейные соображения высшего порядка, а также рамки и место
                   обучения кадров обеспечивает широкому кругу (специалистов)
                   участие в формировании новых предложений:
-  
+
                   <ul class="stories-card__description-list">
                     <li>вкусная еда</li>
                     <li>дешевый транспорт</li>
@@ -577,7 +590,7 @@
                 </ul>
               </div>
             </div>
-  
+
             <div class="stories-card stories-scale">
               <img
                 class="stories-scale stories-card__img"
@@ -611,7 +624,7 @@
                 </ul>
               </div>
             </div>
-  
+
             <div class="stories-card stories-scale">
               <img
                 class="stories-scale stories-card__img"
@@ -650,18 +663,21 @@
             </div>
           </div>
         </div>
-        
       </section>
 
       <section class="intelligence">
         <img class="intelligence-img" src="img/footer photo.png" alt="Фото" />
         <div class="intelligence-description">
           <h3 class="intelligence__text h3">
-            Пора в путешествие<br/> вместе с нами!
+            Пора в путешествие<br />
+            вместе с нами!
           </h3>
           <p class="intelligence__text-email p-normal">
-             Напиши на почту и узнай подробности<br/> на
-            <a href="mailto:yourtour@gmail.com" class="intelligence__email">yourtour@gmail.com</a>
+            Напиши на почту и узнай подробности<br />
+            на
+            <a href="mailto:yourtour@gmail.com" class="intelligence__email"
+              >yourtour@gmail.com</a
+            >
           </p>
         </div>
       </section>

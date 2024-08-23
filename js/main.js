@@ -1,43 +1,53 @@
 
-function changeHeadingColor() {
-  let scrollHeight = window.scrollY;
-  let heading = document.querySelector('.heading');
-  let logotip = document.querySelector('.heading-logo__img');
-  let headingNumber = document.querySelector('.heading-number');
-  let headingText = document.querySelector('.heading-nav');
 
-  if (scrollHeight < 450) {
-    heading.classList.remove('scrolled');
-    logotip.classList.remove('black-color');
-    headingNumber.classList.remove('black-color');
-    headingText.classList.remove('black-headingText');
-  } else {
-    heading.classList.add('scrolled');
-    logotip.classList.add('black-color');
-    headingNumber.classList.add('black-color');
-    headingText.classList.add('black-headingText');
-  }
-}
+const phoneNumberRegex = /^[0-9]*$/;
 
-window.addEventListener('scroll', changeHeadingColor);
-
-function inputPhoneNumber(input) {
-    let regex = /^[0-9]*$/;
-    let value = input.value;
-    if (!regex.test(value)) {
-      input.value = value.replace(/\D/g, "");
-    }
-}
-
-function changeText() {
-  let select = document.getElementById("directionSelect");
-  let selectedOption = select.options[select.selectedIndex];
+document.addEventListener('DOMContentLoaded', () => {
   
-  if (selectedOption.value !== "Куда хотите ехать?") {
-    select.classList.add("selected");
-  } else {
-    select.classList.remove("selected");
-  }
-}
+  const heading = document.querySelector('.heading');
+  const logo = document.querySelector('.heading-logo__img');
+  const headingNumber = document.querySelector('.heading-number');
+  const headingText = document.querySelector('.heading-nav');
+  const selectDirection = document.getElementById("directionSelect");
 
+  const changeHeaderColor = () => {
+      let scrollHeight = window.scrollY;
+
+      if (scrollHeight < 450) {
+          heading.classList.remove('scrolled');
+          logo.classList.remove('black-color');
+          headingNumber.classList.remove('black-color');
+          headingText.classList.remove('black-headingText');
+      } else {
+          heading.classList.add('scrolled');
+          logo.classList.add('black-color');
+          headingNumber.classList.add('black-color');
+          headingText.classList.add('black-headingText');
+      }
+  };
+
+  window.addEventListener('scroll', changeHeaderColor);
+  
+
+  const changeDirectionSelectText = () => {
+    const selectedOption = selectDirection.options[selectDirection.selectedIndex];
+
+    if (selectedOption.value !== "Куда хотите ехать?") {
+      selectDirection.classList.add("selected");
+    } else {
+      selectDirection.classList.remove("selected");
+    }
+  };
+  
+  selectDirection.addEventListener('change', changeDirectionSelectText);
+  
+});
+
+
+const validatePhoneValue = (input) => {
+  const value = input.value;
+  if (!phoneNumberRegex.test(value)) {
+      input.value = value.replace(/\D/g, "");
+  }
+};
 
