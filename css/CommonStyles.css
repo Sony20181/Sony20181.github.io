@@ -86,7 +86,9 @@ a {
 .common-container{
     margin: 0 auto;
     width: 100%;
-    max-width: 1170px;  
+    max-width: 1170px; 
+    /*background-color: pink;*/
+    padding-bottom: 135px; 
 }
 
 @media screen and (min-width:768px) and (max-width:1240px) {
@@ -94,6 +96,7 @@ a {
     .common-container{
         max-width:1040px;
         padding: 0 53px;
+        padding-bottom: 135px; 
     }
 
     .h1 {
@@ -111,6 +114,7 @@ a {
    .common-container{
         max-width:760px;
         padding: 0 21px;
+        padding-bottom: 75px;
     }
 
     .p-big{

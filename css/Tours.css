@@ -633,32 +633,30 @@ input:checked + .form__radio-label::after{
     transition:none;
 }
 
-.intelligence{
+.cta-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 135px auto;
 }
 
-.intelligence-img{
+.cta-img{
     width: 370px;
     height: 370px;
     border-radius: 50px;
 }
 
-.intelligence__text-email{
-    margin-top: 20px;
+.cta__text-email{
     color:#A6A6A6;
 }
 
-.intelligence__email{
+.cta__email{
     color:#1B1F2B;
     position: relative;
 }
   
-.intelligence__email::after {
+.cta__email::after {
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -668,13 +666,13 @@ input:checked + .form__radio-label::after{
     transition: width 0.2s ease-in-out;
 }
     
-.intelligence__email:active::after {
+.cta__email:active::after {
     color: #286562;
     background-color:  #286562;
     transition:none;
 }
 
-.intelligence__email:active{
+.cta__email:active{
     color: #286562;
     transition:none; 
 }
@@ -962,16 +960,16 @@ footer {
         width: 100%;
     }
 
-    .intelligence{
-        max-width:771px ;
+    .cta__text{
+        padding-bottom:20px;
     }
 
-    .intelligence__email:hover::after {
+    .cta__email:hover::after {
         width: 100%;
         background-color: black; 
     }
 
-    .intelligence__email:active::after {
+    .cta__email:active::after {
         width: 100%;
         background-color: rgba(40, 101, 98, 1); 
     }
@@ -1235,11 +1233,11 @@ footer {
         margin-left: 30px;
     }
 
-    .intelligence{
-        width: 100%;
-    } 
+    .cta__text{
+        padding-bottom:20px;
+    }
 
-    .intelligence-img{
+    .cta-img{
         width:36vw;
         height:45%;
     }
@@ -1643,29 +1641,22 @@ footer {
         display: none;
     }
 
-    .intelligence{
+    .cta-container{
         flex-direction: column;
-        margin: 75px auto;
-        width: 360px;
-        max-width: 100%; 
     }
 
-    .intelligence-description{
+    .cta-description{
         text-align: center;
     }
 
-    .intelligence-img{
+    .cta__text{
+        padding-bottom:20px;
+    }
+
+    .cta-img{
         width: 36vw;
         height: 27%;
         border-radius: 20px;
-    }
-
-    .intelligence__text{
-        padding: 5px 35px 0 ;
-    }
-
-    .intelligence__text-email{
-        padding: 0 5px;
     }
 
     footer {
