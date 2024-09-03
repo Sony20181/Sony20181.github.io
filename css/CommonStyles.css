@@ -42,15 +42,16 @@ a {
 }
 
 .h2{
-    margin-top: 56px;
-    padding-top: 79px;
+   /* margin-top: 56px;
+    padding-top: 79px;*/
+    margin-bottom: 38px;
     color:#1B1F2B;
     text-align: center;
     font-size:59px;
     font-weight: 700;
     line-height: 124%;
-    -webkit-background-clip: content-box;
-    background-clip: content-box;
+   /* -webkit-background-clip: content-box;
+    background-clip: content-box;*/
 }
 
 .h3{
@@ -86,9 +87,12 @@ a {
 .common-container{
     margin: 0 auto;
     width: 100%;
-    max-width: 1170px; 
-    /*background-color: pink;*/
-    padding-bottom: 135px; 
+    max-width: 1170px;
+    margin-top: 135px; 
+}
+
+.chooseTour-card__title{
+    margin-bottom: 12px;  
 }
 
 @media screen and (min-width:768px) and (max-width:1240px) {
@@ -96,7 +100,6 @@ a {
     .common-container{
         max-width:1040px;
         padding: 0 53px;
-        padding-bottom: 135px; 
     }
 
     .h1 {
@@ -104,9 +107,16 @@ a {
     }
 
     .h2{
-        margin-top: 50px;
-        padding-top: 85px;
+        margin-bottom: 35px;
     } 
+
+    .chooseTour-card__title br {
+        display: none; 
+    }
+
+    .chooseTour-card__title{
+        margin-bottom: 14px;  
+    }
 }
 
 @media screen and (max-width:768px){
@@ -114,7 +124,7 @@ a {
    .common-container{
         max-width:760px;
         padding: 0 21px;
-        padding-bottom: 75px;
+        margin-top: 75px; 
     }
 
     .p-big{
@@ -139,7 +149,8 @@ a {
     }
 
     .h2{
-        margin-top: -3px;
+       /* margin-top: -3px;*/
+        margin-bottom: 32px; 
         font-size:34px; 
         line-height: 112%;
         letter-spacing: 1px;
@@ -150,5 +161,13 @@ a {
         font-weight: 700;
         line-height: 120%; 
         letter-spacing: 1px; 
+    }
+
+    .chooseTour-card__title{
+        margin-bottom: 15px;  
+    }
+
+    .chooseTour-card__title br {
+        display: none; 
     }
 }

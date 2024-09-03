@@ -59,9 +59,9 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.2s e
     display:  flex;
     justify-content: center;
     flex-wrap: wrap; 
-    margin-top:35px;
+    /*margin-top:35px;
     margin-left:auto ;
-    margin-right: auto;
+    margin-right: auto;*/
     list-style: none;
 }
 
@@ -103,72 +103,66 @@ input:-ms-input-placeholder {text-indent: 16px;   transition: text-indent 0.2s e
     transition:none;
 }
 
-.chooseTour-cards{
-    position: relative; 
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.chooseTour-card{
-    position: relative; 
+.chooseTour-card {
+    position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
-.Choose-card__img{
-    object-fit: cover;
-}
-
-.chooseTour-scalе{
+.choose-card__img{
+    position: absolute;
+    top:0;
+    left: 0;
     width: 100%;
     height: 100%;
-    transition: transform 0.2s;
-    cursor: pointer; 
+    transition: transform 0.3s;
 }
 
-.chooseTour-scalе::after{
+.chooseTour-card:hover .choose-card__img {
+    transform: scale(1.2);
+}
+
+.chooseTour-card::after{
     position: absolute;
     left: 0;
     top:0;
     width: 100%;
     height: 100%;
-    border-radius: 45px;
     content:''; 
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .chooseTour-card__info{
-    position: absolute; 
-    top: 0; 
-    left: 0;
-    z-index: 3;
-    color: #FFFFFF;
+    position:absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF; 
+    z-index: 3;  
 }
 
 .chooseTour-card__button{
-    position: absolute;
-    z-index:3;
-    border:none;
+    align-self: flex-start;
     color: #FFFFFF;
-    background: none;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s;
 }
 
-.chooseTour-scalе:hover .Choose-card__img {
-    transform: scale(1.2);
-}
-
-.chooseTour-scalе:active .chooseTour-card__button:active{
-    background: #EFA501;
+.chooseTour-card:active .chooseTour-card__button:active{
+    background-color: #EFA501;
     transition:none;
 }
 
-.form-subtitle{
+/*.form-subtitle{
     margin-left: auto;
     margin-right: auto;
     margin-top: 29px;
     text-align: center;
     color: #A6A6A6;
-}
+}*/
 
 form{
     margin-left: auto;
@@ -444,7 +438,7 @@ input:checked + .form__radio-label::after{
     text-align: center;
 }
 
-.reviews-subtitle{
+/*.reviews-subtitle{
     display: flex;
     width:415px;
     height: 56px;
@@ -456,7 +450,7 @@ input:checked + .form__radio-label::after{
     font-size: 20px;
     line-height: 142%;
     color: #A6A6A6;
-}
+}*/
 
 .reviews-review{
     display: grid;
@@ -484,12 +478,12 @@ input:checked + .form__radio-label::after{
     color: #A6A6A6;
 }
 
-.photos-subtitle{
+/*.photos-subtitle{
     margin: 30px auto;
     max-width:415px;
     text-align: center;
     color: #A6A6A6;
-}
+}*/
 
 .photos-Trip{
     margin: 0, auto;
@@ -522,7 +516,7 @@ input:checked + .form__radio-label::after{
     margin-top: 30px;
 }
 
-.stories-subtitle{
+/*.stories-subtitle{
     display: flex;
     width:415px;
     height: 56px;
@@ -532,7 +526,7 @@ input:checked + .form__radio-label::after{
     text-align: center;
     color: #A6A6A6;
     margin-bottom: 98px;
-}
+}*/
 
 .stories-card {
     position: relative;
@@ -770,6 +764,10 @@ footer {
         background: #F8E6BE;
         color: #1B1F2B;  
     }
+
+    .chooseTour-options{
+       margin-bottom: 100px;
+    }
   
     .chooseTour-options-option{
         margin-right:30px;
@@ -784,43 +782,40 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-        width: 100%;
-        margin-top: 100px;
     }  
 
-    .chooseTour-card{
+    .chooseTour-card {
         height: 531px;
-        border-radius: 45px;        
+        border-radius: 50px;
     }
- 
-    .chooseTour-scalе:hover .chooseTour-card__button{
-        background-color:  #286562;
-        cursor: pointer; 
+    
+    .chooseTour-card::after{
+        border-radius: 50px;
     }
 
     .chooseTour-card__info{
-        padding: 50px 80px 0 50px;
-    }
-    
-    .chooseTour-card__price{
-        margin-top: 16px;
+        padding: 50px;
     }
 
     .chooseTour-card__button{
-        left:29px;
-        margin-top: 447px;
         padding: 6px 20px;
+        margin: -6px -20px;
         border-radius: 50px;
+    }
+
+    .chooseTour-card:hover .chooseTour-card__button{
+        background-color:  #286562;
+        cursor: pointer; 
     }
 
     .chooseTour-card__button-icon{
         padding-left: 10px;  
     }
 
-    .form-subtitle{
+    /*.form-subtitle{
         max-width:405px;
         max-height: 56px;
-    }
+    }*/
    
    form{
         display: grid;
@@ -1009,6 +1004,10 @@ footer {
        width: 442px;   
     }
 
+    .chooseTour-options{
+        margin-bottom: 100px;
+     }
+
     .chooseTour-options-option{
         margin-right:30px;
     }
@@ -1017,38 +1016,36 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 18px; 
-        margin-top:100px;
-    }
+    }  
 
-    .chooseTour-card{
+    .chooseTour-card {
         height: 531px;
+        border-radius: 50px;
+    }
+    
+    .chooseTour-card::after{
         border-radius: 50px;
     }
 
     .chooseTour-card__info{
-        padding: 50px 50px 0 50px; 
-    }
-
-    .chooseTour-card__price{
-        margin-top: 16px;
+        padding: 50px;
     }
 
     .chooseTour-card__button{
-        left:29px;
-        margin-top: 447px;
         padding: 6px 20px;
+        margin: -6px -20px;
         border-radius: 50px;
     }
 
     .chooseTour-card__button-icon{
-        padding-left: 11px;  
+        padding-left: 10px;  
     }
 
-    .form-subtitle{
+   /* .form-subtitle{
         margin-top: 31px;
         max-width:405px;
         max-height: 56px;
-    }
+    }*/
 
     form{
         display: grid;
@@ -1146,9 +1143,9 @@ footer {
         margin-left: 24px;
     }
    
-    .reviews-subtitle{
+ /*   .reviews-subtitle{
         margin-top: 114px;
-    }
+    }*/
  
     .reviews-review{ 
         grid-template-columns: 1fr 1fr;
@@ -1212,9 +1209,9 @@ footer {
         margin-top: 30px;
     }
 
-    .stories-subtitle{
+   /* .stories-subtitle{
         margin-bottom: 100px;
-    }
+    }*/
 
     .stories-card{
         margin-bottom: 50px;
@@ -1296,44 +1293,34 @@ footer {
     
     .chooseTour-options {
         gap: 10px;
-        margin-top:30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-bottom: 46px;
     }
+
     .chooseTour-options p::after {
         margin-top: 0;
     }
 
     .chooseTour-cards{
         display: grid;
-        width: 100%;
         grid-gap: 18px;
-        margin-top: 46px;
-    }
+    }  
 
-   .chooseTour-card{
+    .chooseTour-card {
         height:318px;
         border-radius: 20px;
     }
-  
-    .chooseTour-scalе::after{  
+    
+    .chooseTour-card::after{
         border-radius: 20px;
     }
 
     .chooseTour-card__info{
-        top:0;
-        left:0;
         padding: 25px;
     }
 
-    .chooseTour-card__price{ 
-        margin-top: 13px;
-    }
-   
     .chooseTour-card__button{
-        left: 5px; 
-        margin-top: 263px; 
         padding: 6px 20px;
+        margin: -6px -20px;
         border-radius: 50px;
     }
 
@@ -1341,11 +1328,11 @@ footer {
         vertical-align: middle;
         padding-left: 13px; 
     }
-   
-    .form-subtitle{
+  
+   /* .form-subtitle{
         width: 89vmin;
         margin-top: 21px;
-    }
+    }*/
 
     form{
         margin-top: 40px;
@@ -1495,17 +1482,17 @@ footer {
         margin-left: 6px;   
     }
 
-    .reviews-title{
+   /**/ .reviews-title{
        width: 318px;
        height: 76px;
     }
     
-    .reviews-subtitle{
+   /* .reviews-subtitle{
         margin-left: auto;
         margin-right: auto;
         margin-top: 95px;
         width: 318px;
-    }
+    }*/
         
     .reviews-review{
         display: flex;
@@ -1534,9 +1521,9 @@ footer {
     }
 
 
-    .photos-subtitle{
+  /*  .photos-subtitle{
         margin-top: 20px;
-    }
+    }*/
 
     .photos-Trip{
         width: 100%;
@@ -1578,21 +1565,21 @@ footer {
         margin-top: 18px;
     }
  
-    .stories-Title{
+  /*  .stories-Title{
         margin-left: auto;
         margin-right: auto;
         width: 319px;
         height: 76px;
-    }
+    }*/
 
-    .stories-subtitle{   
+  /*  .stories-subtitle{   
         margin-left: auto;
         margin-right: auto;
         margin-top: 95px;
         margin-bottom: 40px;
         width: 318px;
         display: flex;
-    }
+    }*/
 
     .stories-card{
         height: 455px;
