@@ -41,10 +41,10 @@ a {
     letter-spacing: 2px;
 }
 
-.h2{
+h2{
    /* margin-top: 56px;
     padding-top: 79px;*/
-    margin-bottom: 38px;
+    margin-bottom: 32px;
     color:#1B1F2B;
     text-align: center;
     font-size:59px;
@@ -88,12 +88,21 @@ a {
     margin: 0 auto;
     width: 100%;
     max-width: 1170px;
-    margin-top: 135px; 
+    margin-top: 134px; 
 }
 
-.chooseTour-card__title{
-    margin-bottom: 12px;  
+.form-subtitle,
+.reviews-subtitle,
+.stories-subtitle,
+.photos-subtitle
+{
+    margin-bottom: 100px;
+    text-align: center;
+    align-items: center;
+    color: #A6A6A6;
 }
+
+
 
 @media screen and (min-width:768px) and (max-width:1240px) {
    
@@ -107,15 +116,11 @@ a {
     }
 
     .h2{
-        margin-bottom: 35px;
+        margin-bottom: 32px;
     } 
 
     .chooseTour-card__title br {
         display: none; 
-    }
-
-    .chooseTour-card__title{
-        margin-bottom: 14px;  
     }
 }
 
@@ -150,7 +155,7 @@ a {
 
     .h2{
        /* margin-top: -3px;*/
-        margin-bottom: 32px; 
+        margin-bottom: 34px; 
         font-size:34px; 
         line-height: 112%;
         letter-spacing: 1px;
@@ -163,11 +168,15 @@ a {
         letter-spacing: 1px; 
     }
 
-    .chooseTour-card__title{
-        margin-bottom: 15px;  
-    }
+  
 
-    .chooseTour-card__title br {
-        display: none; 
-    }
+    .form-subtitle,
+    .reviews-subtitle,
+    .stories-subtitle,
+    .photos-subtitle
+{
+    margin-bottom: 40px;
+}
+
+   
 }
