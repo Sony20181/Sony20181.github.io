@@ -338,7 +338,7 @@ input:checked + .form__radio-label::after{
 
 .form-checkbox__fake::before{
    float: left;
-   z-index: 1;
+   /*z-index: 1;*/
    display:block;
    width: 22px;
    height: 22px;
@@ -475,16 +475,9 @@ input:checked + .form__radio-label::after{
     color: #A6A6A6;
 }
 
-/*.photos-subtitle{
-    margin: 30px auto;
-    max-width:415px;
-    text-align: center;
-    color: #A6A6A6;
-}*/
 
 .photos-Trip{
     margin: 0, auto;
-   /* margin-top: 100px;*/
 }
 
 .photos-Trip__first-row{
@@ -512,18 +505,6 @@ input:checked + .form__radio-label::after{
     grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
 }
-
-/*.stories-subtitle{
-    display: flex;
-    width:415px;
-    height: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    text-align: center;
-    color: #A6A6A6;
-    margin-bottom: 98px;
-}*/
 
 .stories-card {
     position: relative;
@@ -1659,7 +1640,8 @@ footer {
     }
 
     .footer {
-        justify-content: center;
+        display:block;
+        text-align:center;
         height: 95px;
         padding: 21px 0;
     }
@@ -1673,6 +1655,7 @@ footer {
 */
     .footer-networks{
         margin-top: 7px;
+        justify-content: center;
     }
 
     .footer-networks__option{
