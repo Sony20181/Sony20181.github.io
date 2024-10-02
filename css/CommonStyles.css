@@ -43,8 +43,8 @@ a {
 
 h2{
    /* margin-top: 56px;
-    padding-top: 79px;*/
-    margin-bottom: 32px;
+    padding-top: 79px;
+    margin-bottom: 32px;*/
     color:#1B1F2B;
     text-align: center;
     font-size:59px;
@@ -91,16 +91,46 @@ h2{
     margin-top: 134px; 
 }
 
+.chooseTour-title{
+    margin-bottom: 36px;
+}
+.form-title{
+    margin-bottom: 32px;
+}
+.reviews-title{
+    margin-bottom: 32px;
+}
+.photos-Title{
+    margin-bottom: 32px;
+}
+.stories-Title{
+    margin-bottom: 32px;
+}
+
+
 .form-subtitle,
 .reviews-subtitle,
 .stories-subtitle,
 .photos-subtitle
 {
-    margin-bottom: 100px;
+    margin-bottom: 99px;
     text-align: center;
     align-items: center;
     color: #A6A6A6;
 }
+
+.reviews-subtitle{
+    margin-bottom: 99px;
+}
+
+.stories-subtitle{
+    margin-bottom: 98px;
+}
+
+.photos-subtitle{
+    margin-bottom:98px;
+}
+
 
 
 
@@ -116,8 +146,41 @@ h2{
     }
 
     .h2{
-        margin-bottom: 32px;
+      /*  margin-bottom: 36px;*/
     } 
+
+    .chooseTour-title{
+        margin-bottom: 36px;
+    }
+    .form-title{
+        margin-bottom: 30px;
+    }
+    .reviews-title{
+        margin-bottom: 32px;
+    }
+    .photos-Title{
+        margin-bottom: 32px;
+    }
+    .stories-Title{
+        margin-bottom: 32px;
+    }
+
+    .form-subtitle    
+    {
+        margin-bottom: 101px;
+    }
+
+    .reviews-subtitle{
+        margin-bottom: 98px;
+    }
+
+    .stories-subtitle{
+        margin-bottom: 98px;
+    }
+
+    .photos-subtitle{
+        margin-bottom:98px;
+    }
 
     .chooseTour-card__title br {
         display: none; 
@@ -154,8 +217,8 @@ h2{
     }
 
     .h2{
-       /* margin-top: -3px;*/
-        margin-bottom: 34px; 
+       /* margin-top: -3px;
+        margin-bottom: 34px; */
         font-size:34px; 
         line-height: 112%;
         letter-spacing: 1px;
@@ -168,14 +231,33 @@ h2{
         letter-spacing: 1px; 
     }
 
+    .chooseTour-title{
+        margin-bottom: 32px;
+    }
+    .form-title{
+        margin-bottom: 23px;
+    }
+    .reviews-title{
+        margin-bottom: 22px;
+    }
+    .photos-Title{
+        margin-bottom: 32px;
+    }
+    .stories-Title{
+        margin-bottom: 32px;
+    }
+
   
 
     .form-subtitle,
-    .reviews-subtitle,
     .stories-subtitle,
     .photos-subtitle
 {
     margin-bottom: 40px;
+}
+.reviews-subtitle
+{
+    margin-bottom: 48px;
 }
 
    
