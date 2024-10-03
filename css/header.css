@@ -1,5 +1,5 @@
 
-    .heading-container {
+    .heading_container {
         width: 1170px;
         max-width: 100%;
         margin: 0 auto;
@@ -17,91 +17,91 @@
         align-items: center;
     }
         
-    .heading .heading-container {
+    .heading .heading_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .heading-logo__img {
+    .heading__logo-img {
         width: 100%;
         height: 100%;
        
     }
         
-    .heading-nav__list {
+    .heading_nav__list {
         position: relative;
         display: flex;
         align-items: center;
         list-style: none;
     }
 
-    .heading-nav__option {
+    .heading_nav__option {
         margin-top: 2px;   
     }
         
-    .heading-nav__option:last-child {
+    .heading_nav__option:last-child {
         margin-right: 0;
     }
 
-    .heading-nav__option a::after {
+    .heading_nav__option a::after {
         display: block;
         width: 0;
         height: 1px;
         content: "";
         transition: width 0.2s ease-in-out;
     }
-    .heading-number{
+    .heading_number{
         color: white;
     }
   
 
     @media screen and (min-width: 1240px){
 
-        .heading-nav__option a:hover::after {
+        .heading_nav__option a:hover::after {
             width: 100%;
             background-color: white;
         }
            
-        .heading-nav__option {
+        .heading_nav__option {
             margin-right: 50px;
         }
     }
     
      @media screen and (min-width: 860px)and (max-width:1240px){
 
-        .heading-container {
+        .heading_container {
             padding: 0 53px;
         }
 
-        .heading-nav__option {
+        .heading_nav__option {
            margin-right: 2rem;
         }  
     }
 
     @media screen and (min-width: 768px)and (max-width:860px){ 
 
-        .heading-container {
+        .heading_container {
             padding: 0 53px;
         }
 
-        .heading-nav__list {
+        .heading_nav__list {
             display: none;
         } 
     }
 
     @media screen and (max-width:767px){
         
-        .heading-container {
+        .heading_container {
            padding: 0 21px;
         }
 
-        .heading-logo {
+        .heading_logo {
             width: 133px;
             height: 22px;
         }
 
-        .heading-nav__list {
+        .heading_nav__list {
             display: none;
         }
         

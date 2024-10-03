@@ -84,34 +84,34 @@ h2{
     background-color: black;
 }
 
-.common-container{
+.common_container{
     margin: 0 auto;
     width: 100%;
     max-width: 1170px;
     margin-top: 134px; 
 }
 
-.chooseTour-title{
+.choose_tour__title {
     margin-bottom: 36px;
 }
-.form-title{
+.form_title{
     margin-bottom: 32px;
 }
-.reviews-title{
+.reviews_title{
     margin-bottom: 32px;
 }
-.photos-Title{
+.photos_title{
     margin-bottom: 32px;
 }
-.stories-Title{
+.stories_title{
     margin-bottom: 32px;
 }
 
 
-.form-subtitle,
-.reviews-subtitle,
-.stories-subtitle,
-.photos-subtitle
+.form_subtitle,
+.reviews_subtitle,
+.stories_subtitle,
+.photos_subtitle
 {
     margin-bottom: 99px;
     text-align: center;
@@ -119,15 +119,15 @@ h2{
     color: #A6A6A6;
 }
 
-.reviews-subtitle{
+.reviews_subtitle{
     margin-bottom: 99px;
 }
 
-.stories-subtitle{
+.stories_subtitle{
     margin-bottom: 98px;
 }
 
-.photos-subtitle{
+.photos_subtitle{
     margin-bottom:98px;
 }
 
@@ -136,7 +136,7 @@ h2{
 
 @media screen and (min-width:768px) and (max-width:1240px) {
    
-    .common-container{
+    .common_container{
         max-width:1040px;
         padding: 0 53px;
     }
@@ -149,47 +149,47 @@ h2{
       /*  margin-bottom: 36px;*/
     } 
 
-    .chooseTour-title{
+    .choose_tour__title {
         margin-bottom: 36px;
     }
-    .form-title{
+    .form_title{
         margin-bottom: 30px;
     }
-    .reviews-title{
+    .reviews_title{
         margin-bottom: 32px;
     }
-    .photos-Title{
+    .photos_title{
         margin-bottom: 32px;
     }
-    .stories-Title{
+    .stories_title{
         margin-bottom: 32px;
     }
 
-    .form-subtitle    
+    .form_subtitle    
     {
         margin-bottom: 101px;
     }
 
-    .reviews-subtitle{
+    .reviews_subtitle{
         margin-bottom: 98px;
     }
 
-    .stories-subtitle{
+    .stories_subtitle{
         margin-bottom: 98px;
     }
 
-    .photos-subtitle{
+    .photos_subtitle{
         margin-bottom:98px;
     }
 
-    .chooseTour-card__title br {
+    .choose_tour__card_title br {
         display: none; 
     }
 }
 
 @media screen and (max-width:768px){
         
-   .common-container{
+   .common_container{
         max-width:760px;
         padding: 0 21px;
         margin-top: 75px; 
@@ -231,31 +231,31 @@ h2{
         letter-spacing: 1px; 
     }
 
-    .chooseTour-title{
+    .choose_tour__title {
         margin-bottom: 32px;
     }
-    .form-title{
+    .form_title{
         margin-bottom: 23px;
     }
-    .reviews-title{
+    .reviews_title{
         margin-bottom: 22px;
     }
-    .photos-Title{
+    .photos_title{
         margin-bottom: 32px;
     }
-    .stories-Title{
+    .stories_title{
         margin-bottom: 32px;
     }
 
   
 
-    .form-subtitle,
-    .stories-subtitle,
-    .photos-subtitle
+    .form_subtitle,
+    .stories_subtitle,
+    .photos_subtitle
 {
     margin-bottom: 40px;
 }
-.reviews-subtitle
+.reviews_subtitle
 {
     margin-bottom: 48px;
 }
