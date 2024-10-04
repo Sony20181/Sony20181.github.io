@@ -241,21 +241,22 @@ h2{
         margin-bottom: 22px;
     }
     .photos_title{
-        margin-bottom: 32px;
+        margin-bottom: 22px;
     }
     .stories_title{
-        margin-bottom: 32px;
+        margin-bottom: 22px;
     }
 
   
 
-    .form_subtitle,
-    .stories_subtitle,
-    .photos_subtitle
+    .form_subtitle
+    
 {
     margin-bottom: 40px;
 }
-.reviews_subtitle
+.reviews_subtitle,
+.photos_subtitle,
+.stories_subtitle
 {
     margin-bottom: 48px;
 }
