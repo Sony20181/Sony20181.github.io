@@ -50,8 +50,6 @@ h2{
     font-size:59px;
     font-weight: 700;
     line-height: 124%;
-   /* -webkit-background-clip: content-box;
-    background-clip: content-box;*/
 }
 
 .h3{
@@ -88,25 +86,24 @@ h2{
     margin: 0 auto;
     width: 100%;
     max-width: 1170px;
-    margin-top: 134px; 
 }
 
 .choose_tour__title {
+    padding-top: 134px;
     margin-bottom: 36px;
 }
-.form_title{
-    margin-bottom: 32px;
-}
+
+.form_title,
 .reviews_title{
-    margin-bottom: 32px;
-}
-.photos_title{
-    margin-bottom: 32px;
-}
-.stories_title{
+    padding-top: 135px;
     margin-bottom: 32px;
 }
 
+.photos_title,
+.stories_title{
+    padding-top: 134px;
+    margin-bottom: 32px;
+}
 
 .form_subtitle,
 .reviews_subtitle,
@@ -119,17 +116,12 @@ h2{
     color: #A6A6A6;
 }
 
-.reviews_subtitle{
-    margin-bottom: 99px;
-}
-
-.stories_subtitle{
+.stories_subtitle,
+.photos_subtitle{
     margin-bottom: 98px;
 }
 
-.photos_subtitle{
-    margin-bottom:98px;
-}
+
 
 
 
@@ -145,23 +137,18 @@ h2{
         font-size:96px;
     }
 
-    .h2{
-      /*  margin-bottom: 36px;*/
-    } 
-
     .choose_tour__title {
         margin-bottom: 36px;
     }
+
     .form_title{
         margin-bottom: 30px;
     }
-    .reviews_title{
-        margin-bottom: 32px;
-    }
-    .photos_title{
-        margin-bottom: 32px;
-    }
-    .stories_title{
+    
+    .reviews_title,
+    .photos_title,
+    .stories_title
+    {
         margin-bottom: 32px;
     }
 
@@ -170,16 +157,11 @@ h2{
         margin-bottom: 101px;
     }
 
-    .reviews_subtitle{
+    .reviews_subtitle,
+    .photos_subtitle,
+    .stories_subtitle
+    {
         margin-bottom: 98px;
-    }
-
-    .stories_subtitle{
-        margin-bottom: 98px;
-    }
-
-    .photos_subtitle{
-        margin-bottom:98px;
     }
 
     .choose_tour__card_title br {
@@ -192,7 +174,6 @@ h2{
    .common_container{
         max-width:760px;
         padding: 0 21px;
-        margin-top: 75px; 
     }
 
     .p-big{
@@ -232,34 +213,32 @@ h2{
     }
 
     .choose_tour__title {
+        padding-top: 75px;
         margin-bottom: 32px;
     }
+
     .form_title{
+        padding-top: 75px;
         margin-bottom: 23px;
     }
-    .reviews_title{
-        margin-bottom: 22px;
-    }
-    .photos_title{
-        margin-bottom: 22px;
-    }
-    .stories_title{
+
+    .reviews_title,
+    .photos_title,
+    .stories_title
+    {
+        padding-top: 75px;
         margin-bottom: 22px;
     }
 
-  
+    .form_subtitle{
+        margin-bottom: 40px;
+    }
 
-    .form_subtitle
-    
-{
-    margin-bottom: 40px;
-}
-.reviews_subtitle,
-.photos_subtitle,
-.stories_subtitle
-{
-    margin-bottom: 48px;
-}
+    .reviews_subtitle,
+    .photos_subtitle,
+    .stories_subtitle
+    {
+        margin-bottom: 48px;
+    }
 
-   
 }
