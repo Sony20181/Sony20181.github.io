@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectDirection = document.getElementById("directionSelect");
 
   const changeHeaderColor = () => {
+
+    
+
       let scrollHeight = window.scrollY;
 
       if (scrollHeight < 450) {
@@ -42,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   selectDirection.addEventListener('change', changeDirectionSelectText);
   
 });
-
 
 const validatePhoneValue = (input) => {
   const value = input.value;
